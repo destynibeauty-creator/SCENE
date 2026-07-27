@@ -14,6 +14,7 @@ from reportlab.lib.colors import HexColor
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import inch
+from reportlab.lib.utils import ImageReader
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import (
@@ -25,6 +26,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 FONTDIR = os.path.join(HERE, 'fonts')
 OUTDIR = os.path.normpath(os.path.join(HERE, '..', 'pdfs'))
 CONTENT = os.path.join(HERE, 'content.json')
+LOGO = os.path.join(HERE, 'assets', 'logo-lockup.jpg')
 
 # ----- brand palette -----
 JET = HexColor('#000000')
@@ -117,6 +119,25 @@ def tracked(c, x, y, text, font, size, color, track=1.6, center_at=None):
     c.drawText(tx)
     c.restoreState()
     return x
+
+
+def metal_text(c, cx, y, text, font, size, horiz_scale=93, slant=0.14):
+    """Brand headline treatment: condensed, oblique, brushed-silver gradient
+    (clip text, then paint a vertical metallic gradient through it)."""
+    w = pdfmetrics.stringWidth(text, font, size) * horiz_scale / 100.0
+    c.saveState()
+    c.translate(cx - w / 2, y)
+    c.transform(1, 0, slant, 1, 0, 0)
+    t = c.beginText(0, 0)
+    t.setTextRenderMode(7)  # add glyph outlines to clipping path
+    t.setFont(font, size)
+    t.setHorizScale(horiz_scale)
+    t.textOut(text)
+    c.drawText(t)
+    c.linearGradient(0, -size * 0.05, 0, size * 0.78,
+                     (HexColor('#8F9399'), HexColor('#FBFCFD')), extend=True)
+    c.restoreState()
+    return w
 
 
 def wordmark(c, cx, y, scale=1.0):
@@ -367,9 +388,9 @@ class SceneDoc(BaseDocTemplate):
         y = PAGE_H - 300
         tracked(c, 0, y + 66, m['kicker'], FONTS['P-SB'], 12, CYAN, 4.2, center_at=cx)
 
-        # title (up to 2 lines)
+        # title (up to 2 lines) — brushed-silver brand headline
         title = m['title']
-        size = 40
+        size = 42
         f = FONTS['P-XB']
         lines = [title]
         if pdfmetrics.stringWidth(title, f, size) > AVAIL + 40:
@@ -378,11 +399,9 @@ class SceneDoc(BaseDocTemplate):
             lines = [' '.join(words[:half]), ' '.join(words[half:])]
         while max(pdfmetrics.stringWidth(l, f, size) for l in lines) > AVAIL + 40:
             size -= 2
-        c.setFont(f, size)
-        c.setFillColor(WHITE)
         ty = y
         for ln in lines:
-            c.drawCentredString(cx, ty, ln)
+            metal_text(c, cx, ty, ln, f, size)
             ty -= size * 1.12
         ty += size * 1.12
 
@@ -428,10 +447,12 @@ class SceneDoc(BaseDocTemplate):
                 tracked(c, x, ty2, p, fnt, fs, cols[i % 3], track)
                 x += widths[i] + gap
 
-        # bottom wordmark
-        wordmark(c, cx, 108, 0.9)
-        tracked(c, 0, 84, 'CREATE CINEMATIC CONTENT.  BUILD YOUR DIGITAL WORLD.',
-                FONTS['P'], 6.4, MUTED, 1.8, center_at=cx)
+        # bottom: official logo lockup (includes tagline)
+        img = ImageReader(LOGO)
+        iw, ih = img.getSize()
+        lw = 250.0
+        lh = lw * ih / iw
+        c.drawImage(img, cx - lw / 2, 76, lw, lh)
 
     # ---- content pages
     def draw_page(self, c, doc):
