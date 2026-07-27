@@ -121,6 +121,43 @@ next step — Rachel's rule.
 
 ---
 
+## 5 · CONFIRMED from live store screenshots (Jenna Peterson + Rachel Adams Lee)
+
+What their actual store pages show, product by product:
+
+**Universal patterns (both stores, every product):**
+- **Strikethrough anchor on EVERY price** — $197 ~~$1,100~~, $97 ~~$167~~,
+  $3,497 ~~$5,500~~, $49.97 ~~$99~~. Nothing is ever listed at face value.
+- **★5.0 ratings displayed** wherever they exist.
+- **First-person, energetic CTA buttons:** "LETS GO", "I NEED THIS!",
+  "I WANT THIS", "Sign Me Up!", "Join The Crew!", "Get My Guide" — never
+  "Buy now."
+- **Short cards** — 1–2 outcome lines on the storefront; the pitch lives
+  on the product page.
+- **Free content woven through the store** (free trainings, workshop
+  replays, free classes) — each one is an email-capture point, not an
+  afterthought at the bottom.
+- **Section header chips** organize the page by audience: "For Realtors",
+  "NEXT STEPS", "Let's Get Fit & Healthy!" — one store serves multiple
+  audiences without confusing anyone.
+- **Their face is the store.** Personal photos on nearly every card.
+
+**Jenna's structure (low/mid-ticket ladder):** $197 bundle (anchored from
+$1,100) on top → free training right under it → community links → $67–$97
+guides → niche section for realtors with its own free course + $97 guide.
+
+**Rachel's structure (high-ticket anchor):** $3,497 ReBrand at the very
+top makes everything below feel cheap — then $2,200, $1,497, $697, $547,
+$497 products, TWO memberships ($147/mo Social Content Hub with a yearly
+"2 months free" tier, and a $49/mo Coaching Crew), a $49.97 impulse item,
+and free replays sprinkled between. Every budget has a next step — her own
+rule, visible on the page.
+
+**What this changes for your blueprint:** nothing structural — it
+validates it. Add three tactical rules: anchor every price with a
+strikethrough, write CTA buttons in first person ("ENTER THE SCENE" fits
+perfectly), and collect ★5.0 reviews in week one.
+
 ### Sources
 - https://www.netinfluencer.com/stan-helped-creators-make-500m-selling-digital-products-its-biggest-lesson-was-that-products-arent-the-problem/
 - https://www.forbes.com/sites/victoriafeng/2025/08/12/this-startup-helps-creators-sell-classes-coaching-and-more-to-their-fans/
