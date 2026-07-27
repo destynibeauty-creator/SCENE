@@ -344,16 +344,22 @@ def themed_table(rows, S):
         if sum(1 for c in r if c.strip()) == 1 and ri > 0:
             span_rows.add(ri)
 
-    # column widths weighted by content length (span rows excluded, capped)
-    weights = []
+    # column widths: never narrower than the longest single word,
+    # remaining space shared by content volume (span rows excluded)
+    pad = 16
+    minw, weights = [], []
     for ci in range(ncols):
-        vals = [min(len(r[ci]), 42) for ri, r in enumerate(rows)
-                if ri not in span_rows]
-        weights.append(max(max(vals or [4]), 4))
-    total = sum(weights)
-    widths = [max(AVAIL * w / total, 42) for w in weights]
-    f = AVAIL / sum(widths)
-    widths = [w * f for w in widths]
+        cells = [r[ci] for ri, r in enumerate(rows) if ri not in span_rows]
+        words = [w for c in cells for w in c.split()] or ['x']
+        longest = max(pdfmetrics.stringWidth(w, FONTS['P'], 10) for w in words)
+        minw.append(longest + pad)
+        weights.append(max(max((min(len(c), 42) for c in cells), default=4), 4))
+    spare = AVAIL - sum(minw)
+    if spare > 0:
+        total = sum(weights)
+        widths = [m + spare * w / total for m, w in zip(minw, weights)]
+    else:
+        widths = [m * AVAIL / sum(minw) for m in minw]
 
     header = [Paragraph(esc(c.upper()), S['cellh']) for c in rows[0]]
     data = [header]

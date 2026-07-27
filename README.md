@@ -7,17 +7,23 @@ vibrant-magenta `#F600A2` accents, and the corner-bracket motif from the logo.
 
 - **`scene-os/pdfs/`** — the 19 finished PDFs (Start Here, Modules 01–12
   incl. 09A/09B + 10A/10B, Bonus 01–04). US Letter, fonts embedded.
+Each section has its own signature color, and the text is set large and
+high-contrast in plain, 6th-grade-level language so it is easy on the eyes
+for readers of any age. Copy-paste AI prompts are preserved word-for-word.
+
 - **`scene-os/build/extract.py`** — parses the original master bundle into
   structured content (`content.json`): headings, body, bullets, prompt blocks,
   tables (classified by font/size).
+- **`scene-os/build/content_simple.json`** — the same content rewritten in
+  plain language (prompt blocks untouched). Used automatically when present.
 - **`scene-os/build/render.py`** — renders each module as a branded PDF
-  (ReportLab; cover pages with corner brackets + cyan→magenta gradient bar,
-  dark prompt panels, themed tables).
+  (ReportLab; cover pages with corner brackets + gradient bar, dark prompt
+  panels, themed tables, per-section accent colors in `DOC_ACCENT`).
 
 ```bash
 cd scene-os/build
 python3 extract.py     # source PDF -> content.json
-python3 render.py      # content.json -> ../pdfs/*.pdf
+python3 render.py      # content_simple.json (or content.json) -> ../pdfs/*.pdf
 ```
 
 ---
