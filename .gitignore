@@ -1,2 +1,6 @@
 build/__pycache__/
 *.pyc
+build/iconpkg/node_modules/
+build/*.png
+build/female_outfit_pack.html
+build/female_outfit_pack.pdf

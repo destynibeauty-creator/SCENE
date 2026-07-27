@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@iconify-json/fluent-emoji-flat": "^1.2.5",
+    "@iconify-json/openmoji": "^1.2.27"
+  }
+}
