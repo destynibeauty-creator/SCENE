@@ -24,8 +24,10 @@ Spring & Summer
 The outfit graphics are **Microsoft Fluent Emoji (MIT-licensed)**, so the pack is free
 to share, print, and sell. Each piece in a look is auto-matched to the right clothing or
 accessory icon (dress, blazer, legging, heel, tote, sunglasses, lipstick, ring, watch…)
-by its description. Icons are stylized stand-ins — **drop in your own product photos to
-turn any look into a photographic flatlay** in the same layout.
+by its description, and sits on a **whisper-faint color chip** tinted to match the color
+named in the piece (navy → soft blue, camel → warm tan, blush → pink…). Icons are
+stylized stand-ins — **drop in your own product photos to turn any look into a
+photographic flatlay** in the same layout.
 
 > Photographic flatlays from Google/Pinterest couldn't be sourced directly: this
 > environment's network policy blocks image hosts, and those pins are third-party

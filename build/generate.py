@@ -2,7 +2,7 @@
 """Render THE FEMALE OUTFIT PACK(TM) as flatlay collages -> HTML for Chromium->PDF."""
 import base64, os, html
 from data import PACK
-from iconmap import icon_uri_for, icon_svg_for, svg_inline
+from iconmap import icon_uri_for, icon_svg_for, svg_inline, tint_for
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 FONTS = os.path.join(HERE, "fonts")
@@ -35,8 +35,9 @@ TOTAL = sum(len(v) for v in PACK.values())
 
 def cell(brand, desc):
     svg = icon_svg_for(brand, desc)
+    tint = tint_for(desc)
     return (f'<div class="cell">'
-            f'<div class="ico">{svg}</div>'
+            f'<div class="ico" style="background:{tint}">{svg}</div>'
             f'<div class="lbl"><span class="brand">{e(brand)}</span>'
             f'<span class="desc">{e(desc)}</span></div></div>')
 
@@ -143,8 +144,8 @@ html,body {{ font-family:'Poppins',sans-serif; color:var(--ink);
 .flat {{ flex:1; display:grid; grid-template-columns:repeat(3,1fr); grid-auto-rows:1fr; gap:4px;
   background:var(--blush); border-radius:8px; padding:7px 5px; }}
 .cell {{ display:flex; flex-direction:column; align-items:center; text-align:center; justify-content:flex-start; }}
-.ico {{ height:42px; display:flex; align-items:center; justify-content:center; }}
-.ico .ic {{ height:42px; width:42px; filter:drop-shadow(0 1px 1px rgba(180,90,140,.18)); }}
+.ico {{ width:54px; height:50px; border-radius:13px; display:flex; align-items:center; justify-content:center; }}
+.ico .ic {{ height:40px; width:40px; filter:drop-shadow(0 1px 1px rgba(120,90,110,.16)); }}
 .cover .row .ic {{ width:44px; height:44px; }}
 .intro .demo .ic {{ height:40px; width:40px; }}
 .lbl {{ margin-top:2px; line-height:1.08; }}

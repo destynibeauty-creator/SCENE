@@ -152,6 +152,69 @@ def svg_inline(icon, cls="ic"):
     _isvg[key] = out
     return out
 
+# ---- very faint color tint, read from each piece's description ----
+# base medium tones; blended toward white so the chip stays whisper-soft.
+_COLOR_BASE = [
+    # multiword / specific first
+    ("light wash", (188, 211, 239)), ("mid-wash", (150, 178, 214)),
+    ("dark wash", (120, 140, 178)), ("university blue", (150, 190, 235)),
+    ("powder blue", (196, 220, 244)), ("baby blue", (196, 220, 244)),
+    # pinks
+    ("blush", (244, 201, 219)), ("rose", (240, 178, 198)), ("mauve", (220, 190, 202)),
+    ("powder", (245, 214, 227)), ("sugar", (247, 210, 224)), ("petal", (246, 205, 220)),
+    ("pink", (244, 190, 214)),
+    # purples
+    ("lilac", (220, 204, 236)), ("lavender", (222, 210, 238)), ("purple", (205, 180, 220)),
+    # reds / warm
+    ("burgundy", (196, 130, 138)), ("wine", (200, 138, 146)), ("ruby", (226, 150, 160)),
+    ("cherry", (232, 150, 158)), ("red", (232, 160, 166)), ("scarlet", (232, 150, 150)),
+    ("coral", (244, 196, 166)), ("apricot", (246, 208, 176)), ("terracotta", (226, 176, 150)),
+    ("peach", (248, 214, 190)), ("rust", (214, 160, 128)), ("orange", (246, 196, 150)),
+    # yellows / gold
+    ("champagne", (232, 220, 190)), ("butter", (244, 232, 190)), ("gold", (232, 210, 158)),
+    ("mustard", (226, 196, 120)), ("yellow", (246, 232, 170)),
+    # greens
+    ("emerald", (170, 206, 180)), ("sage", (200, 216, 198)), ("olive", (196, 200, 150)),
+    ("mint", (198, 226, 206)), ("green", (188, 214, 186)),
+    # blues
+    ("navy", (185, 196, 222)), ("denim", (176, 200, 230)), ("cobalt", (170, 190, 232)),
+    ("blue", (190, 212, 236)), ("teal", (176, 214, 214)),
+    # neutrals
+    ("charcoal", (196, 192, 202)), ("graphite", (198, 194, 204)),
+    ("grey", (216, 214, 220)), ("gray", (216, 214, 220)), ("heather", (214, 212, 220)),
+    ("silver", (222, 223, 230)), ("dove", (222, 220, 226)), ("fog", (220, 220, 226)),
+    ("black", (200, 196, 206)), ("onyx", (200, 196, 206)), ("jet", (200, 196, 206)),
+    ("chocolate", (196, 158, 128)), ("cocoa", (200, 164, 134)), ("mocha", (206, 176, 148)),
+    ("coffee", (196, 160, 128)), ("espresso", (176, 146, 120)), ("brown", (200, 164, 132)),
+    ("camel", (224, 196, 150)), ("caramel", (222, 190, 146)), ("tan", (222, 200, 162)),
+    ("khaki", (210, 200, 158)), ("taupe", (216, 204, 186)), ("sand", (230, 216, 190)),
+    ("stone", (222, 216, 204)), ("beige", (230, 218, 196)), ("nude", (232, 214, 194)),
+    ("oatmeal", (230, 222, 204)), ("oat", (230, 222, 204)), ("ecru", (234, 226, 210)),
+    ("bone", (234, 226, 212)), ("cream", (236, 228, 210)), ("ivory", (238, 230, 214)),
+    ("vanilla", (238, 230, 214)), ("white", (236, 232, 226)),
+]
+_NEUTRAL = (243, 233, 240)   # soft blush-grey default
+
+def _blend_white(rgb, keep=0.22):
+    r, g, b = rgb
+    r = round(255*(1-keep) + r*keep)
+    g = round(255*(1-keep) + g*keep)
+    b = round(255*(1-keep) + b*keep)
+    return f"#{r:02x}{g:02x}{b:02x}"
+
+def tint_for(desc):
+    """Whisper-faint chip color pulled from the color word in the description."""
+    d = desc.lower()
+    parts = [p.strip() for p in d.split(",")]
+    cand = parts[-1] if len(parts) > 1 else d
+    for kw, rgb in _COLOR_BASE:
+        if kw in cand:
+            return _blend_white(rgb)
+    for kw, rgb in _COLOR_BASE:
+        if kw in d:
+            return _blend_white(rgb)
+    return _blend_white(_NEUTRAL)
+
 def icon_uri_for(brand, desc):
     return data_uri(classify(brand, desc))
 
