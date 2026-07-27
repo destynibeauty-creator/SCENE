@@ -3,7 +3,8 @@
 Who's winning right now in your exact lane — teaching people to build
 consistent AI characters and cinematic AI story content, and selling the
 system — what they do well, where they're weak, and how THE SCENE AI beats
-each one.
+each one. Covers the top three in the direct lane plus Alicia Lyttle, the
+authority-tier AI educator.
 
 > Note on sourcing: TikTok/Instagram pages and two sales pages block
 > automated reading, so follower counts and prices are best-effort from
@@ -113,6 +114,47 @@ keyword system + pinned comments built in), but sell the depth they can't:
 
 ---
 
+## Competitor 4 — Alicia Lyttle · the authority-tier AI educator
+
+**Who:** AI strategist and trainer (alicialyttle.com; ~186K Instagram,
+~12.8K TikTok), 23+ years in digital marketing, TEDx speaker, CEO of
+AI InnoVision, named one of JPMorgan Chase's "100 Women to KNOW in
+America." The most established Black woman in the money-with-AI education
+space — the credibility ceiling of your niche.
+
+**What she's doing:**
+- A full offer LADDER, not one product: free live events at the bottom
+  (AI Agents Bootcamp, free AI Marketing Summit with live demos) → the
+  **AI Experts Club** membership (subscription: mentorship + community +
+  ongoing tool training) → premium **AI Consultant Certification at
+  $4,997** → corporate training and strategy sessions on top.
+- Authority engine: TEDx, press credentials, a certification body she
+  founded (International Association of AI Consultants), higher-ed
+  partnerships. Her content sells trust, not hype.
+- Teaches broad "make money with AI" skills — cloning your voice/video
+  presence, automating content, AI agents — for entrepreneurs and
+  organizations.
+
+**Her strengths:** unmatched credibility stack; recurring revenue from the
+membership; free-live-event funnel that fills itself; premium pricing
+nobody questions.
+
+**Her weaknesses vs you:**
+- She is generalist and corporate-leaning. Nothing in her stack teaches
+  the thing SCENE owns: a consistent AI CHARACTER running a cinematic
+  story series that grows a creator's audience. Her students learn tools;
+  yours build a world.
+- Weak TikTok presence (~12.8K) — she is not native to the short-form
+  storytelling culture your buyers live in. You can out-demonstrate her
+  daily just by posting your character's episodes.
+
+**How SCENE beats her:** don't fight the résumé — fight with the product
+on screen. She tells; your character SHOWS. And steal her structure: her
+ladder (free live event → membership → premium tier) is exactly how SCENE
+should grow once the core product is selling.
+
+---
+
 ## The 5 moves to steal (do these now)
 
 1. **Proof-first hooks.** Every promo post opens with the character's
@@ -128,6 +170,10 @@ keyword system + pinned comments built in), but sell the depth they can't:
 5. **Ride their search traffic.** Post into the live trends ("AI baddie,"
    "making a baddie AI," "AI influencer") with a character that never
    drifts — then let the keyword funnel catch the demand.
+6. **Build the ladder (from Alicia Lyttle).** Free live event or challenge
+   → SCENE core product → membership/community with monthly drops (new
+   packs, new scene libraries) → premium 1:1 or certification tier. Her
+   $4,997 top tier proves the ceiling in this market is high.
 
 ## The 3 gaps only SCENE fills (say these in your marketing)
 
@@ -145,6 +191,9 @@ keyword system + pinned comments built in), but sell the depth they can't:
 ---
 
 ### Sources
+- https://alicialyttle.com/ · https://alicialyttle.com/courses/ · https://alicialyttle.com/training/
+- https://nextlevellearninghub.com/ai-experts-club/ · https://theaiagentsbootcamp.com/bootcamp · https://aiinnovision.com/
+- https://www.instagram.com/alicialyttle/ · https://www.tiktok.com/@alicialyttle
 - https://course.yeltsov.com/ · https://yeltsov.com/
 - https://www.instagram.com/yurii_yeltsov/
 - https://tradecanon.com/product/yury-yeltsov-video-creation-by-using-artificial-intelligence/
