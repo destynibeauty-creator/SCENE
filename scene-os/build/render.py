@@ -365,6 +365,162 @@ class MethodFlow(Flowable):
         c.drawCentredString(self.width / 2, 0, 'Do the five parts in this order, every episode.')
 
 
+class StepFlow(Flowable):
+    """Generic numbered-box arrow flow (left to right) with a caption."""
+
+    def __init__(self, steps, caption=''):
+        super().__init__()
+        self.steps = steps          # list of [number, title]
+        self.caption = caption
+
+    def wrap(self, aw, ah):
+        self.width = AVAIL
+        self.height = 74 if self.caption else 62
+        return self.width, self.height
+
+    def draw(self):
+        c = self.canv
+        cycle = [CYAN, MAGENTA, LIME, CYAN, MAGENTA]
+        n = len(self.steps)
+        arrow = 14
+        bw = (self.width - arrow * (n - 1)) / n
+        bh = 46
+        y = self.height - 46 - 12
+        for i, (num, name) in enumerate(self.steps):
+            x = i * (bw + arrow)
+            col = cycle[i % len(cycle)]
+            c.setFillColor(HexColor('#0C0C11'))
+            c.setStrokeColor(col)
+            c.setLineWidth(1)
+            c.roundRect(x, y, bw, bh, 6, stroke=1, fill=1)
+            c.setFillColor(col)
+            c.setFont(FONTS['P-XB'], 10)
+            c.drawCentredString(x + bw / 2, y + bh - 18, str(num))
+            c.setFillColor(WHITE)
+            words = name.split()
+            if len(words) > 2 or pdfmetrics.stringWidth(name, FONTS['P-B'], 9) > bw - 8:
+                half = (len(words) + 1) // 2
+                l1, l2 = ' '.join(words[:half]), ' '.join(words[half:])
+                c.setFont(FONTS['P-B'], 7.5)
+                c.drawCentredString(x + bw / 2, y + 15, l1)
+                c.drawCentredString(x + bw / 2, y + 6, l2)
+            else:
+                c.setFont(FONTS['P-B'], 9)
+                c.drawCentredString(x + bw / 2, y + 9, name)
+            if i < n - 1:
+                ax = x + bw + arrow / 2
+                c.setFillColor(HexColor('#4A4A55'))
+                p = c.beginPath()
+                p.moveTo(ax - 4, y + bh / 2 + 5)
+                p.lineTo(ax - 4, y + bh / 2 - 5)
+                p.lineTo(ax + 4.5, y + bh / 2)
+                p.close()
+                c.drawPath(p, stroke=0, fill=1)
+        if self.caption:
+            c.setFillColor(HexColor('#9AA0A8'))
+            c.setFont(FONTS['P'], 8.5)
+            c.drawCentredString(self.width / 2, 0, self.caption)
+
+
+class CommentCard(Flowable):
+    """A pinned-comment mockup that looks like a social comment."""
+
+    def __init__(self, note, text, accent):
+        super().__init__()
+        self.note = note
+        self.text = text
+        self.accent = accent
+
+    def wrap(self, aw, ah):
+        from reportlab.lib.utils import simpleSplit
+        self.width = AVAIL
+        self.tlines = simpleSplit(self.text, FONTS['P-M'], 11, self.width - 96)
+        self.card_h = max(26 + len(self.tlines) * 15 + 12, 56)
+        self.height = self.card_h + 18
+        return self.width, self.height
+
+    def draw(self):
+        c = self.canv
+        ch = self.card_h
+        tracked(c, 0, ch + 6, self.note, FONTS['P-SB'], 8.5, self.accent, 2.2)
+        c.setFillColor(HexColor('#0C0C11'))
+        c.setStrokeColor(HexColor('#26262E'))
+        c.setLineWidth(0.8)
+        c.roundRect(0, 0, self.width, ch, 8, stroke=1, fill=1)
+        # avatar
+        c.setFillColor(self.accent)
+        c.circle(28, ch - 26, 13, stroke=0, fill=1)
+        c.setFillColor(JET)
+        c.setFont(FONTS['P-XB'], 12)
+        c.drawCentredString(28, ch - 30.5, 'Y')
+        # handle + pin badge
+        c.setFillColor(WHITE)
+        c.setFont(FONTS['P-B'], 10.5)
+        c.drawString(50, ch - 22, 'YOU  ·  Creator')
+        bw = 58
+        c.setFillColor(HexColor('#1C1C24'))
+        c.roundRect(self.width - bw - 12, ch - 30, bw, 16, 8, stroke=0, fill=1)
+        # little pin glyph
+        c.setFillColor(self.accent)
+        c.circle(self.width - bw - 2, ch - 22, 2.6, stroke=0, fill=1)
+        c.setStrokeColor(self.accent)
+        c.setLineWidth(1.2)
+        c.line(self.width - bw - 2, ch - 25, self.width - bw - 2, ch - 29)
+        c.setFillColor(HexColor('#B9BDC4'))
+        c.setFont(FONTS['P-SB'], 7)
+        c.drawString(self.width - bw + 6, ch - 25, 'PINNED')
+        # comment text
+        c.setFillColor(HexColor('#EFF0F2'))
+        c.setFont(FONTS['P-M'], 11)
+        ty = ch - 44
+        for ln in self.tlines:
+            c.drawString(50, ty, ln)
+            ty -= 15
+
+
+class WorksheetCard(Flowable):
+    """Fill-in worksheet card: title chip + labeled write-in lines."""
+
+    def __init__(self, title, fields, accent):
+        super().__init__()
+        self.title = title
+        self.fields = fields
+        self.accent = accent
+
+    def wrap(self, aw, ah):
+        self.width = AVAIL
+        self.height = 40 + len(self.fields) * 27 + 10
+        return self.width, self.height
+
+    def draw(self):
+        c = self.canv
+        h = self.height
+        c.setFillColor(HexColor('#0C0C11'))
+        c.setStrokeColor(HexColor('#26262E'))
+        c.setLineWidth(0.8)
+        c.roundRect(0, 0, self.width, h - 6, 8, stroke=1, fill=1)
+        c.setFillColor(self.accent)
+        c.rect(0, 0, 3, h - 6, stroke=0, fill=1)
+        # title chip
+        tw = pdfmetrics.stringWidth(self.title, FONTS['P-B'], 9.5) + \
+            2.0 * len(self.title) + 22
+        c.setFillColor(self.accent)
+        c.roundRect(14, h - 34, tw, 19, 9.5, stroke=0, fill=1)
+        tracked(c, 25, h - 28.5, self.title, FONTS['P-B'], 9.5, JET, 2.0)
+        y = h - 58
+        for f in self.fields:
+            c.setFillColor(HexColor('#D6D8DB'))
+            c.setFont(FONTS['P-M'], 10)
+            c.drawString(16, y, f)
+            lw = pdfmetrics.stringWidth(f, FONTS['P-M'], 10)
+            c.setStrokeColor(HexColor('#3A3A44'))
+            c.setLineWidth(0.9)
+            c.setDash(2, 3)
+            c.line(24 + lw, y - 1, self.width - 16, y - 1)
+            c.setDash()
+            y -= 27
+
+
 class NextStepBanner(Flowable):
     """End-of-document wayfinding: big arrow + where to go next."""
 
@@ -804,6 +960,18 @@ def build_doc(docid, pages, meta, outpath, S):
                 flow.append(Spacer(1, 10))
                 flow.append(SystemMap())
                 flow.append(Spacer(1, 14))
+        elif t == 'flow':
+            flow.append(Spacer(1, 6))
+            flow.append(StepFlow(e['steps'], e.get('caption', '')))
+            flow.append(Spacer(1, 10))
+        elif t == 'ccard':
+            flow.append(Spacer(1, 6))
+            flow.append(CommentCard(e['note'], e['text'], S['accent']))
+            flow.append(Spacer(1, 4))
+        elif t == 'wcard':
+            flow.append(Spacer(1, 8))
+            flow.append(WorksheetCard(e['title'], e['fields'], S['accent']))
+            flow.append(Spacer(1, 8))
         elif t == 'h2':
             flow.append(Spacer(1, 14))
             flow.append(AccentHeading(' '.join(e['lines']), S['accent']))
@@ -873,8 +1041,11 @@ def build_doc(docid, pages, meta, outpath, S):
 def main():
     register_fonts()
     os.makedirs(OUTDIR, exist_ok=True)
+    final = os.path.join(HERE, 'content_final.json')
     simple = os.path.join(HERE, 'content_simple.json')
-    pages = json.load(open(simple if os.path.exists(simple) else CONTENT))
+    src = final if os.path.exists(final) else (
+        simple if os.path.exists(simple) else CONTENT)
+    pages = json.load(open(src))
 
     # group pages by doc, preserving order
     docs = []
