@@ -255,6 +255,110 @@
   "doc": "START HERE"
  },
  {
+  "page": 3.5,
+  "doc": "START HERE",
+  "elems": [
+   {
+    "type": "h2",
+    "y": 0,
+    "lines": [
+     "Your tool kit \u2014 the apps you need"
+    ]
+   },
+   {
+    "type": "body",
+    "y": 0,
+    "lines": [
+     "You only need three tools: one that makes photos, one that turns photos into video, and one that edits. The system works in ANY app that can use your MASTER photo as a reference. These are the popular picks right now:"
+    ]
+   },
+   {
+    "type": "table",
+    "y": 0,
+    "rows": [
+     [
+      "THE JOB",
+      "POPULAR TOOLS",
+      "TIP"
+     ],
+     [
+      "Make the face and photos",
+      "Midjourney, Higgsfield, OpenArt, Gemini",
+      "Pick one with a character or reference feature."
+     ],
+     [
+      "Turn photos into video",
+      "Kling, Veo, Higgsfield, Runway",
+      "It must accept your MASTER image."
+     ],
+     [
+      "Edit, captions and sound",
+      "CapCut, InShot",
+      "CapCut is free and enough to start."
+     ]
+    ]
+   },
+   {
+    "type": "flow",
+    "y": 0,
+    "steps": [
+     [
+      "1",
+      "PICK ONE PER JOB"
+     ],
+     [
+      "2",
+      "LEARN IT ONCE"
+     ],
+     [
+      "3",
+      "STAY THERE"
+     ]
+    ],
+    "caption": "Switching apps every week is how characters drift. Pick your three and commit."
+   },
+   {
+    "type": "bullet",
+    "y": 0,
+    "lines": [
+     "Free versions are fine to start. Upgrade when episodes are working."
+    ]
+   },
+   {
+    "type": "bullet",
+    "y": 0,
+    "lines": [
+     "Upload your MASTER photo into every tool, every time."
+    ]
+   },
+   {
+    "type": "bullet",
+    "y": 0,
+    "lines": [
+     "Keep the SAME three tools for a whole series."
+    ]
+   },
+   {
+    "type": "body",
+    "y": 0,
+    "lines": [
+     "Tools change fast. If a new app comes out, the system still works \u2014 the prompts and the method do not change."
+    ]
+   },
+   {
+    "type": "wcard",
+    "y": 0,
+    "title": "MY TOOL KIT",
+    "fields": [
+     "My photo tool:",
+     "My video tool:",
+     "My editing app:",
+     "My keyword (one word):"
+    ]
+   }
+  ]
+ },
+ {
   "page": 4,
   "elems": [
    {

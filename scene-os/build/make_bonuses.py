@@ -30,6 +30,40 @@ def cover(kicker, title, sub):
     ]
 
 
+# ------------------------------------------------------------- START HERE
+def start_here_tools():
+    return {'page': 3.5, 'doc': 'START HERE', 'elems': [
+        E('h2', 'Your tool kit — the apps you need'),
+        E('body', 'You only need three tools: one that makes photos, one that '
+                  'turns photos into video, and one that edits. The system '
+                  'works in ANY app that can use your MASTER photo as a '
+                  'reference. These are the popular picks right now:'),
+        E('table', rows=[
+            ['THE JOB', 'POPULAR TOOLS', 'TIP'],
+            ['Make the face and photos',
+             'Midjourney, Higgsfield, OpenArt, Gemini',
+             'Pick one with a character or reference feature.'],
+            ['Turn photos into video',
+             'Kling, Veo, Higgsfield, Runway',
+             'It must accept your MASTER image.'],
+            ['Edit, captions and sound',
+             'CapCut, InShot',
+             'CapCut is free and enough to start.'],
+        ]),
+        E('flow', steps=[['1', 'PICK ONE PER JOB'], ['2', 'LEARN IT ONCE'],
+                         ['3', 'STAY THERE']],
+          caption='Switching apps every week is how characters drift. Pick your three and commit.'),
+        E('bullet', 'Free versions are fine to start. Upgrade when episodes are working.'),
+        E('bullet', 'Upload your MASTER photo into every tool, every time.'),
+        E('bullet', 'Keep the SAME three tools for a whole series.'),
+        E('body', 'Tools change fast. If a new app comes out, the system still '
+                  'works — the prompts and the method do not change.'),
+        E('wcard', title='MY TOOL KIT', fields=[
+            'My photo tool:', 'My video tool:', 'My editing app:',
+            'My keyword (one word):']),
+    ]}
+
+
 # ---------------------------------------------------------------- BONUS 01
 def bonus01_intro():
     return {'page': 72.5, 'doc': 'BONUS 01', 'elems': [
@@ -247,10 +281,13 @@ def bonus04():
 def main():
     pages = json.load(open(SRC))
     out = []
-    b1_done = False
+    b1_done = sh_done = False
     for p in pages:
         if p['doc'] in ('BONUS 02', 'BONUS 03', 'BONUS 04'):
             continue  # fully replaced below
+        if p['doc'] != 'START HERE' and not sh_done:
+            out.append(start_here_tools())  # after the last Start Here page
+            sh_done = True
         out.append(p)
         if p['doc'] == 'BONUS 01' and not b1_done:
             out.append(bonus01_intro())  # after the Bonus 01 cover
