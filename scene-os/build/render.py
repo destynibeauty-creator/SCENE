@@ -46,6 +46,37 @@ PAGE_W, PAGE_H = letter
 MARGIN = 0.82 * inch
 AVAIL = PAGE_W - 2 * MARGIN
 
+# one signature color per section (all bright enough to sit on black)
+DOC_ACCENT = {
+    'START HERE': '#00E5FF',
+    'MODULE 01': '#FFD166',
+    'MODULE 02': '#C6FF00',
+    'MODULE 03': '#4D9FFF',
+    'MODULE 04': '#A78BFA',
+    'MODULE 05': '#4ADE80',
+    'MODULE 06': '#FF8A3D',
+    'MODULE 07': '#F87171',
+    'MODULE 08': '#2DD4BF',
+    'MODULE 09A': '#FF7AC6',
+    'MODULE 09B': '#7DD3FC',
+    'MODULE 10A': '#E879F9',
+    'MODULE 10B': '#5EEAD4',
+    'MODULE 11': '#FBBF24',
+    'MODULE 12': '#FF4D6D',
+    'BONUS 01': '#FF9F45',
+    'BONUS 02': '#6EE7B7',
+    'BONUS 03': '#C4B5FD',
+    'BONUS 04': '#FDE047',
+}
+
+
+def blend_black(hexcolor, frac):
+    """Mix a hex color toward black; frac is how much color survives."""
+    r = int(hexcolor[1:3], 16) * frac
+    g = int(hexcolor[3:5], 16) * frac
+    b = int(hexcolor[5:7], 16) * frac
+    return HexColor(f'#{int(r):02X}{int(g):02X}{int(b):02X}')
+
 FONTS = {
     'P': 'Poppins-Regular', 'P-M': 'Poppins-Medium', 'P-SB': 'Poppins-SemiBold',
     'P-B': 'Poppins-Bold', 'P-XB': 'Poppins-ExtraBold', 'P-I': 'Poppins-Italic',
@@ -166,13 +197,14 @@ def wordmark(c, cx, y, scale=1.0):
 # ---------------------------------------------------------------- flowables
 
 class AccentHeading(Flowable):
-    """H2 — white Poppins Bold with cyan accent bar."""
+    """H2 — white Poppins Bold with a section-color accent bar."""
 
-    def __init__(self, text, width=AVAIL):
+    def __init__(self, text, accent=CYAN, width=AVAIL):
         super().__init__()
         self.text = text
+        self.accent = accent
         self.width = width
-        self.font, self.size, self.leading = FONTS['P-B'], 15.5, 19
+        self.font, self.size, self.leading = FONTS['P-B'], 18, 22.5
         self.space_before, self.space_after = 0, 0
 
     def wrap(self, aw, ah):
@@ -194,8 +226,8 @@ class AccentHeading(Flowable):
 
     def draw(self):
         c = self.canv
-        c.setFillColor(CYAN)
-        c.rect(0, 0, 3, self.height - 3, stroke=0, fill=1)
+        c.setFillColor(self.accent)
+        c.rect(0, 0, 3.5, self.height - 3, stroke=0, fill=1)
         c.setFillColor(WHITE)
         c.setFont(self.font, self.size)
         y = self.height - self.leading + 3
@@ -210,7 +242,7 @@ class PanelLabel(Flowable):
     def __init__(self, text='COPY + PASTE PROMPT'):
         super().__init__()
         self.text = text
-        self.height = 11
+        self.height = 13
         self.width = AVAIL
 
     def wrap(self, aw, ah):
@@ -219,37 +251,42 @@ class PanelLabel(Flowable):
     def draw(self):
         c = self.canv
         c.setFillColor(MAGENTA)
-        c.rect(0, 3, 5, 5, stroke=0, fill=1)
-        tracked(c, 11, 3, self.text, FONTS['MONO'], 6.3, MUTED, 1.4)
+        c.rect(0, 3, 6, 6, stroke=0, fill=1)
+        tracked(c, 13, 3, self.text, FONTS['MONO'], 7.6,
+                HexColor('#B9BDC4'), 1.4)
 
 
 # ---------------------------------------------------------------- styles
 
-def make_styles():
+def make_styles(accent=CYAN):
+    """Large-print, high-contrast styles; the accent color is per-section."""
     S = {}
-    S['body'] = ParagraphStyle('body', fontName=FONTS['P'], fontSize=9.3,
-                               leading=14.6, textColor=BODY_TX, spaceAfter=8)
+    S['body'] = ParagraphStyle('body', fontName=FONTS['P'], fontSize=11,
+                               leading=17.5, textColor=HexColor('#EFF0F2'),
+                               spaceAfter=9)
     S['lede'] = ParagraphStyle('lede', parent=S['body'], fontName=FONTS['P-M'],
-                               fontSize=11, leading=17, textColor=SILVER,
-                               spaceAfter=10)
-    S['h3'] = ParagraphStyle('h3', fontName=FONTS['P-SB'], fontSize=11.5,
-                             leading=15, textColor=CYAN, spaceBefore=10,
-                             spaceAfter=5)
-    S['label'] = ParagraphStyle('label', fontName=FONTS['P-SB'], fontSize=8.6,
-                                leading=12.5, textColor=MAGENTA, spaceBefore=6,
-                                spaceAfter=4)
-    S['bullet'] = ParagraphStyle('bullet', parent=S['body'], leftIndent=15,
-                                 bulletIndent=2, spaceAfter=4,
-                                 bulletFontName=FONTS['P-B'], bulletFontSize=9.5,
-                                 bulletColor=CYAN)
-    S['item'] = ParagraphStyle('item', parent=S['body'], spaceAfter=3.6,
-                               leading=13.6)
-    S['mono'] = ParagraphStyle('mono', fontName=FONTS['MONO'], fontSize=7.4,
-                               leading=11.2, textColor=HexColor('#E9E9E7'))
-    S['cell'] = ParagraphStyle('cell', fontName=FONTS['P'], fontSize=8.3,
-                               leading=12, textColor=BODY_TX)
-    S['cellh'] = ParagraphStyle('cellh', fontName=FONTS['P-SB'], fontSize=7.6,
-                                leading=10.5, textColor=CYAN)
+                               fontSize=12.5, leading=19.5,
+                               textColor=HexColor('#E2E4E7'), spaceAfter=11)
+    S['h3'] = ParagraphStyle('h3', fontName=FONTS['P-SB'], fontSize=13.5,
+                             leading=17.5, textColor=accent, spaceBefore=12,
+                             spaceAfter=6)
+    S['label'] = ParagraphStyle('label', fontName=FONTS['P-SB'], fontSize=10,
+                                leading=14.5, textColor=MAGENTA, spaceBefore=7,
+                                spaceAfter=5)
+    S['bullet'] = ParagraphStyle('bullet', parent=S['body'], leftIndent=17,
+                                 bulletIndent=2, spaceAfter=5,
+                                 bulletFontName=FONTS['P-B'], bulletFontSize=11,
+                                 bulletColor=accent)
+    S['item'] = ParagraphStyle('item', parent=S['body'], spaceAfter=4.5,
+                               leading=16.5)
+    S['mono'] = ParagraphStyle('mono', fontName=FONTS['MONO'], fontSize=8.8,
+                               leading=13.6, textColor=HexColor('#F2F2F0'))
+    S['cell'] = ParagraphStyle('cell', fontName=FONTS['P'], fontSize=10,
+                               leading=14.5, textColor=HexColor('#EFF0F2'))
+    S['cellh'] = ParagraphStyle('cellh', fontName=FONTS['P-SB'], fontSize=9,
+                                leading=12.5, textColor=accent)
+    S['accent'] = accent
+    S['accent_hex'] = accent.hexval().replace('0x', '#').upper()
     return S
 
 
@@ -262,13 +299,13 @@ def para_body(text, S):
     m = NUM_RE.match(text)
     if m:
         return Paragraph(
-            f'<font color="#00E5FF" name="{FONTS["P-SB"]}">{m.group(1)}</font> '
+            f'<font color="{S["accent_hex"]}" name="{FONTS["P-SB"]}">{m.group(1)}</font> '
             f'{esc(m.group(2))}', S['item'])
     if text.lower().startswith('category:'):
         val = text.split(':', 1)[1].strip()
         return Paragraph(
-            f'<font color="#F600A2" name="{FONTS["P-SB"]}" size="7.6">CATEGORY'
-            f'</font>&nbsp;&nbsp;<font color="#C0C3C7" size="8.6">{esc(val.upper())}</font>',
+            f'<font color="#F600A2" name="{FONTS["P-SB"]}" size="9">CATEGORY'
+            f'</font>&nbsp;&nbsp;<font color="#D6D8DB" size="10">{esc(val.upper())}</font>',
             S['item'])
     if '____' in text:
         text = re.sub(r'_{6,}', lambda m: f'<font color="#3A3A44">{m.group(0)}</font>', esc(text))
@@ -287,7 +324,7 @@ def code_panel(code_elems, S):
     t.setStyle(TableStyle([
         ('BACKGROUND', (0, 0), (-1, -1), PANEL),
         ('BOX', (0, 0), (-1, -1), 0.7, PANEL_EDGE),
-        ('LINEBEFORE', (0, 0), (0, -1), 2, CYAN),
+        ('LINEBEFORE', (0, 0), (0, -1), 2.5, S['accent']),
         ('LEFTPADDING', (0, 0), (-1, -1), 13),
         ('RIGHTPADDING', (0, 0), (-1, -1), 12),
         ('TOPPADDING', (0, 0), (-1, -1), 10),
@@ -336,7 +373,7 @@ def themed_table(rows, S):
     t = Table(data, colWidths=widths, repeatRows=1)
     style = [
         ('BACKGROUND', (0, 0), (-1, 0), HexColor('#14141B')),
-        ('LINEBELOW', (0, 0), (-1, 0), 1, CYAN),
+        ('LINEBELOW', (0, 0), (-1, 0), 1, S['accent']),
         ('GRID', (0, 0), (-1, -1), 0.5, HexColor('#202028')),
         ('VALIGN', (0, 0), (-1, -1), 'TOP'),
         ('LEFTPADDING', (0, 0), (-1, -1), 7),
@@ -384,7 +421,7 @@ class SceneDoc(BaseDocTemplate):
         c.translate(cx, PAGE_H - 385)
         c.transform(1, 0, 0.14, 1, 0, 0)
         c.setFont(FONTS['P-XB'], gsize)
-        c.setFillColor(HexColor('#101016'))
+        c.setFillColor(blend_black(m['accent_hex'], 0.12))
         c.drawCentredString(0, 0, ghost)
         c.restoreState()
         # frame brackets
@@ -398,7 +435,8 @@ class SceneDoc(BaseDocTemplate):
 
         # kicker
         y = PAGE_H - 300
-        tracked(c, 0, y + 66, m['kicker'], FONTS['P-SB'], 12, CYAN, 4.2, center_at=cx)
+        tracked(c, 0, y + 66, m['kicker'], FONTS['P-SB'], 12.5, m['accent'],
+                4.2, center_at=cx)
 
         # title (up to 2 lines) — brushed-silver brand headline
         title = m['title']
@@ -417,19 +455,25 @@ class SceneDoc(BaseDocTemplate):
             ty -= size * 1.12
         ty += size * 1.12
 
-        # gradient bar
-        gradient_bar(c, cx - 80, ty - 26, 160, 3.4)
+        # gradient bar: section color into brand magenta
+        c.saveState()
+        p = c.beginPath()
+        p.rect(cx - 80, ty - 26, 160, 3.4)
+        c.clipPath(p, stroke=0, fill=0)
+        c.linearGradient(cx - 80, ty - 26, cx + 80, ty - 26,
+                         (m['accent'], MAGENTA), extend=False)
+        c.restoreState()
 
         # subtitle
         sub = m.get('sub') or ''
         if sub:
-            c.setFont(FONTS['P'], 11.5)
-            c.setFillColor(SILVER)
+            c.setFont(FONTS['P'], 13)
+            c.setFillColor(HexColor('#E2E4E7'))
             # wrap
             words, cur, subls = sub.split(), '', []
             for w in words:
                 t = (cur + ' ' + w).strip()
-                if pdfmetrics.stringWidth(t, FONTS['P'], 11.5) < 380:
+                if pdfmetrics.stringWidth(t, FONTS['P'], 13) < 400:
                     cur = t
                 else:
                     subls.append(cur); cur = w
@@ -438,7 +482,7 @@ class SceneDoc(BaseDocTemplate):
             sy = ty - 56
             for ln in subls:
                 c.drawCentredString(cx, sy, ln)
-                sy -= 17
+                sy -= 19
         else:
             sy = ty - 56
 
@@ -454,7 +498,7 @@ class SceneDoc(BaseDocTemplate):
             total = sum(widths) + gap * (len(parts) - 1)
             x = cx - total / 2
             ty2 = sy - 26
-            cols = [WHITE, CYAN, MAGENTA]
+            cols = [WHITE, m['accent'], MAGENTA]
             for i, p in enumerate(parts):
                 tracked(c, x, ty2, p, fnt, fs, cols[i % 3], track)
                 x += widths[i] + gap
@@ -474,14 +518,15 @@ class SceneDoc(BaseDocTemplate):
 
         # header
         hy = PAGE_H - 0.62 * inch
-        bracket(c, MARGIN, hy + 11, 7, 'tl', MAGENTA, 1.5)
-        x = tracked(c, MARGIN + 13, hy, 'THE SCENE AI', FONTS['P-SB'], 7, CYAN, 1.8)
-        w1 = pdfmetrics.stringWidth('THE SCENE AI', FONTS['P-SB'], 7) + 1.8 * 11
-        tracked(c, MARGIN + 13 + w1 + 8, hy, '/  ' + m['kicker'].upper(),
-                FONTS['P-SB'], 7, HexColor('#5A5E66'), 1.8)
-        tw = pdfmetrics.stringWidth(m['title'].upper(), FONTS['P-SB'], 7) + 1.6 * len(m['title'])
+        bracket(c, MARGIN, hy + 12, 8, 'tl', MAGENTA, 1.6)
+        x = tracked(c, MARGIN + 14, hy, 'THE SCENE AI', FONTS['P-SB'], 8,
+                    m['accent'], 1.8)
+        w1 = pdfmetrics.stringWidth('THE SCENE AI', FONTS['P-SB'], 8) + 1.8 * 11
+        tracked(c, MARGIN + 14 + w1 + 8, hy, '/  ' + m['kicker'].upper(),
+                FONTS['P-SB'], 8, HexColor('#8A8F98'), 1.8)
+        tw = pdfmetrics.stringWidth(m['title'].upper(), FONTS['P-SB'], 8) + 1.6 * len(m['title'])
         tracked(c, PAGE_W - MARGIN - tw, hy, m['title'].upper(), FONTS['P-SB'],
-                7, HexColor('#5A5E66'), 1.6)
+                8, HexColor('#8A8F98'), 1.6)
         c.setStrokeColor(RULE)
         c.setLineWidth(0.7)
         c.line(MARGIN, hy - 9, PAGE_W - MARGIN, hy - 9)
@@ -490,11 +535,12 @@ class SceneDoc(BaseDocTemplate):
         fy = 0.55 * inch
         c.setStrokeColor(RULE)
         c.line(MARGIN, fy + 12, PAGE_W - MARGIN, fy + 12)
-        tracked(c, MARGIN, fy, 'THE SCENE AI  —  CREATOR OS', FONTS['P'], 6.2,
-                MUTED, 1.6)
+        tracked(c, MARGIN, fy, 'THE SCENE AI  —  CREATOR OS', FONTS['P'], 7.4,
+                HexColor('#9AA0A8'), 1.6)
         pn = f'PAGE {doc.page - 1:02d}'
-        pw = pdfmetrics.stringWidth(pn, FONTS['P-SB'], 6.6) + 1.8 * len(pn)
-        tracked(c, PAGE_W - MARGIN - pw, fy, pn, FONTS['P-SB'], 6.6, CYAN, 1.8)
+        pw = pdfmetrics.stringWidth(pn, FONTS['P-SB'], 8) + 1.8 * len(pn)
+        tracked(c, PAGE_W - MARGIN - pw, fy, pn, FONTS['P-SB'], 8,
+                m['accent'], 1.8)
         bracket(c, PAGE_W - MARGIN + 4, fy - 4, 5, 'br', MAGENTA, 1.2)
 
 
@@ -534,7 +580,7 @@ def build_doc(docid, pages, meta, outpath, S):
             flow.append(Spacer(1, 12))
         elif t == 'h2':
             flow.append(Spacer(1, 14))
-            flow.append(AccentHeading(' '.join(e['lines'])))
+            flow.append(AccentHeading(' '.join(e['lines']), S['accent']))
             flow.append(Spacer(1, 8))
         elif t == 'h3':
             h3txt = ' '.join(e['lines'])
@@ -559,7 +605,7 @@ def build_doc(docid, pages, meta, outpath, S):
                 flow.append(para_body(txt, S))
         elif t == 'h1':
             flow.append(Spacer(1, 14))
-            flow.append(AccentHeading(' '.join(e['lines'])))
+            flow.append(AccentHeading(' '.join(e['lines']), S['accent']))
             flow.append(Spacer(1, 8))
         i += 1
 
@@ -589,8 +635,8 @@ def build_doc(docid, pages, meta, outpath, S):
 def main():
     register_fonts()
     os.makedirs(OUTDIR, exist_ok=True)
-    S = make_styles()
-    pages = json.load(open(CONTENT))
+    simple = os.path.join(HERE, 'content_simple.json')
+    pages = json.load(open(simple if os.path.exists(simple) else CONTENT))
 
     # group pages by doc, preserving order
     docs = []
@@ -601,9 +647,12 @@ def main():
             docs.append((p['doc'], [p]))
 
     for idx, (docid, dpages) in enumerate(docs):
+        accent_hex = DOC_ACCENT.get(docid, '#00E5FF')
+        S = make_styles(HexColor(accent_hex))
         # cover metadata from the first page containing an h1
         cover = None
-        meta = {'kicker': docid, 'title': docid, 'sub': '', 'tagline': ''}
+        meta = {'kicker': docid, 'title': docid, 'sub': '', 'tagline': '',
+                'accent': HexColor(accent_hex), 'accent_hex': accent_hex}
         for p in dpages:
             types = [e['type'] for e in p['elems']]
             if 'h1' in types:
