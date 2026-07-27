@@ -46,28 +46,14 @@ PAGE_W, PAGE_H = letter
 MARGIN = 0.82 * inch
 AVAIL = PAGE_W - 2 * MARGIN
 
-# one signature color per section (all bright enough to sit on black)
-DOC_ACCENT = {
-    'START HERE': '#00E5FF',
-    'MODULE 01': '#FFD166',
-    'MODULE 02': '#C6FF00',
-    'MODULE 03': '#4D9FFF',
-    'MODULE 04': '#A78BFA',
-    'MODULE 05': '#4ADE80',
-    'MODULE 06': '#FF8A3D',
-    'MODULE 07': '#F87171',
-    'MODULE 08': '#2DD4BF',
-    'MODULE 09A': '#FF7AC6',
-    'MODULE 09B': '#7DD3FC',
-    'MODULE 10A': '#E879F9',
-    'MODULE 10B': '#5EEAD4',
-    'MODULE 11': '#FBBF24',
-    'MODULE 12': '#FF4D6D',
-    'BONUS 01': '#FF9F45',
-    'BONUS 02': '#6EE7B7',
-    'BONUS 03': '#C4B5FD',
-    'BONUS 04': '#FDE047',
-}
+# one signature color per section — BRAND COLORS ONLY, rotating through the
+# kit: Electric Cyan, Vibrant Magenta, Acid Lime, Metallic Silver
+BRAND_CYCLE = ['#00E5FF', '#F600A2', '#C6FF00', '#C0C3C7']
+DOC_ORDER = ['START HERE', 'MODULE 01', 'MODULE 02', 'MODULE 03', 'MODULE 04',
+             'MODULE 05', 'MODULE 06', 'MODULE 07', 'MODULE 08', 'MODULE 09A',
+             'MODULE 09B', 'MODULE 10A', 'MODULE 10B', 'MODULE 11', 'MODULE 12',
+             'BONUS 01', 'BONUS 02', 'BONUS 03', 'BONUS 04']
+DOC_ACCENT = {d: BRAND_CYCLE[i % 4] for i, d in enumerate(DOC_ORDER)}
 
 
 def blend_black(hexcolor, frac):
@@ -256,6 +242,165 @@ class PanelLabel(Flowable):
                 HexColor('#B9BDC4'), 1.4)
 
 
+class SystemMap(Flowable):
+    """Full road map: 9 numbered steps with arrows, START and POST pins."""
+
+    STEPS = [
+        ('1', 'CHARACTER FIRST', 'Pick who your audience will follow.', 'MODULE 01'),
+        ('2', 'PROMPT PACK', 'Make your MASTER face and DNA photos.', 'MODULE 02'),
+        ('3', 'OUTFIT + HAIR', 'Pick the look for this episode.', 'MODULES 09 + 10'),
+        ('4', 'REFERENCE BLUEPRINT', 'Give every photo you upload one job.', 'MODULE 04'),
+        ('5', 'THE SCENE METHOD', 'Direct the scene: story, cast, place.', 'MODULE 03'),
+        ('6', 'CONTINUITY SYSTEM', 'Make Part 2 match Part 1.', 'MODULE 05'),
+        ('7', 'CAMERA BIBLE', 'Put the camera in a spot that makes sense.', 'MODULE 07'),
+        ('8', 'REALISM CHECK', 'Catch anything that looks fake.', 'MODULE 08'),
+        ('9', 'GENERATE + POST + REVIEW', 'Post it. See what works. Repeat.', 'MODULES 06 + 12'),
+    ]
+    ROW, GAP = 46, 13
+
+    def wrap(self, aw, ah):
+        self.width = AVAIL
+        self.height = 30 + len(self.STEPS) * self.ROW + \
+            (len(self.STEPS) - 1) * self.GAP + 40
+        return self.width, self.height
+
+    def _chip(self, c, cx, cy, text, bg):
+        w = pdfmetrics.stringWidth(text, FONTS['P-B'], 8.5) + 3.2 * len(text) + 20
+        c.setFillColor(bg)
+        c.roundRect(cx - w / 2, cy, w, 18, 9, stroke=0, fill=1)
+        c.setFillColor(JET)
+        tracked(c, 0, cy + 5.5, text, FONTS['P-B'], 8.5, JET, 1.6, center_at=cx)
+
+    def draw(self):
+        c = self.canv
+        cycle = [CYAN, MAGENTA, LIME]
+        bx, bw = 24, self.width - 48
+        chip_cx = bx + 30
+        y = self.height - 30
+        self._chip(c, self.width / 2, y + 6, 'START HERE', LIME)
+        for i, (n, name, desc, ref) in enumerate(self.STEPS):
+            col = cycle[i % 3]
+            top = y - i * (self.ROW + self.GAP)
+            # connector arrow from previous
+            if i > 0:
+                ay = top + self.GAP
+                c.setStrokeColor(HexColor('#3A3A44'))
+                c.setLineWidth(1.4)
+                c.line(chip_cx, ay + self.GAP - 2, chip_cx, ay - 8)
+                c.setFillColor(HexColor('#3A3A44'))
+                p = c.beginPath()
+                p.moveTo(chip_cx - 4, ay - 7)
+                p.lineTo(chip_cx + 4, ay - 7)
+                p.lineTo(chip_cx, ay - 13)
+                p.close()
+                c.drawPath(p, stroke=0, fill=1)
+            box_y = top - self.ROW
+            c.setFillColor(HexColor('#0C0C11'))
+            c.setStrokeColor(HexColor('#26262E'))
+            c.setLineWidth(0.7)
+            c.roundRect(bx, box_y, bw, self.ROW, 6, stroke=1, fill=1)
+            c.setFillColor(col)
+            c.rect(bx, box_y, 3, self.ROW, stroke=0, fill=1)
+            # number chip
+            c.setFillColor(col)
+            c.circle(chip_cx, box_y + self.ROW / 2, 11, stroke=0, fill=1)
+            c.setFillColor(JET)
+            c.setFont(FONTS['P-XB'], 12)
+            c.drawCentredString(chip_cx, box_y + self.ROW / 2 - 4.2, n)
+            # text
+            c.setFillColor(WHITE)
+            c.setFont(FONTS['P-B'], 11.5)
+            c.drawString(chip_cx + 24, box_y + self.ROW - 20, name)
+            c.setFillColor(HexColor('#B9BDC4'))
+            c.setFont(FONTS['P'], 9.5)
+            c.drawString(chip_cx + 24, box_y + 8, desc)
+            tracked(c, 0, box_y + self.ROW - 19, ref, FONTS['MONO'], 7, col,
+                    1.2, center_at=bx + bw - 52)
+        self._chip(c, self.width / 2, 2, 'POST IT', MAGENTA)
+
+
+class MethodFlow(Flowable):
+    """The SCENE Method: 5 blocks with arrows, left to right."""
+
+    PARTS = ['STORY', 'CAST', 'ENVIRONMENT', 'NOW BUILD', 'END STAMP']
+
+    def wrap(self, aw, ah):
+        self.width = AVAIL
+        self.height = 74
+        return self.width, self.height
+
+    def draw(self):
+        c = self.canv
+        cycle = [CYAN, MAGENTA, LIME, CYAN, MAGENTA]
+        n = len(self.PARTS)
+        arrow = 12
+        bw = (self.width - arrow * (n - 1)) / n
+        bh = 46
+        y = 12
+        for i, name in enumerate(self.PARTS):
+            x = i * (bw + arrow)
+            col = cycle[i]
+            c.setFillColor(HexColor('#0C0C11'))
+            c.setStrokeColor(col)
+            c.setLineWidth(1)
+            c.roundRect(x, y, bw, bh, 6, stroke=1, fill=1)
+            c.setFillColor(col)
+            c.setFont(FONTS['P-XB'], 10)
+            c.drawCentredString(x + bw / 2, y + bh - 18, str(i + 1))
+            c.setFillColor(WHITE)
+            size = 8 if len(name) > 9 else 9
+            c.setFont(FONTS['P-B'], size)
+            c.drawCentredString(x + bw / 2, y + 9, name)
+            if i < n - 1:
+                ax = x + bw + arrow / 2
+                c.setFillColor(HexColor('#4A4A55'))
+                p = c.beginPath()
+                p.moveTo(ax - 3.5, y + bh / 2 + 4.5)
+                p.lineTo(ax - 3.5, y + bh / 2 - 4.5)
+                p.lineTo(ax + 4, y + bh / 2)
+                p.close()
+                c.drawPath(p, stroke=0, fill=1)
+        c.setFillColor(HexColor('#9AA0A8'))
+        c.setFont(FONTS['P'], 8.5)
+        c.drawCentredString(self.width / 2, 0, 'Do the five parts in this order, every episode.')
+
+
+class NextStepBanner(Flowable):
+    """End-of-document wayfinding: big arrow + where to go next."""
+
+    def __init__(self, accent, line1, line2):
+        super().__init__()
+        self.accent = accent
+        self.line1 = line1
+        self.line2 = line2
+
+    def wrap(self, aw, ah):
+        self.width = AVAIL
+        self.height = 62
+        return self.width, self.height
+
+    def draw(self):
+        c = self.canv
+        c.setFillColor(HexColor('#0C0C11'))
+        c.setStrokeColor(self.accent)
+        c.setLineWidth(1)
+        c.roundRect(0, 4, self.width, 54, 7, stroke=1, fill=1)
+        # arrow badge
+        c.setFillColor(self.accent)
+        c.circle(34, 31, 16, stroke=0, fill=1)
+        c.setFillColor(JET)
+        p = c.beginPath()
+        p.moveTo(28, 38)
+        p.lineTo(28, 24)
+        p.lineTo(42, 31)
+        p.close()
+        c.drawPath(p, stroke=0, fill=1)
+        tracked(c, 62, 38, self.line1, FONTS['P-SB'], 8.5, self.accent, 2.2)
+        c.setFillColor(WHITE)
+        c.setFont(FONTS['P-B'], 13.5)
+        c.drawString(62, 16, self.line2)
+
+
 # ---------------------------------------------------------------- styles
 
 def make_styles(accent=CYAN):
@@ -320,15 +465,26 @@ def code_panel(code_elems, S):
         if i:
             inner.append(Spacer(1, 6))
         inner.append(Paragraph(esc(txt), S['mono']))
-    t = Table([[inner]], colWidths=[AVAIL])
+    hdr = Paragraph(
+        f'<font color="{S["accent_hex"]}" name="{FONTS["P-B"]}" size="8.5">'
+        f'COPY THIS PROMPT</font>'
+        f'<font color="#8A8F98" name="{FONTS["P-SB"]}" size="8.5">'
+        f' &nbsp;&#8594;&nbsp; PASTE IT INTO YOUR AI TOOL</font>',
+        ParagraphStyle('codehdr', fontName=FONTS['P-B'], fontSize=8.5,
+                       leading=11, textColor=S['accent']))
+    t = Table([[hdr], [inner]], colWidths=[AVAIL])
     t.setStyle(TableStyle([
-        ('BACKGROUND', (0, 0), (-1, -1), PANEL),
+        ('BACKGROUND', (0, 0), (-1, 0), HexColor('#15151C')),
+        ('BACKGROUND', (0, 1), (-1, 1), PANEL),
         ('BOX', (0, 0), (-1, -1), 0.7, PANEL_EDGE),
+        ('LINEBELOW', (0, 0), (-1, 0), 0.7, PANEL_EDGE),
         ('LINEBEFORE', (0, 0), (0, -1), 2.5, S['accent']),
         ('LEFTPADDING', (0, 0), (-1, -1), 13),
         ('RIGHTPADDING', (0, 0), (-1, -1), 12),
-        ('TOPPADDING', (0, 0), (-1, -1), 10),
-        ('BOTTOMPADDING', (0, 0), (-1, -1), 10),
+        ('TOPPADDING', (0, 0), (-1, 0), 6),
+        ('BOTTOMPADDING', (0, 0), (-1, 0), 6),
+        ('TOPPADDING', (0, 1), (-1, 1), 10),
+        ('BOTTOMPADDING', (0, 1), (-1, 1), 10),
     ]))
     return t
 
@@ -336,9 +492,43 @@ def code_panel(code_elems, S):
 LABEL_RE = re.compile(r'^([A-Z][A-Z0-9 .+/&\'-]{3,}?)(?=\s+[A-Z][a-z])')
 
 
+def callout_row(txt, S):
+    m = LABEL_RE.match(txt)
+    if m:
+        lbl, rest = m.group(1), txt[m.end():].strip()
+        html = (f'<font color="#F600A2" name="{FONTS["P-SB"]}" size="9.5">'
+                f'{esc(lbl)}</font><br/>{esc(rest)}')
+    else:
+        html = esc(txt)
+    t = Table([[Paragraph(html, S['cell'])]], colWidths=[AVAIL])
+    t.setStyle(TableStyle([
+        ('BACKGROUND', (0, 0), (-1, -1), CHARCOAL),
+        ('BOX', (0, 0), (-1, -1), 0.7, PANEL_EDGE),
+        ('LINEBEFORE', (0, 0), (0, -1), 2.5, MAGENTA),
+        ('LEFTPADDING', (0, 0), (-1, -1), 12),
+        ('RIGHTPADDING', (0, 0), (-1, -1), 12),
+        ('TOPPADDING', (0, 0), (-1, -1), 8),
+        ('BOTTOMPADDING', (0, 0), (-1, -1), 8),
+    ]))
+    return t
+
+
 def themed_table(rows, S):
+    """Returns a list of flowables: leading single-cell rows become callout
+    boxes above the real table (pdfplumber sometimes merges an adjacent
+    callout into the table grid)."""
     ncols = max(len(r) for r in rows)
     rows = [r + [''] * (ncols - len(r)) for r in rows]
+    lead = []
+    while rows and sum(1 for c in rows[0] if c.strip()) == 1:
+        lead.append(next(c for c in rows[0] if c.strip()))
+        rows = rows[1:]
+    pre = []
+    for txt in lead:
+        pre.append(callout_row(txt, S))
+        pre.append(Spacer(1, 8))
+    if not rows:
+        return pre
     span_rows = set()
     for ri, r in enumerate(rows):
         if sum(1 for c in r if c.strip()) == 1 and ri > 0:
@@ -394,7 +584,7 @@ def themed_table(rows, S):
         style.append(('SPAN', (0, ri), (-1, ri)))
         style.append(('BACKGROUND', (0, ri), (-1, ri), CHARCOAL))
     t.setStyle(TableStyle(style))
-    return t
+    return pre + [t]
 
 
 # ---------------------------------------------------------------- document
@@ -509,6 +699,28 @@ class SceneDoc(BaseDocTemplate):
                 tracked(c, x, ty2, p, fnt, fs, cols[i % 3], track)
                 x += widths[i] + gap
 
+        # progress strip: PART n / 19 with tick marks — "you are here"
+        part = m.get('part', 0)
+        total = m.get('total', 19)
+        py = 205
+        tracked(c, 0, py + 16, f'PART {part:02d} OF {total}', FONTS['P-SB'],
+                8.5, HexColor('#9AA0A8'), 2.4, center_at=cx)
+        tick_w, gap = 14, 5
+        row_w = total * tick_w + (total - 1) * gap
+        tx = cx - row_w / 2
+        for i in range(total):
+            c.setFillColor(m['accent'] if i == part - 1 else HexColor('#26262E'))
+            c.rect(tx + i * (tick_w + gap), py, tick_w, 5, stroke=0, fill=1)
+        if part > 0:
+            hx = tx + (part - 1) * (tick_w + gap) + tick_w / 2
+            c.setFillColor(m['accent'])
+            p = c.beginPath()
+            p.moveTo(hx - 4, py + 12)
+            p.lineTo(hx + 4, py + 12)
+            p.lineTo(hx, py + 7)
+            p.close()
+            c.drawPath(p, stroke=0, fill=1)
+
         # bottom: official logo lockup (includes tagline)
         img = ImageReader(LOGO)
         iw, ih = img.getSize()
@@ -569,6 +781,7 @@ def build_doc(docid, pages, meta, outpath, S):
 
     i = 0
     flow = []
+    did_map = did_method = False
     while i < len(elems):
         e = elems[i]
         t = e['type']
@@ -582,8 +795,15 @@ def build_doc(docid, pages, meta, outpath, S):
             continue
         if t == 'table':
             flow.append(Spacer(1, 4))
-            flow.append(themed_table(e['rows'], S))
+            flow.extend(themed_table(e['rows'], S))
             flow.append(Spacer(1, 12))
+            if docid == 'START HERE' and not did_map:
+                did_map = True
+                flow.append(Spacer(1, 6))
+                flow.append(AccentHeading('Your road map', S['accent']))
+                flow.append(Spacer(1, 10))
+                flow.append(SystemMap())
+                flow.append(Spacer(1, 14))
         elif t == 'h2':
             flow.append(Spacer(1, 14))
             flow.append(AccentHeading(' '.join(e['lines']), S['accent']))
@@ -591,9 +811,7 @@ def build_doc(docid, pages, meta, outpath, S):
         elif t == 'h3':
             h3txt = ' '.join(e['lines'])
             if h3txt.lower().startswith('copy-and-paste'):
-                flow.append(Spacer(1, 3))
-                flow.append(PanelLabel(h3txt.upper()))
-                flow.append(Spacer(1, 4))
+                pass  # the prompt panel's own COPY THIS header replaces it
             else:
                 flow.append(Paragraph(esc(h3txt), S['h3']))
         elif t == 'label':
@@ -609,6 +827,11 @@ def build_doc(docid, pages, meta, outpath, S):
                 flow.append(Paragraph(esc(txt), S['lede']))
             else:
                 flow.append(para_body(txt, S))
+            if docid == 'MODULE 03' and not did_method:
+                did_method = True
+                flow.append(Spacer(1, 8))
+                flow.append(MethodFlow())
+                flow.append(Spacer(1, 12))
         elif t == 'h1':
             flow.append(Spacer(1, 14))
             flow.append(AccentHeading(' '.join(e['lines']), S['accent']))
@@ -635,6 +858,15 @@ def build_doc(docid, pages, meta, outpath, S):
             j += 1
 
     story.extend(merged)
+    nxt = meta.get('next')
+    if nxt:
+        story.append(Spacer(1, 22))
+        story.append(NextStepBanner(S['accent'], 'NEXT STEP',
+                                    f'Go to {nxt[0]} — {nxt[1]}'))
+    else:
+        story.append(Spacer(1, 22))
+        story.append(NextStepBanner(S['accent'], 'YOU FINISHED THE SYSTEM',
+                                    'Now go make your first episode.'))
     doc.build(story)
 
 
@@ -652,13 +884,28 @@ def main():
         else:
             docs.append((p['doc'], [p]))
 
+    # doc titles up-front so each doc can point to the next one
+    titles = {}
+    for docid, dpages in docs:
+        for p in dpages:
+            h1s = [e for e in p['elems'] if e['type'] == 'h1']
+            if h1s:
+                titles[docid] = ' '.join(' '.join(h['lines']) for h in h1s)
+                break
+        titles.setdefault(docid, docid)
+
     for idx, (docid, dpages) in enumerate(docs):
         accent_hex = DOC_ACCENT.get(docid, '#00E5FF')
         S = make_styles(HexColor(accent_hex))
         # cover metadata from the first page containing an h1
         cover = None
+        nxt = None
+        if idx + 1 < len(docs):
+            nd = docs[idx + 1][0]
+            nxt = (nd, titles[nd])
         meta = {'kicker': docid, 'title': docid, 'sub': '', 'tagline': '',
-                'accent': HexColor(accent_hex), 'accent_hex': accent_hex}
+                'accent': HexColor(accent_hex), 'accent_hex': accent_hex,
+                'part': idx + 1, 'total': len(docs), 'next': nxt}
         for p in dpages:
             types = [e['type'] for e in p['elems']]
             if 'h1' in types:
