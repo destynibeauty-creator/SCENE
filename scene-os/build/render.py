@@ -360,7 +360,7 @@ class SceneDoc(BaseDocTemplate):
     def __init__(self, path, meta, **kw):
         super().__init__(path, pagesize=letter, **kw)
         self.meta = meta
-        frame = Frame(MARGIN, 0.9 * inch, AVAIL, PAGE_H - 1.55 * inch - 0.9 * inch,
+        frame = Frame(MARGIN, 0.9 * inch, AVAIL, PAGE_H - 1.18 * inch - 0.9 * inch,
                       leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)
         cover_frame = Frame(MARGIN, MARGIN, AVAIL, PAGE_H - 2 * MARGIN)
         self.addPageTemplates([
@@ -375,6 +375,18 @@ class SceneDoc(BaseDocTemplate):
         c.rect(0, 0, PAGE_W, PAGE_H, stroke=0, fill=1)
 
         cx = PAGE_W / 2
+
+        # ghost module numeral behind the title block
+        kick = m['kicker'].upper().split()
+        ghost = kick[-1] if kick[-1] not in ('HERE',) else 'OS'
+        gsize = 300 if len(ghost) <= 2 else 215
+        c.saveState()
+        c.translate(cx, PAGE_H - 385)
+        c.transform(1, 0, 0.14, 1, 0, 0)
+        c.setFont(FONTS['P-XB'], gsize)
+        c.setFillColor(HexColor('#101016'))
+        c.drawCentredString(0, 0, ghost)
+        c.restoreState()
         # frame brackets
         bracket(c, 58, PAGE_H - 58, 46, 'tl', MAGENTA, 3)
         bracket(c, PAGE_W - 58, PAGE_H - 58, 46, 'tr', HexColor('#2A2A31'), 2)
@@ -406,7 +418,7 @@ class SceneDoc(BaseDocTemplate):
         ty += size * 1.12
 
         # gradient bar
-        gradient_bar(c, cx - 70, ty - 26, 140, 3.4)
+        gradient_bar(c, cx - 80, ty - 26, 160, 3.4)
 
         # subtitle
         sub = m.get('sub') or ''
@@ -607,8 +619,14 @@ def main():
                 break
         meta['cover_page'] = cover
 
-        safe_title = re.sub(r'[^A-Za-z0-9]+', '-', meta['title'].title()).strip('-')
-        safe_kick = re.sub(r'[^A-Za-z0-9]+', '-', meta['kicker'].title()).strip('-')
+        def fname_part(s):
+            s = re.sub(r'[‘’\']', '', s).title()
+            for w, r in (('Scene', 'SCENE'), ('Os', 'OS'), ('Ai', 'AI')):
+                s = re.sub(rf'\b{w}\b', r, s)
+            return re.sub(r'[^A-Za-z0-9]+', '-', s).strip('-')
+
+        safe_title = fname_part(meta['title'])
+        safe_kick = fname_part(meta['kicker'])
         fname = f'{idx:02d}_The-SCENE-AI_{safe_kick}_{safe_title}.pdf'
         outpath = os.path.join(OUTDIR, fname)
         build_doc(docid, dpages, meta, outpath, S)
