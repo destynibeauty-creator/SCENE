@@ -7,9 +7,9 @@ on the product page.
 **Title:** THE SCENE AI — Creator OS
 
 **Card description:**
-> The full system for building an AI character people recognize — and
-> turning her into a content world they follow like a series. 19 modules.
-> Copy-paste everything.
+> The full system for building an AI character people recognize — him or
+> her — and turning one idea into a content world people follow like a
+> series. 19 modules. Copy-paste everything.
 
 **Price:** $97 ~~$197~~  *(anchor price is non-negotiable — every single
 product on Jenna's and Rachel's stores shows a strikethrough)*
@@ -29,8 +29,8 @@ product on Jenna's and Rachel's stores shows a strikethrough)*
 > idea into a content world people actually recognize.
 >
 > This is not a prompt pack. Prompt packs give you one pretty picture.
-> SCENE gives you a character whose face never changes — and that's why
-> people follow.
+> SCENE gives you a character — him or her — whose face never changes.
+> That's why people follow.
 
 **You'll learn how to:**
 - build a character people recognize
@@ -44,13 +44,13 @@ product on Jenna's and Rachel's stores shows a strikethrough)*
 
 **Inside: the complete 19-part Creator OS**
 
-*BUILD HER*
+*BUILD THE CHARACTER* (works for him AND her — both included)
 - Start Here Roadmap · Character First · The Prompt Pack
 
-*STYLE HER*
+*STYLE THE CHARACTER*
 - Women's + Men's Outfit Packs · Women's Hair Pack · Men's Hair + Grooming
 
-*DIRECT HER*
+*DIRECT THE SCENE*
 - The SCENE Method · Reference Blueprint · Continuity System · Camera
   Bible · Realism Check · SCENE Library (120 story ideas) · Prompt Vault
 
