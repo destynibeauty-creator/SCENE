@@ -1022,6 +1022,15 @@ def build_doc(docid, pages, meta, outpath, S):
             flow.append(Spacer(1, 6))
             flow.append(StepFlow(e['steps'], e.get('caption', '')))
             flow.append(Spacer(1, 10))
+        elif t == 'linkline':
+            flow.append(Spacer(1, 4))
+            flow.append(Paragraph(
+                f'<link href="{e["url"]}">'
+                f'<font color="{S["accent_hex"]}" name="{FONTS["P-B"]}">'
+                f'&#9654; {esc(e["text"])}</font></link><br/>'
+                f'<font color="#8A8F98" size="9" name="{FONTS["MONO"]}">'
+                f'{esc(e["url"].replace("https://", ""))}</font>', S['body']))
+            flow.append(Spacer(1, 6))
         elif t == 'ccard':
             flow.append(Spacer(1, 6))
             flow.append(CommentCard(e['note'], e['text'], S['accent']))

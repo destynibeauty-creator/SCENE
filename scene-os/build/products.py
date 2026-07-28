@@ -79,6 +79,15 @@ def starter_pages():
                     'That photo is your MASTER — your character’s ID card.'),
         E('bullet', 'From now on, never generate this character without '
                     'uploading the MASTER first.'),
+        E('h2', 'The easiest path — talk, don’t type'),
+        E('body', 'Don’t want to fill in brackets? Open THE SCENE AI Starter '
+                  'in ChatGPT and just start talking. It interviews you, '
+                  'builds your character in front of you, and hands you '
+                  'everything — the free ChatGPT app is fine.'),
+        E('linkline', text='OPEN THE SCENE AI STARTER IN CHATGPT',
+          url='https://chatgpt.com/g/g-6a67d69aacc08191be2f58cb6daba3db-the-scene-ai-starter'),
+        E('body', 'Prefer to run it yourself? The three steps below use the '
+                  'same prompts. Copy, paste, post.'),
         E('h2', 'Step 1 — Make her face'),
     ] + b['F'] + [
         E('h2', 'Or make his face'),
@@ -212,7 +221,7 @@ def main():
     render.register_fonts()
     os.makedirs(OUT, exist_ok=True)
 
-    STORE = 'https://stan.store/thesceneai'
+    STORE = 'https://stan.store/thesceneai/p/the-scene-ai-creator-os'
     jobs = [
         ('STARTER', starter_pages(), LIME,
          {'kicker': 'FREE STARTER DROP', 'title': 'YOUR FIRST AI CHARACTER',
