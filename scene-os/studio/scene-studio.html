@@ -93,6 +93,7 @@
     <button class="step" data-k="1" role="tab" aria-selected="true" data-pane="p1">1 · BUILD THE CHARACTER</button>
     <button class="step" data-k="2" role="tab" aria-selected="false" data-pane="p2">2 · STYLE THE LOOK</button>
     <button class="step" data-k="3" role="tab" aria-selected="false" data-pane="p3">3 · KEEP IT CONSISTENT</button>
+    <button class="step" data-k="2" role="tab" aria-selected="false" data-pane="p4">4 · DIRECTOR MODE</button>
   </nav>
 
   <!-- STEP 1 -->
@@ -191,6 +192,60 @@
     </div>
   </section>
 
+  <!-- STEP 4: DIRECTOR MODE — full multi-reference master prompt -->
+  <section id="p4" class="grid hidden">
+    <div class="card accent-m">
+      <h2>Director Mode — the full framework</h2>
+      <p class="hint">Builds the complete master prompt for tools that take
+      MULTIPLE reference images (Higgsfield 2.0, etc.): numbered references
+      for identity, hair, outfit and locations, then one section per job —
+      camera, hands, scene, movement, realism, atmosphere.</p>
+      <form id="f4">
+        <label>OUTFIT ITEMS — ONE PER LINE
+          <textarea id="d_outfit" rows="5" placeholder="Lime green crochet bikini
+Matching crochet cover-up
+White raffia beach tote
+Sunglasses resting on top of the head only
+Gold jewelry"></textarea></label>
+        <label>LOCATION 1 — NAME <input id="d_loc1" placeholder="e.g. luxury oceanfront penthouse"></label>
+        <label>LOCATION 1 — DETAILS, ONE PER LINE
+          <textarea id="d_loc1d" rows="3" placeholder="White marble floors
+Floor-to-ceiling windows
+Ocean views"></textarea></label>
+        <label>LOCATION 2 — NAME (LEAVE EMPTY IF SCENE STAYS PUT) <input id="d_loc2" placeholder="e.g. private rooftop infinity pool"></label>
+        <label>LOCATION 2 — DETAILS, ONE PER LINE
+          <textarea id="d_loc2d" rows="3" placeholder="Infinity pool
+White lounge chairs
+Glass railings"></textarea></label>
+        <label>PHONE MODEL <input id="d_phone" value="iPhone 17 Pro Max"></label>
+        <label>THE OTHER HAND CARRIES <input id="d_carry" placeholder="e.g. the white raffia tote"></label>
+        <label>SCENE BEATS — ONE PER LINE. PUT SPOKEN LINES IN "QUOTES"
+          <textarea id="d_scene" rows="7" placeholder='She stands at the sliding glass doors, sun behind her
+"Hold on..."
+She slides the door open and walks out
+She turns the phone to reveal the rooftop pool
+"Nah..."
+She sits at the pool edge and dips her feet in
+"I do not think I am ever checking out."'></textarea></label>
+        <label>ATMOSPHERE — SETTING <input id="d_atmo" placeholder="e.g. bright Miami summer afternoon, warm ocean breeze"></label>
+        <label>ATMOSPHERE — SOUNDS <input id="d_sound" placeholder="e.g. soft ocean waves, occasional seagulls"></label>
+        <label>LENGTH IN SECONDS <input id="d_len" value="15" inputmode="numeric"></label>
+      </form>
+    </div>
+    <div class="out">
+      <div class="prompt">
+        <div class="bar"><span class="sq"></span><span class="t">MASTER PROMPT — FULL FRAMEWORK</span>
+          <span class="where">ATTACH ALL REFERENCE IMAGES</span>
+          <button class="copy" data-for="o-master4">COPY</button></div>
+        <pre id="o-master4" style="max-height:640px"></pre>
+      </div>
+      <p class="note"><b>Upload order matters:</b> attach your reference
+      images in the same order the prompt lists them — identity first, then
+      hair, outfit, locations. Every section has ONE job. That separation is
+      why the face, hair and outfit stop drifting.</p>
+    </div>
+  </section>
+
   <footer>SCENE STUDIO — PROTOTYPE · CREATE THE CHARACTER<span class="a"> · DIRECT THE SCENE</span><span class="i"> · BUILD THE WORLD</span></footer>
 </div>
 
@@ -253,16 +308,112 @@ ${P.she[0].toUpperCase()+P.she.slice(1)} is wearing ${tok(fit)}. Setting: ${tok(
 `CONTINUITY This scene begins immediately after Part ${tok(part)}. Everything remains identical: - Same lead identity and body proportions - Same supporting cast - Same hairstyle, hair texture, hairline and grooming - Same outfit, shoes, bag, jewelry, nails and makeup - Same camera device, placement, height, framing and lens behavior - Same lighting, weather, shadows and time of day - Same environment, furniture, products, props and background guests - Same emotional state at the exact ending beat. The clips must cut together seamlessly. Begin with the character already completing the final action from Part ${tok(part)}: ${tok(lastact)}.`;
 }
 
+function render4(){
+  const her = gender==='F';
+  const P = {she:her?'she':'he', her:her?'her':'his', She:her?'She':'He',
+             Her:her?'Her':'His', woman:her?'woman':'man'};
+  const lines = id => ($(id).value||'').split('\n').map(s=>s.trim()).filter(Boolean);
+  const outfit = lines('d_outfit');
+  const loc1 = v('d_loc1','[LOCATION 1]'), loc1d = lines('d_loc1d');
+  const loc2 = ($('d_loc2').value||'').trim(), loc2d = lines('d_loc2d');
+  const phone = v('d_phone','[PHONE MODEL]'), carry = v('d_carry','[THE BAG / ITEM]');
+  const beats = lines('d_scene');
+  const atmo = v('d_atmo','[SETTING, e.g. bright summer afternoon]');
+  const sound = v('d_sound','[SOUNDS, e.g. soft city ambience]');
+  const len = v('d_len','15');
+
+  const list = arr => arr.length ? arr.map(x=>'- '+esc(x)).join('\n')
+                                 : '- <b class="todo">[LIST THE ITEMS]</b>';
+  let refN = 3;
+  let refs =
+`REFERENCE IMAGES (USE ALL REFERENCES TOGETHER)
+
+Reference 1 — Identity Reference (Highest Priority)
+Use this image as the exact identity source. Preserve the exact face, skin tone, ethnicity, facial structure, eyes, nose, lips, eyebrows, hairline, hairstyle, eyelashes, body proportions, and overall appearance. Do not beautify, face swap, or alter the identity in any way. Maintain the exact same identity from the first frame to the last frame.
+
+Reference 2 — Hair Reference
+Use this image to preserve the exact hairstyle, color, texture, density, edges, parting, and overall hair appearance. Hair must remain consistent throughout the video.
+
+Reference 3 — Outfit Reference
+Use this image as the exact wardrobe reference.
+Preserve:
+${list(outfit)}
+
+Reference 4 — ${tok(loc1)} Reference
+Use this image as the exact location. The video begins in this location.
+Preserve:
+${list(loc1d)}`;
+  if(loc2){
+    refs += `
+
+Reference 5 — ${esc(loc2)} Reference
+Use this image as the exact second location.
+Preserve:
+${list(loc2d)}
+
+Reference 6 — Transition Reference (optional)
+Use this image to establish that the ${esc(loc2)} belongs to the same ${tok(loc1)}. The transition from the first location to the second must feel completely seamless and realistic.`;
+  }
+
+  const sceneTxt = beats.length ? beats.map(b=>{
+      if(/^["“].*["”.]*$/.test(b)) return `${P.She} says, ${esc(b)}`;
+      return (esc(b)+'.').replace(/\.\.$/,'.');
+    }).join('\n\n') : '<b class="todo">[BEAT 1]</b>\n\n<b class="todo">"[LINE 1]"</b>\n\n<b class="todo">[BEAT 2 — THE REVEAL]</b>';
+
+  $('o-master4').innerHTML =
+`${refs}
+
+IDENTITY LOCK (HIGHEST PRIORITY)
+
+Use the uploaded identity reference as the exact person. Preserve the same face, skin tone, ethnicity, facial structure, eyes, nose, lips, eyebrows, hairline, hairstyle, eyelashes, body proportions, and overall appearance. Do not beautify, face swap, or alter the identity. No face drift. No identity drift. Maintain the exact same identity throughout the entire video.
+
+CAMERA
+
+Filmed on ${tok(phone)} front-facing camera. Vertical 9:16. Generate in native 4K. 60 FPS. Natural HDR. Default phone color science. Authentic handheld selfie. Very slight handheld movement. Tiny autofocus breathing. Natural exposure adjustments. Slight rolling shutter. Natural motion blur while walking. Looks exactly like genuine phone footage uploaded directly to Instagram. No cinematic filters. No beauty filters. No skin smoothing. No over-sharpening.
+
+HANDS
+
+The phone is naturally held in ${P.her} right hand. ${P.Her} left hand naturally carries ${tok(carry)} while walking. Do not generate a second phone. Do not generate another camera. Do not generate a selfie stick. Do not generate any additional recording devices.
+
+SCENE
+
+The video begins in the ${tok(loc1)}.
+
+${sceneTxt}
+
+The clip ends naturally.
+
+MOVEMENT
+
+${P.She} moves at a relaxed, natural pace. Natural posture. Natural shoulder, arm and hip movement. Natural breathing. Natural blinking. Natural facial expressions. The outfit flows naturally. ${P.Her} hair moves naturally with any breeze. Nothing appears robotic or overly animated.
+
+REALISM (HIGHEST PRIORITY)
+
+The final result must be visually indistinguishable from authentic phone footage. Ultra-photorealistic 4K quality. Natural skin texture. Visible pores. Subtle baby hairs. Natural facial texture. Natural lip texture. Realistic eye reflections. Natural teeth. Correct hand anatomy. Correct finger anatomy. Natural fingernails. Realistic muscle movement. Natural body proportions. Physically accurate lighting. Realistic shadows. Natural reflections. Consistent identity throughout every frame. No face morphing. No identity drift. No flickering. No ghosting. No warping. No floating objects. No duplicated limbs. No extra fingers. No plastic skin. No waxy skin. No AI artifacts.
+
+ATMOSPHERE
+
+${tok(atmo)}. ${tok(sound)}. Natural environmental audio only. No background music. No sound effects. Natural speaking voice.
+
+LENGTH
+
+${tok(len)} seconds.
+
+STYLE
+
+The first three seconds must create immediate curiosity through a natural reveal. The pacing should feel effortless, as if ${P.she} instinctively grabbed the phone to show someone something incredible. The video should look so authentic that viewers genuinely question whether it is AI or real footage.`;
+}
+
 document.querySelectorAll('.steps .step').forEach(btn=>{
   btn.addEventListener('click',()=>{
     document.querySelectorAll('.steps .step').forEach(b=>b.setAttribute('aria-selected', b===btn?'true':'false'));
-    ['p1','p2','p3'].forEach(p=>$(p).classList.add('hidden'));
+    ['p1','p2','p3','p4'].forEach(p=>$(p).classList.add('hidden'));
     $(btn.dataset.pane).classList.remove('hidden');
   });
 });
-$('gF').addEventListener('click',()=>{gender='F';$('gF').setAttribute('aria-pressed','true');$('gM').setAttribute('aria-pressed','false');render();});
-$('gM').addEventListener('click',()=>{gender='M';$('gM').setAttribute('aria-pressed','true');$('gF').setAttribute('aria-pressed','false');render();});
-document.querySelectorAll('input,textarea,select').forEach(el=>el.addEventListener('input',render));
+$('gF').addEventListener('click',()=>{gender='F';$('gF').setAttribute('aria-pressed','true');$('gM').setAttribute('aria-pressed','false');render();render4();});
+$('gM').addEventListener('click',()=>{gender='M';$('gM').setAttribute('aria-pressed','true');$('gF').setAttribute('aria-pressed','false');render();render4();});
+document.querySelectorAll('input,textarea,select').forEach(el=>el.addEventListener('input',()=>{render();render4();}));
 document.querySelectorAll('.copy').forEach(btn=>{
   btn.addEventListener('click',()=>{
     const text = $(btn.dataset.for).innerText;
@@ -273,4 +424,5 @@ document.querySelectorAll('.copy').forEach(btn=>{
   });
 });
 render();
+render4();
 </script>

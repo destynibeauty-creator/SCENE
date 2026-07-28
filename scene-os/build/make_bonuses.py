@@ -41,15 +41,20 @@ def start_here_tools():
         E('table', rows=[
             ['THE JOB', 'POPULAR TOOLS', 'TIP'],
             ['Make the face and photos',
-             'Midjourney, Higgsfield, OpenArt, Gemini',
+             'Nano Banana Pro, Higgsfield, Midjourney, OpenArt',
              'Pick one with a character or reference feature.'],
             ['Turn photos into video',
-             'Kling, Veo, Higgsfield, Runway',
-             'It must accept your MASTER image.'],
+             'Higgsfield 2.0, Kling, Veo, Runway',
+             'It MUST accept multiple reference images.'],
             ['Edit, captions and sound',
              'CapCut, InShot',
              'CapCut is free and enough to start.'],
         ]),
+        E('body', 'The bigger your scenes get, the more reference images you '
+                  'will use at once — one for identity, one for hair, one for '
+                  'the outfit, one for each location. Tools like Higgsfield '
+                  '2.0 are built for this. The full multi-reference master '
+                  'template is in Module 11.'),
         E('flow', steps=[['1', 'PICK ONE PER JOB'], ['2', 'LEARN IT ONCE'],
                          ['3', 'STAY THERE']],
           caption='Switching apps every week is how characters drift. Pick your three and commit.'),
@@ -62,6 +67,94 @@ def start_here_tools():
             'My photo tool:', 'My video tool:', 'My editing app:',
             'My keyword (one word):']),
     ]}
+
+
+# -------------------------------------------------- MODULE 11 master template
+def module11_template():
+    tmpl = [
+"""REFERENCE IMAGES (USE ALL REFERENCES TOGETHER)
+
+Reference 1 — Identity Reference (Highest Priority)
+Use this image as the exact identity source. Preserve the exact face, skin tone, ethnicity, facial structure, eyes, nose, lips, eyebrows, hairline, hairstyle, eyelashes, body proportions, and overall appearance. Do not beautify, face swap, or alter the identity in any way. Maintain the exact same identity from the first frame to the last frame.
+
+Reference 2 — Hair Reference
+Use this image to preserve the exact hairstyle, color, texture, density, edges, parting, and overall hair appearance. Hair must remain consistent throughout the video.
+
+Reference 3 — Outfit Reference
+Use this image as the exact wardrobe reference.
+Preserve:
+- [ITEM 1, e.g. the exact swimsuit or suit]
+- [ITEM 2, e.g. the cover-up or jacket]
+- [ITEM 3, e.g. the bag]
+- [ITEM 4, e.g. sunglasses — and WHERE they sit]
+- [ITEM 5, e.g. shoes]
+- [ITEM 6, e.g. jewelry]
+
+Reference 4 — Location Reference
+Use this image as the exact location.
+The video begins in this [LOCATION].
+Preserve:
+- [DETAIL 1, e.g. the floors]
+- [DETAIL 2, e.g. the windows]
+- [DETAIL 3, e.g. the furniture]
+- [DETAIL 4, e.g. the light]
+- [DETAIL 5, e.g. the view]
+
+Reference 5 — Second Location Reference (if the scene moves)
+Use this image as the exact second location. The transition from the first location to this one must feel completely seamless and realistic.""",
+"""IDENTITY LOCK (HIGHEST PRIORITY)
+Use the uploaded identity reference as the exact person. Preserve the same face, skin tone, ethnicity, facial structure, eyes, nose, lips, eyebrows, hairline, hairstyle, eyelashes, body proportions, and overall appearance. Do not beautify, face swap, or alter the identity. No face drift. No identity drift. Maintain the exact same identity throughout the entire video.""",
+"""CAMERA
+Filmed on [YOUR PHONE MODEL] front-facing camera. Vertical 9:16. Generate in native 4K. 60 FPS. Natural HDR. Default phone color science. Authentic handheld selfie. Very slight handheld movement. Tiny autofocus breathing. Natural exposure adjustments. Slight rolling shutter. Natural motion blur while walking. Looks exactly like genuine phone footage uploaded directly to Instagram. No cinematic filters. No beauty filters. No skin smoothing. No over-sharpening.""",
+"""HANDS
+The phone is naturally held in [HER / HIS] right hand. The left hand naturally carries [THE BAG / ITEM] while walking. Do not generate a second phone. Do not generate another camera. Do not generate a selfie stick. Do not generate any additional recording devices.""",
+"""SCENE
+The video begins [WHERE, e.g. inside the first location].
+[BEAT 1 — what they do first]
+[THEY] quietly say, "[LINE 1]"
+[BEAT 2 — the move or reveal]
+Hold the reveal naturally for about two seconds.
+[BEAT 3 — the reaction]
+Then say, "[LINE 2]"
+[BEAT 4 — the settle: where they end up]
+Then quietly say, "[LINE 3 — the line that makes people comment]"
+The clip ends naturally.""",
+"""MOVEMENT
+[SHE / HE] moves at a relaxed, natural pace. Natural posture. Natural shoulder, arm and hip movement. Natural breathing. Natural blinking. Natural facial expressions. [THE GARMENT] flows naturally. The hair moves naturally with the wind. Nothing appears robotic or overly animated.""",
+"""REALISM (HIGHEST PRIORITY)
+The final result must be visually indistinguishable from authentic phone footage. Ultra-photorealistic 4K quality. Natural skin texture. Visible pores. Subtle baby hairs. Natural facial texture. Natural lip texture. Realistic eye reflections. Natural teeth. Correct hand anatomy. Correct finger anatomy. Natural fingernails. Realistic muscle movement. Natural body proportions. Physically accurate lighting. Authentic sunlight. Realistic shadows. Natural reflections. Consistent identity throughout every frame. No face morphing. No identity drift. No flickering. No ghosting. No warping. No floating objects. No duplicated limbs. No extra fingers. No plastic skin. No waxy skin. No AI artifacts.""",
+"""ATMOSPHERE
+[SETTING, e.g. bright summer afternoon in your city]. [AIR / WEATHER, e.g. warm ocean breeze]. [BACKGROUND MOTION, e.g. gentle movement in the pool, palm trees in the breeze]. [SOUNDS, e.g. soft waves, occasional seagulls]. Natural environmental audio only. No background music. No sound effects. Natural speaking voice.""",
+"""LENGTH
+[SECONDS, e.g. 15] seconds.""",
+"""STYLE
+The first three seconds must create immediate curiosity through a natural reveal. The pacing should feel effortless, as if [SHE / HE] instinctively grabbed the phone to show someone something incredible. The video should look so authentic that viewers genuinely question whether it is AI or real footage.""",
+    ]
+    return {'page': 68.5, 'doc': 'MODULE 11', 'elems': [
+        E('h2', 'The Director’s Master Template'),
+        E('body', 'This is the full skeleton for a video master prompt — the '
+                  'way working creators actually run scenes through tools '
+                  'like Higgsfield 2.0. Every section has ONE job. You never '
+                  'mix wardrobe with lighting, or camera with dialogue. Fill '
+                  'in the brackets top to bottom, then paste the WHOLE thing '
+                  'with all of your reference images attached.'),
+        E('table', rows=[
+            ['#', 'SECTION', 'ITS ONE JOB'],
+            ['1', 'Reference Images', 'Who and what each uploaded photo controls'],
+            ['2', 'Identity Lock', 'The face never changes'],
+            ['3', 'Camera', 'How it is filmed'],
+            ['4', 'Hands', 'What each hand holds — and no extra devices'],
+            ['5', 'Scene', 'What happens, and every spoken line'],
+            ['6', 'Movement', 'How the body moves naturally'],
+            ['7', 'Realism', 'What makes it believable'],
+            ['8', 'Atmosphere', 'What the world feels and sounds like'],
+            ['9', 'Length', 'How long the clip runs'],
+            ['10', 'Style', 'The feeling the first three seconds must create'],
+        ]),
+        E('body', 'Copy the whole template below. Save your filled version — '
+                  'that becomes YOUR master, and every new episode is a '
+                  'small edit, not a rewrite.'),
+    ] + [E('code', t) for t in tmpl]}
 
 
 # ---------------------------------------------------------------- BONUS 01
@@ -281,13 +374,16 @@ def bonus04():
 def main():
     pages = json.load(open(SRC))
     out = []
-    b1_done = sh_done = False
+    b1_done = sh_done = m11_done = False
     for p in pages:
         if p['doc'] in ('BONUS 02', 'BONUS 03', 'BONUS 04'):
             continue  # fully replaced below
         if p['doc'] != 'START HERE' and not sh_done:
             out.append(start_here_tools())  # after the last Start Here page
             sh_done = True
+        if p['doc'] == 'MODULE 12' and not m11_done:
+            out.append(module11_template())  # after the last Module 11 page
+            m11_done = True
         out.append(p)
         if p['doc'] == 'BONUS 01' and not b1_done:
             out.append(bonus01_intro())  # after the Bonus 01 cover

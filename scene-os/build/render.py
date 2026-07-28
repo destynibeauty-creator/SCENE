@@ -615,12 +615,16 @@ def para_body(text, S):
 
 
 def code_panel(code_elems, S):
-    inner = []
-    for i, el in enumerate(code_elems):
-        txt = ' '.join(el['lines'])
-        if i:
-            inner.append(Spacer(1, 6))
-        inner.append(Paragraph(esc(txt), S['mono']))
+    # one paragraph per row so long panels can split across pages
+    paras = []
+    for el in code_elems:
+        if len(el['lines']) == 1 and '\n' in el['lines'][0]:
+            # authored template block: blank lines separate paragraphs,
+            # single newlines are hard breaks
+            for chunk in el['lines'][0].split('\n\n'):
+                paras.append(esc(chunk).replace('\n', '<br/>'))
+        else:
+            paras.append(esc(' '.join(el['lines'])))
     hdr = Paragraph(
         f'<font color="{S["accent_hex"]}" name="{FONTS["P-B"]}" size="8.5">'
         f'COPY THIS PROMPT</font>'
@@ -628,10 +632,11 @@ def code_panel(code_elems, S):
         f' &nbsp;&#8594;&nbsp; PASTE IT INTO YOUR AI TOOL</font>',
         ParagraphStyle('codehdr', fontName=FONTS['P-B'], fontSize=8.5,
                        leading=11, textColor=S['accent']))
-    t = Table([[hdr], [inner]], colWidths=[AVAIL])
-    t.setStyle(TableStyle([
+    data = [[hdr]] + [[Paragraph(p, S['mono'])] for p in paras]
+    t = Table(data, colWidths=[AVAIL], repeatRows=0)
+    style = [
         ('BACKGROUND', (0, 0), (-1, 0), HexColor('#15151C')),
-        ('BACKGROUND', (0, 1), (-1, 1), PANEL),
+        ('BACKGROUND', (0, 1), (-1, -1), PANEL),
         ('BOX', (0, 0), (-1, -1), 0.7, PANEL_EDGE),
         ('LINEBELOW', (0, 0), (-1, 0), 0.7, PANEL_EDGE),
         ('LINEBEFORE', (0, 0), (0, -1), 2.5, S['accent']),
@@ -639,9 +644,12 @@ def code_panel(code_elems, S):
         ('RIGHTPADDING', (0, 0), (-1, -1), 12),
         ('TOPPADDING', (0, 0), (-1, 0), 6),
         ('BOTTOMPADDING', (0, 0), (-1, 0), 6),
+        ('TOPPADDING', (0, 1), (-1, -1), 4),
+        ('BOTTOMPADDING', (0, 1), (-1, -1), 4),
         ('TOPPADDING', (0, 1), (-1, 1), 10),
-        ('BOTTOMPADDING', (0, 1), (-1, 1), 10),
-    ]))
+        ('BOTTOMPADDING', (0, -1), (-1, -1), 10),
+    ]
+    t.setStyle(TableStyle(style))
     return t
 
 
