@@ -49,9 +49,10 @@ AVAIL = PAGE_W - 2 * MARGIN
 # one signature color per section — BRAND COLORS ONLY, rotating through the
 # kit: Electric Cyan, Vibrant Magenta, Acid Lime, Metallic Silver
 BRAND_CYCLE = ['#00E5FF', '#F600A2', '#C6FF00', '#C0C3C7']
-DOC_ORDER = ['START HERE', 'MODULE 01', 'MODULE 02', 'MODULE 03', 'MODULE 04',
-             'MODULE 05', 'MODULE 06', 'MODULE 07', 'MODULE 08', 'MODULE 09A',
-             'MODULE 09B', 'MODULE 10A', 'MODULE 10B', 'MODULE 11', 'MODULE 12',
+DOC_ORDER = ['START HERE', 'MODULE 01', 'MODULE 02', 'MODULE 03A',
+             'MODULE 03B', 'MODULE 04A', 'MODULE 04B', 'MODULE 05',
+             'MODULE 06', 'MODULE 07', 'MODULE 08', 'MODULE 09',
+             'MODULE 10', 'MODULE 11', 'MODULE 12',
              'BONUS 01', 'BONUS 02', 'BONUS 03', 'BONUS 04']
 DOC_ACCENT = {d: BRAND_CYCLE[i % 4] for i, d in enumerate(DOC_ORDER)}
 
@@ -248,13 +249,13 @@ class SystemMap(Flowable):
     STEPS = [
         ('1', 'CHARACTER FIRST', 'Pick who your audience will follow.', 'MODULE 01'),
         ('2', 'PROMPT PACK', 'Make your MASTER face and DNA photos.', 'MODULE 02'),
-        ('3', 'OUTFIT + HAIR', 'Pick the look for this episode.', 'MODULES 09 + 10'),
-        ('4', 'REFERENCE BLUEPRINT', 'Give every photo you upload one job.', 'MODULE 04'),
-        ('5', 'THE SCENE METHOD', 'Direct the scene: story, cast, place.', 'MODULE 03'),
-        ('6', 'CONTINUITY SYSTEM', 'Make Part 2 match Part 1.', 'MODULE 05'),
-        ('7', 'CAMERA BIBLE', 'Put the camera in a spot that makes sense.', 'MODULE 07'),
-        ('8', 'REALISM CHECK', 'Catch anything that looks fake.', 'MODULE 08'),
-        ('9', 'GENERATE + POST + REVIEW', 'Post it. See what works. Repeat.', 'MODULES 06 + 12'),
+        ('3', 'OUTFIT + HAIR', 'Pick the look for this episode.', 'MODULES 03 + 04'),
+        ('4', 'REFERENCE BLUEPRINT', 'Give every photo you upload one job.', 'MODULE 05'),
+        ('5', 'THE SCENE METHOD', 'Direct the scene: story, cast, place.', 'MODULE 06'),
+        ('6', 'CONTINUITY SYSTEM', 'Make Part 2 match Part 1.', 'MODULE 07'),
+        ('7', 'CAMERA BIBLE', 'Put the camera in a spot that makes sense.', 'MODULE 08'),
+        ('8', 'REALISM CHECK', 'Catch anything that looks fake.', 'MODULE 09'),
+        ('9', 'GENERATE + POST + REVIEW', 'Post it. See what works. Repeat.', 'MODULES 10 - 12'),
     ]
     ROW, GAP = 46, 13
 

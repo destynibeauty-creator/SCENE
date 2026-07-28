@@ -416,8 +416,111 @@ def main():
     out.extend(bonus02())
     out.extend(bonus03())
     out.extend(bonus04())
+    out = renumber(out)
+    out = fix_included_list(out)
     json.dump(out, open(OUT, 'w'), indent=1)
     print(f'wrote {OUT}: {len(out)} pages')
+
+
+INCLUDED = [
+    'Module 01 — Character First',
+    'Module 02 — The Prompt Pack',
+    'Module 03A — Women’s Outfit Pack',
+    'Module 03B — Men’s Outfit Pack',
+    'Module 04A — Women’s Hair Pack',
+    'Module 04B — Men’s Hair + Grooming Pack',
+    'Module 05 — The Reference Blueprint',
+    'Module 06 — The SCENE Method',
+    'Module 07 — The Continuity System',
+    'Module 08 — Camera Bible',
+    'Module 09 — Realism Check',
+    'Module 10 — The SCENE Library',
+    'Module 11 — The Prompt Vault',
+    'Module 12 — The Viral Story Blueprint',
+    'Bonus 01 — Hook Vault',
+    'Bonus 02 — Caption Vault',
+    'Bonus 03 — Comment Blueprint',
+    'Bonus 04 — The SCENE Files',
+]
+OLD_NAMES = {
+    'Character First', 'The Prompt Pack', 'The SCENE Method',
+    'The Reference Blueprint', 'The Continuity System', 'The SCENE Library',
+    'Camera Bible', 'Realism Check', 'Women’s Outfit Pack',
+    'Men’s Outfit Pack', 'Women’s Hair Pack', 'Men’s Hair + Grooming Pack',
+    'The Prompt Vault', 'The Viral Story Blueprint', 'Hook Vault',
+    'Caption Vault', 'Comment Blueprint', 'The SCENE Files',
+}
+
+
+def fix_included_list(pages):
+    """Replace the What-is-included bullets with a numbered, in-order list."""
+    inserted = False
+    for p in pages:
+        if p['doc'] != 'START HERE':
+            continue
+        elems = []
+        for e in p['elems']:
+            if e['type'] == 'bullet' and \
+                    ' '.join(e['lines']).strip() in OLD_NAMES:
+                if not inserted:
+                    for item in INCLUDED:
+                        elems.append({'type': 'bullet', 'y': e['y'],
+                                      'lines': [item]})
+                    inserted = True
+                continue
+            elems.append(e)
+        p['elems'] = elems
+    return pages
+
+
+# Renumber modules so numeric order == the road-map do-order.
+# Old bundle order (03 Method, 04 Reference, 09/10 style packs) forced
+# buyers to jump around; now Module N is simply step N.
+NUM_MAP = {
+    '03': '06',   # The SCENE Method
+    '04': '05',   # The Reference Blueprint
+    '05': '07',   # The Continuity System
+    '06': '10',   # The SCENE Library
+    '07': '08',   # Camera Bible
+    '08': '09',   # Realism Check
+    '09A': '03A', '09B': '03B',   # Outfit Packs
+    '10A': '04A', '10B': '04B',   # Hair Packs
+    '13': '11',   # stray legacy reference to the Prompt Vault
+}
+NEW_ORDER = ['START HERE', 'MODULE 01', 'MODULE 02', 'MODULE 03A',
+             'MODULE 03B', 'MODULE 04A', 'MODULE 04B', 'MODULE 05',
+             'MODULE 06', 'MODULE 07', 'MODULE 08', 'MODULE 09',
+             'MODULE 10', 'MODULE 11', 'MODULE 12',
+             'BONUS 01', 'BONUS 02', 'BONUS 03', 'BONUS 04']
+
+import re as _re
+_MODREF = _re.compile(r'\b(MODULE|Module)S?\s+(\d{2}[AB]?)\b')
+
+
+def _remap_text(s):
+    def sub(m):
+        word, num = m.group(1), m.group(2)
+        return f'{word} {NUM_MAP.get(num, num)}'
+    return _MODREF.sub(sub, s)
+
+
+def renumber(pages):
+    for p in pages:
+        p['doc'] = _remap_text(p['doc'])
+        for e in p['elems']:
+            if 'lines' in e:
+                e['lines'] = [_remap_text(x) for x in e['lines']]
+            if 'rows' in e:
+                e['rows'] = [[_remap_text(c) for c in r] for r in e['rows']]
+            if 'text' in e:
+                e['text'] = _remap_text(e['text'])
+            if 'title' in e:
+                e['title'] = _remap_text(e['title'])
+            if 'fields' in e:
+                e['fields'] = [_remap_text(x) for x in e['fields']]
+    idx = {d: i for i, d in enumerate(NEW_ORDER)}
+    pages.sort(key=lambda p: (idx.get(p['doc'], 99), p['page']))
+    return pages
 
 
 if __name__ == '__main__':
