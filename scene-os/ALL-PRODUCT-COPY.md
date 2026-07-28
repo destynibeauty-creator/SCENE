@@ -54,21 +54,21 @@ first character: [link]. Post it and tag #THESCENEAI so I see it."
 > in — 10 for her, 10 for him.
 
 **Price:** $17 ~~$37~~
-**Button:** LOCK HER IN
+**Button:** LOCK THE FACE
 **Thumbnail:** `thumb-mini-pack-1080.png`
 **File:** `products/The-SCENE-AI_Identity-Lock-Mini-Pack.pdf`
 
 **Product page:**
-> You made a beautiful AI character. Then you generated the next photo —
+> You made a stunning AI character. Then you generated the next photo —
 > and it was a different person.
 >
 > That's not your fault. It's a missing sentence.
 >
 > The Identity Lock Mini-Pack gives you 20 ready-to-run photo scenes —
 > golden hour rooftops, coffee runs, car selfies, fit checks, nights out —
-> and every single one carries the identity lock: the exact wording that
-> keeps the same face, the same skin tone, and the same body in every
-> generation.
+> ten built for her, ten built for him. Every single one carries the
+> identity lock: the exact wording that keeps the same face, the same
+> skin tone, and the same body in every generation.
 >
 > **Inside:**
 > - The Identity Lock — the sentence that stops face drift (and why it works)
@@ -80,8 +80,8 @@ first character: [link]. Post it and tag #THESCENEAI so I see it."
 > a reference photo.
 
 **Order bump at this checkout ($27):** The Female Outfit Pack —
-> "Add 210 outfits she can wear in any scene — broken down piece by
-> piece. One-click add: $27."
+> "Building a female character? Add 210 outfits for her, broken down
+> piece by piece. One-click add: $27."
 
 **Delivery note:** Delivered instantly to your inbox after purchase.
 **Fine print:** Digital product. Instant access. All sales are final.
@@ -105,11 +105,11 @@ first character: [link]. Post it and tag #THESCENEAI so I see it."
 > The fastest way to kill a scene is a wrong outfit. The fastest way to
 > sell one is a look people screenshot.
 >
-> The Female Outfit Pack is a full style reference: 210 complete looks
-> across 21 categories — business, vacation, resort, airport, lounging,
-> date night, nightlife, streetwear, gala and more — each broken down
-> piece by piece, top to bottom, so it drops straight into your outfit
-> reference or your prompt.
+> The Female Outfit Pack is a full style reference for your female
+> character: 210 complete looks across 21 categories — business,
+> vacation, resort, airport, lounging, date night, nightlife, streetwear,
+> gala and more — each broken down piece by piece, top to bottom, so it
+> drops straight into your outfit reference or your prompt.
 >
 > **Inside:**
 > - 210 complete looks · 21 categories
@@ -117,8 +117,11 @@ first character: [link]. Post it and tag #THESCENEAI so I see it."
 > - Shoppable format — recreate any look as a flat-lay or a prompt
 > - Pairs with the Identity Lock Mini-Pack and the Creator OS
 >
-> Your character can't be recognizable in a random outfit. Give her a
+> A character can't be recognizable in a random outfit. Give yours a
 > closet.
+>
+> *Building a male character? His outfit + grooming packs are inside the
+> Creator OS.*
 
 **Delivery note:** Delivered instantly to your inbox after purchase.
 **Fine print:** Digital product. Instant access. All sales are final.
@@ -146,8 +149,8 @@ first character: [link]. Post it and tag #THESCENEAI so I see it."
 > Stop making random AI pictures and wondering why nothing connects.
 >
 > You've seen the AI content that makes people stop and argue in the
-> comments about whether she's real. Now you're going to make it — with
-> him or with her.
+> comments about whether they're even real. Now you're going to make it —
+> with him or with her.
 >
 > Think: one character. Locked forever. A world people follow like a
 > show.
@@ -209,7 +212,8 @@ downloadable products, all sales are final.
 
 **Upsell after purchase:** SCENE Society (copy below).
 **Downsell if they skip the OS ($27):** The Female Outfit Pack —
-> "Not ready for the full system? Start with her closet — 210 looks, $27."
+> "Not ready for the full system? Start with the closet — 210 complete
+> looks for your female character, $27."
 
 ---
 
