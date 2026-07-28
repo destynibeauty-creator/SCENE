@@ -56,12 +56,18 @@ for life." SCENE Society adopts the meta and beats them on deliverables.
    use? (unlocks the full OS classroom)
 3. What's your Instagram username?
 
-## Classroom structure
-- 🟢 START HERE (free to all members): The Character Starter + community
-  rules + how drops work
-- 🔒 THE CREATOR OS (unlocks with $97 purchase, email-verified): the 19
-  modules
+## Classroom structure (v2 — see OFFER-LADDER.md)
+- 🟢 START HERE (all members): Character Starter + rules + how drops work
+- 🟢 BUILD YOUR CHARACTER (all members — the 6 included modules):
+  Start Here Road Map · 01 Character First · 02 Prompt Pack ·
+  06 SCENE Method · 10 SCENE Library · Hook Vault
+- 🔒 THE WORLD BUILDER (unlocks at $97, in-app or email-verified from
+  Stan): styling packs, Reference, Continuity, Camera, Realism, Prompt
+  Vault + Director's Template, Viral Story, Caption + Comment vaults,
+  SCENE Files, SCENE Studio
 - 🟣 MONTHLY DROPS (all members): Drop 001 — The Vacation Heat Drop, ...
+- 💼 WORK WITH ME (all members can see): CHARACTER, DELIVERED ($297) ·
+  THE EPISODE PACK ($697) · THE CREATIVE DIRECTOR (application)
 
 ## Scarcity mechanics (the niche meta, used honestly)
 - Launch: "Founding members lock in $9/mo for life."
