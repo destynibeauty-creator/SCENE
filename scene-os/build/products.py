@@ -212,26 +212,28 @@ def main():
     render.register_fonts()
     os.makedirs(OUT, exist_ok=True)
 
+    STORE = 'https://stan.store/thesceneai'
     jobs = [
         ('STARTER', starter_pages(), LIME,
          {'kicker': 'FREE STARTER DROP', 'title': 'YOUR FIRST AI CHARACTER',
           'sub': 'Make a face people remember, post your first hook and pin '
                  'your first comment — in about an hour.',
           'tagline': 'CREATE THE CHARACTER. DIRECT THE SCENE. BUILD THE WORLD.'},
-         ('THE SCENE AI', 'THE FULL CREATOR OS (19 MODULES)'),
          'The-SCENE-AI_FREE_Starter-Drop_Your-First-AI-Character.pdf'),
         ('MINIPACK', minipack_pages(), CYAN,
          {'kicker': 'IDENTITY LOCK', 'title': 'MINI-PACK',
           'sub': '20 photo prompts that keep the same face in every single '
                  'shot. Ten for her, ten for him.',
           'tagline': 'CREATE THE CHARACTER. DIRECT THE SCENE. BUILD THE WORLD.'},
-         ('THE SCENE AI', 'THE FULL CREATOR OS (19 MODULES)'),
          'The-SCENE-AI_Identity-Lock-Mini-Pack.pdf'),
     ]
-    for docid, pages, accent, meta_extra, nxt, fname in jobs:
+    for docid, pages, accent, meta_extra, fname in jobs:
         S = make_styles(HexColor(accent))
         meta = {'accent': HexColor(accent), 'accent_hex': accent,
-                'part': 0, 'total': 0, 'next': nxt,
+                'part': 0, 'total': 0, 'next': None,
+                'banner': ('NEXT STEP — TAP THIS BANNER',
+                           'Get THE SCENE AI — the full Creator OS'),
+                'banner_url': STORE,
                 'cover_page': pages[0]}
         meta.update(meta_extra)
         build_doc(docid, pages, meta, os.path.join(OUT, fname), S)

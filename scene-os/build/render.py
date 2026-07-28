@@ -527,11 +527,12 @@ class WorksheetCard(Flowable):
 class NextStepBanner(Flowable):
     """End-of-document wayfinding: big arrow + where to go next."""
 
-    def __init__(self, accent, line1, line2):
+    def __init__(self, accent, line1, line2, url=None):
         super().__init__()
         self.accent = accent
         self.line1 = line1
         self.line2 = line2
+        self.url = url
 
     def wrap(self, aw, ah):
         self.width = AVAIL
@@ -558,6 +559,12 @@ class NextStepBanner(Flowable):
         c.setFillColor(WHITE)
         c.setFont(FONTS['P-B'], 13.5)
         c.drawString(62, 16, self.line2)
+        if self.url:
+            c.linkURL(self.url, (0, 4, self.width, 58), relative=1)
+            c.setFillColor(HexColor('#9AA0A8'))
+            c.setFont(FONTS['P-SB'], 8)
+            tw = pdfmetrics.stringWidth('TAP HERE', FONTS['P-SB'], 8) + 14
+            c.drawString(self.width - tw - 10, 12, 'TAP HERE')
 
 
 # ---------------------------------------------------------------- styles
@@ -1081,7 +1088,8 @@ def build_doc(docid, pages, meta, outpath, S):
     custom = meta.get('banner')
     if custom:
         story.append(Spacer(1, 22))
-        story.append(NextStepBanner(S['accent'], custom[0], custom[1]))
+        story.append(NextStepBanner(S['accent'], custom[0], custom[1],
+                                    url=meta.get('banner_url')))
     elif nxt:
         story.append(Spacer(1, 22))
         story.append(NextStepBanner(S['accent'], 'NEXT STEP',
