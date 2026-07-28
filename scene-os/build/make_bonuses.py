@@ -396,6 +396,71 @@ def bonus04():
     ]
 
 
+# Upgraded MASTER templates from the Character Starter — the canonical
+# versions everywhere (adds arm's-length framing + matte-skin realism).
+FEMALE_MASTER = ("A realistic front-facing selfie of a [AGE]-year-old "
+"[ETHNICITY] woman, taken on a phone. She is clearly [ETHNICITY] with "
+"[SKIN TONE] skin and beautiful, true-to-her features. Naturally gorgeous, "
+"the kind of face that stops you scrolling, but soft and bare with no "
+"makeup. Real skin texture, natural glow, [KEY FEATURES]. "
+"[HER ENERGY / WALL]. Her hair is [HAIRSTYLE]. Wearing a [SIMPLE TOP]. "
+"Tiny stud earrings only, minimal jewelry. Natural indoor window light, "
+"plain everyday apartment background. Authentic, candid phone selfie, not "
+"studio, not glam, but undeniably beautiful. Clearly a [SKIN TONE] "
+"[ETHNICITY] woman, real. Shot at arm's length on the front camera, at "
+"eye level, slightly imperfect framing, one shoulder closer to the lens. "
+"Matte real skin with visible pores, soft natural light only, no glossy "
+"shine, no retouching. Nothing staged or posed toward the camera, "
+"ordinary imperfect background.")
+MALE_MASTER = ("A realistic front-facing selfie of a [AGE]-year-old "
+"[ETHNICITY] man, taken on a phone. He is clearly [ETHNICITY] with "
+"[SKIN TONE] skin and beautiful, true-to-his features. Naturally handsome, "
+"the kind of face that stops you scrolling, but natural and unfiltered "
+"with no beauty filter. Real skin texture, natural glow, [KEY FEATURES]. "
+"[HIS ENERGY / WALL]. His hair is [HAIRSTYLE, e.g. a low fade / a temple "
+"fade / starter locs / a tapered afro]. Wearing a [SIMPLE TOP]. Minimal "
+"jewelry. Preserve culturally and personally appropriate grooming. "
+"Natural indoor window light, plain everyday apartment background. "
+"Authentic, candid phone selfie, not studio, not glam, but undeniably "
+"handsome. Clearly a [SKIN TONE] [ETHNICITY] man, real. Shot at arm's "
+"length on the front camera, at eye level, slightly imperfect framing, "
+"one shoulder closer to the lens. Matte real skin with visible pores, "
+"soft natural light only, no glossy shine, no retouching. Nothing staged "
+"or posed toward the camera, ordinary imperfect background.")
+
+
+def upgrade_master_prompts(pages):
+    """Swap Module 02's Prompt 1F/1M for the Character Starter versions,
+    keeping the drift-fix paragraph that follows each."""
+    for p in pages:
+        if p['doc'] != 'MODULE 02':
+            continue
+        elems, i = [], 0
+        old = p['elems']
+        while i < len(old):
+            e = old[i]
+            elems.append(e)
+            if e['type'] == 'h3':
+                h = ' '.join(e['lines'])
+                tmpl = FEMALE_MASTER if h.startswith('Prompt 1F') else \
+                    (MALE_MASTER if h.startswith('Prompt 1M') else None)
+                if tmpl:
+                    group = []
+                    j = i + 1
+                    while j < len(old) and old[j]['type'] == 'code':
+                        group.append(old[j])
+                        j += 1
+                    if group:
+                        elems.append({'type': 'code', 'y': group[0]['y'],
+                                      'lines': [tmpl]})
+                        elems.append(group[-1])  # keep the drift-fix note
+                        i = j
+                        continue
+            i += 1
+        p['elems'] = elems
+    return pages
+
+
 def main():
     pages = json.load(open(SRC))
     out = []
@@ -418,6 +483,7 @@ def main():
     out.extend(bonus04())
     out = renumber(out)
     out = fix_included_list(out)
+    out = upgrade_master_prompts(out)
     json.dump(out, open(OUT, 'w'), indent=1)
     print(f'wrote {OUT}: {len(out)} pages')
 

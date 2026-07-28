@@ -924,36 +924,10 @@
    },
    {
     "type": "code",
+    "y": 251.35000000000002,
     "lines": [
-     "A realistic front-facing selfie of a [AGE]-year-old [ETHNICITY] woman, taken on a phone. She is",
-     "clearly [ETHNICITY] with [SKIN TONE] skin and beautiful, true-to-her features. Naturally gorgeous,",
-     "the kind of face that stops you scrolling, but soft and bare with no makeup."
-    ],
-    "y": 251.35000000000002
-   },
-   {
-    "type": "code",
-    "lines": [
-     "Real skin texture, natural glow, [KEY FEATURES, e.g. full lips, high cheekbones, expressive eyes].",
-     "[HER ENERGY / WALL, e.g. quietly hopeful, wanting something she won't say out loud]."
-    ],
-    "y": 290.34999999999997
-   },
-   {
-    "type": "code",
-    "lines": [
-     "Her hair is [HAIRSTYLE, e.g. a natural low bun / a sleek middle-part sew-in / a silk press / long",
-     "loose waves]. Wearing a [SIMPLE TOP]. Tiny stud earrings only, minimal jewelry."
-    ],
-    "y": 319.59999999999997
-   },
-   {
-    "type": "code",
-    "lines": [
-     "Natural indoor window light, plain everyday apartment background. Authentic, candid phone selfie, not",
-     "studio, not glam, but undeniably beautiful. Clearly a [SKIN TONE] [ETHNICITY] woman, real."
-    ],
-    "y": 348.84999999999997
+     "A realistic front-facing selfie of a [AGE]-year-old [ETHNICITY] woman, taken on a phone. She is clearly [ETHNICITY] with [SKIN TONE] skin and beautiful, true-to-her features. Naturally gorgeous, the kind of face that stops you scrolling, but soft and bare with no makeup. Real skin texture, natural glow, [KEY FEATURES]. [HER ENERGY / WALL]. Her hair is [HAIRSTYLE]. Wearing a [SIMPLE TOP]. Tiny stud earrings only, minimal jewelry. Natural indoor window light, plain everyday apartment background. Authentic, candid phone selfie, not studio, not glam, but undeniably beautiful. Clearly a [SKIN TONE] [ETHNICITY] woman, real. Shot at arm's length on the front camera, at eye level, slightly imperfect framing, one shoulder closer to the lens. Matte real skin with visible pores, soft natural light only, no glossy shine, no retouching. Nothing staged or posed toward the camera, ordinary imperfect background."
+    ]
    },
    {
     "type": "code",
@@ -972,37 +946,10 @@
    },
    {
     "type": "code",
+    "y": 447.9,
     "lines": [
-     "A realistic front-facing selfie of a [AGE]-year-old [ETHNICITY] man, taken on a phone. He is clearly",
-     "[ETHNICITY] with [SKIN TONE] skin and beautiful, true-to-his features. Naturally handsome, the kind",
-     "of face that stops you scrolling, but natural and unfiltered with no beauty filter."
-    ],
-    "y": 447.9
-   },
-   {
-    "type": "code",
-    "lines": [
-     "Real skin texture, natural glow, [KEY FEATURES, e.g. full lips, high cheekbones, expressive eyes].",
-     "[HIS ENERGY / WALL, e.g. quietly hopeful, wanting something she won't say out loud]."
-    ],
-    "y": 486.9
-   },
-   {
-    "type": "code",
-    "lines": [
-     "His hair is [HAIRSTYLE, e.g. a natural low bun / a sleek middle-part sew-in / a silk press / long",
-     "loose waves]. Wearing a [SIMPLE TOP]. Minimal jewelry. Preserve culturally and personally appropriate",
-     "grooming."
-    ],
-    "y": 516.15
-   },
-   {
-    "type": "code",
-    "lines": [
-     "Natural indoor window light, plain everyday apartment background. Authentic, candid phone selfie, not",
-     "studio, not glam, but undeniably beautiful. Clearly a [SKIN TONE] [ETHNICITY] man, real."
-    ],
-    "y": 555.15
+     "A realistic front-facing selfie of a [AGE]-year-old [ETHNICITY] man, taken on a phone. He is clearly [ETHNICITY] with [SKIN TONE] skin and beautiful, true-to-his features. Naturally handsome, the kind of face that stops you scrolling, but natural and unfiltered with no beauty filter. Real skin texture, natural glow, [KEY FEATURES]. [HIS ENERGY / WALL]. His hair is [HAIRSTYLE, e.g. a low fade / a temple fade / starter locs / a tapered afro]. Wearing a [SIMPLE TOP]. Minimal jewelry. Preserve culturally and personally appropriate grooming. Natural indoor window light, plain everyday apartment background. Authentic, candid phone selfie, not studio, not glam, but undeniably handsome. Clearly a [SKIN TONE] [ETHNICITY] man, real. Shot at arm's length on the front camera, at eye level, slightly imperfect framing, one shoulder closer to the lens. Matte real skin with visible pores, soft natural light only, no glossy shine, no retouching. Nothing staged or posed toward the camera, ordinary imperfect background."
+    ]
    },
    {
     "type": "code",

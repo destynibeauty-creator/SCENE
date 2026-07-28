@@ -6,18 +6,20 @@ Every price ends in 7. Every product uses its thumbnail from
 
 ---
 
-# 1 · FREE — The Starter Drop
+# 1 · FREE — The Character Starter
 
-**Card title:** Your First AI Character (FREE)
+**Card title:** The Character Starter (FREE)
 
 **Card description:**
-> Make a face people remember, post your first hook, pin your first
-> comment — in about an hour. Him or her.
+> Your first AI character. Locked today. From your phone. An assistant
+> interviews you and builds them in front of you — him or her.
 
 **Price:** FREE (email required)
 **Button:** SEND IT TO ME
 **Thumbnail:** `thumb-free-starter-1080.png`
-**File:** `products/The-SCENE-AI_FREE_Starter-Drop_Your-First-AI-Character.pdf`
+**File:** `products/The-SCENE-AI_FREE_The-Character-Starter.pdf`
+**Contains:** the tappable SCENE AI Starter GPT link, the full paste-in
+agent, the manual prompts, and the first-post kit (hook, caption, pin).
 
 **Product page:**
 > Everyone's making AI pictures. Nobody's making AI *people*.
