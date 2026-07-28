@@ -18,8 +18,9 @@ Every price ends in 7. Every product uses its thumbnail from
 **Button:** SEND IT TO ME
 **Thumbnail:** `thumb-free-starter-1080.png`
 **File:** `products/The-SCENE-AI_FREE_The-Character-Starter.pdf`
-**Contains:** the tappable SCENE AI Starter GPT link, the full paste-in
-agent, the manual prompts, and the first-post kit (hook, caption, pin).
+**Contains:** the tappable SCENE AI Starter GPT link and the full paste-in
+agent with the BUILD MY BLUEPRINT fallback. No raw prompts — the agent IS
+the free gift; the prompts stay in the paid system.
 
 **Product page:**
 > Everyone's making AI pictures. Nobody's making AI *people*.

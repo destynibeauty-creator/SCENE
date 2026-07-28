@@ -110,7 +110,6 @@ Adults only: if they say or imply they are under 18, kindly say THE SCENE AI is 
 
 # ------------------------------------------------------------- starter drop
 def starter_pages():
-    b = master_prompts()
     cover = {'page': 1, 'doc': 'STARTER', 'elems': [
         E('label', 'THE CHARACTER STARTER · FREE'),
         E('h1', 'YOUR FIRST AI CHARACTER'),
@@ -119,86 +118,58 @@ def starter_pages():
         E('label', 'CREATE THE CHARACTER. DIRECT THE SCENE. BUILD THE WORLD.'),
     ]}
     p2 = {'page': 2, 'doc': 'STARTER', 'elems': [
-        E('h2', 'Pick your path'),
-        E('body', 'This is not a tutorial. It is an assistant that interviews '
-                  'you, generates your character in front of you, and hands '
-                  'you everything: your prompt, your roadmap, your keepsake '
-                  'document. Three ways in — all three end the same place: '
-                  'one locked character.'),
-        E('flow', steps=[['1', 'TAP THE STARTER'], ['2', 'PASTE THE AGENT'],
-                         ['3', 'RUN THE PROMPTS']],
-          caption='Path 1 is easiest. Paths 2 and 3 are for people who like to drive.'),
-        E('h2', 'Path 1 — Tap here. Easiest.'),
+        E('body', 'This is not a tutorial. It is an assistant that '
+                  'interviews you, generates your character in front of '
+                  'you, and hands you everything: your prompt, your '
+                  'roadmap, your keepsake document.'),
+        E('h2', 'Tap here. Easiest path.'),
         E('body', 'Open THE SCENE AI Starter in ChatGPT and just start '
                   'talking. It interviews you, generates your character in '
-                  'front of you, and hands you everything. Nothing to copy. '
-                  'The free ChatGPT app is fine.'),
+                  'front of you, and hands you everything. Nothing to copy.'),
         E('linkline', text='OPEN THE SCENE AI STARTER IN CHATGPT', url=GPT_URL),
+        E('h2', 'Prefer to run it yourself? Three steps.'),
+        E('flow', steps=[['1', 'COPY THE BOX'], ['2', 'PASTE IN CHATGPT'],
+                         ['3', 'ANSWER + GENERATE']],
+          caption='The free ChatGPT app is fine. Same Starter, same result.'),
+        E('bullet', 'COPY THE BOX. Tap and hold the very first word inside '
+                    'the box on the next page, drag the bottom handle down '
+                    'through every page to the final line, and copy. Every '
+                    'word matters — grab the whole box and nothing outside it.'),
+        E('bullet', 'PASTE IT INTO CHATGPT. Start a new chat, paste, and '
+                    'send. The Starter wakes up and asks its first question.'),
+        E('bullet', 'ANSWER, THEN GENERATE. One question at a time. At the '
+                    'end it hands you your character — and your document.'),
         E('label', 'ONE THING BEFORE YOU START'),
         E('body', 'The app was never the secret. The reason most AI content '
                   'looks fake, or looks like a different person in every '
                   'post, is that nobody built and locked a character first. '
                   'That is what you are about to do. Build once, reuse '
                   'forever.'),
-        E('h2', 'Path 2 — Paste the agent into ChatGPT'),
-        E('bullet', 'COPY THE BOX BELOW. Tap and hold the very first word, '
-                    'drag the handle down through every page to the final '
-                    'line, and copy. Every word matters.'),
-        E('bullet', 'PASTE IT INTO CHATGPT. Start a new chat, paste, send. '
-                    'The Starter wakes up and asks its first question.'),
-        E('bullet', 'ANSWER, THEN GENERATE. One question at a time. At the '
-                    'end it hands you a finished prompt with your answers '
-                    'filled in.'),
+    ]}
+    p3 = {'page': 3, 'doc': 'STARTER', 'elems': [
+        E('h2', 'The agent — copy everything in the box'),
+        E('body', 'It runs onto the next pages. Copy all of it, from '
+                  '"You are THE SCENE AI Starter" down to the final line.'),
         E('code', AGENT),
         E('label', 'STOP COPYING THERE — EVERYTHING BELOW IS FOR YOU'),
-        E('h3', 'Didn’t get your document?'),
+    ]}
+    p4 = {'page': 4, 'doc': 'STARTER', 'elems': [
+        E('h2', 'Didn’t get your document?'),
         E('body', 'Once your images are done and you have picked your '
                   'MASTER, the Starter hands you a full branded character '
                   'guide as a PDF. If it does not, tell it exactly this, '
                   'big energy:'),
         E('ccard', note='SAY THIS TO THE STARTER',
           text='BUILD MY BLUEPRINT'),
-        E('h2', 'Path 3 — Run the prompts yourself'),
-        E('bullet', 'Pick him or her — both prompts are below.'),
-        E('bullet', 'Fill in every [BRACKET] with your own words.'),
-        E('bullet', 'Run the prompt until you love ONE face. Save that photo. '
-                    'That photo is your MASTER — your character’s ID card.'),
-        E('bullet', 'From now on, never generate this character without '
-                    'uploading the MASTER first.'),
-        E('h3', 'Make her face'),
-    ] + b['F'] + [
-        E('h3', 'Or make his face'),
-    ] + b['M']}
-    p3 = {'page': 3, 'doc': 'STARTER', 'elems': [
-        E('h2', 'Your first post — hook, caption, pin'),
-        E('body', 'A hook is one normal moment with one thing wrong. '
-                  'Generate a short clip or photo of your character in this '
-                  'moment, and do not explain it:'),
-        E('code', 'Use the uploaded image as the exact identity reference. '
-                  'Same person, same face, same skin tone. No identity '
-                  'drift. Scene: a server delivers a drink to '
-                  '[HIM / HER] from an unknown guest at a nice restaurant. '
-                  'Your character reacts with a small, real expression — '
-                  'curious, not shocked. Vertical 9:16, natural light, '
-                  'shot like phone footage. ' + REAL),
-        E('body', 'Caption it with this and nothing else:'),
-        E('code', 'Now who sent this over...'),
-        E('h2', 'Pin this comment'),
-        E('body', 'The comment section is where views turn into followers. '
-                  'Post this from your own account and pin it:'),
-        E('ccard', note='PIN THIS  —  EVERYONE HAS AN OPINION',
-          text='Be honest — would you take the drink or send it back?'),
-        E('h2', 'What happens next'),
-        E('body', 'Here is the problem you will hit tomorrow: you will '
-                  'generate your character again, and the face will drift. '
-                  'Different nose, different skin, different person. That is '
-                  'the moment most people quit.'),
-        E('body', 'THE SCENE AI Creator OS is the fix — 19 modules that lock '
-                  'the identity, style the look (him AND her), direct the '
-                  'camera, keep Part 2 matching Part 1, and turn one '
-                  'character into a world people follow like a show.'),
+        E('h2', 'When your character is standing there looking real'),
+        E('body', 'That is the hard part, done. Keeping them identical in '
+                  'every scene, from every angle, across a whole series '
+                  'people follow — that is what the full system is for. '
+                  'THE SCENE AI Creator Operating System. Three moves: '
+                  'create the character, direct the scene, build the world. '
+                  'All copy and paste.'),
     ]}
-    return [cover, p2, p3]
+    return [cover, p2, p3, p4]
 
 
 # ---------------------------------------------------------------- mini pack
