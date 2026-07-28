@@ -66,7 +66,10 @@
    scarcity, and pre-sells the AI Studio as the future price-raise reason.
 4. Deliver each drop as a Stan digital download to members + post it in
    the community space. Drop 001 is built and in `products/`.
-5. Community home: a private WhatsApp group (invite link delivered in the
-   Stan welcome email after subscribing) + a free Instagram Broadcast
-   Channel as the public announcement layer. Move to Skool (~$99/mo) once
-   the Society passes ~30–40 members; billing stays on Stan throughout.
+5. Community home: a private Skool group on the $9/mo Hobby plan
+   (unlimited members + classroom tab for the OS files and future videos).
+   Billing stays on Stan — members subscribe there and get the Skool
+   invite link in the welcome email, so Skool's 10% transaction fee never
+   applies. Free Instagram Broadcast Channel as the public announcement
+   layer. Upgrade to Skool Pro ($99/mo) only if billing ever moves into
+   Skool or a second admin is needed.
