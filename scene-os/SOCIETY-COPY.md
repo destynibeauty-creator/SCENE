@@ -73,6 +73,25 @@ They sell tutorials. SCENE SOCIETY ships DONE-FOR-YOU drops monthly —
 scenes, looks, a filled master template — plus a system, not videos to
 binge. Culturally accurate by design. Him and her. Nobody else has that.
 
+## The ascension play (what beats Bootcamp's Golden Ticket)
+
+Bootcamp's ONLY upsell is an $89 one-time "Golden Ticket" (lifetime
+community access, in-app Apple Pay). That's a cashflow grab with nothing
+behind it. SCENE SOCIETY's in-Skool ascension is a real product:
+
+1. **Primary in-Skool unlock: THE CREATOR OS — $97 one-time.** The locked
+   classroom section IS the golden ticket. Same price as Stan (no channel
+   conflict); Skool's ~10% fee is the cost of the frictionless in-app
+   Apple Pay checkout. Every $9 member sees the locked section daily.
+2. **Held in reserve: "Founders' Lifetime" — $89 one-time** for lifetime
+   Society access (the exact Bootcamp play). Run it as a limited flash
+   offer in a slow month, never as a standing offer — a standing lifetime
+   pass caps recurring revenue from your best members.
+
+Ladder inside Skool: $9/mo member → $97 OS unlock → (later) Director's
+Room. Bootcamp's members can only ever give them $9/mo or $89 once.
+SCENE members have somewhere to go.
+
 ## Funnel updates
 - OS post-purchase upsell → "Join SCENE SOCIETY — $9/mo founding price"
   (Skool link)
