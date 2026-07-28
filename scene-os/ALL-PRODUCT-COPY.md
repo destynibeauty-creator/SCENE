@@ -217,19 +217,20 @@ downloadable products, all sales are final.
 
 ---
 
-# 5 · $37/mo — SCENE Society (the membership)
+# 5 · $9/mo — SCENE SOCIETY™ (Skool community — see SOCIETY-COPY.md)
 
-**Card title:** SCENE Society — The Membership
+**Where it lives:** Skool, billed through Skool at **$9/mo** (founding
+price, locks for life; rises to $49/mo at a real member threshold). This
+matches the niche meta — the top communities in this exact lane (AI Video
+Bootcamp 25.8k, AI Creator League, AI Style Secrets) are all $9 on Skool.
 
-**Card description:**
-> New scenes, new looks, new tools — dropped monthly. Your character
-> never runs out of episodes.
-
-**Price:** $37/mo ~~$57~~ · Yearly $370 (2 months free)
-**Button:** JOIN THE SOCIETY
+**On Stan:** list as an external-link card pointing to the Skool page.
+> Card: "SCENE SOCIETY™ — the $9/mo community. A new drop every month:
+> 30 scenes, 10 looks, the Master Scene. Founding price locks for life."
+> Button: JOIN THE SOCIETY
 **Thumbnail:** `thumb-scene-society-1080.png`
-**First delivery:** `products/SCENE-Society_Drop-001_The-Vacation-Heat-Drop.pdf`
-+ private Skool invite link
+**Inside Skool:** Drop 001 in the classroom; full OS classroom unlocks
+for verified $97 buyers (email-match join question).
 
 **Product page:**
 > The system got you started. The Society keeps you posting.
