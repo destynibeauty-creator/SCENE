@@ -27,6 +27,8 @@ FONTDIR = os.path.join(HERE, 'fonts')
 OUTDIR = os.path.normpath(os.path.join(HERE, '..', 'pdfs'))
 CONTENT = os.path.join(HERE, 'content.json')
 LOGO = os.path.join(HERE, 'assets', 'logo-lockup.jpg')
+KEYART = os.path.normpath(os.path.join(
+    HERE, '..', 'marketing', 'keyart', 'keyart-wide-destyni.jpg'))
 
 # ----- brand palette -----
 JET = HexColor('#000000')
@@ -764,7 +766,41 @@ class SceneDoc(BaseDocTemplate):
         self.addPageTemplates([
             PageTemplate(id='cover', frames=[cover_frame], onPage=self.draw_cover),
             PageTemplate(id='content', frames=[frame], onPage=self.draw_page),
+            PageTemplate(id='closing', frames=[cover_frame],
+                         onPage=self.draw_closing),
         ])
+
+    # ---- closing page: the key art + community push
+    def draw_closing(self, c, doc):
+        m = self.meta
+        c.setFillColor(JET)
+        c.rect(0, 0, PAGE_W, PAGE_H, stroke=0, fill=1)
+        cx = PAGE_W / 2
+        bracket(c, 58, PAGE_H - 58, 46, 'tl', MAGENTA, 3)
+        bracket(c, PAGE_W - 58, 58, 46, 'br', CYAN, 3)
+        tracked(c, 0, PAGE_H - 100, 'THE SCENE AI  /  CREATOR OS',
+                FONTS['P-SB'], 7.5, MUTED, 2.6, center_at=cx)
+        img = ImageReader(KEYART)
+        iw, ih = img.getSize()
+        aw = PAGE_W - 2 * 72
+        ah = aw * ih / iw
+        ay = PAGE_H - 150 - ah
+        c.drawImage(img, cx - aw / 2, ay, aw, ah)
+        c.setStrokeColor(HexColor('#26262E'))
+        c.setLineWidth(1)
+        c.rect(cx - aw / 2, ay, aw, ah, stroke=1, fill=0)
+        metal_text(c, cx, ay - 74, 'SHARE YOUR WORLD.', FONTS['P-XB'], 34)
+        c.setFillColor(HexColor('#E2E4E7'))
+        c.setFont(FONTS['P'], 11.5)
+        c.drawCentredString(cx, ay - 112,
+                            'Post your episodes with #THESCENEAI so your work gets seen.')
+        c.setFont(FONTS['P'], 11.5)
+        c.drawCentredString(cx, ay - 132,
+                            'New scene drops, packs and tools land every month inside')
+        tracked(c, 0, ay - 158, 'SCENE SOCIETY', FONTS['P-B'], 13,
+                m['accent'], 3.4, center_at=cx)
+        gradient_bar(c, cx - 80, ay - 176, 160, 3)
+        wordmark(c, cx, 96, 0.8)
 
     # ---- cover page
     def draw_cover(self, c, doc):
@@ -1050,6 +1086,10 @@ def build_doc(docid, pages, meta, outpath, S):
         story.append(Spacer(1, 22))
         story.append(NextStepBanner(S['accent'], 'YOU FINISHED THE SYSTEM',
                                     'Now go make your first episode.'))
+    if meta.get('closing') and os.path.exists(KEYART):
+        story.append(NextPageTemplate('closing'))
+        story.append(PageBreak())
+        story.append(Spacer(1, 1))
     doc.build(story)
 
 
@@ -1091,7 +1131,8 @@ def main():
             nxt = (nd, titles[nd])
         meta = {'kicker': docid, 'title': docid, 'sub': '', 'tagline': '',
                 'accent': HexColor(accent_hex), 'accent_hex': accent_hex,
-                'part': idx + 1, 'total': len(docs), 'next': nxt}
+                'part': idx + 1, 'total': len(docs), 'next': nxt,
+                'closing': True}
         for p in dpages:
             types = [e['type'] for e in p['elems']]
             if 'h1' in types:
