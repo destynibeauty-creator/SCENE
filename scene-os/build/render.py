@@ -1078,7 +1078,11 @@ def build_doc(docid, pages, meta, outpath, S):
 
     story.extend(merged)
     nxt = meta.get('next')
-    if nxt:
+    custom = meta.get('banner')
+    if custom:
+        story.append(Spacer(1, 22))
+        story.append(NextStepBanner(S['accent'], custom[0], custom[1]))
+    elif nxt:
         story.append(Spacer(1, 22))
         story.append(NextStepBanner(S['accent'], 'NEXT STEP',
                                     f'Go to {nxt[0]} — {nxt[1]}'))
