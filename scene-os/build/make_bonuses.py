@@ -34,38 +34,43 @@ def cover(kicker, title, sub):
 def start_here_tools():
     return {'page': 3.5, 'doc': 'START HERE', 'elems': [
         E('h2', 'Your tool kit — the apps you need'),
-        E('body', 'You only need three tools: one that makes photos, one that '
-                  'turns photos into video, and one that edits. The system '
-                  'works in ANY app that can use your MASTER photo as a '
-                  'reference. These are the popular picks right now:'),
+        E('body', 'You need four tools: one that writes and stores your '
+                  'prompts, one that makes photos, one that turns photos '
+                  'into video, and one that edits. The system works in ANY '
+                  'apps that can do these jobs. This is the working stack:'),
         E('table', rows=[
-            ['THE JOB', 'POPULAR TOOLS', 'TIP'],
-            ['Make the face and photos',
-             'Nano Banana Pro, Higgsfield, Midjourney, OpenArt',
-             'Pick one with a character or reference feature.'],
-            ['Turn photos into video',
-             'Higgsfield 2.0, Kling, Veo, Runway',
-             'It MUST accept multiple reference images.'],
+            ['THE JOB', 'TOOLS', 'TIP'],
+            ['Write and store your prompts',
+             'ChatGPT, Claude',
+             'Save your master template there. Every episode is a small edit.'],
+            ['Make the face, photos and poses',
+             'Nano Banana Pro, Higgsfield, Midjourney',
+             'Generate your MASTER here, plus extra angles and poses.'],
+            ['Turn it all into video',
+             'Seedance 2.0, Higgsfield, Kling, Veo',
+             'It MUST accept multiple reference images at once.'],
             ['Edit, captions and sound',
              'CapCut, InShot',
              'CapCut is free and enough to start.'],
         ]),
+        E('label', 'THE PIPELINE — EVERY EPISODE MOVES LEFT TO RIGHT'),
+        E('flow', steps=[['1', 'WRITE IT'], ['2', 'SHOOT PHOTOS'],
+                         ['3', 'MAKE THE VIDEO'], ['4', 'EDIT + POST']],
+          caption='ChatGPT writes the prompt → Nano Banana Pro makes the photos → paste it ALL into Seedance 2.0 with every reference attached → CapCut finishes it.'),
         E('body', 'The bigger your scenes get, the more reference images you '
-                  'will use at once — one for identity, one for hair, one for '
-                  'the outfit, one for each location. Tools like Higgsfield '
-                  '2.0 are built for this. The full multi-reference master '
-                  'template is in Module 11.'),
-        E('flow', steps=[['1', 'PICK ONE PER JOB'], ['2', 'LEARN IT ONCE'],
-                         ['3', 'STAY THERE']],
-          caption='Switching apps every week is how characters drift. Pick your three and commit.'),
+                  'attach at once — one for identity, one for hair, one for '
+                  'the outfit, one for each location. The full multi-reference '
+                  'master template is in Module 11.'),
+        E('bullet', 'Pick ONE tool per job, learn it once, and stay there — '
+                    'switching apps every week is how characters drift.'),
         E('bullet', 'Free versions are fine to start. Upgrade when episodes are working.'),
         E('bullet', 'Upload your MASTER photo into every tool, every time.'),
-        E('bullet', 'Keep the SAME three tools for a whole series.'),
+        E('bullet', 'Keep the SAME tools for a whole series.'),
         E('body', 'Tools change fast. If a new app comes out, the system still '
                   'works — the prompts and the method do not change.'),
         E('wcard', title='MY TOOL KIT', fields=[
-            'My photo tool:', 'My video tool:', 'My editing app:',
-            'My keyword (one word):']),
+            'My prompt-writing tool:', 'My photo tool:', 'My video tool:',
+            'My editing app:', 'My keyword (one word):']),
     ]}
 
 
@@ -151,6 +156,26 @@ The first three seconds must create immediate curiosity through a natural reveal
             ['9', 'Length', 'How long the clip runs'],
             ['10', 'Style', 'The feeling the first three seconds must create'],
         ]),
+        E('h3', 'Where each piece goes'),
+        E('table', rows=[
+            ['STEP', 'WHAT YOU DO', 'WHICH APP'],
+            ['1', 'Fill in this template (save your version)', 'ChatGPT'],
+            ['2', 'Generate the MASTER, poses and reference photos',
+             'Nano Banana Pro'],
+            ['3', 'Paste the WHOLE template + attach every reference image',
+             'Seedance 2.0 or Higgsfield'],
+            ['4', 'Trim, captions, sound', 'CapCut'],
+        ]),
+        E('h3', 'The dialogue budget (this decides if lips sync)'),
+        E('bullet', 'Keep every spoken line 5–10 words. Short lines sync; '
+                    'long lines drift.'),
+        E('bullet', 'People speak about 2 words per second — a 15-second '
+                    'clip has room for roughly 25–30 spoken words TOTAL, '
+                    'and less if the character is walking or reacting.'),
+        E('bullet', 'Heavy talking? Keep the clip 10 seconds or under — '
+                    'lip-sync quality drops on longer generations.'),
+        E('bullet', 'Three or four short lines beat one long speech. Let '
+                    'the action carry the rest.'),
         E('body', 'Copy the whole template below. Save your filled version — '
                   'that becomes YOUR master, and every new episode is a '
                   'small edit, not a rewrite.'),

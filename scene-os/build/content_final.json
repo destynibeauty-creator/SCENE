@@ -269,7 +269,7 @@
     "type": "body",
     "y": 0,
     "lines": [
-     "You only need three tools: one that makes photos, one that turns photos into video, and one that edits. The system works in ANY app that can use your MASTER photo as a reference. These are the popular picks right now:"
+     "You need four tools: one that writes and stores your prompts, one that makes photos, one that turns photos into video, and one that edits. The system works in ANY apps that can do these jobs. This is the working stack:"
     ]
    },
    {
@@ -278,18 +278,23 @@
     "rows": [
      [
       "THE JOB",
-      "POPULAR TOOLS",
+      "TOOLS",
       "TIP"
      ],
      [
-      "Make the face and photos",
-      "Nano Banana Pro, Higgsfield, Midjourney, OpenArt",
-      "Pick one with a character or reference feature."
+      "Write and store your prompts",
+      "ChatGPT, Claude",
+      "Save your master template there. Every episode is a small edit."
      ],
      [
-      "Turn photos into video",
-      "Higgsfield 2.0, Kling, Veo, Runway",
-      "It MUST accept multiple reference images."
+      "Make the face, photos and poses",
+      "Nano Banana Pro, Higgsfield, Midjourney",
+      "Generate your MASTER here, plus extra angles and poses."
+     ],
+     [
+      "Turn it all into video",
+      "Seedance 2.0, Higgsfield, Kling, Veo",
+      "It MUST accept multiple reference images at once."
      ],
      [
       "Edit, captions and sound",
@@ -299,10 +304,10 @@
     ]
    },
    {
-    "type": "body",
+    "type": "label",
     "y": 0,
     "lines": [
-     "The bigger your scenes get, the more reference images you will use at once \u2014 one for identity, one for hair, one for the outfit, one for each location. Tools like Higgsfield 2.0 are built for this. The full multi-reference master template is in Module 11."
+     "THE PIPELINE \u2014 EVERY EPISODE MOVES LEFT TO RIGHT"
     ]
    },
    {
@@ -311,18 +316,36 @@
     "steps": [
      [
       "1",
-      "PICK ONE PER JOB"
+      "WRITE IT"
      ],
      [
       "2",
-      "LEARN IT ONCE"
+      "SHOOT PHOTOS"
      ],
      [
       "3",
-      "STAY THERE"
+      "MAKE THE VIDEO"
+     ],
+     [
+      "4",
+      "EDIT + POST"
      ]
     ],
-    "caption": "Switching apps every week is how characters drift. Pick your three and commit."
+    "caption": "ChatGPT writes the prompt \u2192 Nano Banana Pro makes the photos \u2192 paste it ALL into Seedance 2.0 with every reference attached \u2192 CapCut finishes it."
+   },
+   {
+    "type": "body",
+    "y": 0,
+    "lines": [
+     "The bigger your scenes get, the more reference images you attach at once \u2014 one for identity, one for hair, one for the outfit, one for each location. The full multi-reference master template is in Module 11."
+    ]
+   },
+   {
+    "type": "bullet",
+    "y": 0,
+    "lines": [
+     "Pick ONE tool per job, learn it once, and stay there \u2014 switching apps every week is how characters drift."
+    ]
    },
    {
     "type": "bullet",
@@ -342,7 +365,7 @@
     "type": "bullet",
     "y": 0,
     "lines": [
-     "Keep the SAME three tools for a whole series."
+     "Keep the SAME tools for a whole series."
     ]
    },
    {
@@ -357,6 +380,7 @@
     "y": 0,
     "title": "MY TOOL KIT",
     "fields": [
+     "My prompt-writing tool:",
      "My photo tool:",
      "My video tool:",
      "My editing app:",
@@ -8266,6 +8290,79 @@
       "Style",
       "The feeling the first three seconds must create"
      ]
+    ]
+   },
+   {
+    "type": "h3",
+    "y": 0,
+    "lines": [
+     "Where each piece goes"
+    ]
+   },
+   {
+    "type": "table",
+    "y": 0,
+    "rows": [
+     [
+      "STEP",
+      "WHAT YOU DO",
+      "WHICH APP"
+     ],
+     [
+      "1",
+      "Fill in this template (save your version)",
+      "ChatGPT"
+     ],
+     [
+      "2",
+      "Generate the MASTER, poses and reference photos",
+      "Nano Banana Pro"
+     ],
+     [
+      "3",
+      "Paste the WHOLE template + attach every reference image",
+      "Seedance 2.0 or Higgsfield"
+     ],
+     [
+      "4",
+      "Trim, captions, sound",
+      "CapCut"
+     ]
+    ]
+   },
+   {
+    "type": "h3",
+    "y": 0,
+    "lines": [
+     "The dialogue budget (this decides if lips sync)"
+    ]
+   },
+   {
+    "type": "bullet",
+    "y": 0,
+    "lines": [
+     "Keep every spoken line 5\u201310 words. Short lines sync; long lines drift."
+    ]
+   },
+   {
+    "type": "bullet",
+    "y": 0,
+    "lines": [
+     "People speak about 2 words per second \u2014 a 15-second clip has room for roughly 25\u201330 spoken words TOTAL, and less if the character is walking or reacting."
+    ]
+   },
+   {
+    "type": "bullet",
+    "y": 0,
+    "lines": [
+     "Heavy talking? Keep the clip 10 seconds or under \u2014 lip-sync quality drops on longer generations."
+    ]
+   },
+   {
+    "type": "bullet",
+    "y": 0,
+    "lines": [
+     "Three or four short lines beat one long speech. Let the action carry the rest."
     ]
    },
    {

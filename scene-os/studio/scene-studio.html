@@ -227,6 +227,7 @@ She turns the phone to reveal the rooftop pool
 "Nah..."
 She sits at the pool edge and dips her feet in
 "I do not think I am ever checking out."'></textarea></label>
+        <div class="note" id="d_wc" aria-live="polite"></div>
         <label>ATMOSPHERE — SETTING <input id="d_atmo" placeholder="e.g. bright Miami summer afternoon, warm ocean breeze"></label>
         <label>ATMOSPHERE — SOUNDS <input id="d_sound" placeholder="e.g. soft ocean waves, occasional seagulls"></label>
         <label>LENGTH IN SECONDS <input id="d_len" value="15" inputmode="numeric"></label>
@@ -353,6 +354,22 @@ ${list(loc2d)}
 
 Reference 6 — Transition Reference (optional)
 Use this image to establish that the ${esc(loc2)} belongs to the same ${tok(loc1)}. The transition from the first location to the second must feel completely seamless and realistic.`;
+  }
+
+  // dialogue budget: ~2 spoken words per second; lines of 5-10 words sync best
+  const quoted = beats.filter(b=>/^["“]/.test(b));
+  const dw = quoted.reduce((n,b)=>n + b.replace(/["“”]/g,'').trim().split(/\s+/).filter(Boolean).length, 0);
+  const secs = parseInt(len.txt,10) || 15;
+  const budget = secs * 2;
+  const longLines = quoted.filter(b=>b.replace(/["“”]/g,'').trim().split(/\s+/).length > 10).length;
+  const wc = $('d_wc');
+  if(wc){
+    let msg = `<b>Dialogue budget:</b> ${dw} spoken words of ~${budget} max for ${secs}s.`;
+    if(dw > budget) msg += ' <b style="color:var(--mag)">Too much talking — cut lines or split the scene into two parts.</b>';
+    if(longLines) msg += ` <b style="color:var(--mag)">${longLines} line${longLines>1?'s':''} over 10 words — long lines drift out of sync.</b>`;
+    if(dw <= budget && !longLines && dw>0) msg += ' <b style="color:var(--lime)">Lips will sync. ✓</b>';
+    if(secs > 10 && dw > 0) msg += ' Heavy talking? Keep clips 10s or under for the cleanest sync.';
+    wc.innerHTML = msg;
   }
 
   const sceneTxt = beats.length ? beats.map(b=>{
