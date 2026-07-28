@@ -6,6 +6,12 @@ on the product page.
 
 **Title:** THE SCENE AI — Creator OS
 
+**Product image:** `marketing/keyart/keyart-square-destyni.jpg` (the Destyni
+key art — square). Use the wide version as the store header/banner.
+
+**Tagline (from the key art — use it everywhere):**
+> ONE CHARACTER. A WHOLE WORLD.
+
 **Card description:**
 > The full system for building an AI character people recognize — him or
 > her — and turning one idea into a content world people follow like a
