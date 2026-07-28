@@ -1,75 +1,81 @@
-# SCENE SOCIETY — Stan Sales Copy
+# SCENE SOCIETY — Skool Community Copy (v2 — $9/mo meta)
 
-## Store card
-**Title:** SCENE Society — The Membership
+Market data (July 2026): the winning communities in this exact niche are
+all $9/mo on Skool — AI Video Bootcamp (25.8k members), AI Creator League
+(940), AI Style Secrets (827). Every one runs the same scarcity play:
+"$9 now, price jumps to $50 for new members later, early members lock $9
+for life." SCENE Society adopts the meta and beats them on deliverables.
 
-**Card description:**
-> New scenes, new looks, new tools — dropped monthly. Your character never
-> runs out of episodes.
+## The setup
+- **Billing: through Skool** ($9/mo join button on the About page — zero
+  friction, and Skool's discovery/leaderboards become a free growth
+  channel). Skool Hobby fee 10% + 30¢ ≈ $7.80 net per member.
+- **The Creator OS stays $97 on Stan.** Inside Skool, the OS classroom
+  section is LOCKED; buyers unlock it by join question / email match
+  (the AI Creator Academy pattern: "What email did you use when
+  purchasing? We can't approve if it doesn't match our records").
+- Community = the funnel's warm middle: $9 members are the OS's best
+  prospects, and OS buyers get the community as their home.
 
-**Price:** $37/mo ~~$57~~ · Yearly: $370/yr (2 months free)
+## Skool About-page copy
 
-**Button:** JOIN THE SOCIETY
+**Name:** SCENE SOCIETY™
 
-**Thumbnail:** `marketing/thumb-scene-society-1080.png`
+**Short line under name:**
+> One character. A whole world. The community where AI creators build
+> characters people follow like a series — him or her.
 
----
+**About copy:**
+> 🎬 SCENE SOCIETY is where creators run THE SCENE AI system together.
+>
+> 🚨 Founding members lock in $9/month for life.
+> ‼️ When we hit [NUMBER] members, new members pay $49/month.
+>
+> If you struggle with:
+> ❌ AI that looks fake or plastic
+> ❌ A character that turns into a different person every post
+> ❌ Never knowing what to post next
+> ...you're in the right place.
+>
+> What's inside:
+> ✅ A NEW DROP every month: 30 ready-to-run scenes + 10 identity-locked
+>    looks (5 for her, 5 for him) + the Master Scene of the Month
+> ✅ Tool notes every month — Seedance, Nano Banana Pro, what changed,
+>    what settings to use
+> ✅ The Character Starter — build your first locked character today, free
+> ✅ Post your episodes, get feedback, get reposted
+> ✅ Monthly member mission — best episode gets broken down live
+> ✅ The full Creator OS classroom (unlocks for OS owners)
+>
+> Everything copy and paste. Written so simply a sixth grader could run
+> it. Built for him AND her, in any niche.
 
-## Product page
+**Join questions (Skool):**
+1. What's your niche? (beauty, fitness, music, real estate, etc.)
+2. Have you bought THE SCENE AI Creator OS? If yes — what email did you
+   use? (unlocks the full OS classroom)
+3. What's your Instagram username?
 
-**Headline:**
-> The system got you started. The Society keeps you posting.
+## Classroom structure
+- 🟢 START HERE (free to all members): The Character Starter + community
+  rules + how drops work
+- 🔒 THE CREATOR OS (unlocks with $97 purchase, email-verified): the 19
+  modules
+- 🟣 MONTHLY DROPS (all members): Drop 001 — The Vacation Heat Drop, ...
 
-**Opening:**
-> The #1 reason creators stall isn't skill — it's running out of ideas.
-> SCENE Society fixes that permanently. Every month, a new drop lands in
-> your inbox: fresh scenes, fresh looks, a new master scene, and the
-> latest tool settings — all in the same copy-paste format as the
-> Creator OS.
+## Scarcity mechanics (the niche meta, used honestly)
+- Launch: "Founding members lock in $9/mo for life."
+- Set a REAL member threshold (e.g. 500) where price rises to $49/mo.
+- Announce the countdown on the IG broadcast channel as it approaches.
 
-**Every month you get:**
-- **30 new scenes** — a full month of episodes if you post daily
-- **10 new looks** — 5 for her, 5 for him, identity-locked
-- **1 Master Scene of the Month** — a complete, filled-out Director's
-  template you can run the day it drops
-- **Tool notes** — what changed in Seedance, Nano Banana Pro and the
-  rest, so your settings never go stale
-- **The community** — post your episodes, get feedback, get reposted
-- **Member missions** — the best episode each month gets broken down in
-  the next drop
+## What beats the competitors at $9
+They sell tutorials. SCENE SOCIETY ships DONE-FOR-YOU drops monthly —
+scenes, looks, a filled master template — plus a system, not videos to
+binge. Culturally accurate by design. Him and her. Nobody else has that.
 
-**The math:**
-> One drop = a month of content, planned for you. That's less than $1.25
-> a day to never sit staring at a blank prompt again.
-
-**Founding member framing (launch only):**
-> Founding members lock in $37/mo for life — the price goes up when the
-> AI-powered SCENE Studio joins the membership.
-
-**Bottom title:**
-> Your world doesn't pause. Neither do the drops.
-
-**CTA button:** JOIN THE SOCIETY
-
-**Fine print:**
-> Billed monthly through Stan. Cancel anytime — you keep every drop you
-> received. Drop 001 is delivered instantly when you join.
-
----
-
-## Notes
-1. **$37 ~~$57~~** keeps the 7-ending rule and undercuts Rachel Adams
-   Lee's $147/mo Social Content Hub while staying above throwaway pricing.
-2. **Yearly = 2 months free** is lifted directly from her store (Social
-   Content Hub Yearly).
-3. **"Founding member" price-lock** creates urgency without fake
-   scarcity, and pre-sells the AI Studio as the future price-raise reason.
-4. Deliver each drop as a Stan digital download to members + post it in
-   the community space. Drop 001 is built and in `products/`.
-5. Community home: a private Skool group on the $9/mo Hobby plan
-   (unlimited members + classroom tab for the OS files and future videos).
-   Billing stays on Stan — members subscribe there and get the Skool
-   invite link in the welcome email, so Skool's 10% transaction fee never
-   applies. Free Instagram Broadcast Channel as the public announcement
-   layer. Upgrade to Skool Pro ($99/mo) only if billing ever moves into
-   Skool or a second admin is needed.
+## Funnel updates
+- OS post-purchase upsell → "Join SCENE SOCIETY — $9/mo founding price"
+  (Skool link)
+- Free Character Starter email sequence → Society invite as email 2
+- Stan can list Society as an external-link card pointing to the Skool
+  page (keeps the store as the single storefront)
