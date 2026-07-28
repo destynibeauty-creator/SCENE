@@ -19,6 +19,7 @@ $1,497–$2,600 and a $147/mo content hub in an adjacent niche.
 | 3 | **THE WORLD BUILDER unlock** — the rest of the OS | **$97** one-time | Skool unlock + Stan |
 | 4 | **CHARACTER, DELIVERED** — DFY product | **$297** | Stan (application-free) |
 | 5 | **THE EPISODE PACK** — DFY service | **$697** | Stan (light application) |
+| 5.5 | **THE PREMIERE** — character + month one + funnel, all DFY | **$997** | Stan |
 | 6 | **THE CREATIVE DIRECTOR** — retainer | **$1,497/mo** (3–5 seats) | Application only |
 
 ---
@@ -90,6 +91,34 @@ same deliverables every time, 5–7 day turnaround:
 > world — four ready-to-run episodes with captions and pinned comments.
 > You just generate and post.
 > Button: DIRECT MY MONTH
+
+## 3.5 · Tier 5.5 — THE PREMIERE (the $997 flagship bundle)
+
+**What it is:** CHARACTER, DELIVERED + THE EPISODE PACK ($994 apart)
+fused into one launch package — plus the pieces neither has alone, so
+the bundle beats buying separately:
+- The character interview → locked MASTER + full DNA batch
+- 5 styled, identity-locked looks (up from 3)
+- 6 complete episodes with captions + pinned comment sets (up from 4)
+- 30-day posting calendar
+- **The keyword funnel, set up**: their keyword chosen, pin templates
+  written, AutoDM reply script — the money layer, done
+- **The World Builder unlock included** ($97 value) + 60 days of SCENE
+  SOCIETY
+- One revision round · priority 14-day delivery
+
+**Stan copy:**
+> **THE PREMIERE — $997 ~~$1,494~~**
+> Your character, born and launched. I build them, style them, direct
+> your first six episodes, and set up the comment funnel that sells —
+> you just generate, post, and reply. Everything my system does, done
+> for you, in 14 days.
+> Button: LAUNCH MY WORLD
+
+**Role in the ladder:** the flagship DFY. It anchors the Episode Pack
+($697 feels light next to it), makes $297 feel like the easy yes, and it
+is the retainer's front door — Premiere clients get first claim on
+Creative Director seats ("keep your director").
 
 ## 4 · Tier 6 — THE CREATIVE DIRECTOR (retainer, $1,497/mo)
 
