@@ -858,6 +858,8 @@ class SceneDoc(BaseDocTemplate):
         # progress strip: PART n / 19 with tick marks — "you are here"
         part = m.get('part', 0)
         total = m.get('total', 19)
+        if not part:
+            return self._cover_bottom(c, m)
         py = 205
         tracked(c, 0, py + 16, f'PART {part:02d} OF {total}', FONTS['P-SB'],
                 8.5, HexColor('#9AA0A8'), 2.4, center_at=cx)
@@ -877,7 +879,11 @@ class SceneDoc(BaseDocTemplate):
             p.close()
             c.drawPath(p, stroke=0, fill=1)
 
+        self._cover_bottom(c, m)
+
+    def _cover_bottom(self, c, m):
         # bottom: official logo lockup (includes tagline)
+        cx = PAGE_W / 2
         img = ImageReader(LOGO)
         iw, ih = img.getSize()
         lw = 250.0
