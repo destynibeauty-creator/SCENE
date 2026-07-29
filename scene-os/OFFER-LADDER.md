@@ -150,9 +150,19 @@ character" is the best OS ad that exists.
 
 ## Credit costs — the DFY unit economics (the part that saves the margin)
 
-Generation costs (Seedance-class, 15s): **4K = $15.95 · 1080p = $6.43**
-per attempt. Real average: 2–3 attempts per finished episode.
-→ Finished episode ≈ **$40 at 4K** vs **$16 at 1080p**.
+Actual plan: **$190/mo = 6,000 credits** (≈3.2¢/credit).
+Per 15s attempt: **1080p = 135 credits ≈ $4.28 · 4K = 335 credits ≈ $10.61**.
+Real average 2–3 attempts per keeper → finished episode ≈
+**$10.70 / 340 credits at 1080p** vs **$26.50 / 840 credits at 4K**.
+
+**Capacity is the real constraint, not cost.** The 6,000-credit pool at
+2.5 attempts/keeper is ~17 finished 1080p episodes a month — shared
+between HER OWN posting and client work:
+- One Premiere ≈ 2,000 credits (a third of the pool)
+- One retainer client ≈ 2,700–3,400 credits/mo (over half the pool)
+- Rule: when DFY bookings need more than half the pool, buy the second
+  credit plan — a single Premiere covers five months of an extra $190
+  plan, so credits should never be the reason to say no.
 
 **Delivery policy (bake into every DFY listing):**
 1. **1080p is the standard deliverable.** Say it with confidence — it's
@@ -171,17 +181,17 @@ per attempt. Real average: 2–3 attempts per finished episode.
    episode internally; a scene that won't converge gets re-directed
    (prompt fix), not brute-forced with credits.
 
-**Margins after credits (1080p standard):**
-| Offer | Price | Credits (est.) | Keeps |
-|---|---|---|---|
-| CHARACTER, DELIVERED (photos + 1 episode) | $297 | ~$25 | ~$270 |
-| EPISODE PACK (4 episodes) | $697 | ~$70 | ~$625 |
-| THE PREMIERE (6 episodes) | $997 | ~$105 | ~$890 |
-| CREATIVE DIRECTOR (8–10 episodes/mo) | $1,497/mo | ~$130–160 | ~$1,340 |
+**Margins after credits (1080p standard, 2.5 attempts avg):**
+| Offer | Price | Credits used | $ cost | Keeps |
+|---|---|---|---|---|
+| CHARACTER, DELIVERED (photos + 1 ep) | $297 | ~400 | ~$13 | ~$284 |
+| EPISODE PACK (4 episodes) | $697 | ~1,350 | ~$43 | ~$654 |
+| THE PREMIERE (6 episodes) | $997 | ~2,025 | ~$64 | ~$933 |
+| CREATIVE DIRECTOR (8–10 eps/mo) | $1,497/mo | ~2,700–3,400 | ~$86–108 | ~$1,390 |
 
-If a client insists on all-4K everything: Premiere +$150, retainer
-+$200–250/mo via the add-on pricing — the cost rides on their invoice,
-never on the margin.
+The **+$25/episode 4K add-on** stays: true 4K cost delta is ~$16/episode
+with retries, so the add-on covers it with margin. All-4K Premiere:
++$150. All-4K retainer: +$200–250/mo.
 
 ## Economics sanity check (per 100 Society members)
 - 100 × $9 ≈ $780/mo net (Skool fee) — the base layer
