@@ -154,6 +154,52 @@ Application questions (Stan form or Skool DM):
    Creative Director application)
 5. Instagram handle + email.
 
+## PHASE 7 — Paid ads to Skool (the scale lever)
+
+**The move:** Skool Pro ($99/mo) + the native Meta pixel plugin (Pixel ID
++ Conversions API access token in Skool's plugin settings — tracks page
+views, membership requests, and PURCHASES). Ads go straight to the Skool
+about page; the $9 join is the conversion event. One link everywhere.
+
+**Why Pro makes sense with ads:** no 10% platform fee (nets ~$8.44 vs
+$7.80 per member/mo — fee break-even alone is ~140 members, which ads
+should pass), plus the extra admin seat. Verify the pixel plugin is
+enabled on your plan during setup.
+
+**Unit economics (be honest with the machine):**
+- Member LTV: ~$25–34 from dues alone (3–4 month median retention)
+  + ~$10–15 expected value per member from World Builder unlocks
+  + the DFY tail → blended LTV ≈ **$40–50 per member**.
+- **Target CPA: under $15 to start; scale anything under $25; kill or
+  fix creative at $30+.** At $15 CPA you're ~3x LTV/CAC.
+
+**Setup:**
+1. Meta Business Manager → create dedicated pixel → paste Pixel ID +
+   access token into Skool's Meta plugin → verify with Pixel Helper.
+2. Campaign: Sales objective → optimize to Purchase (the $9 join).
+   Until the pixel has ~50 purchase events, run one campaign, broad
+   targeting, US + your top countries, Advantage+ placements.
+3. Budget ramp: **$20/day for 2 weeks** → judge on CPA, not clicks →
+   double every 4–5 days while CPA < $25. Don't touch it daily.
+4. Retargeting ad set (week 2+): about-page visitors who didn't join —
+   creative = member wins + founding-price countdown.
+
+**Creative rule (this decides everything):** ads are your best organic
+posts, promoted. Run Phase 5 for two weeks FIRST — the episodes that get
+"is she real??" comments become the ads. Ad formula:
+> The character's clip + comment screenshots → "She's not real. I built
+> her from my phone." → "Learn it inside SCENE SOCIETY — $9 founding
+> price, locks for life."
+
+**Guardrails:**
+- Never promise income in ad copy (account bans + it's not true yet).
+- The founding-price countdown must be REAL (it's also your best urgency
+  creative near the threshold).
+- Watch weekly: CPA · member churn · % of ad-joined members who unlock
+  the World Builder. If churn on ad traffic is far worse than organic,
+  fix the START HERE onboarding before scaling spend.
+- Credits: budget your own posting FIRST (ads need the content engine).
+
 ## WEEKLY SCOREBOARD (check every Friday)
 - Comments containing SCENE → AutoDM sends → email opt-ins (leak check #1)
 - Free → Mini-Pack % · Free → OS % (leak check #2)
