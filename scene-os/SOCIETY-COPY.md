@@ -29,7 +29,7 @@ for life." SCENE Society adopts the meta and beats them on deliverables.
 > 🎬 SCENE SOCIETY is where creators run THE SCENE AI system together.
 >
 > 🚨 Founding members lock in $9/month for life.
-> ‼️ When we hit [NUMBER] members, new members pay $49/month.
+> ‼️ When we hit 600 members, new members pay $49/month.
 >
 > If you struggle with:
 > ❌ AI that looks fake or plastic
@@ -71,7 +71,8 @@ for life." SCENE Society adopts the meta and beats them on deliverables.
 
 ## Scarcity mechanics (the niche meta, used honestly)
 - Launch: "Founding members lock in $9/mo for life."
-- Set a REAL member threshold (e.g. 500) where price rises to $49/mo.
+- The threshold is 600 members (= the first $5K MRR). At 600, new
+  members pay $49/mo. Founding members keep $9 for life.
 - Announce the countdown on the IG broadcast channel as it approaches.
 
 ## What beats the competitors at $9

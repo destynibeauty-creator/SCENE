@@ -1,6 +1,15 @@
 # THE SCENE AI — Full Funnel Setup
 ### The complete machine, end to end. Work top to bottom; every asset named.
 
+> **STACK v2 (current): ALL-SKOOL.** Skool Pro $99/mo + ManyChat free
+> (AutoDM) + **Square payment links** (DFY checkouts) ≈ $99/mo total.
+> Stan is retired once links are migrated — Phase 1 below is kept for
+> reference only. Mini-Pack and Outfit Pack become in-Skool classroom
+> unlocks ($17 / $27) alongside the $97 World Builder.
+> **MEMBER GOAL: 600 = first $5K MRR** (600 × $9 ≈ $5,400 gross,
+> ~$5,060 net on Pro). 600 is also the public founding-price threshold —
+> when the group hits it, new members pay $49/mo.
+
 ```
 IG/TikTok post (proof-first) ──► "Comment SCENE"
         │
@@ -146,7 +155,10 @@ Post formula (proof-first, from the competitor study):
 
 ## PHASE 6 — DFY intake (when it opens)
 
-Application questions (Stan form or Skool DM):
+Checkout: **Square payment links** — one link per package ($297 / $697 /
+$997), created free in Square; retainer = Square recurring invoice.
+Interview booking: Calendly free tier. Application questions (Skool DM
+or Square checkout note):
 1. What's your niche and who's your audience?
 2. Him or her — and do you already have a character?
 3. What are you selling (or planning to sell)?
@@ -202,7 +214,7 @@ posts, promoted. Run Phase 5 for two weeks FIRST — the episodes that get
 
 ## WEEKLY SCOREBOARD (check every Friday)
 - Comments containing SCENE → AutoDM sends → email opt-ins (leak check #1)
-- Free → Mini-Pack % · Free → OS % (leak check #2)
+- Member count vs the 600 goal · $9 joins → World Builder unlock % (leak check #2)
 - Society joins + churn · World Builder unlocks
 - Credit pool used vs remaining (own content vs client work)
 - ★ reviews collected (goal: 5 in week one — give 3–5 copies away for

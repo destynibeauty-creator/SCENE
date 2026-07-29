@@ -13,14 +13,14 @@ $1,497–$2,600 and a $147/mo content hub in an adjacent niche.
 
 | Tier | Offer | Price | Where |
 |---|---|---|---|
-| 0 | The Character Starter (GPT + agent) | FREE | Stan email capture + Skool classroom |
+| 0 | The Character Starter (GPT + agent) | FREE | AutoDM delivery + Skool classroom |
 | 1 | **SCENE SOCIETY™** — community + 6 modules + monthly drops | **$9/mo** (founding, → $49 later) | Skool |
-| 2 | Identity Lock Mini-Pack / Female Outfit Pack | $17 / $27 | Stan (+ order bumps) |
-| 3 | **THE WORLD BUILDER unlock** — the rest of the OS | **$97** one-time | Skool unlock + Stan |
-| 4 | **CHARACTER, DELIVERED** — DFY product | **$297** | Stan (application-free) |
-| 5 | **THE EPISODE PACK** — DFY service | **$697** | Stan (light application) |
-| 5.5 | **THE PREMIERE** — character + month one + funnel, all DFY | **$997** | Stan |
-| 6 | **THE CREATIVE DIRECTOR** — retainer | **$1,497/mo** (3–5 seats) | Application only |
+| 2 | Identity Lock Mini-Pack / Female Outfit Pack | $17 / $27 | Skool classroom unlocks |
+| 3 | **THE WORLD BUILDER unlock** — the rest of the OS | **$97** one-time | Skool unlock |
+| 4 | **CHARACTER, DELIVERED** — DFY product | **$297** | Square link |
+| 5 | **THE EPISODE PACK** — DFY service | **$697** | Square link |
+| 5.5 | **THE PREMIERE** — character + month one + funnel, all DFY | **$997** | Square link |
+| 6 | **THE CREATIVE DIRECTOR** — retainer | **$1,497/mo** (3–5 seats) | Square recurring invoice, application only |
 
 ---
 
