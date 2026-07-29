@@ -148,6 +148,41 @@ renewal cohort two.
 Every DFY delivery doubles as content: "watch me build a client's
 character" is the best OS ad that exists.
 
+## Credit costs — the DFY unit economics (the part that saves the margin)
+
+Generation costs (Seedance-class, 15s): **4K = $15.95 · 1080p = $6.43**
+per attempt. Real average: 2–3 attempts per finished episode.
+→ Finished episode ≈ **$40 at 4K** vs **$16 at 1080p**.
+
+**Delivery policy (bake into every DFY listing):**
+1. **1080p is the standard deliverable.** Say it with confidence — it's
+   true: "Delivered in 1080p — the resolution platforms actually show.
+   Instagram and TikTok compress every upload; 4K masters die in the
+   feed." **Native 4K masters: +$25 per episode** (covers the real cost
+   difference with margin).
+2. **Dialogue-heavy episodes ship at 10 seconds**, not 15 — cheaper per
+   attempt AND better lip-sync (documented Seedance behavior). Longer
+   scenes get split into two clips that cut together (the Continuity
+   System is literally the product for this).
+3. **One revision round included = one regeneration per episode.**
+   Additional revisions: **$25 per episode**. This is the "if it gets
+   wrong" insurance — unlimited revisions is how DFY margins die.
+4. **Attempts are budgeted, not unlimited:** 3 generation attempts per
+   episode internally; a scene that won't converge gets re-directed
+   (prompt fix), not brute-forced with credits.
+
+**Margins after credits (1080p standard):**
+| Offer | Price | Credits (est.) | Keeps |
+|---|---|---|---|
+| CHARACTER, DELIVERED (photos + 1 episode) | $297 | ~$25 | ~$270 |
+| EPISODE PACK (4 episodes) | $697 | ~$70 | ~$625 |
+| THE PREMIERE (6 episodes) | $997 | ~$105 | ~$890 |
+| CREATIVE DIRECTOR (8–10 episodes/mo) | $1,497/mo | ~$130–160 | ~$1,340 |
+
+If a client insists on all-4K everything: Premiere +$150, retainer
++$200–250/mo via the add-on pricing — the cost rides on their invoice,
+never on the margin.
+
 ## Economics sanity check (per 100 Society members)
 - 100 × $9 ≈ $780/mo net (Skool fee) — the base layer
 - ~10–15% take the $97 unlock ≈ $1,000–1,500
