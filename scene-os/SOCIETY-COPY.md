@@ -17,44 +17,72 @@ for life." SCENE Society adopts the meta and beats them on deliverables.
 - Community = the funnel's warm middle: $9 members are the OS's best
   prospects, and OS buyers get the community as their home.
 
-## Skool About-page copy
+## Skool About-page copy (FINAL — paste this)
 
 **Name:** SCENE SOCIETY™
 
-**Short line under name:**
-> One character. A whole world. The community where AI creators build
-> characters people follow like a series — him or her.
+**Short description (discovery line under the name):**
+> One character. A whole world. Build an AI character people follow
+> like a series — him or her. New drop every month. Everything
+> copy + paste.
 
 **About copy:**
-> 🎬 SCENE SOCIETY is where creators run THE SCENE AI system together.
+> 🎬 Welcome to SCENE SOCIETY
 >
-> 🚨 Founding members lock in $9/month for life.
-> ‼️ When we hit 600 members, new members pay $49/month.
+> The community where creators build AI characters people follow like
+> a series — him or her.
 >
-> If you struggle with:
-> ❌ AI that looks fake or plastic
-> ❌ A character that turns into a different person every post
-> ❌ Never knowing what to post next
-> ...you're in the right place.
+> 🚨 Founding members lock in $9/month FOR LIFE.
+> ‼️ At 600 members, new members pay $49/month. Founders keep $9 forever.
 >
-> What's inside:
-> ✅ A NEW DROP every month: 30 ready-to-run scenes + 10 identity-locked
->    looks (5 for her, 5 for him) + the Master Scene of the Month
-> ✅ Tool notes every month — Seedance, Nano Banana Pro, what changed,
->    what settings to use
-> ✅ The Character Starter — build your first locked character today, free
+> Sound familiar?
+> ❌ Your AI content looks fake or plastic
+> ❌ Your character turns into a different person every post
+> ❌ You never know what to post next
+>
+> That's not a talent problem. It's a system problem. This is the system.
+>
+> WHAT YOU GET EVERY MONTH:
+> ✅ A NEW DROP — 30 ready-to-run scenes + 10 identity-locked looks
+>    (5 for her, 5 for him) + the Master Scene of the Month, filled
+>    out and ready to run the day it lands
+> ✅ Tool notes — what changed in Seedance and Nano Banana Pro, and
+>    the exact settings to use
 > ✅ Post your episodes, get feedback, get reposted
-> ✅ Monthly member mission — best episode gets broken down live
-> ✅ The full Creator OS classroom (unlocks for OS owners)
+> ✅ Monthly member mission — the best episode gets broken down live
 >
-> Everything copy and paste. Written so simply a sixth grader could run
-> it. Built for him AND her, in any niche.
+> WHAT'S WAITING IN THE CLASSROOM:
+> 🎬 START HERE — build your first locked character TODAY with the
+>    free Character Starter
+> 🟢 BUILD YOUR CHARACTER — the road map + core modules, included
+>    with your $9
+> 🔒 THE WORLD BUILDER — the full Creator OS: styling systems for him
+>    and her, continuity, camera, realism, the Prompt Vault. Unlocks
+>    right inside the group when you're ready.
+> 💼 WORK WITH ME — don't want to build? I build characters and
+>    direct episodes for you.
+>
+> Everything is copy and paste. Written so simply a sixth grader
+> could run it. Him AND her. Any niche.
+>
+> $9/month. Cancel anytime. Not for you? Tell me in your first 7 days
+> and I'll refund it — no questions asked.
+>
+> One character. A whole world. Enter THE SCENE. 🎬
 
-**Join questions (Skool):**
-1. What's your niche? (beauty, fitness, music, real estate, etc.)
-2. Have you bought THE SCENE AI Creator OS? If yes — what email did you
-   use? (unlocks the full OS classroom)
-3. What's your Instagram username?
+**Join questions (Skool, max 3):**
+1. What's your niche? (beauty, fitness, music, real estate...)
+2. Him or her — which character are you building first?
+3. What's your Instagram @? (so I can see your episodes)
+
+*(If Stan OS buyers exist at migration time, swap Q2 for: "Did you buy
+the Creator OS? If yes, what email did you use?" — email-match unlocks
+the World Builder classroom free.)*
+
+**Settings checklist while you're in there:**
+- Price: $9/month · **free trial OFF** (the refund promise replaces it)
+- Group: private · discovery ON
+- Cover image: `keyart-wide-destyni.jpg` · icon: logo lockup
 
 ## Classroom structure (v2 — see OFFER-LADDER.md)
 - 🟢 START HERE (all members): Character Starter + rules + how drops work
