@@ -17,7 +17,7 @@ for life." THE SCENE AI adopts the meta and beats them on deliverables.
 - Community = the funnel's warm middle: $9 members are the OS's best
   prospects, and OS buyers get the community as their home.
 
-## Skool About-page copy (FINAL — paste this)
+## Skool About-page copy (FINAL — paste this · 988 chars, limit 1,000)
 
 **Name:** THE SCENE AI
 
@@ -26,7 +26,39 @@ for life." THE SCENE AI adopts the meta and beats them on deliverables.
 > like a series — him or her. New drop every month. Everything
 > copy + paste.
 
-**About copy:**
+**About copy (Skool description field — 988/1000 chars):**
+```
+🎬 Build an AI character people follow like a series — him or her.
+
+🚨 Founding members lock in $9/month FOR LIFE
+‼️ At 600 members, new members pay $49/month
+
+What's inside? 🚀
+✅ A new drop every month: 30 ready-to-run scenes
+✅ 10 identity-locked looks — 5 for her, 5 for him
+✅ Master Scene of the Month, filled out & ready
+✅ The Character Starter — build your character TODAY
+✅ Monthly tool notes: Seedance, Nano Banana Pro settings
+✅ Post your episodes, get feedback, get reposted
+🔒 The World Builder classroom: the full Creator OS
+💼 Don't want to build? I build & direct it for you
+
+Everything is copy + paste. So simple a sixth grader could run it. Him AND her. Any niche.
+
+If you're tired of:
+❌ Plastic AI that screams "fake"
+❌ A different face every post
+❌ Never knowing what to post next
+This is the system.
+
+⚡ Start today. Lock in $9/month for life — under $0.30/day
+✅ Cancel anytime
+✅ 7-day money-back guarantee, no questions asked
+
+One character. A whole world. Enter THE SCENE. 🎬
+```
+
+**Long-form version (kept for sales emails / external pages):**
 > 🎬 Welcome to THE SCENE AI
 >
 > The community where creators build AI characters people follow like
