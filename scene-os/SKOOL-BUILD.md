@@ -119,16 +119,31 @@ Cinema level names:
 1 Extra · 2 Day Player · 3 Supporting · 4 Co-Star · 5 Lead ·
 6 Showrunner · 7 Director · 8 Producer · 9 Studio Head
 
-Level rewards (announce on the About of each: a classroom tile or the
-level description - every prize real and affordable from day one):
-- Level 3 (Supporting): the Identity Lock Mini-Pack, free
-- Level 5 (Lead): a personal episode breakdown from Destyni
-- Level 7 (Director): 50% off any DFY package
-- Level 8 (Producer): FREE lifetime membership
-- Level 9 (Studio Head): the full World Builder, free + title
+**Level-reward MODULES (the Bootcamp mechanic): one locked classroom
+tile per level.** Skool points = likes received from other members, so
+this rewards good content, not spam. Their own leaderboard shows 62%
+never reach L2 and ~1% reach L6+ - the big prizes advertise to
+everyone and pay out to almost no one, which is why this is affordable
+at zero revenue.
 
-Section covers for the classroom tiles: `marketing/classroom/`
-(cover-01 through cover-05, 1460x752, one per section).
+| Tile (classroom) | Unlocks at | Inside |
+|---|---|---|
+| DAY PLAYER | Level 2 | 3 bonus hooks + the first-post checklist |
+| SUPPORTING | Level 3 | Identity Lock Mini-Pack PDF, free |
+| CO-STAR | Level 4 | 5 bonus scenes (mini drop) |
+| LEAD | Level 5 | "Post your episode + tag me" - personal breakdown |
+| SHOWRUNNER | Level 6 | 5 bonus looks, his and hers |
+| DIRECTOR | Level 7 | 50% off any DFY package (DM to claim) |
+| PRODUCER | Level 8 | FREE lifetime membership (DM to activate) |
+| STUDIO HEAD | Level 9 | The full World Builder, free |
+
+Set each tile's access to the matching level in Skool's course access
+settings. Content for L2/L4/L6 tiles: pull 3 hooks from the Hook
+Vault, 5 scenes + 5 looks from Drop 001 leftovers or the next drop
+batch - small real tastes, never the $97 core.
+
+Covers for ALL tiles: `marketing/classroom/` - cover-01..05 for the
+5 sections, cover-level-02..09 for the level tiles (1460x752).
 
 ## 7 · SEED CONTENT (15 min - do NOT skip; an empty group kills joins)
 
