@@ -1,14 +1,22 @@
 # THE SCENE AI — Full Funnel Setup
 ### The complete machine, end to end. Work top to bottom; every asset named.
 
-> **STACK v2 (current): ALL-SKOOL.** Skool Pro $99/mo + ManyChat free
-> (AutoDM) + **Square payment links** (DFY checkouts) ≈ $99/mo total.
-> Stan is retired once links are migrated — Phase 1 below is kept for
-> reference only. Mini-Pack and Outfit Pack become in-Skool classroom
-> unlocks ($17 / $27) alongside the $97 World Builder.
-> **MEMBER GOAL: 600 = first $5K MRR** (600 × $9 ≈ $5,400 gross,
-> ~$5,060 net on Pro). 600 is also the public founding-price threshold —
-> when the group hits it, new members pay $49/mo.
+> **STACK v3 (current): $0-CASH LAUNCH.** Skool **Hobby $9/mo** +
+> ManyChat free (AutoDM) + **Square payment links** (DFY checkouts,
+> free) ≈ **$9/mo total out of pocket.** Skool Pro ($99) and paid ads
+> are DEFERRED until the business pays for them itself — see the
+> SELF-FUNDING RULE in Phase 7. Stan is retired once links are
+> migrated — Phase 1 below is kept for reference only. Mini-Pack and
+> Outfit Pack become in-Skool classroom unlocks ($17 / $27) alongside
+> the $97 World Builder.
+> **MEMBER GOAL: 600 = first $5K MRR.** 600 is also the public
+> founding-price threshold — at 600, new members pay $49/mo.
+> **FIRST MILESTONE: 10 founding members, all organic.**
+>
+> **THE MONEY RULE (non-negotiable): personal money never funds this
+> business past the $9/mo Skool bill. Not rent, not savings, not
+> credit. Every upgrade — Pro, ads, extra credits — is bought by
+> revenue the business already earned.**
 
 ```
 IG/TikTok post (proof-first) ──► "Comment SCENE"
@@ -166,7 +174,20 @@ or Square checkout note):
    Creative Director application)
 5. Instagram handle + email.
 
-## PHASE 7 — Paid ads to Skool (the scale lever)
+## PHASE 7 — Paid ads to Skool (the scale lever · SELF-FUNDED ONLY)
+
+> **🔒 THE SELF-FUNDING RULE — this phase stays LOCKED until the
+> business has earned it. It unlocks when EITHER:**
+> - **one DFY sale lands** (a single $297 CHARACTER, DELIVERED funds
+>   Skool Pro + a full month at $7/day), **or**
+> - **total business revenue passes $500** (memberships + unlocks).
+>
+> Until then: $0 on ads, stay on Skool Hobby, and the growth engine is
+> Phase 5 organic — which is already producing 1.5K–5K views per post
+> for free. At a typical $10–15 CPM, one 4,900-view clip is $50–75 of
+> ad reach that costs nothing. Post daily; that IS the ad budget.
+> When the rule unlocks, start at **$7–10/day, not $25** — the ramp
+> math below scales down, the CPA kill rules stay identical.
 
 **The move:** Skool Pro ($99/mo) + the native Meta pixel plugin (Pixel ID
 + Conversions API access token in Skool's plugin settings — tracks page
