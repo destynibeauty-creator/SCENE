@@ -43,7 +43,8 @@ the library can film our ad.
 ## The SCENE AI launch set (5 ads, one per proven angle)
 
 *(All land on the Skool about page. Video = the organic clip named.
-Enable Skool's 7-day free trial so the risk-reversal line is true.)*
+Risk reversal = their proven play: charge $9 day one, 7-day money-back
+guarantee. NO free trial — see the note at the bottom of this file.)*
 
 ### AD 1 — "The receipt" (workhorse slot · cost-truth version of their income ad)
 **Creative:** the 4,939-view walk-through clip.
@@ -69,7 +70,7 @@ Enable Skool's 7-day free trial so the risk-reversal line is true.)*
 > Founding rate: $9/month. That's $0.30/day.
 > When we hit 600 members, new members pay $49. Founders keep $9 for life.
 >
-> Try it 7 days free. Cancel anytime.
+> Not for you? Full refund in your first 7 days. Cancel anytime.
 > 👇 Enter THE SCENE
 > [skool link]
 
@@ -96,7 +97,7 @@ Enable Skool's 7-day free trial so the risk-reversal line is true.)*
 > ✅ Scenes that feel real, not staged
 > ✅ Monthly drops so you never run out of episodes
 >
-> $9/month founding rate. $49 after 600 members. 7 days free.
+> $9/month founding rate. $49 after 600 members. 7-day money-back guarantee.
 > 👇 [skool link]
 
 ### AD 3 — "Didn't join by accident" (social-proof slot — DEPLOY AFTER ~100 MEMBERS)
@@ -113,7 +114,7 @@ Enable Skool's 7-day free trial so the risk-reversal line is true.)*
 >
 > Same skeleton as their winner; update [X] monthly like they do.
 >
-> $9/month, locks for life. $49 after 600. 7 days free.
+> $9/month, locks for life. $49 after 600. 7-day money-back guarantee.
 > 👇 [skool link]
 
 ### AD 4 — "She posts every day" (clone slot · her version of no-camera)
@@ -132,7 +133,7 @@ Enable Skool's 7-day free trial so the risk-reversal line is true.)*
 > ✅ 30 new scenes every month so you never stare at a blank prompt
 > ✅ Everything copy-paste. No editing skills. No film school.
 >
-> $9/month founding. 7 days free. Cancel anytime.
+> $9/month founding. Full refund in your first 7 days if it's not for you.
 > 👇 [skool link]
 
 ### AD 5 — "Copy and paste" (beginner-safety slot · their 'zero knowledge' angle)
@@ -150,7 +151,7 @@ Enable Skool's 7-day free trial so the risk-reversal line is true.)*
 > Step 1: build the face. Step 2: lock it. Step 3: post your first
 > episode. Most members do all three in their first sitting.
 >
-> $9/month founding rate. $0.30/day. 7 days free.
+> $9/month founding rate. $0.30/day. 7-day money-back guarantee.
 > 👇 [skool link]
 
 ---
@@ -176,7 +177,31 @@ Enable Skool's 7-day free trial so the risk-reversal line is true.)*
 ## Compliance lines (non-negotiable for a young ad account)
 - No income numbers, ever. Views/comments/cost-of-scene are the proof.
 - The 600 threshold and $49 price must be real and eventually enforced.
-- "7 days free" only if the Skool trial is actually enabled.
+- The 7-day money-back guarantee is real: any member who asks inside
+  7 days gets the $9 back, no questions. (In practice almost nobody
+  asks — that's why the big players can afford to print it in every ad.)
+
+## Trial vs guarantee (decided: GUARANTEE, no free trial)
+
+AI Video Bootcamp does NOT run a free trial — every ad in the library
+says "7-day money-back guarantee" and charges $9 on day one. At 260
+ads and 25K members, that's a tested decision, and it's better for a
+new group on every axis:
+
+1. **The pixel learns on real money.** Meta optimizes on the purchase
+   event. A $9 charge day one = a real purchase signal; a $0 trial
+   start teaches the pixel to find people who click "free."
+2. **No rip-and-run.** Trial members can download a month of drops and
+   vanish on day 6. Paid members who refund are rare; trialers who
+   never convert are the norm.
+3. **The 600 founding count stays clean.** Every member is a paid
+   member — no asterisks, no "trials don't count" bookkeeping.
+4. **Revenue from member one.** The ads start paying themselves back
+   immediately instead of 7 days later minus trial churn.
+
+At $9, the price IS the trial. The guarantee gives the identical
+risk-reversal sentence in the ad copy with none of the trial's costs.
+Skool setting: leave free trial OFF.
 
 ---
 
