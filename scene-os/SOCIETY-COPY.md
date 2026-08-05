@@ -17,7 +17,7 @@ for life." THE SCENE AI adopts the meta and beats them on deliverables.
 - Community = the funnel's warm middle: $9 members are the OS's best
   prospects, and OS buyers get the community as their home.
 
-## Skool About-page copy (FINAL — paste this · 995 chars, limit 1,000)
+## Skool About-page copy (FINAL — paste this · 982 chars, limit 1,000)
 
 **Name:** THE SCENE AI
 
@@ -26,12 +26,12 @@ for life." THE SCENE AI adopts the meta and beats them on deliverables.
 > like a series - him or her. New drop every month. Everything
 > copy + paste.
 
-**About copy (Skool description field — 995/1000 chars):**
+**About copy (Skool description field — 982/1000 chars):**
 ```
 🎬 Build an AI character people follow like a series - him or her. No camera. No face on camera. All from your phone.
 
 🚨 Founding members lock in $9/month FOR LIFE
-‼️ At 600 members, new members pay $49/month
+‼️ The price goes up as we grow
 
 What's inside? 🎬
 ✅ A new drop every month: 30 ready-to-run scenes
@@ -43,7 +43,7 @@ What's inside? 🎬
 🔒 World Builder classroom: the full Creator OS
 🎥 Don't want to build? I build & direct it for you
 
-Real skin texture. Baby hairs. Culturally accurate styling for him AND her. All copy + paste - simple enough for a sixth grader.
+Real skin texture. Baby hairs. Culturally accurate styling for him AND her. All copy + paste - simple enough for a fifth grader.
 
 Tired of:
 ❌ Plastic AI that screams "fake"
@@ -101,6 +101,17 @@ One character. A whole world. Enter THE SCENE. 🎬
 > and I'll refund it - no questions asked.
 >
 > One character. A whole world. Enter THE SCENE. 🎬
+
+
+**Stage-gate on the threshold line (learned from Bootcamp's own arc):**
+they did NOT run "once we hit X, price jumps" copy when small - that
+line appeared once the member count was already impressive. Same here:
+- **0-400 members:** "The price goes up as we grow" (unfalsifiable,
+  still urgent). No specific number on the page or in ads.
+- **~400 members:** swap in "At 600 members, new members pay $49/month"
+  on the About page AND in ad copy. Announce the countdown on the IG
+  broadcast channel. At that size it reads as a real countdown.
+- **At 600:** actually raise it. The claim has to come true.
 
 **Join questions (Skool, max 3):**
 1. What's your niche? (beauty, fitness, music, real estate...)

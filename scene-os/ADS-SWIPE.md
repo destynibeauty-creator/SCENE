@@ -67,8 +67,8 @@ guarantee. NO free trial — see the note at the bottom of this file.)*
 > ✅ New tool settings every month (Seedance, Nano Banana Pro)
 > ✅ Post your episodes, get feedback, get reposted
 >
-> Founding rate: $9/month. That's $0.30/day.
-> When we hit 600 members, new members pay $49. Founders keep $9 for life.
+> Founding rate: $9/month. That's $0.30/day. Locks for life.
+> The price goes up as we grow - founders keep $9 forever.
 >
 > Not for you? Full refund in your first 7 days. Cancel anytime.
 > 👇 Enter THE SCENE
@@ -97,7 +97,7 @@ guarantee. NO free trial — see the note at the bottom of this file.)*
 > ✅ Scenes that feel real, not staged
 > ✅ Monthly drops so you never run out of episodes
 >
-> $9/month founding rate. $49 after 600 members. 7-day money-back guarantee.
+> $9/month founding rate, locks for life. 7-day money-back guarantee.
 > 👇 [skool link]
 
 ### AD 3 — "Didn't join by accident" (social-proof slot — DEPLOY AFTER ~100 MEMBERS)
@@ -114,7 +114,7 @@ guarantee. NO free trial — see the note at the bottom of this file.)*
 >
 > Same skeleton as their winner; update [X] monthly like they do.
 >
-> $9/month, locks for life. $49 after 600. 7-day money-back guarantee.
+> $9/month, locks for life. 7-day money-back guarantee.
 > 👇 [skool link]
 
 ### AD 4 — "She posts every day" (clone slot · her version of no-camera)
@@ -160,7 +160,7 @@ guarantee. NO free trial — see the note at the bottom of this file.)*
 - "One Character. A Whole World. $9"
 - "Build Your AI Character Today | Just $9"
 - "Go From Random AI Pics To A World People Follow"
-- "Founding Price $9 — $49 After 600 Members"
+- "Founding Price $9 - Locks For Life" (swap to "$49 After 600 Members" at ~400)
 - Button copy: ENTER THE SCENE · Join Only for $9
 
 ## Later plays stolen from their library
@@ -176,7 +176,8 @@ guarantee. NO free trial — see the note at the bottom of this file.)*
 
 ## Compliance lines (non-negotiable for a young ad account)
 - No income numbers, ever. Views/comments/cost-of-scene are the proof.
-- The 600 threshold and $49 price must be real and eventually enforced.
+- The 600/$49 line is STAGE-GATED: not in copy until ~400 members
+  (see SOCIETY-COPY.md). Once it appears, it must come true at 600.
 - The 7-day money-back guarantee is real: any member who asks inside
   7 days gets the $9 back, no questions. (In practice almost nobody
   asks — that's why the big players can afford to print it in every ad.)
