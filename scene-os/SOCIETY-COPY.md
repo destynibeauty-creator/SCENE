@@ -23,21 +23,21 @@ for life." THE SCENE AI adopts the meta and beats them on deliverables.
 
 **Short description (discovery line under the name):**
 > One character. A whole world. Build an AI character people follow
-> like a series — him or her. New drop every month. Everything
+> like a series - him or her. New drop every month. Everything
 > copy + paste.
 
 **About copy (Skool description field — 988/1000 chars):**
 ```
-🎬 Build an AI character people follow like a series — him or her.
+🎬 Build an AI character people follow like a series - him or her.
 
 🚨 Founding members lock in $9/month FOR LIFE
 ‼️ At 600 members, new members pay $49/month
 
 What's inside? 🚀
 ✅ A new drop every month: 30 ready-to-run scenes
-✅ 10 identity-locked looks — 5 for her, 5 for him
+✅ 10 identity-locked looks - 5 for her, 5 for him
 ✅ Master Scene of the Month, filled out & ready
-✅ The Character Starter — build your character TODAY
+✅ The Character Starter - build your character TODAY
 ✅ Monthly tool notes: Seedance, Nano Banana Pro settings
 ✅ Post your episodes, get feedback, get reposted
 🔒 The World Builder classroom: the full Creator OS
@@ -51,7 +51,7 @@ If you're tired of:
 ❌ Never knowing what to post next
 This is the system.
 
-⚡ Start today. Lock in $9/month for life — under $0.30/day
+⚡ Start today. Lock in $9/month for life - under $0.30/day
 ✅ Cancel anytime
 ✅ 7-day money-back guarantee, no questions asked
 
@@ -62,7 +62,7 @@ One character. A whole world. Enter THE SCENE. 🎬
 > 🎬 Welcome to THE SCENE AI
 >
 > The community where creators build AI characters people follow like
-> a series — him or her.
+> a series - him or her.
 >
 > 🚨 Founding members lock in $9/month FOR LIFE.
 > ‼️ At 600 members, new members pay $49/month. Founders keep $9 forever.
@@ -75,30 +75,30 @@ One character. A whole world. Enter THE SCENE. 🎬
 > That's not a talent problem. It's a system problem. This is the system.
 >
 > WHAT YOU GET EVERY MONTH:
-> ✅ A NEW DROP — 30 ready-to-run scenes + 10 identity-locked looks
+> ✅ A NEW DROP - 30 ready-to-run scenes + 10 identity-locked looks
 >    (5 for her, 5 for him) + the Master Scene of the Month, filled
 >    out and ready to run the day it lands
-> ✅ Tool notes — what changed in Seedance and Nano Banana Pro, and
+> ✅ Tool notes - what changed in Seedance and Nano Banana Pro, and
 >    the exact settings to use
 > ✅ Post your episodes, get feedback, get reposted
-> ✅ Monthly member mission — the best episode gets broken down live
+> ✅ Monthly member mission - the best episode gets broken down live
 >
 > WHAT'S WAITING IN THE CLASSROOM:
-> 🎬 START HERE — build your first locked character TODAY with the
+> 🎬 START HERE - build your first locked character TODAY with the
 >    free Character Starter
-> 🟢 BUILD YOUR CHARACTER — the road map + core modules, included
+> 🟢 BUILD YOUR CHARACTER - the road map + core modules, included
 >    with your $9
-> 🔒 THE WORLD BUILDER — the full Creator OS: styling systems for him
+> 🔒 THE WORLD BUILDER - the full Creator OS: styling systems for him
 >    and her, continuity, camera, realism, the Prompt Vault. Unlocks
 >    right inside the group when you're ready.
-> 💼 WORK WITH ME — don't want to build? I build characters and
+> 💼 WORK WITH ME - don't want to build? I build characters and
 >    direct episodes for you.
 >
 > Everything is copy and paste. Written so simply a sixth grader
 > could run it. Him AND her. Any niche.
 >
 > $9/month. Cancel anytime. Not for you? Tell me in your first 7 days
-> and I'll refund it — no questions asked.
+> and I'll refund it - no questions asked.
 >
 > One character. A whole world. Enter THE SCENE. 🎬
 

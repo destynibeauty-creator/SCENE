@@ -53,17 +53,17 @@ guarantee. NO free trial — see the note at the bottom of this file.)*
 > The penthouse. The rooftop pool. The beach club. The server bringing
 > the drink over. Her.
 >
-> None of it is real. I built all of it from my phone — no camera, no
+> None of it is real. I built all of it from my phone - no camera, no
 > flights, no crew. The reason it doesn't look like plastic AI garbage
 > is not the app. Everyone has the app. It's that I built and locked
 > the character FIRST, and direct every scene like an episode.
 >
 > That's the whole system inside THE SCENE AI:
 >
-> ✅ Build a character people recognize — him or her
+> ✅ Build a character people recognize - him or her
 > ✅ Lock the face so it never changes between posts
 > ✅ 30 ready-to-run scenes dropped every month
-> ✅ Copy-paste everything — written so simply a sixth grader could run it
+> ✅ Copy-paste everything - written so simply a sixth grader could run it
 > ✅ New tool settings every month (Seedance, Nano Banana Pro)
 > ✅ Post your episodes, get feedback, get reposted
 >
@@ -79,11 +79,11 @@ guarantee. NO free trial — see the note at the bottom of this file.)*
 > 99% of AI content looks fake.
 >
 > Too smooth. Too perfect. A different face in every post. You can
-> spot it from a mile away — and so can everyone else, which is why
+> spot it from a mile away - and so can everyone else, which is why
 > nobody follows those pages.
 >
 > Now look at her. Real skin texture. Baby hairs. The same face, the
-> same body, the same person — in the restaurant, at the pool, on the
+> same body, the same person - in the restaurant, at the pool, on the
 > jet. People argue in my comments about whether she's real.
 >
 > That's not an app setting. It's a system: the identity lock, the
@@ -92,7 +92,7 @@ guarantee. NO free trial — see the note at the bottom of this file.)*
 >
 > THE SCENE AI teaches the whole thing, in order, copy-paste:
 >
-> ✅ The locked MASTER — one face, forever
+> ✅ The locked MASTER - one face, forever
 > ✅ Outfits and hair that stay consistent (his AND hers, culturally accurate)
 > ✅ Scenes that feel real, not staged
 > ✅ Monthly drops so you never run out of episodes
@@ -104,8 +104,8 @@ guarantee. NO free trial — see the note at the bottom of this file.)*
 **Creative:** grid-scroll screen recording of the character's feed.
 > [X]+ creators didn't join THE SCENE AI by accident.
 >
-> They watched one character rack up views in the comments — arguing
-> about whether she's real — and wanted the system behind her.
+> They watched one character rack up views in the comments - arguing
+> about whether she's real - and wanted the system behind her.
 >
 > While you were scrolling, members inside were:
 > → Locking characters that stay the same face in every scene
@@ -122,11 +122,11 @@ guarantee. NO free trial — see the note at the bottom of this file.)*
 > She posts every day. She doesn't exist.
 >
 > No camera. No outfits bought. No flights booked. No showing my face
-> when I don't feel like it. The character does the posting — I do the
+> when I don't feel like it. The character does the posting - I do the
 > directing, from my phone, in minutes.
 >
 > If you've ever wanted a content page that doesn't need your face,
-> your wardrobe, or your location — this is exactly that. Build them
+> your wardrobe, or your location - this is exactly that. Build them
 > once. Direct them forever. Him or her.
 >
 > ✅ Your character, built and locked this week
@@ -144,7 +144,7 @@ guarantee. NO free trial — see the note at the bottom of this file.)*
 > prompt. The scenes. The camera settings. The captions. Even the
 > comment you pin under your first post.
 >
-> It's written so simply a sixth grader could run it — on purpose.
+> It's written so simply a sixth grader could run it - on purpose.
 > Because the people winning with AI content right now aren't
 > engineers. They're the ones who followed a system in order.
 >
