@@ -133,7 +133,7 @@ at zero revenue.
 | CO-STAR | Level 4 | 5 bonus scenes (mini drop) |
 | LEAD | Level 5 | "Post your episode + tag me" - personal breakdown |
 | SHOWRUNNER | Level 6 | 5 bonus looks, his and hers |
-| DIRECTOR | Level 7 | 50% off any DFY package (DM to claim) |
+| DIRECTOR | Level 7 | 50% off any ONE-TIME DFY package - $297/$697/$997, never the retainer, one use (DM to claim) |
 | PRODUCER | Level 8 | FREE lifetime membership (DM to activate) |
 | STUDIO HEAD | Level 9 | The full World Builder, free |
 
