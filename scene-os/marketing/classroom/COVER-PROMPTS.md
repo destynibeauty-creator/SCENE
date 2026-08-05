@@ -1,8 +1,16 @@
 # Classroom cover prompts - Nano Banana Pro (or any image tool)
 
-Rules that make them clean like AVB's:
-- NO TEXT in the image. Skool renders the title below the tile - baked-in
-  text is what crops on mobile. The art carries the vibe only.
+Rules that make them clean like AVB's (they use BOTH modes):
+- Small text and edge text is what breaks on mobile. Either NO text
+  (Option A) or ONE huge centered label (Option B, the AVB "Phase 1"
+  look) - giant-and-centered survives every crop.
+- Option B add-on line (insert after the subject, swap words + color):
+  'The words "START HERE" in huge bold brushed-chrome metallic capital
+  letters with a subtle electric cyan neon rim, centered in the middle
+  of the frame, filling the middle third. No other text anywhere.'
+- Recommended: Option B for the 5 sections, Option A (pure emblem) for
+  the 9 rank badges. SPELL-CHECK every generation - regenerate any
+  flubbed letters.
 - ONE centered subject with breathing room on all sides. A centered
   subject survives every crop.
 - Paste the same STYLE BLOCK into every prompt so all tiles match.
