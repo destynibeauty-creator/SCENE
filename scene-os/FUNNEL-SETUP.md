@@ -193,10 +193,16 @@ or Square checkout note):
 > money; NOT borrowed, NOT credit, NOT anyone's rent):** the revenue
 > gate can be replaced by this PROOF checklist. Every box, no skips:
 > - [ ] Group live with copy, classroom split, join questions set
-> - [ ] 10+ paying founding members, all from organic
-> - [ ] 2+ weeks of daily posting; ONE clip clearly outperforming
->       (that clip becomes the first ad creative)
+> - [ ] First 10 paying members — from the EXISTING audience and DMs
+>       (this is a page-conversion test, not an audience-building era;
+>       announce to current followers + AutoDM, done in days not weeks)
+> - [ ] One proven ad creative — **already satisfied**: the account's
+>       existing winners (the 4,939-view walk clip, the 4,089 bottle
+>       scene) ARE the creative test, pre-run for free
 > - [ ] Skool Pro upgraded + pixel verified firing (Pixel Helper)
+>
+> With the creative box pre-checked, the realistic gap from "group
+> live" to "first ad running" is about ONE WEEK, not a month.
 >
 > **Deploy as runway, not a bang: $99 Pro + $15/day × ~60 days.**
 > Sixty days of learning beats thirty at double speed — a young pixel
