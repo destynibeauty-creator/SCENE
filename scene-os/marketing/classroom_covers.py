@@ -52,54 +52,54 @@ def cover(fname, accent, ghost, kick, title_lines, desc, chip, lock=False):
     img = Image.new('RGB', (W, H), (0, 0, 0))
     d = ImageDraw.Draw(img)
     # ghost glyph, off-center left
-    gf = font('Poppins-ExtraBold', 470 if len(ghost) <= 2 else 300)
+    gf = font('Poppins-ExtraBold', 430 if len(ghost) <= 2 else 280)
     dark = tuple(int(c * 0.13) for c in accent)
-    d.text((60, H // 2 - gf.size // 2 - 40), ghost, font=gf, fill=dark)
-    bracket(d, 40, 40, 64, 'tl', MAG)
-    bracket(d, W - 40, H - 40, 64, 'br', CYAN)
+    d.text((80, H // 2 - gf.size // 2 - 30), ghost, font=gf, fill=dark)
+    # brackets pulled inside the mobile-safe zone
+    bracket(d, 84, 84, 54, 'tl', MAG)
+    bracket(d, W - 84, H - 84, 54, 'br', CYAN)
     # logo
     logo = Image.open(LOGO)
-    lw = 260
+    lw = 225
     lh = int(lw * logo.height / logo.width)
-    img.paste(logo.resize((lw, lh), Image.LANCZOS), (W // 2 - lw // 2, 44))
+    img.paste(logo.resize((lw, lh), Image.LANCZOS), (W // 2 - lw // 2, 62))
     d = ImageDraw.Draw(img)
-    y = 44 + lh + 42
+    y = 62 + lh + 30
     # kicker
-    kf = font('Poppins-SemiBold', 30)
+    kf = font('Poppins-SemiBold', 27)
     spaced = '  '.join(kick)
     kw = d.textlength(spaced, kf)
     d.text((W // 2 - kw / 2, y), spaced, font=kf, fill=accent)
-    y += 66
+    y += 56
     # title
-    size = 108 if max(len(t) for t in title_lines) <= 16 else 84
+    size = 100 if max(len(t) for t in title_lines) <= 16 else 78
     tf = font('Poppins-ExtraBold', size)
     for ln in title_lines:
         metal_text(img, W // 2, y, ln, tf)
-        y += int(tf.size * 1.14)
+        y += int(tf.size * 1.1)
     d = ImageDraw.Draw(img)
-    y += 16
-    gradient_bar(d, W // 2, y, 340, 8, accent, MAG if accent != MAG else CYAN)
-    y += 46
-    df = font('Poppins-Regular', 36)
+    y += 12
+    gradient_bar(d, W // 2, y, 320, 7, accent, MAG if accent != MAG else CYAN)
+    y += 38
+    df = font('Poppins-Regular', 33)
     dw = d.textlength(desc, df)
     d.text((W // 2 - dw / 2, y), desc, font=df, fill=(226, 228, 231))
-    # chip bottom
-    cf = font('Poppins-Bold', 34)
-    pad = 44 if lock else 0
-    cw = d.textlength(chip, cf) + 76 + pad
-    cy = H - 108
-    d.rounded_rectangle([W // 2 - cw / 2, cy, W // 2 + cw / 2, cy + 66],
-                        33, outline=accent, width=3)
-    tx = W // 2 - (cw - 76) / 2 + pad
+    # chip fully inside the safe zone
+    cf = font('Poppins-Bold', 31)
+    pad = 40 if lock else 0
+    cw = d.textlength(chip, cf) + 70 + pad
+    cy = H - 156
+    d.rounded_rectangle([W // 2 - cw / 2, cy, W // 2 + cw / 2, cy + 60],
+                        30, outline=accent, width=3)
+    tx = W // 2 - (cw - 70) / 2 + pad
     if lock:
-        lx, ly = tx - 44, cy + 20
-        d.arc([lx + 4, ly - 12, lx + 24, ly + 10], 180, 360, fill=accent, width=4)
-        d.rounded_rectangle([lx, ly + 4, lx + 28, ly + 28], 5, fill=accent)
-    d.text((tx, cy + 12), chip, font=cf, fill=accent)
+        lx, ly = tx - 40, cy + 17
+        d.arc([lx + 3, ly - 10, lx + 21, ly + 9], 180, 360, fill=accent, width=4)
+        d.rounded_rectangle([lx, ly + 3, lx + 25, ly + 25], 4, fill=accent)
+    d.text((tx, cy + 11), chip, font=cf, fill=accent)
     os.makedirs(OUT, exist_ok=True)
     img.save(os.path.join(OUT, fname))
     print('wrote', fname)
-
 
 cover('cover-01-start-here.png', LIME, '01', 'SECTION ONE',
       ['START HERE'], 'Your first locked character, today. Free.',
