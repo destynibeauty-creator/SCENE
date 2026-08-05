@@ -209,12 +209,17 @@ Skool setting: leave free trial OFF.
 
 **The member count in their copy is a public scaling timeline.**
 Across ad generations the count runs 4,000 → 8,000 → 15,000 →
-17,900 → 18,000 → 21,100 → 24,000 → 25,000. The early-count ads
-still visible started in late spring — meaning ads took them from
-~4K to ~25K members in roughly TEN WEEKS. That's the proof that
-this exact play (long-copy ads → $9 Skool page) scales in this
-niche in 2026. Our 600 goal is 2.4% of what they added in one
-quarter.
+17,900 → 18,000 → 21,100 → 24,000 → 25,000, with the visible ads
+starting late May. **Corrected timeline (firsthand member intel):
+community launched ~Oct 2025, and ads were running by April 2026
+at the latest — Destyni joined in April FROM an ad.** The library
+only shows active ads; the pre-May generations were killed and are
+invisible. So: they went to paid acquisition early in the
+community's life, and ads carried them to ~25K members within
+~10 months of launch. That's the proof that long-copy ads → $9
+Skool page scales in this niche in 2026 — and that starting ads
+early works here WHEN the destination page, pixel, and bankroll
+exist. Our 600 goal is a fraction of one of their months.
 
 **Persona ads are a real lever, not a footnote.** The full dump
 shows dedicated variants for realtors, Amazon FBA sellers, ecom
