@@ -151,30 +151,29 @@ the World Builder classroom free.)*
 - 🎥 WORK WITH ME (all members can see): CHARACTER, DELIVERED ($297) ·
   THE EPISODE PACK ($697) · THE CREATIVE DIRECTOR (application)
 
-## Scarcity mechanics: THE PRICE LADDER (real rolling scarcity)
+## Pricing decision (FINAL): $9 flat until 50k members
 
-Skool grandfathers existing members on a price change - new joins pay
-the new rate, existing members keep theirs. So the "number that keeps
-moving" is REAL: the price actually rises at each public threshold.
+The price does NOT rise on a member threshold. $9 is the permanent
+volume play (Bootcamp runs the same at 26k+). Revenue depth comes from
+ascension, not dues: the $97 World Builder unlock, the $17/$27 packs,
+and the DFY ladder ($297 / $697 / $997 / $1,497 retainer).
 
-| Members | New-member price | Page line |
-|---|---|---|
-| 1-50 | $9 (founders, locked for life) | "Founding members lock in $9/month FOR LIFE" |
-| 51-150 | $14 | "At 150 members the price rises again" |
-| 151-400 | $19 | same, next number |
-| 401-600 | $29 | NOW deploy: "At 600, new members pay $49/month" |
-| 600+ | $49 | the claim comes true, on schedule |
+Urgency rules under flat pricing:
+- The About page line stays vague and true: "The price goes up as we
+  grow." No specific member-number thresholds on the page or in ads -
+  a specific number that never comes true is a screenshot waiting to
+  burn trust with the exact people who buy DFY.
+- Join-now pressure comes from: the $9 price itself, the 7-day
+  money-back guarantee, the FOUNDING 20 pinned-post perk (first 20
+  members get a personal episode breakdown), and drop FOMO (each
+  month's drop is the event).
+- The real countdown gets ONE deployment: when a genuine raise is
+  actually scheduled (e.g. approaching 50k or a deliberate strategy
+  change). Never cheapened before that.
 
-Rules:
-- Every bump is a content event: announce it before (countdown on the
-  broadcast channel) and after (real receipts: "14 people got in at
-  $14 in the last 3 hours").
-- Each cohort's lock is forever - "I got in at $9" is founder status.
-- If a step visibly stalls joins, delay announcing the next one. The
-  ladder is controlled, never fake: a number on the page must always
-  come true.
-- Ad copy at deploy time uses the CURRENT rung's price and the NEXT
-  rung's threshold - update both together.
+Economics check at flat $9: 600 members ≈ $4,680/mo net on Hobby
+(~$7.80/member) or ≈ $5,060 on Pro. The $5K MRR goal survives without
+any price rise.
 
 ## What beats the competitors at $9
 They sell tutorials. THE SCENE AI ships DONE-FOR-YOU drops monthly —
