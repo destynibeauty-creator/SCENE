@@ -177,3 +177,39 @@ Enable Skool's 7-day free trial so the risk-reversal line is true.)*
 - No income numbers, ever. Views/comments/cost-of-scene are the proof.
 - The 600 threshold and $49 price must be real and eventually enforced.
 - "7 days free" only if the Skool trial is actually enabled.
+
+---
+
+## What the FULL library dump added (~260 results, Aug 2026)
+
+**The member count in their copy is a public scaling timeline.**
+Across ad generations the count runs 4,000 → 8,000 → 15,000 →
+17,900 → 18,000 → 21,100 → 24,000 → 25,000. The early-count ads
+still visible started in late spring — meaning ads took them from
+~4K to ~25K members in roughly TEN WEEKS. That's the proof that
+this exact play (long-copy ads → $9 Skool page) scales in this
+niche in 2026. Our 600 goal is 2.4% of what they added in one
+quarter.
+
+**Persona ads are a real lever, not a footnote.** The full dump
+shows dedicated variants for realtors, Amazon FBA sellers, ecom
+brand owners, and a "busy mum" ad — same skeleton, the opening
+line and examples swapped for one audience. The "busy mum" one
+matters most for us: it targets a PERSON, not an industry.
+SCENE persona variants to write when the general set finds its
+CPA: "the 9-to-5er who can't post daily," "the creator who's
+tired of showing their face," "the beauty pro," "the new mom
+building from the couch." One winning skeleton, four openings.
+
+**The $55/yr ad is warm-traffic only.** It never runs cold — it
+exists to convert people already paying $9. Copy that sequencing:
+no annual offer until there are monthly members to upgrade.
+
+**The meta-proof ad is their longest game.** "This ad cost $0 to
+make" doubles as a demo and runs forever because it can't age.
+Ours is stronger: "this ad cost $4 in credits, starring a woman
+who doesn't exist" — queue it as ad #6 once one creative is proven.
+
+**Duplicates are strategy, not sloppiness.** The same winning copy
+runs in 4–6 simultaneous ad IDs (different creatives/placements).
+When one of our five ads wins, duplicate IT — don't write new copy.
