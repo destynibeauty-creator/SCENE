@@ -36,7 +36,7 @@ Email sequence (5 emails, below)
         🔒 WORLD BUILDER unlock ($97 in-app)
                 │
                 ▼
-        💼 DFY: Character Delivered $297 → Episode Pack $697
+        🎥 DFY: Character Delivered $297 → Episode Pack $697
            → THE PREMIERE $997 → Creative Director $1,497/mo
 ```
 
@@ -75,7 +75,7 @@ Classroom:
 - 🔒 THE WORLD BUILDER — the rest, unlock **$97 in-app** (+ free manual
   unlock for verified Stan buyers via email-match join question)
 - 🟣 MONTHLY DROPS — Drop 001: The Vacation Heat Drop
-- 💼 WORK WITH ME — the DFY tiers (visible to all members)
+- 🎥 WORK WITH ME — the DFY tiers (visible to all members)
 
 Founding banner: *"Founding members lock in $9/mo for life. At 500
 members, new members pay $49/mo."* (Real threshold. Announce once.)

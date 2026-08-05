@@ -33,7 +33,7 @@ for life." THE SCENE AI adopts the meta and beats them on deliverables.
 🚨 Founding members lock in $9/month FOR LIFE
 ‼️ At 600 members, new members pay $49/month
 
-What's inside? 🚀
+What's inside? 🎬
 ✅ A new drop every month: 30 ready-to-run scenes
 ✅ 10 identity-locked looks - 5 for her, 5 for him
 ✅ Master Scene of the Month, filled out & ready
@@ -41,7 +41,7 @@ What's inside? 🚀
 ✅ Monthly tool notes: Seedance, Nano Banana Pro settings
 ✅ Post your episodes, get feedback, get reposted
 🔒 The World Builder classroom: the full Creator OS
-💼 Don't want to build? I build & direct it for you
+🎥 Don't want to build? I build & direct it for you
 
 Everything is copy + paste. So simple a sixth grader could run it. Him AND her. Any niche.
 
@@ -91,7 +91,7 @@ One character. A whole world. Enter THE SCENE. 🎬
 > 🔒 THE WORLD BUILDER - the full Creator OS: styling systems for him
 >    and her, continuity, camera, realism, the Prompt Vault. Unlocks
 >    right inside the group when you're ready.
-> 💼 WORK WITH ME - don't want to build? I build characters and
+> 🎥 WORK WITH ME - don't want to build? I build characters and
 >    direct episodes for you.
 >
 > Everything is copy and paste. Written so simply a sixth grader
@@ -116,6 +116,17 @@ the World Builder classroom free.)*
 - Group: private · discovery ON
 - Cover image: `keyart-wide-destyni.jpg` · icon: logo lockup
 
+
+## Emoji brand kit (use these, nothing else, in public copy)
+- **Brand marks:** 🎬 (the clapper = the logo of the copy) · 🎥 (work
+  with me / directing) · 🔒 (the Identity Lock - it's a product name)
+  · ⚡ (energy - it's acid-lime) · 🌍 (a whole world) · 👀 ("is she
+  real" moments in captions/DMs)
+- **Sales structure (the Skool dialect, functional):** ✅ ❌ 🚨 ‼️ 👇
+- **Banned:** 🚀 💰 🤑 💸 (guru-core) · 💼 (corporate) · gendered
+  decoration (💅 ✨ 💖 as default flavor - the brand is him AND her;
+  fine inside her-specific scene prompts, not in brand copy)
+
 ## Classroom structure (v2 — see OFFER-LADDER.md)
 - 🟢 START HERE (all members): Character Starter + rules + how drops work
 - 🟢 BUILD YOUR CHARACTER (all members — the 6 included modules):
@@ -126,7 +137,7 @@ the World Builder classroom free.)*
   Vault + Director's Template, Viral Story, Caption + Comment vaults,
   SCENE Files, SCENE Studio
 - 🟣 MONTHLY DROPS (all members): Drop 001 — The Vacation Heat Drop, ...
-- 💼 WORK WITH ME (all members can see): CHARACTER, DELIVERED ($297) ·
+- 🎥 WORK WITH ME (all members can see): CHARACTER, DELIVERED ($297) ·
   THE EPISODE PACK ($697) · THE CREATIVE DIRECTOR (application)
 
 ## Scarcity mechanics (the niche meta, used honestly)
