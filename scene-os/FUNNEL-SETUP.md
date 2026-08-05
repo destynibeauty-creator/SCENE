@@ -188,6 +188,22 @@ or Square checkout note):
 > ad reach that costs nothing. Post daily; that IS the ad budget.
 > When the rule unlocks, start at **$7–10/day, not $25** — the ramp
 > math below scales down, the CPA kill rules stay identical.
+>
+> **ALTERNATE UNLOCK — the war chest (~$1,000 of genuinely spare
+> money; NOT borrowed, NOT credit, NOT anyone's rent):** the revenue
+> gate can be replaced by this PROOF checklist. Every box, no skips:
+> - [ ] Group live with copy, classroom split, join questions set
+> - [ ] 10+ paying founding members, all from organic
+> - [ ] 2+ weeks of daily posting; ONE clip clearly outperforming
+>       (that clip becomes the first ad creative)
+> - [ ] Skool Pro upgraded + pixel verified firing (Pixel Helper)
+>
+> **Deploy as runway, not a bang: $99 Pro + $15/day × ~60 days.**
+> Sixty days of learning beats thirty at double speed — a young pixel
+> needs time more than volume. Kill rules unchanged: scale under $25
+> CPA, kill creative at $30. If the checklist isn't done, the money
+> isn't spent — a war chest in reserve loses nothing; deployed into
+> an unproven page, it's gone in three weeks with no lesson.
 
 **The move:** Skool Pro ($99/mo) + the native Meta pixel plugin (Pixel ID
 + Conversions API access token in Skool's plugin settings — tracks page
