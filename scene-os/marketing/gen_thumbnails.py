@@ -124,9 +124,9 @@ card('thumb-mini-pack-1080.png', CYAN, '20', 'THE MINI-PACK',
      ['IDENTITY LOCK', 'MINI-PACK'], 'Same face. Every photo. 20 prompts.',
      'HIM + HER  ·  COPY-PASTE')
 
-# 3 · SCENE Society membership
+# 3 · THE SCENE AI membership
 card('thumb-scene-society-1080.png', MAG, 'S', 'THE MEMBERSHIP',
-     ['SCENE', 'SOCIETY'], 'New scenes, packs and drops every month.',
+     ['THE SCENE', 'AI'], 'New scenes, packs and drops every month.',
      'MONTHLY  ·  COMMUNITY  ·  FIRST ACCESS')
 
 # 4 · SCENE Studio bonus

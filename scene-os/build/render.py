@@ -804,7 +804,7 @@ class SceneDoc(BaseDocTemplate):
         c.setFont(FONTS['P'], 11.5)
         c.drawCentredString(cx, ay - 132,
                             'New scene drops, packs and tools land every month inside')
-        tracked(c, 0, ay - 158, 'SCENE SOCIETY', FONTS['P-B'], 13,
+        tracked(c, 0, ay - 158, 'THE SCENE AI', FONTS['P-B'], 13,
                 m['accent'], 3.4, center_at=cx)
         gradient_bar(c, cx - 80, ay - 176, 160, 3)
         wordmark(c, cx, 96, 0.8)

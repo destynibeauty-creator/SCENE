@@ -29,8 +29,8 @@ Email sequence (5 emails, below)
    ├─► $17 Identity Lock Mini-Pack ──bump──► $27 Outfit Pack
    │           └─post-purchase──► $97 Creator OS
    ├─► $97 CREATOR OS  ──bump──► $17 Mini-Pack
-   │           └─post-purchase──► SCENE SOCIETY ($9/mo Skool)
-   └─► SCENE SOCIETY $9/mo (Skool)
+   │           └─post-purchase──► THE SCENE AI ($9/mo Skool)
+   └─► THE SCENE AI $9/mo (Skool)
                 │  6 modules + drops + community
                 ▼
         🔒 WORLD BUILDER unlock ($97 in-app)
@@ -54,18 +54,18 @@ priciest. All copy in ALL-PRODUCT-COPY.md.
 | 2 | Identity Lock Mini-Pack | $17 ~~$37~~ | `The-SCENE-AI_Identity-Lock-Mini-Pack.pdf` | `thumb-mini-pack-1080.png` |
 | 3 | Female Outfit Pack™ | $27 ~~$47~~ | `The-Female-Outfit-Pack.pdf` | `thumb-outfit-pack-1080.png` |
 | 4 | THE SCENE AI Creator OS | $97 ~~$497~~ | 19-PDF zip | `keyart-square-destyni.jpg` |
-| 5 | SCENE SOCIETY™ | external link | → Skool page | `thumb-scene-society-1080.png` |
+| 5 | THE SCENE AI | external link | → Skool page | `thumb-scene-society-1080.png` |
 
 **Wiring:**
 - Mini-Pack checkout → order bump: Outfit Pack $27
 - OS checkout → order bump: Mini-Pack $17
-- OS post-purchase → upsell: SCENE SOCIETY (Skool link)
+- OS post-purchase → upsell: THE SCENE AI (Skool link)
 - OS skipped → downsell: Outfit Pack $27
 - Payment plan on OS if your Stan tier has it: 3 × $37
 
 ## PHASE 2 — Skool (45 minutes)
 
-Group: **SCENE SOCIETY™**, private, **$9/mo billed in Skool** (Hobby
+Group: **THE SCENE AI**, private, **$9/mo billed in Skool** (Hobby
 plan). About copy + join questions: SOCIETY-COPY.md.
 
 Classroom:
@@ -125,10 +125,10 @@ members, new members pay $49/mo."* (Real threshold. Announce once.)
 > → ENTER THE SCENE: [OS link]
 
 **E4 — day 6** · Subject: **$9. every month, I hand you the content.**
-> Every month inside SCENE SOCIETY: 30 new scenes, 10 new looks, one
+> Every month inside THE SCENE AI: 30 new scenes, 10 new looks, one
 > master scene filled out and ready, plus the community running the
 > same system you are. Founding members lock $9/month for life.
-> → JOIN THE SOCIETY: [Skool link]
+> → ENTER THE SCENE: [Skool link]
 
 **Post-purchase, Mini-Pack** · Subject: **your scenes + what's next**
 > Files attached. Run scene 01 today.
@@ -139,7 +139,7 @@ members, new members pay $49/mo."* (Real threshold. Announce once.)
 > Your Creator OS files: [zip link]
 > Start with the Start Here Road Map — it tells you exactly where to go.
 > Two more things you now own:
-> 1) SCENE SOCIETY unlock: join at [Skool link], answer the join
+> 1) THE SCENE AI unlock: join at [Skool link], answer the join
 >    questions with THIS email address, and the full World Builder
 >    classroom opens free.
 > 2) SCENE Studio — the tool that writes your prompts: [Studio link]
@@ -243,7 +243,7 @@ enabled on your plan during setup.
 posts, promoted. Run Phase 5 for two weeks FIRST — the episodes that get
 "is she real??" comments become the ads. Ad formula:
 > The character's clip + comment screenshots → "She's not real. I built
-> her from my phone." → "Learn it inside SCENE SOCIETY — $9 founding
+> her from my phone." → "Learn it inside THE SCENE AI — $9 founding
 > price, locks for life."
 
 **Guardrails:**
@@ -258,7 +258,7 @@ posts, promoted. Run Phase 5 for two weeks FIRST — the episodes that get
 ## WEEKLY SCOREBOARD (check every Friday)
 - Comments containing SCENE → AutoDM sends → email opt-ins (leak check #1)
 - Member count vs the 600 goal · $9 joins → World Builder unlock % (leak check #2)
-- Society joins + churn · World Builder unlocks
+- Member joins + churn · World Builder unlocks
 - Credit pool used vs remaining (own content vs client work)
 - ★ reviews collected (goal: 5 in week one — give 3–5 copies away for
   honest reviews on day one)

@@ -1,10 +1,10 @@
-# SCENE SOCIETY — Skool Community Copy (v2 — $9/mo meta)
+# THE SCENE AI — Skool Community Copy (v2 — $9/mo meta)
 
 Market data (July 2026): the winning communities in this exact niche are
 all $9/mo on Skool — AI Video Bootcamp (25.8k members), AI Creator League
 (940), AI Style Secrets (827). Every one runs the same scarcity play:
 "$9 now, price jumps to $50 for new members later, early members lock $9
-for life." SCENE Society adopts the meta and beats them on deliverables.
+for life." THE SCENE AI adopts the meta and beats them on deliverables.
 
 ## The setup
 - **Billing: through Skool** ($9/mo join button on the About page — zero
@@ -19,7 +19,7 @@ for life." SCENE Society adopts the meta and beats them on deliverables.
 
 ## Skool About-page copy (FINAL — paste this)
 
-**Name:** SCENE SOCIETY™
+**Name:** THE SCENE AI
 
 **Short description (discovery line under the name):**
 > One character. A whole world. Build an AI character people follow
@@ -27,7 +27,7 @@ for life." SCENE Society adopts the meta and beats them on deliverables.
 > copy + paste.
 
 **About copy:**
-> 🎬 Welcome to SCENE SOCIETY
+> 🎬 Welcome to THE SCENE AI
 >
 > The community where creators build AI characters people follow like
 > a series — him or her.
@@ -104,7 +104,7 @@ the World Builder classroom free.)*
 - Announce the countdown on the IG broadcast channel as it approaches.
 
 ## What beats the competitors at $9
-They sell tutorials. SCENE SOCIETY ships DONE-FOR-YOU drops monthly —
+They sell tutorials. THE SCENE AI ships DONE-FOR-YOU drops monthly —
 scenes, looks, a filled master template — plus a system, not videos to
 binge. Culturally accurate by design. Him and her. Nobody else has that.
 
@@ -112,14 +112,14 @@ binge. Culturally accurate by design. Him and her. Nobody else has that.
 
 Bootcamp's ONLY upsell is an $89 one-time "Golden Ticket" (lifetime
 community access, in-app Apple Pay). That's a cashflow grab with nothing
-behind it. SCENE SOCIETY's in-Skool ascension is a real product:
+behind it. THE SCENE AI's in-Skool ascension is a real product:
 
 1. **Primary in-Skool unlock: THE CREATOR OS — $97 one-time.** The locked
    classroom section IS the golden ticket. Same price as Stan (no channel
    conflict); Skool's ~10% fee is the cost of the frictionless in-app
    Apple Pay checkout. Every $9 member sees the locked section daily.
 2. **Held in reserve: "Founders' Lifetime" — $89 one-time** for lifetime
-   Society access (the exact Bootcamp play). Run it as a limited flash
+   community access (the exact Bootcamp play). Run it as a limited flash
    offer in a slow month, never as a standing offer — a standing lifetime
    pass caps recurring revenue from your best members.
 
@@ -128,8 +128,8 @@ Room. Bootcamp's members can only ever give them $9/mo or $89 once.
 SCENE members have somewhere to go.
 
 ## Funnel updates
-- OS post-purchase upsell → "Join SCENE SOCIETY — $9/mo founding price"
+- OS post-purchase upsell → "Join THE SCENE AI — $9/mo founding price"
   (Skool link)
-- Free Character Starter email sequence → Society invite as email 2
-- Stan can list Society as an external-link card pointing to the Skool
+- Free Character Starter email sequence → community invite as email 2
+- Stan can list the community as an external-link card pointing to the Skool
   page (keeps the store as the single storefront)

@@ -14,7 +14,7 @@ $1,497–$2,600 and a $147/mo content hub in an adjacent niche.
 | Tier | Offer | Price | Where |
 |---|---|---|---|
 | 0 | The Character Starter (GPT + agent) | FREE | AutoDM delivery + Skool classroom |
-| 1 | **SCENE SOCIETY™** — community + 6 modules + monthly drops | **$9/mo** (founding, → $49 later) | Skool |
+| 1 | **THE SCENE AI** — community + 6 modules + monthly drops | **$9/mo** (founding, → $49 later) | Skool |
 | 2 | Identity Lock Mini-Pack / Female Outfit Pack | $17 / $27 | Skool classroom unlocks |
 | 3 | **THE WORLD BUILDER unlock** — the rest of the OS | **$97** one-time | Skool unlock |
 | 4 | **CHARACTER, DELIVERED** — DFY product | **$297** | Square link |
@@ -66,7 +66,7 @@ same deliverables every time, 5–7 day turnaround:
 - 1 complete first-episode master prompt (Director's template, filled)
 - The Character Bible: a branded PDF with their prompt, their rule,
   their roadmap
-- 30 days of SCENE SOCIETY included
+- 30 days of THE SCENE AI included
 
 **Stan copy:**
 > **CHARACTER, DELIVERED — $297 ~~$497~~**
@@ -103,8 +103,8 @@ the bundle beats buying separately:
 - 30-day posting calendar
 - **The keyword funnel, set up**: their keyword chosen, pin templates
   written, AutoDM reply script — the money layer, done
-- **The World Builder unlock included** ($97 value) + 60 days of SCENE
-  SOCIETY
+- **The World Builder unlock included** ($97 value) + 60 days of THE SCENE
+  AI membership
 - One revision round · priority 14-day delivery
 
 **Stan copy:**
@@ -193,7 +193,7 @@ The **+$25/episode 4K add-on** stays: true 4K cost delta is ~$16/episode
 with retries, so the add-on covers it with margin. All-4K Premiere:
 +$150. All-4K retainer: +$200–250/mo.
 
-## Economics sanity check (per 100 Society members)
+## Economics sanity check (per 100 members)
 - 100 × $9 ≈ $780/mo net (Skool fee) — the base layer
 - ~10–15% take the $97 unlock ≈ $1,000–1,500
 - 2–3 CHARACTER, DELIVERED/mo ≈ $600–900

@@ -210,14 +210,14 @@ downloadable products, all sales are final.
 > "Add 20 ready-to-run photo scenes with the lock built in. One-click
 > add: $17."
 
-**Upsell after purchase:** SCENE Society (copy below).
+**Upsell after purchase:** THE SCENE AI (copy below).
 **Downsell if they skip the OS ($27):** The Female Outfit Pack —
 > "Not ready for the full system? Start with the closet — 210 complete
 > looks for your female character, $27."
 
 ---
 
-# 5 · $9/mo — SCENE SOCIETY™ (Skool community — see SOCIETY-COPY.md)
+# 5 · $9/mo — THE SCENE AI (Skool community — see SOCIETY-COPY.md)
 
 **Where it lives:** Skool, billed through Skool at **$9/mo** (founding
 price, locks for life; rises to $49/mo at a real member threshold). This
@@ -225,18 +225,18 @@ matches the niche meta — the top communities in this exact lane (AI Video
 Bootcamp 25.8k, AI Creator League, AI Style Secrets) are all $9 on Skool.
 
 **On Stan:** list as an external-link card pointing to the Skool page.
-> Card: "SCENE SOCIETY™ — the $9/mo community. A new drop every month:
+> Card: "THE SCENE AI — the $9/mo community. A new drop every month:
 > 30 scenes, 10 looks, the Master Scene. Founding price locks for life."
-> Button: JOIN THE SOCIETY
+> Button: ENTER THE SCENE
 **Thumbnail:** `thumb-scene-society-1080.png`
 **Inside Skool:** Drop 001 in the classroom; full OS classroom unlocks
 for verified $97 buyers (email-match join question).
 
 **Product page:**
-> The system got you started. The Society keeps you posting.
+> The system got you started. The community keeps you posting.
 >
 > The #1 reason creators stall isn't skill — it's running out of ideas.
-> SCENE Society fixes that permanently. Every month, a new drop lands in
+> THE SCENE AI fixes that permanently. Every month, a new drop lands in
 > your inbox: fresh scenes, fresh looks, a new master scene, and the
 > latest tool settings — all in the same copy-paste format as the
 > Creator OS.
@@ -257,7 +257,7 @@ for verified $97 buyers (email-match join question).
 > the AI-powered SCENE Studio joins the membership.
 
 **Bottom title:** Your world doesn't pause. Neither do the drops.
-**CTA button:** JOIN THE SOCIETY
+**CTA button:** ENTER THE SCENE
 **Fine print:** Billed monthly through Stan. Cancel anytime — you keep
 every drop you received. Drop 001 + your community invite are delivered
 instantly when you join.
@@ -288,7 +288,7 @@ IG post/reel → "Comment SCENE"
             checkout bump: Outfit Pack $27
             → post-purchase upsell: Creator OS $97
                checkout bump: Mini-Pack or Outfit Pack
-               → post-purchase upsell: SCENE Society $37/mo
+               → post-purchase upsell: THE SCENE AI $37/mo
                → skipped the OS? downsell: Outfit Pack $27
 ```
 

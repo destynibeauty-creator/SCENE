@@ -108,7 +108,7 @@
 ### The ladder (60–90 days, from the Lyttle playbook)
 8. **Free live challenge** ("Build her in a weekend") → fills the list.
 9. **SCENE AI core** → the 19-module system (current product).
-10. **SCENE Society membership** → monthly drops: new scene libraries,
+10. **THE SCENE AI membership** → monthly drops: new scene libraries,
     seasonal outfit/hair packs, new hook vaults, community. Recurring
     revenue; your catalog instinct already fits this.
 11. **Premium tier** → 1:1 creative direction or a small-group

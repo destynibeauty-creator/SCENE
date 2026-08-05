@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""SCENE Society — Drop 001 (August 2026): The Vacation Heat Drop."""
+"""THE SCENE AI — Drop 001 (August 2026): The Vacation Heat Drop."""
 import os
 
 from reportlab.lib.colors import HexColor
@@ -164,7 +164,7 @@ The first three seconds must create immediate curiosity through a natural reveal
 
 def pages():
     cover = {'page': 1, 'doc': 'DROP 001', 'elems': [
-        E('label', 'SCENE SOCIETY · DROP 001 · AUGUST'),
+        E('label', 'THE SCENE AI · DROP 001 · AUGUST'),
         E('h1', 'THE VACATION HEAT DROP'),
         E('sub', '30 new scenes, 10 new looks, and this month’s master '
                  'scene — members only.'),
@@ -223,7 +223,7 @@ def main():
     render.register_fonts()
     os.makedirs(OUT, exist_ok=True)
     S = make_styles(HexColor(MAG))
-    meta = {'kicker': 'SCENE SOCIETY · DROP 001', 'title': 'THE VACATION HEAT DROP',
+    meta = {'kicker': 'THE SCENE AI · DROP 001', 'title': 'THE VACATION HEAT DROP',
             'sub': '30 new scenes, 10 new looks, and this month’s master '
                    'scene — members only.',
             'tagline': 'CREATE THE CHARACTER. DIRECT THE SCENE. BUILD THE WORLD.',
@@ -235,8 +235,8 @@ def main():
     ps = pages()
     meta['cover_page'] = ps[0]
     build_doc('DROP 001', ps, meta,
-              os.path.join(OUT, 'SCENE-Society_Drop-001_The-Vacation-Heat-Drop.pdf'), S)
-    print('wrote SCENE-Society_Drop-001_The-Vacation-Heat-Drop.pdf')
+              os.path.join(OUT, 'THE-SCENE-AI_Drop-001_The-Vacation-Heat-Drop.pdf'), S)
+    print('wrote THE-SCENE-AI_Drop-001_The-Vacation-Heat-Drop.pdf')
 
 
 if __name__ == '__main__':

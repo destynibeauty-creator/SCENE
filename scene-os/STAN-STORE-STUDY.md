@@ -88,7 +88,7 @@ their buyers look for after the prompt pack disappoints.
    carry risk reversal).
    - **Order bump at checkout ($17–27):** the Mini-Pack or Outfit Pack
      (whichever they don't own).
-   - **Upsell after purchase ($37/mo):** **SCENE Society** — monthly scene
+   - **Upsell after purchase ($37/mo):** **THE SCENE AI** — monthly scene
      libraries, seasonal outfit/hair drops, community. (This is the
      recurring-revenue layer Jenna/Abigail-tier stores live on.)
    - **Downsell if they skip the core ($27):** Outfit Pack or Mini-Pack —
