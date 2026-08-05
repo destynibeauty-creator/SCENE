@@ -113,11 +113,22 @@ One text page, three blocks (full copy in OFFER-LADDER.md):
 > **THE PREMIERE - $997.** Character + 6 episodes + the funnel, done. 14 days. [Square link]
 > DM me BUILT to start.
 
-## 6 · GAMIFICATION (2 min)
+## 6 · GAMIFICATION (5 min - this is Bootcamp's retention engine, copied honestly)
 
-Defaults are fine. Optional flavor for level names, cinema-themed:
+Cinema level names:
 1 Extra · 2 Day Player · 3 Supporting · 4 Co-Star · 5 Lead ·
 6 Showrunner · 7 Director · 8 Producer · 9 Studio Head
+
+Level rewards (announce on the About of each: a classroom tile or the
+level description - every prize real and affordable from day one):
+- Level 3 (Supporting): the Identity Lock Mini-Pack, free
+- Level 5 (Lead): a personal episode breakdown from Destyni
+- Level 7 (Director): 50% off any DFY package
+- Level 8 (Producer): FREE lifetime membership
+- Level 9 (Studio Head): the full World Builder, free + title
+
+Section covers for the classroom tiles: `marketing/classroom/`
+(cover-01 through cover-05, 1460x752, one per section).
 
 ## 7 · SEED CONTENT (15 min - do NOT skip; an empty group kills joins)
 
