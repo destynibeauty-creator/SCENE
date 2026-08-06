@@ -56,12 +56,19 @@ within 24h).
 
 ## 5 · CLASSROOM (40 min - the big block)
 
+### CLASSROOM VOICE RULE (applies to every lesson)
+Members already paid. Inside open sections, "free"/"get"/"offer" do
+not exist - that's funnel language and the funnel is over. Address
+the member as the director they're becoming: cast, direct, shoot,
+wrap, credit. Selling language lives ONLY behind the two closed
+doors: the 🔒 World Builder tile and 🎥 WORK WITH ME.
+
 ### Section 1 · 🎬 START HERE — access: ALL MEMBERS
 | Item | File / content |
 |---|---|
-| Welcome to THE SCENE | 2-min phone video: who you are, what to do first (post it unpolished - authenticity converts) |
-| Your first character, free | `The-SCENE-AI_FREE_The-Character-Starter.pdf` |
-| How drops work | Text: "New drop on the 1st of every month: 30 scenes, 10 looks, one Master Scene. Run one scene a day - the drop is a full month of content." |
+| Day one on set | 2-min phone video, unpolished: "You're the director now. This is your studio. Here's your first 24 hours." |
+| Cast your lead | `The-SCENE-AI_FREE_The-Character-Starter.pdf` + "Every world starts with one face. Build yours today - him or her." |
+| Your drop schedule | Text: "On the 1st of every month a new drop lands: 30 scenes, 10 looks, one Master Scene ready to shoot. One scene a day is a month of episodes." |
 
 ### Section 2 · 🟢 BUILD YOUR CHARACTER — access: ALL MEMBERS
 | Item | File |
@@ -128,7 +135,7 @@ at zero revenue.
 
 | Tile (classroom) | Unlocks at | Inside |
 |---|---|---|
-| DAY PLAYER | Level 2 | 3 bonus hooks + the first-post checklist |
+| DAY PLAYER | Level 2 | "Your first credit" - 3 hooks + the first-post checklist |
 | SUPPORTING | Level 3 | Identity Lock Mini-Pack PDF, free |
 | CO-STAR | Level 4 | 5 bonus scenes (mini drop) |
 | LEAD | Level 5 | "Post your episode + tag me" - personal breakdown |
