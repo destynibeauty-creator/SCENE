@@ -259,12 +259,14 @@ class SystemMap(Flowable):
         ('8', 'CAMERA + REALISM', 'Shoot it real. Catch anything fake.', 'MODULES 09 + 10'),
         ('9', 'VAULT + STORY', 'Build the final prompt. Grow the world.', 'MODULES 11 + 12'),
     ]
-    ROW, GAP = 46, 13
+    ROW, GAP = 44, 11
+    DIVIDER_AFTER = 4   # steps 1-4 = the $9 shelf; WORLD BUILDER below
+    DIV_H = 24
 
     def wrap(self, aw, ah):
         self.width = AVAIL
         self.height = 30 + len(self.STEPS) * self.ROW + \
-            (len(self.STEPS) - 1) * self.GAP + 40
+            (len(self.STEPS) - 1) * self.GAP + 40 + self.DIV_H
         return self.width, self.height
 
     def _chip(self, c, cx, cy, text, bg):
@@ -283,7 +285,17 @@ class SystemMap(Flowable):
         self._chip(c, self.width / 2, y + 6, 'START HERE', LIME)
         for i, (n, name, desc, ref) in enumerate(self.STEPS):
             col = cycle[i % 3]
-            top = y - i * (self.ROW + self.GAP)
+            extra = self.DIV_H if i >= self.DIVIDER_AFTER else 0
+            top = y - i * (self.ROW + self.GAP) - extra
+            if i == self.DIVIDER_AFTER:
+                dy = top + self.GAP + 9
+                c.setStrokeColor(HexColor('#3A2230'))
+                c.setLineWidth(1)
+                c.line(bx, dy, bx + bw * 0.22, dy)
+                c.line(bx + bw * 0.78, dy, bx + bw, dy)
+                tracked(c, 0, dy - 3, 'THE WORLD BUILDER OPENS HERE',
+                        FONTS['P-B'], 8.5, MAGENTA, 2.2,
+                        center_at=bx + bw / 2)
             # connector arrow from previous
             if i > 0:
                 ay = top + self.GAP
@@ -1150,6 +1162,9 @@ def main():
         if idx + 1 < len(docs):
             nd = docs[idx + 1][0]
             nxt = (nd, titles[nd])
+        if docid == 'MODULE 04':
+            # the $9 shelf ends here - the next door has a name
+            nxt = ('THE WORLD BUILDER', 'Modules 05 to 12')
         meta = {'kicker': docid, 'title': docid, 'sub': '', 'tagline': '',
                 'accent': HexColor(accent_hex), 'accent_hex': accent_hex,
                 'part': idx + 1, 'total': len(docs), 'next': nxt,

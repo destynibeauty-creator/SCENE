@@ -115,6 +115,13 @@
     "y": 514.842
    },
    {
+    "type": "h3",
+    "y": 0,
+    "lines": [
+     "ON YOUR $9 SHELF — run these first"
+    ]
+   },
+   {
     "type": "bullet",
     "y": 542.21,
     "lines": [
@@ -140,6 +147,27 @@
     "y": 542.21,
     "lines": [
      "Module 04 — The SCENE Library"
+    ]
+   },
+   {
+    "type": "bullet",
+    "y": 542.21,
+    "lines": [
+     "Bonus 01 — Hook Vault"
+    ]
+   },
+   {
+    "type": "bullet",
+    "y": 0,
+    "lines": [
+     "Monthly drops — 30 new scenes + 10 new looks, every month"
+    ]
+   },
+   {
+    "type": "h3",
+    "y": 0,
+    "lines": [
+     "INSIDE THE WORLD BUILDER — your next unlock"
     ]
    },
    {
@@ -216,13 +244,6 @@
     "type": "bullet",
     "y": 542.21,
     "lines": [
-     "Bonus 01 — Hook Vault"
-    ]
-   },
-   {
-    "type": "bullet",
-    "y": 542.21,
-    "lines": [
      "Bonus 02 — Caption Vault"
     ]
    },
@@ -238,6 +259,20 @@
     "y": 542.21,
     "lines": [
      "Bonus 04 — The SCENE Files"
+    ]
+   },
+   {
+    "type": "bullet",
+    "y": 0,
+    "lines": [
+     "SCENE Studio — the tool that writes your prompts for you"
+    ]
+   },
+   {
+    "type": "body",
+    "y": 0,
+    "lines": [
+     "Finish your shelf first. When your character is born and posting, THE WORLD BUILDER opens everything else — the styling systems, the camera, the realism pass, the vault."
     ]
    }
   ],
@@ -340,7 +375,7 @@
     "type": "body",
     "y": 0,
     "lines": [
-     "The bigger your scenes get, the more reference images you attach at once — one for identity, one for hair, one for the outfit, one for each location. The full multi-reference master template is in Module 11."
+     "The bigger your scenes get, the more reference images you attach at once — one for identity, one for hair, one for the outfit, one for each location. The full multi-reference master template is in Module 11: The Prompt Vault, inside THE WORLD BUILDER."
     ]
    },
    {
@@ -395,7 +430,7 @@
     "type": "body",
     "y": 0,
     "lines": [
-     "Write your six picks - that is your kit, locked. Already posted your intro? Drop your kit as a comment under it. Your keyword is the one word people will comment to get what you make. Keep it short, easy to spell, and yours."
+     "Write your six picks - that is your kit, locked. Post your kit in the community so the crew knows your setup. Your keyword is the one word people will comment to get what you make. Keep it short, easy to spell, and yours."
     ]
    }
   ]
@@ -1244,7 +1279,7 @@
    {
     "type": "body",
     "lines": [
-     "Open Module 03: The SCENE Method. When you reach NOW BUILD, come back to the Reference Blueprint and the Prompt Vault.",
+     "Open Module 03: The SCENE Method. When you reach NOW BUILD, come back to the Reference Blueprint and the Prompt Vault (both inside THE WORLD BUILDER).",
      "Use them to put together your episode prompt."
     ],
     "y": 313.01
@@ -1521,35 +1556,35 @@
    {
     "type": "bullet",
     "lines": [
-     "Open Module 07: Reference Blueprint"
+     "Open Module 07: Reference Blueprint (in THE WORLD BUILDER)"
     ],
     "y": 282.46000000000004
    },
    {
     "type": "bullet",
     "lines": [
-     "Open Module 09: Camera Bible"
+     "Open Module 09: Camera Bible (in THE WORLD BUILDER)"
     ],
     "y": 294.91
    },
    {
     "type": "bullet",
     "lines": [
-     "Use Module 08: Continuity System for Part 2+"
+     "Use Module 08: Continuity System for Part 2+ (in THE WORLD BUILDER)"
     ],
     "y": 307.36
    },
    {
     "type": "bullet",
     "lines": [
-     "Run Module 10: Realism Check before generating"
+     "Run Module 10: Realism Check before generating (in THE WORLD BUILDER)"
     ],
     "y": 319.81
    },
    {
     "type": "bullet",
     "lines": [
-     "Use the detailed scene templates in Module 11: Prompt Vault"
+     "Use the detailed scene templates in Module 11: Prompt Vault (in THE WORLD BUILDER)"
     ],
     "y": 332.26
    },
@@ -1726,7 +1761,7 @@
    {
     "type": "body",
     "lines": [
-     "Use Module 07 to map your references. Use Module 09 to pick camera language. Use Module 11 to build the final prompt."
+     "Use Module 07 to map your references. Use Module 09 to pick camera language. Use Module 11 to build the final prompt. All of these live inside THE WORLD BUILDER — unlock it when you are ready to go deeper."
     ],
     "y": 186.61
    }
