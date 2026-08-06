@@ -90,14 +90,13 @@ Description shown on the locked tile:
 > realism pass. The Prompt Vault. When your character is born and
 > you're ready to build the world - this opens. $97 once.
 
-Contents (13 items):
-`03` Womens Outfit Pack · `04` Mens Outfit Pack · `05` Womens Hair Pack ·
-`06` Mens Hair + Grooming · `07` Reference Blueprint · `09` Continuity
-System · `10` Camera Bible · `11` Realism Check · `13` Prompt Vault ·
-`14` Viral Story Blueprint · `16` Caption Vault · `17` Comment
-Blueprint · `18` The SCENE Files — plus **SCENE Studio**
-(`scene-studio.html`, attach the file; note: "download, open in your
-browser, works offline").
+Contents (20 items - the COMPLETE OS in road-map order, files `00`
+through `18` + `scene-studio.html`): Road Map · 01 · 02 · 03A/03B ·
+04A/04B · 05 · 06 · 07 · 08 · 09 · 10 · 11 · 12 · Hook Vault ·
+Caption Vault · Comment Blueprint · SCENE Files · SCENE Studio.
+Four of these also sit on the $9 shelf - intentional: a $97 buyer
+opens ONE door and owns everything, in order, no gaps. Locked tiles
+hide their lesson list, so $9 members never see the duplication.
 
 **Unlock mechanics - use whichever your plan shows:**
 - **Path A (if course pricing is available):** set section access to

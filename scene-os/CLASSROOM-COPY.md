@@ -117,24 +117,33 @@ Tile description (this one SELLS - it's a closed door):
 > you're ready to build the world - this opens. $97 once.
 > [Square link if Path B]
 
-Inside (owner voice - they paid):
+Inside (owner voice - they paid): THE COMPLETE OS, in road-map
+order - a buyer opens ONE door and owns the whole system. Yes, four
+of these also live on the $9 shelf; locked tiles hide their lesson
+list, so members never see the duplication.
 
 | Lesson | Attach | Paste |
 |---|---|---|
+| The Road Map | file `00` | "The whole system, one map. You own all of it now - run it top to bottom." |
+| Module 01 - Character First | file `01` | "The one decision everything stands on." |
+| Module 02 - The Prompt Pack | file `02` | "The MASTER + DNA batches. A face that never changes." |
 | Module 03A - Her Outfit Pack | file `03` | "210 looks, broken down piece by piece. Your character gets a closet." |
 | Module 03B - His Outfit Pack | file `04` | "His wardrobe system - built, not borrowed." |
 | Module 04A - Her Hair Pack | file `05` | "Culturally accurate. Baby hairs, lace, texture - the details that read REAL." |
 | Module 04B - His Hair + Grooming | file `06` | "Cuts, lineups, beards - locked so they never drift." |
 | Module 05 - The Reference Blueprint | file `07` | "Every reference photo gets ONE job. This is the system behind the system." |
+| Module 06 - The SCENE Method | file `08` | "Direct the scene like an episode, not a post." |
 | Module 07 - The Continuity System | file `09` | "Part 2 starts one second after Part 1 ended. Here's how." |
 | Module 08 - The Camera Bible | file `10` | "Direct the camera like a filmmaker. Phone footage, not renders." |
 | Module 09 - The Realism Check | file `11` | "The pass that kills plastic skin, wrong hands, and AI tells." |
+| Module 10 - The SCENE Library | file `12` | "120 story ideas, organized for thirty-second pulls." |
 | Module 11 - The Prompt Vault | file `13` | "Every prompt in the system + the Director's Master Template." |
 | Module 12 - Viral Story Blueprint | file `14` | "Episodes into arcs. Arcs into a world people can't unfollow." |
+| The Hook Vault | file `15` | "150 hooks that stop the scroll in the first second." |
 | The Caption Vault | file `16` | "Captions that sell the scene without sounding like ads." |
 | The Comment Blueprint | file `17` | "The 3 pinned comments under every episode - your quiet salesforce." |
 | The SCENE Files | file `18` | "The competitor teardowns and episode files. Study the game tape." |
-| SCENE Studio | `scene-studio.html` | "The tool that writes your prompts. Download, open in your browser, works offline. Answer the questions, copy the finished prompt." |
+| SCENE Studio | `scene-studio.html` | "The tool that writes your prompts. Download, open in your browser, works offline." |
 
 Every lesson: "✅ Mark complete when you've run it once."
 
