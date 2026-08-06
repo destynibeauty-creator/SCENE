@@ -142,7 +142,7 @@ the World Builder classroom free.)*
 - 🟢 START HERE (all members): Character Starter + rules + how drops work
 - 🟢 BUILD YOUR CHARACTER (all members — the 6 included modules):
   Start Here Road Map · 01 Character First · 02 Prompt Pack ·
-  06 SCENE Method · 10 SCENE Library · Hook Vault
+  03 SCENE Method · 04 SCENE Library · Hook Vault
 - 🔒 THE WORLD BUILDER (unlocks at $97, in-app or email-verified from
   Stan): styling packs, Reference, Continuity, Camera, Realism, Prompt
   Vault + Director's Template, Viral Story, Caption + Comment vaults,

@@ -30,8 +30,8 @@ $1,497–$2,600 and a $147/mo content hub in an adjacent niche.
 1. Start Here Road Map
 2. Module 01 — Character First
 3. Module 02 — The Prompt Pack (MASTER + DNA batches)
-4. Module 06 — The SCENE Method (direct your first episode)
-5. Module 10 — The SCENE Library (120 story ideas)
+4. Module 03 — The SCENE Method (direct your first episode)
+5. Module 04 — The SCENE Library (120 story ideas)
 6. Bonus 01 — Hook Vault (150 hooks)
 + every monthly drop, the community, and the Character Starter.
 
@@ -40,9 +40,9 @@ their first posted episodes. A $9 member gets a real result fast, which
 is what makes them stay, post, and talk about it.
 
 **LOCKED — the $97 WORLD BUILDER unlock (visible daily, teased by name):**
-- All four styling packs (03A/03B outfits · 04A/04B hair + grooming)
-- Module 05 Reference Blueprint · 07 Continuity System · 08 Camera Bible
-  · 09 Realism Check — *everything that stops drift and fakeness*
+- All four styling packs (05A/05B outfits · 06A/06B hair + grooming)
+- Module 07 Reference Blueprint · 08 Continuity System · 09 Camera Bible
+  · 10 Realism Check — *everything that stops drift and fakeness*
 - Module 11 Prompt Vault + the Director's Master Template
 - Module 12 Viral Story Blueprint · Caption Vault · Comment Blueprint ·
   The SCENE Files

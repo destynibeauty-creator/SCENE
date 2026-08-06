@@ -76,12 +76,12 @@ doors: the 🔒 World Builder tile and 🎥 WORK WITH ME.
 | The Road Map | `00_The-SCENE-AI_Start-Here_The-SCENE-OS.pdf` |
 | Module 01 - Character First | `01_..._Character-First.pdf` |
 | Module 02 - The Prompt Pack | `02_..._The-Prompt-Pack.pdf` |
-| Module 06 - The SCENE Method | `08_..._The-SCENE-Method.pdf` |
-| Module 10 - The SCENE Library | `12_..._The-SCENE-Library.pdf` |
-| Bonus - The Hook Vault | `15_..._Hook-Vault.pdf` |
+| Module 03 - The SCENE Method | `03_..._The-SCENE-Method.pdf` |
+| Module 04 - The SCENE Library | `04_..._The-SCENE-Library.pdf` |
+| The Hook Vault | `15_..._Hook-Vault.pdf` |
 
-*(Yes, the file numbers jump - file prefix ≠ module number for 06/10.
-Use the module names; they're on every cover.)*
+*(Renumbered 2026-08: $9 shelf = Modules 01-04 complete; World
+Builder = 05-12. File prefixes match module numbers everywhere.)*
 
 ### Section 3 · 🔒 THE WORLD BUILDER — access: LOCKED ($97)
 Description shown on the locked tile:
@@ -91,8 +91,8 @@ Description shown on the locked tile:
 > you're ready to build the world - this opens. $97 once.
 
 Contents (20 items - the COMPLETE OS in road-map order, files `00`
-through `18` + `scene-studio.html`): Road Map · 01 · 02 · 03A/03B ·
-04A/04B · 05 · 06 · 07 · 08 · 09 · 10 · 11 · 12 · Hook Vault ·
+through `18` + `scene-studio.html`): Road Map · 01 · 02 · 03 · 04 ·
+05A/05B · 06A/06B · 07 · 08 · 09 · 10 · 11 · 12 · Hook Vault ·
 Caption Vault · Comment Blueprint · SCENE Files · SCENE Studio.
 Four of these also sit on the $9 shelf - intentional: a $97 buyer
 opens ONE door and owns everything, in order, no gaps. Locked tiles

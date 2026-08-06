@@ -71,7 +71,7 @@ plan). About copy + join questions: SOCIETY-COPY.md.
 Classroom:
 - 🟢 START HERE — Character Starter + how drops work
 - 🟢 BUILD YOUR CHARACTER — the 6 included modules (Road Map, 01, 02,
-  06 Method, 10 Library, Hook Vault)
+  03 Method, 04 Library, Hook Vault)
 - 🔒 THE WORLD BUILDER — the rest, unlock **$97 in-app** (+ free manual
   unlock for verified Stan buyers via email-match join question)
 - 🟣 MONTHLY DROPS — Drop 001: The Vacation Heat Drop

@@ -80,8 +80,8 @@ Section description:
 >
 > ✅ Mark complete when your MASTER + DNA batch are generated and saved.
 
-### Lesson 4 · Module 06 - The SCENE Method
-**Attach:** `08_The-SCENE-AI_Module-06_The-SCENE-Method.pdf`
+### Lesson 4 · Module 03 - The SCENE Method
+**Attach:** `03_The-SCENE-AI_Module-03_The-SCENE-Method.pdf`
 **Paste:**
 > How to direct your first episode: the scene, the camera, the moment.
 > This is where your character stops being a photo and starts being a
@@ -89,8 +89,8 @@ Section description:
 >
 > ✅ Mark complete when your first episode is posted. Tag #THESCENEAI.
 
-### Lesson 5 · Module 10 - The SCENE Library
-**Attach:** `12_The-SCENE-AI_Module-10_The-SCENE-Library.pdf`
+### Lesson 5 · Module 04 - The SCENE Library
+**Attach:** `04_The-SCENE-AI_Module-04_The-SCENE-Library.pdf`
 **Paste:**
 > 120 story ideas, organized so you can pull tomorrow's episode in
 > thirty seconds. Between this and the monthly drops, "what do I post"
@@ -120,23 +120,24 @@ Tile description (this one SELLS - it's a closed door):
 Inside (owner voice - they paid): THE COMPLETE OS, in road-map
 order - a buyer opens ONE door and owns the whole system. Yes, four
 of these also live on the $9 shelf; locked tiles hide their lesson
-list, so members never see the duplication.
+list, so members never see the duplication. File prefixes now MATCH
+module numbers - attach by number, no translation needed.
 
 | Lesson | Attach | Paste |
 |---|---|---|
 | The Road Map | file `00` | "The whole system, one map. You own all of it now - run it top to bottom." |
 | Module 01 - Character First | file `01` | "The one decision everything stands on." |
 | Module 02 - The Prompt Pack | file `02` | "The MASTER + DNA batches. A face that never changes." |
-| Module 03A - Her Outfit Pack | file `03` | "210 looks, broken down piece by piece. Your character gets a closet." |
-| Module 03B - His Outfit Pack | file `04` | "His wardrobe system - built, not borrowed." |
-| Module 04A - Her Hair Pack | file `05` | "Culturally accurate. Baby hairs, lace, texture - the details that read REAL." |
-| Module 04B - His Hair + Grooming | file `06` | "Cuts, lineups, beards - locked so they never drift." |
-| Module 05 - The Reference Blueprint | file `07` | "Every reference photo gets ONE job. This is the system behind the system." |
-| Module 06 - The SCENE Method | file `08` | "Direct the scene like an episode, not a post." |
-| Module 07 - The Continuity System | file `09` | "Part 2 starts one second after Part 1 ended. Here's how." |
-| Module 08 - The Camera Bible | file `10` | "Direct the camera like a filmmaker. Phone footage, not renders." |
-| Module 09 - The Realism Check | file `11` | "The pass that kills plastic skin, wrong hands, and AI tells." |
-| Module 10 - The SCENE Library | file `12` | "120 story ideas, organized for thirty-second pulls." |
+| Module 03 - The SCENE Method | file `03` | "Direct the scene like an episode, not a post." |
+| Module 04 - The SCENE Library | file `04` | "120 story ideas, organized for thirty-second pulls." |
+| Module 05A - Her Outfit Pack | file `05` | "210 looks, broken down piece by piece. Your character gets a closet." |
+| Module 05B - His Outfit Pack | file `06` | "His wardrobe system - built, not borrowed." |
+| Module 06A - Her Hair Pack | file `07` | "Culturally accurate. Baby hairs, lace, texture - the details that read REAL." |
+| Module 06B - His Hair + Grooming | file `08` | "Cuts, lineups, beards - locked so they never drift." |
+| Module 07 - The Reference Blueprint | file `09` | "Every reference photo gets ONE job. This is the system behind the system." |
+| Module 08 - The Continuity System | file `10` | "Part 2 starts one second after Part 1 ended. Here's how." |
+| Module 09 - The Camera Bible | file `11` | "Direct the camera like a filmmaker. Phone footage, not renders." |
+| Module 10 - The Realism Check | file `12` | "The pass that kills plastic skin, wrong hands, and AI tells." |
 | Module 11 - The Prompt Vault | file `13` | "Every prompt in the system + the Director's Master Template." |
 | Module 12 - Viral Story Blueprint | file `14` | "Episodes into arcs. Arcs into a world people can't unfollow." |
 | The Hook Vault | file `15` | "150 hooks that stop the scroll in the first second." |

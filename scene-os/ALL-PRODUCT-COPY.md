@@ -176,14 +176,14 @@ first character: [link]. Post it and tag #THESCENEAI so I see it."
 > Start Here Road Map · Module 01 Character First · Module 02 The Prompt Pack
 >
 > *STYLE THE CHARACTER*
-> Modules 03A/03B Outfit Packs · Modules 04A/04B Hair + Grooming Packs
+> Modules 05A/03B Outfit Packs · Modules 06A/04B Hair + Grooming Packs
 >
 > *DIRECT THE SCENE*
-> Module 05 Reference Blueprint · Module 06 The SCENE Method · Module 07
-> Continuity System · Module 08 Camera Bible · Module 09 Realism Check
+> Module 07 Reference Blueprint · Module 03 The SCENE Method · Module 08
+> Continuity System · Module 09 Camera Bible · Module 10 Realism Check
 >
 > *GROW THE WORLD*
-> Module 10 SCENE Library (120 story ideas) · Module 11 The Prompt Vault +
+> Module 04 SCENE Library (120 story ideas) · Module 11 The Prompt Vault +
 > the Director's Master Template · Module 12 Viral Story Blueprint ·
 > Hook Vault (150 hooks) · Caption Vault · Comment Blueprint · The SCENE
 > Files (competitor study + episode files)

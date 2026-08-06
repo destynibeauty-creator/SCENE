@@ -51,9 +51,9 @@ AVAIL = PAGE_W - 2 * MARGIN
 # one signature color per section — BRAND COLORS ONLY, rotating through the
 # kit: Electric Cyan, Vibrant Magenta, Acid Lime, Metallic Silver
 BRAND_CYCLE = ['#00E5FF', '#F600A2', '#C6FF00', '#C0C3C7']
-DOC_ORDER = ['START HERE', 'MODULE 01', 'MODULE 02', 'MODULE 03A',
-             'MODULE 03B', 'MODULE 04A', 'MODULE 04B', 'MODULE 05',
-             'MODULE 06', 'MODULE 07', 'MODULE 08', 'MODULE 09',
+DOC_ORDER = ['START HERE', 'MODULE 01', 'MODULE 02', 'MODULE 03',
+             'MODULE 04', 'MODULE 05A', 'MODULE 05B', 'MODULE 06A',
+             'MODULE 06B', 'MODULE 07', 'MODULE 08', 'MODULE 09',
              'MODULE 10', 'MODULE 11', 'MODULE 12',
              'BONUS 01', 'BONUS 02', 'BONUS 03', 'BONUS 04']
 DOC_ACCENT = {d: BRAND_CYCLE[i % 4] for i, d in enumerate(DOC_ORDER)}
@@ -251,13 +251,13 @@ class SystemMap(Flowable):
     STEPS = [
         ('1', 'CHARACTER FIRST', 'Pick who your audience will follow.', 'MODULE 01'),
         ('2', 'PROMPT PACK', 'Make your MASTER face and DNA photos.', 'MODULE 02'),
-        ('3', 'OUTFIT + HAIR', 'Pick the look for this episode.', 'MODULES 03 + 04'),
-        ('4', 'REFERENCE BLUEPRINT', 'Give every photo you upload one job.', 'MODULE 05'),
-        ('5', 'THE SCENE METHOD', 'Direct the scene: story, cast, place.', 'MODULE 06'),
-        ('6', 'CONTINUITY SYSTEM', 'Make Part 2 match Part 1.', 'MODULE 07'),
-        ('7', 'CAMERA BIBLE', 'Put the camera in a spot that makes sense.', 'MODULE 08'),
-        ('8', 'REALISM CHECK', 'Catch anything that looks fake.', 'MODULE 09'),
-        ('9', 'GENERATE + POST + REVIEW', 'Post it. See what works. Repeat.', 'MODULES 10 - 12'),
+        ('3', 'THE SCENE METHOD', 'Direct your first scene: story, cast, place.', 'MODULE 03'),
+        ('4', 'THE SCENE LIBRARY', 'Pick tomorrow\'s story in thirty seconds.', 'MODULE 04'),
+        ('5', 'OUTFIT + HAIR', 'Lock the look for every episode.', 'MODULES 05 + 06'),
+        ('6', 'REFERENCE BLUEPRINT', 'Give every photo you upload one job.', 'MODULE 07'),
+        ('7', 'CONTINUITY SYSTEM', 'Make Part 2 match Part 1.', 'MODULE 08'),
+        ('8', 'CAMERA + REALISM', 'Shoot it real. Catch anything fake.', 'MODULES 09 + 10'),
+        ('9', 'VAULT + STORY', 'Build the final prompt. Grow the world.', 'MODULES 11 + 12'),
     ]
     ROW, GAP = 46, 13
 
