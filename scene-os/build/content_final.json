@@ -386,8 +386,16 @@
      "My prompt-writing tool:",
      "My photo tool:",
      "My video tool:",
+     "My motion tool:",
      "My editing app:",
      "My keyword (one word):"
+    ]
+   },
+   {
+    "type": "body",
+    "y": 0,
+    "lines": [
+     "Write your six picks, then post them in your intro - that is your kit, locked. Your keyword is the one word people will comment to get what you make. Keep it short, easy to spell, and yours."
     ]
    }
   ]
