@@ -331,6 +331,17 @@ class SystemMap(Flowable):
             c.drawString(chip_cx + 24, box_y + 8, desc)
             tracked(c, 0, box_y + self.ROW - 19, ref, FONTS['MONO'], 7, col,
                     1.2, center_at=bx + bw - 52)
+            if i >= self.DIVIDER_AFTER:
+                # locked-row badge: padlock + THE WORLD BUILDER
+                lx = tracked(c, 0, box_y + 8, 'THE WORLD BUILDER',
+                             FONTS['P-B'], 6.5, MAGENTA, 1.6,
+                             center_at=bx + bw - 47)
+                c.setFillColor(MAGENTA)
+                c.setStrokeColor(MAGENTA)
+                c.setLineWidth(1.1)
+                c.roundRect(lx - 11, box_y + 7, 6.4, 4.6, 1, stroke=0, fill=1)
+                c.arc(lx - 10.2, box_y + 10.2, lx - 5.6, box_y + 14.6,
+                      startAng=0, extent=180)
         self._chip(c, self.width / 2, 2, 'POST IT', MAGENTA)
 
 
