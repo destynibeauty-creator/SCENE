@@ -244,3 +244,31 @@ who doesn't exist" — queue it as ad #6 once one creative is proven.
 **Duplicates are strategy, not sloppiness.** The same winning copy
 runs in 4–6 simultaneous ad IDs (different creatives/placements).
 When one of our five ads wins, duplicate IT — don't write new copy.
+
+---
+
+## Aug 6 re-pull — new intel only (everything above still holds)
+
+**They're testing an owned funnel page.** Two ads launched Aug 1 land
+on `aivideobootcamp.com/start/` instead of the Skool about page — the
+first non-Skool destination in the entire library. They waited until
+~25K members to try it. Lesson for us: ONE destination (the Skool
+about page) until far past 600 members; a custom funnel page is a
+scale problem, not a launch problem.
+
+**Batch cadence is visible and steady.** Launch dates cluster every
+1–2 weeks: May 30–31 (big wave) → Jun 2–8 → Jun 13 → Jul 1–13 →
+Jul 20–24 → Jul 29–Aug 1, with earlier batches left running. Our
+rhythm after launch: a new angle OR a count-refresh batch every two
+weeks, never touching live winners.
+
+**Headlines are a separate test layer.** One body copy runs under many
+link headlines ("Go From Zero…", "Create Ultra Realistic Avatars for
+$9", "Unlock 5 Billion+ Views…"). Cheapest CTR test that exists —
+give each of our five ads 3–4 headline variants from the headline
+bank instead of writing new ads.
+
+**Copy texture worth keeping:** specificity as a style ("10-20
+minutes", "24-48 hours", "9am… 9:15am", "#24 out of 250,000"),
+1–2 line paragraphs, → for result lists, ✅ only for the deliverable
+stack. Zero short-copy ads in ~260 — the long-copy rule is absolute.
