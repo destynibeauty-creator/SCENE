@@ -263,7 +263,7 @@
     "type": "body",
     "y": 0,
     "lines": [
-     "You need four tools: one that writes and stores your prompts, one that makes photos, one that turns photos into video, and one that edits. The system works in ANY apps that can do these jobs. This is the working stack:"
+     "You need five tools: one that writes your prompts, one that makes photos, one that turns photos into video, one that controls the motion, and one that edits it all together."
     ]
    },
    {
@@ -272,28 +272,33 @@
     "rows": [
      [
       "THE JOB",
-      "TOOLS",
+      "THE TOOL",
       "TIP"
      ],
      [
       "Write and store your prompts",
-      "ChatGPT, Claude",
+      "ChatGPT (or Claude)",
       "Save your master template there. Every episode is a small edit."
      ],
      [
       "Make the face, photos and poses",
-      "Nano Banana Pro, Higgsfield, Midjourney",
+      "ChatGPT image or Nano Banana Pro",
       "Generate your MASTER here, plus extra angles and poses."
      ],
      [
       "Turn it all into video",
-      "Seedance 2.0, Higgsfield, Kling, Veo",
-      "It MUST accept multiple reference images at once."
+      "Seedance 2.0",
+      "It accepts multiple reference images at once - attach them ALL."
+     ],
+     [
+      "Control the motion",
+      "Kling",
+      "When a shot needs to move a specific way - camera or character."
      ],
      [
       "Edit, captions and sound",
-      "CapCut, InShot",
-      "CapCut is free and enough to start."
+      "CapCut",
+      "Free and enough. Cut, caption, post."
      ]
     ]
    },
@@ -322,10 +327,14 @@
      ],
      [
       "4",
+      "CONTROL MOTION"
+     ],
+     [
+      "5",
       "EDIT + POST"
      ]
     ],
-    "caption": "ChatGPT writes the prompt → Nano Banana Pro makes the photos → paste it ALL into Seedance 2.0 with every reference attached → CapCut finishes it."
+    "caption": "Prompt → photos → Seedance 2.0 with ALL references → Kling for motion → CapCut."
    },
    {
     "type": "body",
