@@ -28,23 +28,32 @@
 IG/TikTok post (proof-first) ──► "Comment SCENE"
         │
         ▼
-AutoDM ──► FREE Character Starter (email captured on Stan)
+AutoDM ──► the $9 group link. DIRECT. No lead magnet.
+        │   (free Starter RETIRED - it gave away the $9 aha;
+        ▼    AVB runs zero lead magnets, straight to the door)
+THE SCENE AI — $9/mo (Skool) · 7-day money-back guarantee
+        │  Modules 01-04 + drops + community + rank wall
+        ▼
+🔒 WORLD BUILDER unlock ($97 in-app, Skool native)
         │
         ▼
-Email sequence (5 emails, below)
-   ├─► $17 Identity Lock Mini-Pack ──bump──► $27 Outfit Pack
-   │           └─post-purchase──► $97 Creator OS
-   ├─► $97 CREATOR OS  ──bump──► $17 Mini-Pack
-   │           └─post-purchase──► THE SCENE AI ($9/mo Skool)
-   └─► THE SCENE AI $9/mo (Skool)
-                │  6 modules + drops + community
-                ▼
-        🔒 WORLD BUILDER unlock ($97 in-app)
-                │
-                ▼
-        🎥 DFY: Character Delivered $297 → Episode Pack $697
-           → THE PREMIERE $997 → Creative Director $1,497/mo
+🎥 DFY by Square INVOICE: Character Delivered $297
+   → Episode Pack $697 → THE PREMIERE $997
+   → Creative Director $1,497/mo
 ```
+
+**AutoDM copy (keyword SCENE):**
+> You're in 🎬 This is where I teach the whole system - your
+> character, built and locked today, him or her:
+> https://www.skool.com/the-scene-ai-2627
+> $9 founding price locks for life. Not for you? Full refund in
+> your first 7 days.
+
+**RETIRED with Stan:** the FREE Character Starter edition (the
+members-only "Cast Your Lead" edition in the classroom is the only
+live Starter) and the Phase 4 email sequence (no lead capture layer
+exists anymore; Skool emails members natively). Files stay in the
+repo if a lead magnet ever comes back.
 
 ---
 
