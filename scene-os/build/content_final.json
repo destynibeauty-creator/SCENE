@@ -614,7 +614,7 @@
    {
     "type": "body",
     "lines": [
-     "Age range, ethnicity, skin tone, face details, hair, grooming, body type, tattoos, piercings, go-to accessories and clothing style."
+     "Age range, ethnicity, skin tone, face details, hair, grooming, body type, tattoos, piercings, go-to accessories and clothing style. (Their full closet and hair systems get built later, inside THE WORLD BUILDER - right now, just write who they are.)"
     ],
     "y": 642.76
    },
@@ -841,6 +841,13 @@
      "______________________________________________ What the audience should feel"
     ],
     "y": 710.76
+   },
+   {
+    "type": "body",
+    "y": 0,
+    "lines": [
+     "Fill every line. This blueprint IS your character - Module 02 turns it into a face."
+    ]
    }
   ],
   "doc": "MODULE 01"
@@ -867,7 +874,7 @@
     "lines": [
      "Before you start The SCENE Method, open Module 02: The Prompt Pack.",
      "Making a fictional character? Do Prompts 1, 2 and 3. Making an AI twin? Upload your selfie, skip Prompt 1, and do Prompts 2 and 3.",
-     "Save the MASTER, the headshot DNA sheet and the full-body DNA sheet. Then come back to Module 03."
+     "Save the MASTER, the headshot DNA sheet and the full-body DNA sheet. Then move on to Module 03: The SCENE Method - your first episode."
     ],
     "y": 111.06000000000006
    }

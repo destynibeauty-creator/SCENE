@@ -98,13 +98,9 @@ Four of these also sit on the $9 shelf - intentional: a $97 buyer
 opens ONE door and owns everything, in order, no gaps. Locked tiles
 hide their lesson list, so $9 members never see the duplication.
 
-**Unlock mechanics - use whichever your plan shows:**
-- **Path A (if course pricing is available):** set section access to
-  one-time purchase, $97, in-app.
-- **Path B (works on every plan):** set access to "added by admin".
-  Put a Square $97 payment link in the tile description. When Square
-  pings, add the member to the section (same-day). Pin the how-to in
-  the section description.
+**Unlock mechanics (DECIDED): Path A - Skool in-app one-time
+purchase, $97, on the section.** No external checkout for the World
+Builder; the frictionless in-app buy is the point.
 
 ### Section 4 · 🟣 MONTHLY DROPS — access: ALL MEMBERS
 | Item | File |
@@ -112,12 +108,15 @@ hide their lesson list, so $9 members never see the duplication.
 | Drop 001 - The Vacation Heat Drop | `THE-SCENE-AI_Drop-001_The-Vacation-Heat-Drop.pdf` |
 
 ### Section 5 · 🎥 WORK WITH ME — access: ALL MEMBERS (visible = the point)
-One text page, three blocks (full copy in OFFER-LADDER.md):
+One text page, three blocks (full copy in OFFER-LADDER.md). DFY is
+sold by INVOICE, not checkout link: the member DMs BUILT, Destyni
+qualifies them, then sends a Square invoice. The lesson lists prices
+but the only CTA is the DM:
 > **CHARACTER, DELIVERED - $297.** You talk, I build. Locked character,
-> styled, first episode ready. 7 days. [Square link]
-> **THE EPISODE PACK - $697.** A month of episodes, directed by me. [Square link]
-> **THE PREMIERE - $997.** Character + 6 episodes + the funnel, done. 14 days. [Square link]
-> DM me BUILT to start.
+> styled, first episode ready. 7 days.
+> **THE EPISODE PACK - $697.** A month of episodes, directed by me.
+> **THE PREMIERE - $997.** Character + 6 episodes + the funnel, done. 14 days.
+> DM me BUILT to start. I'll ask three questions and send your invoice.
 
 ## 6 · GAMIFICATION (5 min - this is Bootcamp's retention engine, copied honestly)
 
