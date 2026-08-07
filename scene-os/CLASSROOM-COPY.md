@@ -24,8 +24,8 @@ Files: `scene-os/pdfs/` and `scene-os/products/`.
 > ✅ Mark complete when your intro is posted.
 
 ### Lesson 2 · Cast your lead
-**Attach:** `The-SCENE-AI_FREE_The-Character-Starter.pdf`
-*(members' edition swaps in after link migration)*
+**Attach:** `The-SCENE-AI_Cast-Your-Lead_Members-Edition.pdf`
+*(the FREE edition is for AutoDM leads only - never in the classroom)*
 **Paste:**
 > Every world starts with one face.
 >

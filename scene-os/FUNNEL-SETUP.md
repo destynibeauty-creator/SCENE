@@ -13,6 +13,12 @@
 > founding-price threshold — at 600, new members pay $49/mo.
 > **FIRST MILESTONE: 10 founding members, all organic.**
 >
+> **GROUP URL (live): https://www.skool.com/the-scene-ai-2627 .** Custom URL
+> requires the $99 plan, so -2627 stands until the SELF-FUNDING RULE
+> unlocks Pro. PRO-DAY CHECKLIST addition: claim the clean URL, then
+> re-render products (one command) + re-attach, swap AutoDM/bio links
+> the same hour.
+>
 > **THE MONEY RULE (non-negotiable): personal money never funds this
 > business past the $9/mo Skool bill. Not rent, not savings, not
 > credit. Every upgrade — Pro, ads, extra credits — is bought by
