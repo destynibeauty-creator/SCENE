@@ -1,0 +1,447 @@
+<title>SCENE Studio — Prompt Builder</title>
+<style>
+  :root{
+    --jet:#000; --panel:#0c0c11; --panel2:#12121a; --edge:#23232b;
+    --cyan:#00e5ff; --mag:#f600a2; --lime:#c6ff00; --silver:#c0c3c7;
+    --tx:#eff0f2; --mut:#8a8f98;
+    --sans:'Poppins',system-ui,-apple-system,'Segoe UI',sans-serif;
+    --mono:ui-monospace,'JetBrains Mono','SF Mono',Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  html{color-scheme:dark}
+  body{margin:0;background:var(--jet);color:var(--tx);font-family:var(--sans);line-height:1.55}
+  .wrap{max-width:1060px;margin:0 auto;padding:28px 20px 80px}
+
+  header{position:relative;padding:34px 0 26px;text-align:center}
+  .brk{position:absolute;width:26px;height:26px;border:0 solid}
+  .brk.tl{top:8px;left:2px;border-left-width:3px;border-top-width:3px;border-color:var(--mag)}
+  .brk.br{bottom:0;right:2px;border-right-width:3px;border-bottom-width:3px;border-color:var(--cyan)}
+  .kicker{font-size:11px;letter-spacing:.34em;color:var(--cyan);font-weight:600}
+  h1{margin:.35em 0 .15em;font-size:clamp(28px,5vw,40px);font-weight:800;font-style:italic;letter-spacing:-.01em;
+     background:linear-gradient(180deg,#fbfcfd 20%,#8f9399 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+  h1 .ai{background:none;color:var(--cyan);-webkit-text-fill-color:var(--cyan)}
+  .sub{color:var(--mut);font-size:14px;max-width:52ch;margin:0 auto}
+
+  .steps{display:flex;gap:8px;justify-content:center;margin:26px 0 30px;flex-wrap:wrap}
+  .step{border:1px solid var(--edge);background:var(--panel);border-radius:999px;
+        padding:9px 18px;font-size:12.5px;font-weight:600;letter-spacing:.06em;color:var(--mut);cursor:pointer}
+  .step[aria-selected="true"]{color:#000;border-color:transparent}
+  .step[data-k="1"][aria-selected="true"]{background:var(--cyan)}
+  .step[data-k="2"][aria-selected="true"]{background:var(--mag);color:#fff}
+  .step[data-k="3"][aria-selected="true"]{background:var(--lime)}
+  .step:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+
+  .grid{display:grid;grid-template-columns:minmax(300px,380px) 1fr;gap:26px;align-items:start}
+  @media(max-width:840px){.grid{grid-template-columns:1fr}}
+
+  .card{background:var(--panel);border:1px solid var(--edge);border-radius:12px;padding:20px}
+  .card h2{margin:0 0 4px;font-size:16px;font-weight:700}
+  .card .hint{margin:0 0 16px;font-size:12.5px;color:var(--mut)}
+  .accent-c{box-shadow:inset 3px 0 0 var(--cyan)}
+  .accent-m{box-shadow:inset 3px 0 0 var(--mag)}
+  .accent-l{box-shadow:inset 3px 0 0 var(--lime)}
+
+  .seg{display:flex;border:1px solid var(--edge);border-radius:10px;overflow:hidden;margin-bottom:16px}
+  .seg button{flex:1;padding:11px;background:transparent;border:0;color:var(--mut);
+              font-family:inherit;font-size:13.5px;font-weight:700;cursor:pointer;letter-spacing:.04em}
+  .seg button[aria-pressed="true"]{background:var(--panel2);color:var(--cyan)}
+  .seg button:focus-visible{outline:2px solid var(--cyan);outline-offset:-2px}
+
+  form{display:flex;flex-direction:column;gap:13px}
+  label{display:flex;flex-direction:column;gap:5px;font-size:11px;font-weight:600;
+        letter-spacing:.14em;color:var(--silver)}
+  input,select,textarea{background:var(--panel2);border:1px solid var(--edge);border-radius:8px;
+        color:var(--tx);padding:10px 12px;font-family:inherit;font-size:14px}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--cyan)}
+  input::placeholder,textarea::placeholder{color:#555a63}
+  textarea{resize:vertical;min-height:64px}
+
+  .out{display:flex;flex-direction:column;gap:18px}
+  .prompt{background:var(--panel);border:1px solid var(--edge);border-radius:12px;overflow:hidden}
+  .prompt .bar{display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--panel2);
+               border-bottom:1px solid var(--edge)}
+  .prompt .bar .sq{width:7px;height:7px;background:var(--mag);flex:none}
+  .prompt .bar .t{font-size:11px;font-weight:700;letter-spacing:.18em}
+  .prompt .bar .where{font-size:10.5px;color:var(--mut);letter-spacing:.06em;margin-left:auto}
+  .copy{border:1px solid var(--edge);background:transparent;color:var(--cyan);border-radius:7px;
+        font-family:inherit;font-size:11px;font-weight:700;letter-spacing:.1em;padding:6px 12px;cursor:pointer;flex:none}
+  .copy:hover{border-color:var(--cyan)}
+  .copy.done{color:#000;background:var(--lime);border-color:var(--lime)}
+  .copy:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+  .prompt pre{margin:0;padding:15px 16px;font-family:var(--mono);font-size:12.3px;line-height:1.7;
+              white-space:pre-wrap;word-wrap:break-word;color:#e9e9e7;max-height:340px;overflow:auto}
+  .prompt pre b{color:var(--cyan);font-weight:600;background:rgba(0,229,255,.08);border-radius:3px;padding:0 2px}
+  .prompt pre b.todo{color:var(--mag);background:rgba(246,0,162,.1)}
+
+  .note{border:1px dashed var(--edge);border-radius:10px;padding:12px 15px;font-size:12.5px;color:var(--mut)}
+  .note b{color:var(--silver)}
+  footer{margin-top:44px;text-align:center;font-size:10.5px;letter-spacing:.22em;color:#4a4e56}
+  footer .a{color:var(--cyan)} footer .i{color:var(--mag)}
+  .hidden{display:none}
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="brk tl"></span><span class="brk br"></span>
+    <div class="kicker">THE SCENE AI &nbsp;/&nbsp; CREATOR OS</div>
+    <h1>SCENE STUDIO <span class="ai">·</span> PROMPT BUILDER</h1>
+    <p class="sub">Answer the questions. The Studio writes your copy-paste prompts —
+    for him or for her — exactly the way the system teaches.</p>
+  </header>
+
+  <nav class="steps" role="tablist" aria-label="Builder steps">
+    <button class="step" data-k="1" role="tab" aria-selected="true" data-pane="p1">1 · BUILD THE CHARACTER</button>
+    <button class="step" data-k="2" role="tab" aria-selected="false" data-pane="p2">2 · STYLE THE LOOK</button>
+    <button class="step" data-k="3" role="tab" aria-selected="false" data-pane="p3">3 · KEEP IT CONSISTENT</button>
+    <button class="step" data-k="2" role="tab" aria-selected="false" data-pane="p4">4 · DIRECTOR MODE</button>
+  </nav>
+
+  <!-- STEP 1 -->
+  <section id="p1" class="grid">
+    <div class="card accent-c">
+      <h2>Who are we building?</h2>
+      <p class="hint">Fill what you know. Anything left blank stays as a pink
+      [BRACKET] so you can tweak it in your AI tool.</p>
+      <div class="seg" role="group" aria-label="Character gender">
+        <button type="button" id="gF" aria-pressed="true">HER · Prompt 1F</button>
+        <button type="button" id="gM" aria-pressed="false">HIM · Prompt 1M</button>
+      </div>
+      <form id="f1">
+        <label>AGE <input id="age" placeholder="e.g. 27" inputmode="numeric"></label>
+        <label>ETHNICITY <input id="eth" placeholder="e.g. Black American"></label>
+        <label>SKIN TONE <input id="skin" placeholder="e.g. deep brown"></label>
+        <label>KEY FEATURES <input id="feat" placeholder="e.g. full lips, high cheekbones, expressive eyes"></label>
+        <label>ENERGY / VIBE <input id="energy" placeholder="e.g. quietly hopeful, wanting something she won't say out loud"></label>
+        <label>HAIRSTYLE <input id="hair1" placeholder="e.g. a sleek middle-part sew-in"></label>
+        <label>SIMPLE TOP <input id="top" placeholder="e.g. a plain white tee"></label>
+      </form>
+    </div>
+    <div class="out">
+      <div class="prompt">
+        <div class="bar"><span class="sq"></span><span class="t" id="t-master">PROMPT 1F — MAKE YOUR MASTER</span>
+          <span class="where">PASTE INTO YOUR PHOTO TOOL</span>
+          <button class="copy" data-for="o-master">COPY</button></div>
+        <pre id="o-master"></pre>
+      </div>
+      <div class="prompt">
+        <div class="bar"><span class="sq"></span><span class="t">PROMPT 2 — HEADSHOT DNA BATCH</span>
+          <span class="where">UPLOAD YOUR MASTER FIRST</span>
+          <button class="copy" data-for="o-dna">COPY</button></div>
+        <pre id="o-dna"></pre>
+      </div>
+      <p class="note"><b>Order matters:</b> run the MASTER prompt until you love ONE
+      face. Save it. Then upload that photo and run the DNA batch. The system
+      never changes the face after this point.</p>
+    </div>
+  </section>
+
+  <!-- STEP 2 -->
+  <section id="p2" class="grid hidden">
+    <div class="card accent-m">
+      <h2>Style this episode</h2>
+      <p class="hint">Story first, look second — pick the outfit and hair AFTER
+      you know what happens in the scene.</p>
+      <form id="f2">
+        <label>HAIRSTYLE FOR THIS EPISODE <input id="hair2" placeholder="e.g. medium knotless braids / a drop fade"></label>
+        <label>HAIR LENGTH <input id="hlen" placeholder="e.g. waist-length"></label>
+        <label>HAIR COLOR <input id="hcol" placeholder="e.g. jet black with brown highlights"></label>
+        <label>THE OUTFIT <textarea id="fit" placeholder="e.g. an all-white linen resort set with gold accessories"></textarea></label>
+        <label>WHERE ARE THEY? <input id="loc" placeholder="e.g. a rooftop restaurant at golden hour"></label>
+      </form>
+    </div>
+    <div class="out">
+      <div class="prompt">
+        <div class="bar"><span class="sq"></span><span class="t">HAIR PROMPT — IDENTITY PROTECTED</span>
+          <span class="where">UPLOAD YOUR MASTER FIRST</span>
+          <button class="copy" data-for="o-hair">COPY</button></div>
+        <pre id="o-hair"></pre>
+      </div>
+      <div class="prompt">
+        <div class="bar"><span class="sq"></span><span class="t">OUTFIT + SCENE PROMPT</span>
+          <span class="where">UPLOAD YOUR MASTER FIRST</span>
+          <button class="copy" data-for="o-fit">COPY</button></div>
+        <pre id="o-fit"></pre>
+      </div>
+      <p class="note"><b>Why the extra sentences?</b> Every styling prompt repeats
+      the identity lock. That's what keeps the same face, skin tone and body in
+      every single episode — the thing prompt packs skip.</p>
+    </div>
+  </section>
+
+  <!-- STEP 3 -->
+  <section id="p3" class="grid hidden">
+    <div class="card accent-l">
+      <h2>Make Part 2 match Part 1</h2>
+      <p class="hint">Use this when you continue a story. It tells the AI that
+      nothing in the world is allowed to change.</p>
+      <form id="f3">
+        <label>WHICH PART IS THIS? <input id="part" placeholder="e.g. 2" inputmode="numeric"></label>
+        <label>FINAL ACTION OF THE LAST PART <input id="lastact" placeholder="e.g. she reaches for the envelope on the table"></label>
+      </form>
+    </div>
+    <div class="out">
+      <div class="prompt">
+        <div class="bar"><span class="sq"></span><span class="t">MASTER CONTINUITY BLOCK</span>
+          <span class="where">PASTE INTO YOUR VIDEO TOOL</span>
+          <button class="copy" data-for="o-cont">COPY</button></div>
+        <pre id="o-cont"></pre>
+      </div>
+      <p class="note"><b>This is the moat.</b> A recurring face is not enough —
+      same outfit, same light, same room, same emotional beat. Continuity is
+      what makes viewers treat your episodes like a series.</p>
+    </div>
+  </section>
+
+  <!-- STEP 4: DIRECTOR MODE — full multi-reference master prompt -->
+  <section id="p4" class="grid hidden">
+    <div class="card accent-m">
+      <h2>Director Mode — the full framework</h2>
+      <p class="hint">Builds the complete master prompt for tools that take
+      MULTIPLE reference images (Higgsfield 2.0, etc.): numbered references
+      for identity, hair, outfit and locations, then one section per job —
+      camera, hands, scene, movement, realism, atmosphere.</p>
+      <form id="f4">
+        <label>OUTFIT ITEMS — ONE PER LINE
+          <textarea id="d_outfit" rows="5" placeholder="Lime green crochet bikini
+Matching crochet cover-up
+White raffia beach tote
+Sunglasses resting on top of the head only
+Gold jewelry"></textarea></label>
+        <label>LOCATION 1 — NAME <input id="d_loc1" placeholder="e.g. luxury oceanfront penthouse"></label>
+        <label>LOCATION 1 — DETAILS, ONE PER LINE
+          <textarea id="d_loc1d" rows="3" placeholder="White marble floors
+Floor-to-ceiling windows
+Ocean views"></textarea></label>
+        <label>LOCATION 2 — NAME (LEAVE EMPTY IF SCENE STAYS PUT) <input id="d_loc2" placeholder="e.g. private rooftop infinity pool"></label>
+        <label>LOCATION 2 — DETAILS, ONE PER LINE
+          <textarea id="d_loc2d" rows="3" placeholder="Infinity pool
+White lounge chairs
+Glass railings"></textarea></label>
+        <label>PHONE MODEL <input id="d_phone" value="iPhone 17 Pro Max"></label>
+        <label>THE OTHER HAND CARRIES <input id="d_carry" placeholder="e.g. the white raffia tote"></label>
+        <label>SCENE BEATS — ONE PER LINE. PUT SPOKEN LINES IN "QUOTES"
+          <textarea id="d_scene" rows="7" placeholder='She stands at the sliding glass doors, sun behind her
+"Hold on..."
+She slides the door open and walks out
+She turns the phone to reveal the rooftop pool
+"Nah..."
+She sits at the pool edge and dips her feet in
+"I do not think I am ever checking out."'></textarea></label>
+        <div class="note" id="d_wc" aria-live="polite"></div>
+        <label>ATMOSPHERE — SETTING <input id="d_atmo" placeholder="e.g. bright Miami summer afternoon, warm ocean breeze"></label>
+        <label>ATMOSPHERE — SOUNDS <input id="d_sound" placeholder="e.g. soft ocean waves, occasional seagulls"></label>
+        <label>LENGTH IN SECONDS <input id="d_len" value="15" inputmode="numeric"></label>
+      </form>
+    </div>
+    <div class="out">
+      <div class="prompt">
+        <div class="bar"><span class="sq"></span><span class="t">MASTER PROMPT — FULL FRAMEWORK</span>
+          <span class="where">ATTACH ALL REFERENCE IMAGES</span>
+          <button class="copy" data-for="o-master4">COPY</button></div>
+        <pre id="o-master4" style="max-height:640px"></pre>
+      </div>
+      <p class="note"><b>Upload order matters:</b> attach your reference
+      images in the same order the prompt lists them — identity first, then
+      hair, outfit, locations. Every section has ONE job. That separation is
+      why the face, hair and outfit stop drifting.</p>
+    </div>
+  </section>
+
+  <footer>SCENE STUDIO — PROTOTYPE · CREATE THE CHARACTER<span class="a"> · DIRECT THE SCENE</span><span class="i"> · BUILD THE WORLD</span></footer>
+</div>
+
+<script>
+'use strict';
+const $ = id => document.getElementById(id);
+let gender = 'F';
+
+function v(id, fallback){
+  const el = $(id), raw = el ? el.value.trim() : '';
+  if(raw) return {txt: raw, filled: true};
+  return {txt: fallback, filled: false};
+}
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function tok(part){ // wrap value: cyan if filled, magenta bracket if not
+  return part.filled ? '<b>'+esc(part.txt)+'</b>' : '<b class="todo">'+esc(part.txt)+'</b>';
+}
+
+function render(){
+  const her = gender==='F';
+  const P = {she:her?'she':'he', her:her?'her':'his', herO:her?'her':'him',
+             woman:her?'woman':'man', gorgeous:her?'gorgeous':'handsome'};
+  const age=v('age','[AGE]'), eth=v('eth','[ETHNICITY]'), skin=v('skin','[SKIN TONE]'),
+        feat=v('feat','[KEY FEATURES]'), energy=v('energy','[ENERGY / WALL]'),
+        hair1=v('hair1','[HAIRSTYLE]'), top=v('top','[SIMPLE TOP]');
+
+  $('t-master').textContent = her?'PROMPT 1F — MAKE YOUR MASTER':'PROMPT 1M — MAKE YOUR MASTER';
+
+  $('o-master').innerHTML =
+`A realistic front-facing selfie of a ${tok(age)}-year-old ${tok(eth)} ${P.woman}, taken on a phone. ${P.she[0].toUpperCase()+P.she.slice(1)} is clearly ${tok(eth)} with ${tok(skin)} skin and beautiful, true-to-${P.her} features. Naturally ${P.gorgeous}, the kind of face that stops you scrolling, but ${her?'soft and bare with no makeup':'natural and unfiltered with no beauty filter'}.
+
+Real skin texture, natural glow, ${tok(feat)}. [${her?'HER':'HIS'} ENERGY: ${tok(energy)}].
+
+${P.her[0].toUpperCase()+P.her.slice(1)} hair is ${tok(hair1)}. Wearing ${tok(top)}. ${her?'Tiny stud earrings only, minimal jewelry.':'Minimal jewelry. Preserve culturally and personally appropriate grooming.'}
+
+Natural indoor window light, plain everyday apartment background. Authentic, candid phone selfie, not studio, not glam, but undeniably beautiful. Clearly a ${tok(skin)} ${tok(eth)} ${P.woman}, real.
+
+Shot at arm's length on the front camera, at eye level, slightly imperfect framing, one shoulder closer to the lens. Matte real skin with visible pores, soft natural light only, no glossy shine, no retouching. Nothing staged or posed toward the camera, ordinary imperfect background.
+
+(If ${P.she} drifts too pretty, older, or off from who you want, add: "less glam, not older, keep ${P.herO} ${tok(eth)} and ${tok(skin)}, more ordinary" and run again.)`;
+
+  $('o-dna').innerHTML =
+`Create 10 in batch mode, headshot AI twin using the uploaded image as the exact identity reference.
+
+IDENTITY LOCK (HIGHEST PRIORITY)
+Use the uploaded image as the exact identity source. Preserve the same person's facial structure, skin tone, ethnicity, eye shape, nose, lips, eyebrows, hairline, and overall appearance. Do not change identity. Do not beautify, face swap, or heavily alter features. No identity drift. The result should look like the same real person photographed professionally.`;
+
+  const hair2=v('hair2','[HAIRSTYLE]'), hlen=v('hlen','[LENGTH]'), hcol=v('hcol','[COLOR]'),
+        fit=v('fit','[OUTFIT DESCRIPTION]'), loc=v('loc','[LOCATION]');
+
+  $('o-hair').innerHTML =
+`Preserve the exact identity, face, skin tone as shown, ethnicity, forehead shape, hairline and body proportions of the uploaded ${P.woman}. Style ${P.her} hair in ${tok(hair2)}. Specify ${tok(hlen)} length, ${tok(hcol)} color. Keep the texture culturally accurate, with realistic scalp visibility, natural movement, weight and believable edges. Preserve baby hairs naturally without over-styling. Do not change ${P.her} face, skin tone, age, head shape or body. No floating braids, fake scalp, wig-like hairline or identity drift.`;
+
+  $('o-fit').innerHTML =
+`Use the uploaded image as the exact identity reference. Same person, same face, same skin tone, same body proportions. No identity drift.
+
+${P.she[0].toUpperCase()+P.she.slice(1)} is wearing ${tok(fit)}. Setting: ${tok(loc)}. Keep fabrics, fit and accessories realistic and consistent with the scene lighting. Real skin texture, believable shadows, no plastic skin, no extra fingers, no warped background.`;
+
+  const part=v('part','[NUMBER]'), lastact=v('lastact','[FINAL ACTION FROM THE LAST PART]');
+
+  $('o-cont').innerHTML =
+`CONTINUITY This scene begins immediately after Part ${tok(part)}. Everything remains identical: - Same lead identity and body proportions - Same supporting cast - Same hairstyle, hair texture, hairline and grooming - Same outfit, shoes, bag, jewelry, nails and makeup - Same camera device, placement, height, framing and lens behavior - Same lighting, weather, shadows and time of day - Same environment, furniture, products, props and background guests - Same emotional state at the exact ending beat. The clips must cut together seamlessly. Begin with the character already completing the final action from Part ${tok(part)}: ${tok(lastact)}.`;
+}
+
+function render4(){
+  const her = gender==='F';
+  const P = {she:her?'she':'he', her:her?'her':'his', She:her?'She':'He',
+             Her:her?'Her':'His', woman:her?'woman':'man'};
+  const lines = id => ($(id).value||'').split('\n').map(s=>s.trim()).filter(Boolean);
+  const outfit = lines('d_outfit');
+  const loc1 = v('d_loc1','[LOCATION 1]'), loc1d = lines('d_loc1d');
+  const loc2 = ($('d_loc2').value||'').trim(), loc2d = lines('d_loc2d');
+  const phone = v('d_phone','[PHONE MODEL]'), carry = v('d_carry','[THE BAG / ITEM]');
+  const beats = lines('d_scene');
+  const atmo = v('d_atmo','[SETTING, e.g. bright summer afternoon]');
+  const sound = v('d_sound','[SOUNDS, e.g. soft city ambience]');
+  const len = v('d_len','15');
+
+  const list = arr => arr.length ? arr.map(x=>'- '+esc(x)).join('\n')
+                                 : '- <b class="todo">[LIST THE ITEMS]</b>';
+  let refN = 3;
+  let refs =
+`REFERENCE IMAGES (USE ALL REFERENCES TOGETHER)
+
+Reference 1 — Identity Reference (Highest Priority)
+Use this image as the exact identity source. Preserve the exact face, skin tone, ethnicity, facial structure, eyes, nose, lips, eyebrows, hairline, hairstyle, eyelashes, body proportions, and overall appearance. Do not beautify, face swap, or alter the identity in any way. Maintain the exact same identity from the first frame to the last frame.
+
+Reference 2 — Hair Reference
+Use this image to preserve the exact hairstyle, color, texture, density, edges, parting, and overall hair appearance. Hair must remain consistent throughout the video.
+
+Reference 3 — Outfit Reference
+Use this image as the exact wardrobe reference.
+Preserve:
+${list(outfit)}
+
+Reference 4 — ${tok(loc1)} Reference
+Use this image as the exact location. The video begins in this location.
+Preserve:
+${list(loc1d)}`;
+  if(loc2){
+    refs += `
+
+Reference 5 — ${esc(loc2)} Reference
+Use this image as the exact second location.
+Preserve:
+${list(loc2d)}
+
+Reference 6 — Transition Reference (optional)
+Use this image to establish that the ${esc(loc2)} belongs to the same ${tok(loc1)}. The transition from the first location to the second must feel completely seamless and realistic.`;
+  }
+
+  // dialogue budget: ~2 spoken words per second; lines of 5-10 words sync best
+  const quoted = beats.filter(b=>/^["“]/.test(b));
+  const dw = quoted.reduce((n,b)=>n + b.replace(/["“”]/g,'').trim().split(/\s+/).filter(Boolean).length, 0);
+  const secs = parseInt(len.txt,10) || 15;
+  const budget = secs * 2;
+  const longLines = quoted.filter(b=>b.replace(/["“”]/g,'').trim().split(/\s+/).length > 10).length;
+  const wc = $('d_wc');
+  if(wc){
+    let msg = `<b>Dialogue budget:</b> ${dw} spoken words of ~${budget} max for ${secs}s.`;
+    if(dw > budget) msg += ' <b style="color:var(--mag)">Too much talking — cut lines or split the scene into two parts.</b>';
+    if(longLines) msg += ` <b style="color:var(--mag)">${longLines} line${longLines>1?'s':''} over 10 words — long lines drift out of sync.</b>`;
+    if(dw <= budget && !longLines && dw>0) msg += ' <b style="color:var(--lime)">Lips will sync. ✓</b>';
+    if(secs > 10 && dw > 0) msg += ' Heavy talking? Keep clips 10s or under for the cleanest sync.';
+    wc.innerHTML = msg;
+  }
+
+  const sceneTxt = beats.length ? beats.map(b=>{
+      if(/^["“].*["”.]*$/.test(b)) return `${P.She} says, ${esc(b)}`;
+      return (esc(b)+'.').replace(/\.\.$/,'.');
+    }).join('\n\n') : '<b class="todo">[BEAT 1]</b>\n\n<b class="todo">"[LINE 1]"</b>\n\n<b class="todo">[BEAT 2 — THE REVEAL]</b>';
+
+  $('o-master4').innerHTML =
+`${refs}
+
+IDENTITY LOCK (HIGHEST PRIORITY)
+
+Use the uploaded identity reference as the exact person. Preserve the same face, skin tone, ethnicity, facial structure, eyes, nose, lips, eyebrows, hairline, hairstyle, eyelashes, body proportions, and overall appearance. Do not beautify, face swap, or alter the identity. No face drift. No identity drift. Maintain the exact same identity throughout the entire video.
+
+CAMERA
+
+Filmed on ${tok(phone)} front-facing camera. Vertical 9:16. Generate in native 4K. 60 FPS. Natural HDR. Default phone color science. Authentic handheld selfie. Very slight handheld movement. Tiny autofocus breathing. Natural exposure adjustments. Slight rolling shutter. Natural motion blur while walking. Looks exactly like genuine phone footage uploaded directly to Instagram. No cinematic filters. No beauty filters. No skin smoothing. No over-sharpening.
+
+HANDS
+
+The phone is naturally held in ${P.her} right hand. ${P.Her} left hand naturally carries ${tok(carry)} while walking. Do not generate a second phone. Do not generate another camera. Do not generate a selfie stick. Do not generate any additional recording devices.
+
+SCENE
+
+The video begins in the ${tok(loc1)}.
+
+${sceneTxt}
+
+The clip ends naturally.
+
+MOVEMENT
+
+${P.She} moves at a relaxed, natural pace. Natural posture. Natural shoulder, arm and hip movement. Natural breathing. Natural blinking. Natural facial expressions. The outfit flows naturally. ${P.Her} hair moves naturally with any breeze. Nothing appears robotic or overly animated.
+
+REALISM (HIGHEST PRIORITY)
+
+The final result must be visually indistinguishable from authentic phone footage. Ultra-photorealistic 4K quality. Natural skin texture. Visible pores. Subtle baby hairs. Natural facial texture. Natural lip texture. Realistic eye reflections. Natural teeth. Correct hand anatomy. Correct finger anatomy. Natural fingernails. Realistic muscle movement. Natural body proportions. Physically accurate lighting. Realistic shadows. Natural reflections. Consistent identity throughout every frame. No face morphing. No identity drift. No flickering. No ghosting. No warping. No floating objects. No duplicated limbs. No extra fingers. No plastic skin. No waxy skin. No AI artifacts.
+
+ATMOSPHERE
+
+${tok(atmo)}. ${tok(sound)}. Natural environmental audio only. No background music. No sound effects. Natural speaking voice.
+
+LENGTH
+
+${tok(len)} seconds.
+
+STYLE
+
+The first three seconds must create immediate curiosity through a natural reveal. The pacing should feel effortless, as if ${P.she} instinctively grabbed the phone to show someone something incredible. The video should look so authentic that viewers genuinely question whether it is AI or real footage.`;
+}
+
+document.querySelectorAll('.steps .step').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.steps .step').forEach(b=>b.setAttribute('aria-selected', b===btn?'true':'false'));
+    ['p1','p2','p3','p4'].forEach(p=>$(p).classList.add('hidden'));
+    $(btn.dataset.pane).classList.remove('hidden');
+  });
+});
+$('gF').addEventListener('click',()=>{gender='F';$('gF').setAttribute('aria-pressed','true');$('gM').setAttribute('aria-pressed','false');render();render4();});
+$('gM').addEventListener('click',()=>{gender='M';$('gM').setAttribute('aria-pressed','true');$('gF').setAttribute('aria-pressed','false');render();render4();});
+document.querySelectorAll('input,textarea,select').forEach(el=>el.addEventListener('input',()=>{render();render4();}));
+document.querySelectorAll('.copy').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const text = $(btn.dataset.for).innerText;
+    navigator.clipboard.writeText(text).then(()=>{
+      btn.textContent='COPIED ✓'; btn.classList.add('done');
+      setTimeout(()=>{btn.textContent='COPY';btn.classList.remove('done');},1600);
+    });
+  });
+});
+render();
+render4();
+</script>

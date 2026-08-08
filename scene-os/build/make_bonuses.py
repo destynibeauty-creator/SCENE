@@ -1,0 +1,593 @@
+#!/usr/bin/env python3
+"""
+Rebuild the four bonus documents so every tool belongs to the BUYER:
+their own keyword, their own captions, their own pinned comments, plus a
+competitor-study system and niche-diverse examples. Writes content_final.json
+(content_simple.json with the bonus docs replaced).
+"""
+import json
+import os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+SRC = os.path.join(HERE, 'content_simple.json')
+OUT = os.path.join(HERE, 'content_final.json')
+
+
+def E(t, *lines, **kw):
+    d = {'type': t, 'y': 0}
+    if lines:
+        d['lines'] = list(lines)
+    d.update(kw)
+    return d
+
+
+def cover(kicker, title, sub):
+    return [
+        E('label', kicker),
+        E('h1', title),
+        E('sub', sub),
+        E('label', 'CREATE THE CHARACTER. DIRECT THE SCENE. BUILD THE WORLD.'),
+    ]
+
+
+# ------------------------------------------------------------- START HERE
+def start_here_tools():
+    return {'page': 3.5, 'doc': 'START HERE', 'elems': [
+        E('h2', 'Your tool kit — the apps you need'),
+        E('body', 'You need four tools: one that writes and stores your '
+                  'prompts, one that makes photos, one that turns photos '
+                  'into video, and one that edits. The system works in ANY '
+                  'apps that can do these jobs. This is the working stack:'),
+        E('table', rows=[
+            ['THE JOB', 'TOOLS', 'TIP'],
+            ['Write and store your prompts',
+             'ChatGPT, Claude',
+             'Save your master template there. Every episode is a small edit.'],
+            ['Make the face, photos and poses',
+             'Nano Banana Pro, Higgsfield, Midjourney',
+             'Generate your MASTER here, plus extra angles and poses.'],
+            ['Turn it all into video',
+             'Seedance 2.0, Higgsfield, Kling, Veo',
+             'It MUST accept multiple reference images at once.'],
+            ['Edit, captions and sound',
+             'CapCut, InShot',
+             'CapCut is free and enough to start.'],
+        ]),
+        E('label', 'THE PIPELINE — EVERY EPISODE MOVES LEFT TO RIGHT'),
+        E('flow', steps=[['1', 'WRITE IT'], ['2', 'SHOOT PHOTOS'],
+                         ['3', 'MAKE THE VIDEO'], ['4', 'EDIT + POST']],
+          caption='ChatGPT writes the prompt → Nano Banana Pro makes the photos → paste it ALL into Seedance 2.0 with every reference attached → CapCut finishes it.'),
+        E('body', 'The bigger your scenes get, the more reference images you '
+                  'attach at once — one for identity, one for hair, one for '
+                  'the outfit, one for each location. The full multi-reference '
+                  'master template is in Module 11.'),
+        E('bullet', 'Pick ONE tool per job, learn it once, and stay there — '
+                    'switching apps every week is how characters drift.'),
+        E('bullet', 'Free versions are fine to start. Upgrade when episodes are working.'),
+        E('bullet', 'Upload your MASTER photo into every tool, every time.'),
+        E('bullet', 'Keep the SAME tools for a whole series.'),
+        E('body', 'Tools change fast. If a new app comes out, the system still '
+                  'works — the prompts and the method do not change.'),
+        E('wcard', title='MY TOOL KIT', fields=[
+            'My prompt-writing tool:', 'My photo tool:', 'My video tool:',
+            'My editing app:', 'My keyword (one word):']),
+    ]}
+
+
+# -------------------------------------------------- MODULE 11 master template
+def module11_template():
+    tmpl = [
+"""REFERENCE IMAGES (USE ALL REFERENCES TOGETHER)
+
+Reference 1 — Identity Reference (Highest Priority)
+Use this image as the exact identity source. Preserve the exact face, skin tone, ethnicity, facial structure, eyes, nose, lips, eyebrows, hairline, hairstyle, eyelashes, body proportions, and overall appearance. Do not beautify, face swap, or alter the identity in any way. Maintain the exact same identity from the first frame to the last frame.
+
+Reference 2 — Hair Reference
+Use this image to preserve the exact hairstyle, color, texture, density, edges, parting, and overall hair appearance. Hair must remain consistent throughout the video.
+
+Reference 3 — Outfit Reference
+Use this image as the exact wardrobe reference.
+Preserve:
+- [ITEM 1, e.g. the exact swimsuit or suit]
+- [ITEM 2, e.g. the cover-up or jacket]
+- [ITEM 3, e.g. the bag]
+- [ITEM 4, e.g. sunglasses — and WHERE they sit]
+- [ITEM 5, e.g. shoes]
+- [ITEM 6, e.g. jewelry]
+
+Reference 4 — Location Reference
+Use this image as the exact location.
+The video begins in this [LOCATION].
+Preserve:
+- [DETAIL 1, e.g. the floors]
+- [DETAIL 2, e.g. the windows]
+- [DETAIL 3, e.g. the furniture]
+- [DETAIL 4, e.g. the light]
+- [DETAIL 5, e.g. the view]
+
+Reference 5 — Second Location Reference (if the scene moves)
+Use this image as the exact second location. The transition from the first location to this one must feel completely seamless and realistic.""",
+"""IDENTITY LOCK (HIGHEST PRIORITY)
+Use the uploaded identity reference as the exact person. Preserve the same face, skin tone, ethnicity, facial structure, eyes, nose, lips, eyebrows, hairline, hairstyle, eyelashes, body proportions, and overall appearance. Do not beautify, face swap, or alter the identity. No face drift. No identity drift. Maintain the exact same identity throughout the entire video.""",
+"""CAMERA
+Filmed on [YOUR PHONE MODEL] front-facing camera. Vertical 9:16. Generate in native 4K. 60 FPS. Natural HDR. Default phone color science. Authentic handheld selfie. Very slight handheld movement. Tiny autofocus breathing. Natural exposure adjustments. Slight rolling shutter. Natural motion blur while walking. Looks exactly like genuine phone footage uploaded directly to Instagram. No cinematic filters. No beauty filters. No skin smoothing. No over-sharpening.""",
+"""HANDS
+The phone is naturally held in [HER / HIS] right hand. The left hand naturally carries [THE BAG / ITEM] while walking. Do not generate a second phone. Do not generate another camera. Do not generate a selfie stick. Do not generate any additional recording devices.""",
+"""SCENE
+The video begins [WHERE, e.g. inside the first location].
+[BEAT 1 — what they do first]
+[THEY] quietly say, "[LINE 1]"
+[BEAT 2 — the move or reveal]
+Hold the reveal naturally for about two seconds.
+[BEAT 3 — the reaction]
+Then say, "[LINE 2]"
+[BEAT 4 — the settle: where they end up]
+Then quietly say, "[LINE 3 — the line that makes people comment]"
+The clip ends naturally.""",
+"""MOVEMENT
+[SHE / HE] moves at a relaxed, natural pace. Natural posture. Natural shoulder, arm and hip movement. Natural breathing. Natural blinking. Natural facial expressions. [THE GARMENT] flows naturally. The hair moves naturally with the wind. Nothing appears robotic or overly animated.""",
+"""REALISM (HIGHEST PRIORITY)
+The final result must be visually indistinguishable from authentic phone footage. Ultra-photorealistic 4K quality. Natural skin texture. Visible pores. Subtle baby hairs. Natural facial texture. Natural lip texture. Realistic eye reflections. Natural teeth. Correct hand anatomy. Correct finger anatomy. Natural fingernails. Realistic muscle movement. Natural body proportions. Physically accurate lighting. Authentic sunlight. Realistic shadows. Natural reflections. Consistent identity throughout every frame. No face morphing. No identity drift. No flickering. No ghosting. No warping. No floating objects. No duplicated limbs. No extra fingers. No plastic skin. No waxy skin. No AI artifacts.""",
+"""ATMOSPHERE
+[SETTING, e.g. bright summer afternoon in your city]. [AIR / WEATHER, e.g. warm ocean breeze]. [BACKGROUND MOTION, e.g. gentle movement in the pool, palm trees in the breeze]. [SOUNDS, e.g. soft waves, occasional seagulls]. Natural environmental audio only. No background music. No sound effects. Natural speaking voice.""",
+"""LENGTH
+[SECONDS, e.g. 15] seconds.""",
+"""STYLE
+The first three seconds must create immediate curiosity through a natural reveal. The pacing should feel effortless, as if [SHE / HE] instinctively grabbed the phone to show someone something incredible. The video should look so authentic that viewers genuinely question whether it is AI or real footage.""",
+    ]
+    return {'page': 68.5, 'doc': 'MODULE 11', 'elems': [
+        E('h2', 'The Director’s Master Template'),
+        E('body', 'This is the full skeleton for a video master prompt — the '
+                  'way working creators actually run scenes through tools '
+                  'like Higgsfield 2.0. Every section has ONE job. You never '
+                  'mix wardrobe with lighting, or camera with dialogue. Fill '
+                  'in the brackets top to bottom, then paste the WHOLE thing '
+                  'with all of your reference images attached.'),
+        E('table', rows=[
+            ['#', 'SECTION', 'ITS ONE JOB'],
+            ['1', 'Reference Images', 'Who and what each uploaded photo controls'],
+            ['2', 'Identity Lock', 'The face never changes'],
+            ['3', 'Camera', 'How it is filmed'],
+            ['4', 'Hands', 'What each hand holds — and no extra devices'],
+            ['5', 'Scene', 'What happens, and every spoken line'],
+            ['6', 'Movement', 'How the body moves naturally'],
+            ['7', 'Realism', 'What makes it believable'],
+            ['8', 'Atmosphere', 'What the world feels and sounds like'],
+            ['9', 'Length', 'How long the clip runs'],
+            ['10', 'Style', 'The feeling the first three seconds must create'],
+        ]),
+        E('h3', 'Where each piece goes'),
+        E('table', rows=[
+            ['STEP', 'WHAT YOU DO', 'WHICH APP'],
+            ['1', 'Fill in this template (save your version)', 'ChatGPT'],
+            ['2', 'Generate the MASTER, poses and reference photos',
+             'Nano Banana Pro'],
+            ['3', 'Paste the WHOLE template + attach every reference image',
+             'Seedance 2.0 or Higgsfield'],
+            ['4', 'Trim, captions, sound', 'CapCut'],
+        ]),
+        E('h3', 'The dialogue budget (this decides if lips sync)'),
+        E('bullet', 'Keep every spoken line 5–10 words. Short lines sync; '
+                    'long lines drift.'),
+        E('bullet', 'People speak about 2 words per second — a 15-second '
+                    'clip has room for roughly 25–30 spoken words TOTAL, '
+                    'and less if the character is walking or reacting.'),
+        E('bullet', 'Heavy talking? Keep the clip 10 seconds or under — '
+                    'lip-sync quality drops on longer generations.'),
+        E('bullet', 'Three or four short lines beat one long speech. Let '
+                    'the action carry the rest.'),
+        E('body', 'Copy the whole template below. Save your filled version — '
+                  'that becomes YOUR master, and every new episode is a '
+                  'small edit, not a rewrite.'),
+    ] + [E('code', t) for t in tmpl]}
+
+
+# ---------------------------------------------------------------- BONUS 01
+def bonus01_intro():
+    return {'page': 72.5, 'doc': 'BONUS 01', 'elems': [
+        E('h2', 'Make your own hook first'),
+        E('body', 'A hook is the first three seconds of your video. '
+                  'It is one normal moment with one thing wrong. Use this recipe:'),
+        E('flow', steps=[['1', 'NORMAL MOMENT'], ['2', 'ONE THING IS OFF'],
+                         ['3', 'DO NOT EXPLAIN IT']],
+          caption='Start normal. Break one thing. Let the comments ask why.'),
+        E('h3', 'The same recipe works in any niche'),
+        E('bullet', 'Beauty: A client sits down and says, "Fix what she did."'),
+        E('bullet', 'Real estate: The buyers walk in. Someone is already home.'),
+        E('bullet', 'Fitness: The gym is empty except one machine. It is still running.'),
+        E('bullet', 'Food: The order is ready. Nobody ordered it.'),
+        E('bullet', 'Music: The beat stops. The crowd does not.'),
+        E('body', 'Now use the vault below. Pick a hook, then rewrite it with '
+                  'the recipe so it fits YOUR world. Do not copy it word for word.'),
+        E('h2', 'The Hook Vault — 150 starters'),
+    ]}
+
+
+# ---------------------------------------------------------------- BONUS 02
+def bonus02():
+    return [
+        {'page': 77, 'doc': 'BONUS 02', 'elems': cover(
+            'BONUS 02', 'CAPTION VAULT',
+            'Caption recipes and fill-in templates. Make every caption yours.')},
+        {'page': 78, 'doc': 'BONUS 02', 'elems': [
+            E('h2', 'The caption recipe'),
+            E('flow', steps=[['1', 'PULL THEM IN'], ['2', 'ASK OR TEASE'],
+                             ['3', 'YOUR KEYWORD']],
+              caption='Line 1 hooks. Line 2 starts talk. Line 3 tells them what to comment.'),
+            E('body', 'Fill in every [BRACKET] with your own words. '
+                      'Never post a caption with someone else’s keyword in it.'),
+            E('h2', 'Mystery'),
+            E('bullet', 'Now who sent this over...'),
+            E('bullet', 'At this point, whoever sent it needs to come out of hiding.'),
+            E('bullet', 'How are you this bold but scared to say something?'),
+            E('bullet', 'I came for lunch. Apparently somebody else had plans.'),
+            E('bullet', 'The plot was never random. Y’all just got here late.'),
+            E('h2', 'Story series'),
+            E('bullet', 'Part [#], because y’all were not letting this go.'),
+            E('bullet', 'Still no reveal, but now I’m invested.'),
+            E('bullet', 'This was supposed to be the calm part of the trip.'),
+            E('bullet', 'The next five minutes changed the whole storyline.'),
+            E('bullet', 'Some people do not need an introduction.'),
+            E('h2', 'Creator / AI'),
+            E('bullet', 'I almost did not post the first one. Now y’all are asking who the characters are.'),
+            E('bullet', 'The moment people stopped asking if it was AI and started asking what happened next.'),
+            E('bullet', 'We do not just prompt. We direct.'),
+            E('bullet', 'I built the character, the camera and the entire situation from my phone.'),
+            E('bullet', 'Episode one of a world I’m building. Stay if you’re nosy.'),
+            E('h2', 'Education (fill in your craft)'),
+            E('bullet', 'I’mma be real, we are not skipping [THE BASICS OF YOUR CRAFT].'),
+            E('bullet', 'The part everybody calls boring is the part protecting [YOUR CLIENT / CUSTOMER].'),
+            E('bullet', 'Before we talk about [THE RESULT], we need to talk about [THE PROCESS].'),
+            E('bullet', 'A pretty [RESULT] does not excuse a bad [PROCESS].'),
+            E('bullet', 'What is one thing your first [TRAINING / JOB] never taught you?'),
+            E('h2', 'Brand-friendly'),
+            E('bullet', 'A concept built around the product, not pasted on top of it.'),
+            E('bullet', 'This is what branded storytelling can look like.'),
+            E('bullet', 'The product belongs inside the plot.'),
+            E('bullet', 'A campaign people watch before they realize it is a campaign.'),
+            E('bullet', '[YOUR CITY] brands, picture your business inside the next scene.'),
+            E('h2', 'Conversion endings (use YOUR keyword)'),
+            E('bullet', 'Comment [YOUR KEYWORD] and I’ll send you [WHAT THEY GET].'),
+            E('bullet', 'DM me [YOUR KEYWORD] for the details.'),
+            E('bullet', 'Click the link in my bio to get [WHAT THEY GET].'),
+            E('bullet', 'Book [YOUR SERVICE] through the link in my bio.'),
+            E('bullet', 'Join the waitlist for [YOUR OFFER] before it opens.'),
+        ]},
+    ]
+
+
+# ---------------------------------------------------------------- BONUS 03
+def bonus03():
+    return [
+        {'page': 79, 'doc': 'BONUS 03', 'elems': cover(
+            'BONUS 03', 'COMMENT BLUEPRINT',
+            'Turn your comment section into your best salesperson — '
+            'with your own keyword, not anyone else’s.')},
+        {'page': 80, 'doc': 'BONUS 03', 'elems': [
+            E('h2', 'Step 1 — Pick YOUR keyword'),
+            E('body', 'Your keyword is one word people comment to get something '
+                      'from you. It must be YOUR word, tied to YOUR offer.'),
+            E('flow', steps=[['1', 'PICK ONE WORD'], ['2', 'NAME THE PRIZE'],
+                             ['3', 'USE IT EVERY TIME']],
+              caption='One word. Easy to spell. Always points at your offer.'),
+            E('table', rows=[
+                ['YOUR NICHE', 'KEYWORD IDEA', 'WHAT YOU SEND THEM'],
+                ['Beauty', 'GLOW', 'Your booking link or prep guide'],
+                ['Real estate', 'KEYS', 'Your buyer checklist or tour booking'],
+                ['Fitness', 'LIFT', 'Your free workout or coaching link'],
+                ['Food', 'PLATE', 'Your recipe or order link'],
+                ['Music', 'TRACK', 'Your unreleased snippet or presave link'],
+                ['Fashion', 'FIT', 'Your lookbook or shop link'],
+            ]),
+            E('body', 'Pick one now. Write it down. You will use it in every '
+                      'caption, pinned comment and reply below.'),
+            E('h2', 'Step 2 — Pin these three comments'),
+            E('body', 'Pin these on every episode, in this order. '
+                      'Copy the pattern, not the words.'),
+            E('ccard', note='PIN 1  —  EASY OPINION (everyone can answer)',
+              text='Be honest — would you take the drink or send it back?'),
+            E('ccard', note='PIN 2  —  START A DEBATE (they defend a side)',
+              text='Smooth or doing too much?'),
+            E('ccard', note='PIN 3  —  CAPTURE LEADS (your keyword works here)',
+              text='Want [WHAT YOU OFFER]? Comment [YOUR KEYWORD] and I’ll send it to you.'),
+            E('h2', 'Step 3 — Reply like this'),
+            E('table', rows=[
+                ['WHEN THEY SAY', 'YOU REPLY'],
+                ['“Make me one”', 'I got you \U0001F602 Comment [YOUR KEYWORD] and watch what I send you.'],
+                ['“Is this AI?”', 'Yes \U0001F62D but you still need to know what happens next.'],
+                ['“Who is he?”', 'Y’all really want the reveal that bad? \U0001F440'],
+                ['Something negative', 'And yet you stopped to comment \U0001F62D'],
+                ['Brand praise', 'Now imagine YOUR product inside a whole storyline.'],
+                ['Beginner question', 'Start with one character and one scene. That’s it.'],
+            ]),
+            E('h2', 'Step 4 — Build your own comment set'),
+            E('wcard', title='MY COMMENT SET', fields=[
+                'My easy opinion question:',
+                'My debate question:',
+                'My keyword (one word):',
+                'What I send when they comment it:',
+                'My Part 2 teaser:',
+            ]),
+        ]},
+    ]
+
+
+# ---------------------------------------------------------------- BONUS 04
+def bonus04():
+    case = lambda title, hook, refs, engine, nxt: [
+        E('h2', title),
+        E('bullet', f'Hook: {hook}'),
+        E('bullet', f'References: {refs}'),
+        E('bullet', f'Why people watch: {engine}'),
+        E('bullet', f'Next episode: {nxt}'),
+    ]
+    elems82 = [
+        E('h2', 'Study your top 3 competitors first'),
+        E('body', 'Before you film anything, find the top three creators in '
+                  'YOUR niche who are doing this right now. Watch their three '
+                  'best videos each. Fill in one card per creator. '
+                  'Your job is not to copy them. Your job is to beat them.'),
+        E('flow', steps=[['1', 'FIND TOP 3'], ['2', 'STUDY THEIR BEST'],
+                         ['3', 'DO IT BETTER']],
+          caption='Same niche. Same format. Better character, better story, better world.'),
+        E('wcard', title='COMPETITOR #1', fields=[
+            'Name / handle:', 'Their best video (link):',
+            'The hook in the first 3 seconds:', 'Their caption:',
+            'Their pinned comment / keyword:', 'Why it worked:',
+            'What I will do better:']),
+        E('wcard', title='COMPETITOR #2', fields=[
+            'Name / handle:', 'Their best video (link):',
+            'The hook in the first 3 seconds:', 'Their caption:',
+            'Their pinned comment / keyword:', 'Why it worked:',
+            'What I will do better:']),
+        E('wcard', title='COMPETITOR #3', fields=[
+            'Name / handle:', 'Their best video (link):',
+            'The hook in the first 3 seconds:', 'Their caption:',
+            'Their pinned comment / keyword:', 'Why it worked:',
+            'What I will do better:']),
+    ]
+    elems83 = (
+        [E('h2', 'Five viral patterns you can run in any niche')] +
+        case('1. The Mystery Gift',
+             'something arrives for your character from an unknown sender.',
+             'identity, outfit, location, continuity, the item itself.',
+             'viewers need to know who sent it and demand the reveal.',
+             'the sender stays hidden one more time, then gets revealed.') +
+        case('2. The Dream Location',
+             'phone-style footage that feels real inside a dream spot.',
+             'identity, outfit, location exterior and interior, one product.',
+             'continuity makes made-up events feel like a real series.',
+             'one new event, same world, same character.') +
+        case('3. The Shopping Spree',
+             'your character came to browse and leaves with everything.',
+             'identity, exact outfit, store environment, bags and product.',
+             'locals recognize the place, and brands may repost it.',
+             'fitting room, checkout moment or outfit reveal.') +
+        case('4. The Night Out',
+             'nightlife chaos your audience understands at a glance.',
+             'characters, outfits, venue, signage, table service.',
+             'a bold location, matching sound and comment-section debate.',
+             'the morning after, or the behind-the-scenes reaction.') +
+        case('5. The Nervous First Client',
+             'a first-timer walks into your world of work.',
+             'your identity, work outfit, real workspace, your tools.',
+             'emotion plus expert authority builds trust in your skill.',
+             'the transformation, a lesson or the client’s reaction.')
+    )
+    elems84 = [
+        E('h2', 'Blank case-study file (fill one per episode)'),
+        E('wcard', title='EPISODE FILE — BEFORE YOU POST', fields=[
+            'Concept / inspiration:', 'Who it is for (audience):',
+            'Character:', 'Story in one line:', 'Cast:', 'Environment:',
+            'Reference order:', 'Camera:', 'Opening frame:']),
+        E('wcard', title='EPISODE FILE — AFTER YOU POST', fields=[
+            'Caption I used:', 'My three pinned comments:',
+            'Views / saves / comments:', 'What worked:', 'What failed:',
+            'Next episode:']),
+    ]
+    return [
+        {'page': 81, 'doc': 'BONUS 04', 'elems': cover(
+            'BONUS 04', 'THE SCENE FILES',
+            'Study the winners in your niche, run proven viral patterns, '
+            'and keep a file on every episode you post.')},
+        {'page': 82, 'doc': 'BONUS 04', 'elems': elems82},
+        {'page': 83, 'doc': 'BONUS 04', 'elems': elems83},
+        {'page': 84, 'doc': 'BONUS 04', 'elems': elems84},
+    ]
+
+
+# Upgraded MASTER templates from the Character Starter — the canonical
+# versions everywhere (adds arm's-length framing + matte-skin realism).
+FEMALE_MASTER = ("A realistic front-facing selfie of a [AGE]-year-old "
+"[ETHNICITY] woman, taken on a phone. She is clearly [ETHNICITY] with "
+"[SKIN TONE] skin and beautiful, true-to-her features. Naturally gorgeous, "
+"the kind of face that stops you scrolling, but soft and bare with no "
+"makeup. Real skin texture, natural glow, [KEY FEATURES]. "
+"[HER ENERGY / WALL]. Her hair is [HAIRSTYLE]. Wearing a [SIMPLE TOP]. "
+"Tiny stud earrings only, minimal jewelry. Natural indoor window light, "
+"plain everyday apartment background. Authentic, candid phone selfie, not "
+"studio, not glam, but undeniably beautiful. Clearly a [SKIN TONE] "
+"[ETHNICITY] woman, real. Shot at arm's length on the front camera, at "
+"eye level, slightly imperfect framing, one shoulder closer to the lens. "
+"Matte real skin with visible pores, soft natural light only, no glossy "
+"shine, no retouching. Nothing staged or posed toward the camera, "
+"ordinary imperfect background.")
+MALE_MASTER = ("A realistic front-facing selfie of a [AGE]-year-old "
+"[ETHNICITY] man, taken on a phone. He is clearly [ETHNICITY] with "
+"[SKIN TONE] skin and beautiful, true-to-his features. Naturally handsome, "
+"the kind of face that stops you scrolling, but natural and unfiltered "
+"with no beauty filter. Real skin texture, natural glow, [KEY FEATURES]. "
+"[HIS ENERGY / WALL]. His hair is [HAIRSTYLE, e.g. a low fade / a temple "
+"fade / starter locs / a tapered afro]. Wearing a [SIMPLE TOP]. Minimal "
+"jewelry. Preserve culturally and personally appropriate grooming. "
+"Natural indoor window light, plain everyday apartment background. "
+"Authentic, candid phone selfie, not studio, not glam, but undeniably "
+"handsome. Clearly a [SKIN TONE] [ETHNICITY] man, real. Shot at arm's "
+"length on the front camera, at eye level, slightly imperfect framing, "
+"one shoulder closer to the lens. Matte real skin with visible pores, "
+"soft natural light only, no glossy shine, no retouching. Nothing staged "
+"or posed toward the camera, ordinary imperfect background.")
+
+
+def upgrade_master_prompts(pages):
+    """Swap Module 02's Prompt 1F/1M for the Character Starter versions,
+    keeping the drift-fix paragraph that follows each."""
+    for p in pages:
+        if p['doc'] != 'MODULE 02':
+            continue
+        elems, i = [], 0
+        old = p['elems']
+        while i < len(old):
+            e = old[i]
+            elems.append(e)
+            if e['type'] == 'h3':
+                h = ' '.join(e['lines'])
+                tmpl = FEMALE_MASTER if h.startswith('Prompt 1F') else \
+                    (MALE_MASTER if h.startswith('Prompt 1M') else None)
+                if tmpl:
+                    group = []
+                    j = i + 1
+                    while j < len(old) and old[j]['type'] == 'code':
+                        group.append(old[j])
+                        j += 1
+                    if group:
+                        elems.append({'type': 'code', 'y': group[0]['y'],
+                                      'lines': [tmpl]})
+                        elems.append(group[-1])  # keep the drift-fix note
+                        i = j
+                        continue
+            i += 1
+        p['elems'] = elems
+    return pages
+
+
+def main():
+    pages = json.load(open(SRC))
+    out = []
+    b1_done = sh_done = m11_done = False
+    for p in pages:
+        if p['doc'] in ('BONUS 02', 'BONUS 03', 'BONUS 04'):
+            continue  # fully replaced below
+        if p['doc'] != 'START HERE' and not sh_done:
+            out.append(start_here_tools())  # after the last Start Here page
+            sh_done = True
+        if p['doc'] == 'MODULE 12' and not m11_done:
+            out.append(module11_template())  # after the last Module 11 page
+            m11_done = True
+        out.append(p)
+        if p['doc'] == 'BONUS 01' and not b1_done:
+            out.append(bonus01_intro())  # after the Bonus 01 cover
+            b1_done = True
+    out.extend(bonus02())
+    out.extend(bonus03())
+    out.extend(bonus04())
+    out = renumber(out)
+    out = fix_included_list(out)
+    out = upgrade_master_prompts(out)
+    json.dump(out, open(OUT, 'w'), indent=1)
+    print(f'wrote {OUT}: {len(out)} pages')
+
+
+INCLUDED = [
+    'Module 01 — Character First',
+    'Module 02 — The Prompt Pack',
+    'Module 03A — Women’s Outfit Pack',
+    'Module 03B — Men’s Outfit Pack',
+    'Module 04A — Women’s Hair Pack',
+    'Module 04B — Men’s Hair + Grooming Pack',
+    'Module 05 — The Reference Blueprint',
+    'Module 06 — The SCENE Method',
+    'Module 07 — The Continuity System',
+    'Module 08 — Camera Bible',
+    'Module 09 — Realism Check',
+    'Module 10 — The SCENE Library',
+    'Module 11 — The Prompt Vault',
+    'Module 12 — The Viral Story Blueprint',
+    'Bonus 01 — Hook Vault',
+    'Bonus 02 — Caption Vault',
+    'Bonus 03 — Comment Blueprint',
+    'Bonus 04 — The SCENE Files',
+]
+OLD_NAMES = {
+    'Character First', 'The Prompt Pack', 'The SCENE Method',
+    'The Reference Blueprint', 'The Continuity System', 'The SCENE Library',
+    'Camera Bible', 'Realism Check', 'Women’s Outfit Pack',
+    'Men’s Outfit Pack', 'Women’s Hair Pack', 'Men’s Hair + Grooming Pack',
+    'The Prompt Vault', 'The Viral Story Blueprint', 'Hook Vault',
+    'Caption Vault', 'Comment Blueprint', 'The SCENE Files',
+}
+
+
+def fix_included_list(pages):
+    """Replace the What-is-included bullets with a numbered, in-order list."""
+    inserted = False
+    for p in pages:
+        if p['doc'] != 'START HERE':
+            continue
+        elems = []
+        for e in p['elems']:
+            if e['type'] == 'bullet' and \
+                    ' '.join(e['lines']).strip() in OLD_NAMES:
+                if not inserted:
+                    for item in INCLUDED:
+                        elems.append({'type': 'bullet', 'y': e['y'],
+                                      'lines': [item]})
+                    inserted = True
+                continue
+            elems.append(e)
+        p['elems'] = elems
+    return pages
+
+
+# Renumber modules so numeric order == the road-map do-order.
+# Old bundle order (03 Method, 04 Reference, 09/10 style packs) forced
+# buyers to jump around; now Module N is simply step N.
+NUM_MAP = {
+    '03': '06',   # The SCENE Method
+    '04': '05',   # The Reference Blueprint
+    '05': '07',   # The Continuity System
+    '06': '10',   # The SCENE Library
+    '07': '08',   # Camera Bible
+    '08': '09',   # Realism Check
+    '09A': '03A', '09B': '03B',   # Outfit Packs
+    '10A': '04A', '10B': '04B',   # Hair Packs
+    '13': '11',   # stray legacy reference to the Prompt Vault
+}
+NEW_ORDER = ['START HERE', 'MODULE 01', 'MODULE 02', 'MODULE 03A',
+             'MODULE 03B', 'MODULE 04A', 'MODULE 04B', 'MODULE 05',
+             'MODULE 06', 'MODULE 07', 'MODULE 08', 'MODULE 09',
+             'MODULE 10', 'MODULE 11', 'MODULE 12',
+             'BONUS 01', 'BONUS 02', 'BONUS 03', 'BONUS 04']
+
+import re as _re
+_MODREF = _re.compile(r'\b(MODULE|Module)S?\s+(\d{2}[AB]?)\b')
+
+
+def _remap_text(s):
+    def sub(m):
+        word, num = m.group(1), m.group(2)
+        return f'{word} {NUM_MAP.get(num, num)}'
+    return _MODREF.sub(sub, s)
+
+
+def renumber(pages):
+    for p in pages:
+        p['doc'] = _remap_text(p['doc'])
+        for e in p['elems']:
+            if 'lines' in e:
+                e['lines'] = [_remap_text(x) for x in e['lines']]
+            if 'rows' in e:
+                e['rows'] = [[_remap_text(c) for c in r] for r in e['rows']]
+            if 'text' in e:
+                e['text'] = _remap_text(e['text'])
+            if 'title' in e:
+                e['title'] = _remap_text(e['title'])
+            if 'fields' in e:
+                e['fields'] = [_remap_text(x) for x in e['fields']]
+    idx = {d: i for i, d in enumerate(NEW_ORDER)}
+    pages.sort(key=lambda p: (idx.get(p['doc'], 99), p['page']))
+    return pages
+
+
+if __name__ == '__main__':
+    main()
