@@ -71,9 +71,9 @@ Section description:
 ### Lesson 2 · Module 01 - Character First
 **Attach:** `01_The-SCENE-AI_Module-01_Character-First.pdf`
 **Paste:**
-> Why every viral AI page you've seen built the character BEFORE
-> touching the camera - and how to make the one decision most people
-> skip. This is the foundation everything else stands on.
+> Every viral AI page built the character FIRST - before touching the
+> camera. This module shows you the one decision most people skip.
+> Everything else stands on it.
 >
 > 🎬 That's a wrap - mark complete when you've written your character's one-line identity.
 
@@ -98,7 +98,7 @@ Section description:
 ### Lesson 5 · Module 04 - The SCENE Library
 **Attach:** `04_The-SCENE-AI_Module-04_The-SCENE-Library.pdf`
 **Paste:**
-> 120 story ideas, organized so you can pull tomorrow's episode in
+> 120 story ideas, sorted so you can pick tomorrow's episode in
 > thirty seconds. Between this and the monthly drops, "what do I post"
 > is never your problem again.
 >
@@ -225,7 +225,7 @@ CTA. **Paste:**
 > 4. A stranger returns something the character lost years ago.
 > 5. The rooftop is silent until the elevator doors open behind them.
 >
-> Fill the [BRACKETS] like any drop scene. These are Co-Star exclusives -
+> Fill the [BRACKETS] like any drop scene. These scenes are Co-Star only -
 > members below this level never see them.
 
 ### Level 5 · LEAD
@@ -234,7 +234,7 @@ CTA. **Paste:**
 > personally - what's working, what to fix, how to make Part 2.
 
 ### Level 6 · SHOWRUNNER — 5 bonus looks
-> Five looks, exclusive to Showrunners. Drop each into your outfit
+> Five looks only Showrunners get. Drop each into your outfit
 > reference:
 > HER 1: Champagne silk slip dress, gold strappy heels, thin gold chain, hair swept behind one ear.
 > HER 2: Oversized cream blazer over black bodysuit, gold hoops, sleek low bun, nude heels.
@@ -244,7 +244,7 @@ CTA. **Paste:**
 
 ### Level 7 · DIRECTOR
 > The chair is yours. 50% off any one-time package - CHARACTER
-> DELIVERED, THE EPISODE PACK, or THE PREMIERE. One use, never expires.
+> DELIVERED, THE EPISODE PACK, or THE PREMIERE. Use it once, whenever you want.
 > DM me DIRECTOR to claim.
 
 ### Level 8 · PRODUCER

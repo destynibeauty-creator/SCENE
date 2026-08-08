@@ -168,9 +168,9 @@ Five sections + nine level tiles. Covers: your Nano Banana Pro art
 
 **Lesson 2 · Module 01 - Character First** - attach
 `Module 01 - Character First.pdf`:
-> Why every viral AI page you've seen built the character BEFORE
-> touching the camera - and how to make the one decision most people
-> skip. This is the foundation everything else stands on.
+> Every viral AI page built the character FIRST - before touching the
+> camera. This module shows you the one decision most people skip.
+> Everything else stands on it.
 >
 > 🎬 That's a wrap - mark complete when you've written your character's one-line identity.
 
@@ -192,7 +192,7 @@ Five sections + nine level tiles. Covers: your Nano Banana Pro art
 
 **Lesson 5 · Module 04 - The SCENE Library** - attach
 `Module 04 - The SCENE Library.pdf`:
-> 120 story ideas, organized so you can pull tomorrow's episode in
+> 120 story ideas, sorted so you can pick tomorrow's episode in
 > thirty seconds. Between this and the monthly drops, "what do I post"
 > is never your problem again.
 >
@@ -330,8 +330,8 @@ Attach `The Identity Lock Mini-Pack.pdf`:
 > 10 for her, 10 for him. Run one today.
 
 **Level 4 · CO-STAR** - description:
-> Five scenes that exist nowhere else in the system. Co-Star
-> exclusives only.
+> Five scenes nobody else in the system ever sees. Only Co-Stars get
+> these.
 
 Inside:
 > Five scenes that exist nowhere else in the system:
@@ -341,7 +341,7 @@ Inside:
 > 4. A stranger returns something the character lost years ago.
 > 5. The rooftop is silent until the elevator doors open behind them.
 >
-> Fill the [BRACKETS] like any drop scene. These are Co-Star exclusives -
+> Fill the [BRACKETS] like any drop scene. These scenes are Co-Star only -
 > members below this level never see them.
 
 **Level 5 · LEAD** - description:
@@ -354,10 +354,10 @@ Inside:
 > personally - what's working, what to fix, how to make Part 2.
 
 **Level 6 · SHOWRUNNER** - description:
-> Five exclusive looks, his and hers, that only Showrunners ever see.
+> Five looks only Showrunners get - his and hers.
 
 Inside:
-> Five looks, exclusive to Showrunners. Drop each into your outfit
+> Five looks only Showrunners get. Drop each into your outfit
 > reference:
 > HER 1: Champagne silk slip dress, gold strappy heels, thin gold chain, hair swept behind one ear.
 > HER 2: Oversized cream blazer over black bodysuit, gold hoops, sleek low bun, nude heels.
@@ -366,12 +366,12 @@ Inside:
 > HIM 2: Charcoal double-breasted suit, no tie, black tee under, clean white sneakers.
 
 **Level 7 · DIRECTOR** - description:
-> Half off any one-time package. One use, never expires. DM me
-> DIRECTOR.
+> Half off any one-time package. Use it once, whenever you want. DM
+> me DIRECTOR.
 
 Inside:
 > The chair is yours. 50% off any one-time package - CHARACTER
-> DELIVERED, THE EPISODE PACK, or THE PREMIERE. One use, never expires.
+> DELIVERED, THE EPISODE PACK, or THE PREMIERE. Use it once, whenever you want.
 > DM me DIRECTOR to claim.
 
 **Level 8 · PRODUCER** - description:
