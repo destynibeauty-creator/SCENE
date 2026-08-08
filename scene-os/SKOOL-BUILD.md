@@ -90,13 +90,12 @@ Description shown on the locked tile:
 > realism pass. The Prompt Vault. When your character is born and
 > you're ready to build the world - this opens. $97 once.
 
-Contents (20 items - the COMPLETE OS in road-map order, files `00`
-through `18` + `scene-studio.html`): Road Map · 01 · 02 · 03 · 04 ·
-05A/05B · 06A/06B · 07 · 08 · 09 · 10 · 11 · 12 · Hook Vault ·
-Caption Vault · Comment Blueprint · SCENE Files · SCENE Studio.
-Four of these also sit on the $9 shelf - intentional: a $97 buyer
-opens ONE door and owns everything, in order, no gaps. Locked tiles
-hide their lesson list, so $9 members never see the duplication.
+Contents (14 items - the shelf CONTINUES, no repeats: members
+already own 01-04 on the open shelf): Modules 05A/05B · 06A/06B ·
+07 · 08 · 09 · 10 · 11 · 12 (files `05`-`14`) + Caption Vault (`16`)
+· Comment Blueprint (`17`) · SCENE Files (`18`) · SCENE Studio
+(`scene-studio.html`). One system across two shelves - no gaps, no
+duplicates, progress ticks never reset.
 
 **Unlock mechanics (DECIDED): Path A - Skool in-app one-time
 purchase, $97, on the section.** No external checkout for the World

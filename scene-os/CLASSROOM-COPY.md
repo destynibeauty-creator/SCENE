@@ -120,19 +120,13 @@ Tile description (this one SELLS - it's a closed door):
 > you're ready to build the world - this opens. $97 once, right here
 > in the app.
 
-Inside (owner voice - they paid): THE COMPLETE OS, in road-map
-order - a buyer opens ONE door and owns the whole system. Yes, four
-of these also live on the $9 shelf; locked tiles hide their lesson
-list, so members never see the duplication. File prefixes now MATCH
-module numbers - attach by number, no translation needed.
+Inside (owner voice - they paid): the shelf CONTINUES - no repeats.
+Every member already owns 01-04 on the open shelf; the World Builder
+picks up at Module 05 and runs to the end. One system, no gaps, no
+duplicates, ticks never reset. File prefixes match module numbers.
 
 | Lesson | Attach | Paste |
 |---|---|---|
-| The Road Map | file `00` | "The whole system, one map. You own all of it now - run it top to bottom." |
-| Module 01 - Character First | file `01` | "The one decision everything stands on." |
-| Module 02 - The Prompt Pack | file `02` | "The MASTER + DNA batches. A face that never changes." |
-| Module 03 - The SCENE Method | file `03` | "Direct the scene like an episode, not a post." |
-| Module 04 - The SCENE Library | file `04` | "120 story ideas, organized for thirty-second pulls." |
 | Module 05A - Her Outfit Pack | file `05` | "210 looks, broken down piece by piece. Your character gets a closet." |
 | Module 05B - His Outfit Pack | file `06` | "His wardrobe system - built, not borrowed." |
 | Module 06A - Her Hair Pack | file `07` | "Culturally accurate. Baby hairs, lace, texture - the details that read REAL." |
@@ -143,7 +137,6 @@ module numbers - attach by number, no translation needed.
 | Module 10 - The Realism Check | file `12` | "The pass that kills plastic skin, wrong hands, and AI tells." |
 | Module 11 - The Prompt Vault | file `13` | "Every prompt in the system + the Director's Master Template." |
 | Module 12 - Viral Story Blueprint | file `14` | "Episodes into arcs. Arcs into a world people can't unfollow." |
-| The Hook Vault | file `15` | "150 hooks that stop the scroll in the first second." |
 | The Caption Vault | file `16` | "Captions that sell the scene without sounding like ads." |
 | The Comment Blueprint | file `17` | "The 3 pinned comments under every episode - your quiet salesforce." |
 | The SCENE Files | file `18` | "The competitor teardowns and episode files. Study the game tape." |
