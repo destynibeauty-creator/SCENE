@@ -480,8 +480,13 @@ class StepFlow(Flowable):
         self.caption = caption
 
     def wrap(self, aw, ah):
+        from reportlab.lib.utils import simpleSplit
         self.width = AVAIL
-        self.height = 74 if self.caption else 62
+        self._caption_lines = (
+            simpleSplit(self.caption, FONTS['P'], 8.5, self.width)
+            if self.caption else [])
+        cap_h = len(self._caption_lines) * 12 if self._caption_lines else 0
+        self.height = 62 + cap_h
         return self.width, self.height
 
     def draw(self):
@@ -491,6 +496,7 @@ class StepFlow(Flowable):
         arrow = 14
         bw = (self.width - arrow * (n - 1)) / n
         bh = 46
+        cap_h = len(self._caption_lines) * 12 if self._caption_lines else 0
         y = self.height - 46 - 12
         for i, (num, name) in enumerate(self.steps):
             x = i * (bw + arrow)
@@ -522,10 +528,13 @@ class StepFlow(Flowable):
                 p.lineTo(ax + 4.5, y + bh / 2)
                 p.close()
                 c.drawPath(p, stroke=0, fill=1)
-        if self.caption:
+        if self._caption_lines:
             c.setFillColor(HexColor('#9AA0A8'))
             c.setFont(FONTS['P'], 8.5)
-            c.drawCentredString(self.width / 2, 0, self.caption)
+            cy = cap_h - 12
+            for ln in self._caption_lines:
+                c.drawCentredString(self.width / 2, cy, ln)
+                cy -= 12
 
 
 class CommentCard(Flowable):
@@ -625,6 +634,82 @@ class WorksheetCard(Flowable):
             c.line(24 + lw, y - 1, self.width - 16, y - 1)
             c.setDash()
             y -= 27
+
+
+class InfoCard(Flowable):
+    """Bordered card: optional pill chip, bold title, muted description
+    lines, and/or a short bulleted list. One reusable shape for tool-kit
+    rows, sample-production panels, and comparison cards."""
+
+    def __init__(self, title, accent, pill=None, lines=None, bullets=None):
+        super().__init__()
+        self.title = title
+        self.accent = accent
+        self.pill = pill              # (text, bg_color) or None
+        self.lines = lines or []      # muted description lines
+        self.bullets = bullets or []  # short bulleted items
+
+    def wrap(self, aw, ah):
+        from reportlab.lib.utils import simpleSplit
+        self.width = AVAIL
+        inner = self.width - 32
+        self._line_wraps = [simpleSplit(t, FONTS['P'], 10, inner)
+                             for t in self.lines]
+        self._bullet_wraps = [simpleSplit(t, FONTS['P-M'], 10, inner - 14)
+                               for t in self.bullets]
+        h = 20
+        if self.pill:
+            h += 27
+        h += 19  # title
+        for w in self._line_wraps:
+            h += len(w) * 14.5 + 4
+        if self.bullets:
+            h += 14
+        for w in self._bullet_wraps:
+            h += len(w) * 14.5 + 8
+        self.height = h + 14
+        return self.width, self.height
+
+    def draw(self):
+        c = self.canv
+        h = self.height
+        c.setFillColor(HexColor('#0C0C11'))
+        c.setStrokeColor(HexColor('#26262E'))
+        c.setLineWidth(0.8)
+        c.roundRect(0, 0, self.width, h - 6, 8, stroke=1, fill=1)
+        c.setFillColor(self.accent)
+        c.rect(0, 0, 3, h - 6, stroke=0, fill=1)
+        y = h - 20
+        if self.pill:
+            ptext, pbg = self.pill
+            tw = pdfmetrics.stringWidth(ptext, FONTS['P-B'], 8.5) + \
+                2.0 * len(ptext) + 20
+            c.setFillColor(pbg)
+            c.roundRect(16, y - 13, tw, 18, 9, stroke=0, fill=1)
+            tracked(c, 26, y - 8, ptext, FONTS['P-B'], 8.5, JET, 1.8)
+            y -= 27
+        c.setFillColor(WHITE)
+        c.setFont(FONTS['P-B'], 13)
+        c.drawString(16, y - 13, self.title)
+        y -= 19
+        c.setFillColor(HexColor('#9AA0A8'))
+        c.setFont(FONTS['P'], 10)
+        for wrap in self._line_wraps:
+            for ln in wrap:
+                y -= 14.5
+                c.drawString(16, y, ln)
+            y -= 4
+        if self.bullets:
+            y -= 14
+            for wrap in self._bullet_wraps:
+                c.setFillColor(self.accent)
+                c.circle(19, y - 3.5, 2, stroke=0, fill=1)
+                c.setFillColor(HexColor('#D6D8DB'))
+                c.setFont(FONTS['P-M'], 10)
+                for j, ln in enumerate(wrap):
+                    c.drawString(30, y, ln)
+                    y -= 14.5
+                y -= 8
 
 
 class NextStepBanner(Flowable):
@@ -993,22 +1078,38 @@ class SceneDoc(BaseDocTemplate):
         else:
             sy = ty - 56
 
-        # tagline in three colors
+        # tagline in three colors — wraps onto extra centered rows if the
+        # phrase list is too wide for the page (avoids running into the
+        # corner brackets)
         tag = m.get('tagline') or ''
         if tag:
             parts = [p.strip() + '.' for p in tag.split('.') if p.strip()]
             fs, gap = 9, 12
             fnt = FONTS['P-SB']
             track = 1.8
+            cols = [WHITE, m['accent'], MAGENTA]
             widths = [pdfmetrics.stringWidth(p, fnt, fs) + track * (len(p) - 1)
                       for p in parts]
-            total = sum(widths) + gap * (len(parts) - 1)
-            x = cx - total / 2
+            maxrow = AVAIL - 40
+            rows, cur, cur_w = [], [], 0
+            for p, w in zip(parts, widths):
+                add_w = w + (gap if cur else 0)
+                if cur and cur_w + add_w > maxrow:
+                    rows.append(cur); cur, cur_w = [], 0
+                    add_w = w
+                cur.append((p, w)); cur_w += add_w
+            if cur:
+                rows.append(cur)
             ty2 = sy - 26
-            cols = [WHITE, m['accent'], MAGENTA]
-            for i, p in enumerate(parts):
-                tracked(c, x, ty2, p, fnt, fs, cols[i % 3], track)
-                x += widths[i] + gap
+            idx = 0
+            for row in rows:
+                row_w = sum(w for _, w in row) + gap * (len(row) - 1)
+                x = cx - row_w / 2
+                for p, w in row:
+                    tracked(c, x, ty2, p, fnt, fs, cols[idx % 3], track)
+                    x += w + gap
+                    idx += 1
+                ty2 -= 15
 
         # progress strip: PART n / 19 with tick marks — "you are here"
         part = m.get('part', 0)
@@ -1141,6 +1242,16 @@ def build_doc(docid, pages, meta, outpath, S):
         elif t == 'wcard':
             flow.append(Spacer(1, 8))
             flow.append(WorksheetCard(e['title'], e['fields'], S['accent']))
+            flow.append(Spacer(1, 8))
+        elif t == 'infocard':
+            accent = HexColor(e['accent']) if e.get('accent') else S['accent']
+            pill = None
+            if e.get('pill'):
+                ptext, pcolor = e['pill']
+                pill = (ptext, HexColor(pcolor))
+            flow.append(Spacer(1, 8))
+            flow.append(InfoCard(e['title'], accent, pill=pill,
+                                  lines=e.get('lines'), bullets=e.get('bullets')))
             flow.append(Spacer(1, 8))
         elif t == 'h2':
             flow.append(Spacer(1, 14))
