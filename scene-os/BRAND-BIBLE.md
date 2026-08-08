@@ -7,7 +7,34 @@ a PDF, a DM, a cover - answers to this document.
 
 ---
 
-## 1 · THE BRAND IN ONE BREATH
+## 1 · THE FOUNDER
+
+Destyni Triplett, RN - a nurse who builds businesses on systems, not luck.
+
+She started in 2017 doing lashes out of her home - no studio, no
+team, just a client in a chair and the decision to get better every
+week. She went back and finished nursing school, became an RN in
+2020, and kept building the beauty business at the same time. Nine
+years later: over 1,000 clients serviced, 250+ women trained, a
+nationwide certification brand built from that same chair. She has
+already run this exact play once - take a real skill, systemize it,
+teach it, build a business from it. THE SCENE AI is the second time
+she's run that play, not the first attempt.
+
+Nursing is where the brand's real edge comes from. Nurses do not do
+something once and hope it holds - they build a protocol that
+produces the same outcome every time. THE SCENE AI points that same
+instinct at AI content: the rest of this niche sells one-off prompts.
+We sell CONTINUITY - the same face, the same body, the same world,
+episode after episode. Consistency is a clinical value, aimed at a
+creative problem. That's the whole differentiator in one sentence,
+and it's not a slogan - it's where she actually comes from.
+
+Her anchor: Habakkuk 2:2 - "write the vision and make it plain." Not
+decoration. The actual operating instruction: she writes it down,
+then builds until it exists.
+
+## 2 · THE BRAND IN ONE BREATH
 
 **THE SCENE AI** teaches creators to build AI characters and run
 them like a series - him or her or both, locked faces, real skin,
@@ -17,27 +44,54 @@ cast grows.
 - **The one-liner:** One character. A whole world. (The entry move,
   not a cap - the world holds a full cast. Lead first, then co-stars,
   then the second lead. Like any series.)
+- **The three moves** (the plain-English pitch, one level up from the
+  system itself): Create the Character. Direct the Scene. Build the
+  World. The Production Blueprint's four zones are how those three
+  moves actually run, step by step.
 - **The tagline:** Create cinematic content. Build your digital world.
 - **The promise:** Everything is copy and paste - simple enough for a
   fifth grader.
 - **The feeling:** Netflix production school meets a creator operating
   system. Members don't take a course. They run a studio.
 
-## 2 · WHO WE TALK TO
+## 3 · WHO WE TALK TO
 
-The creator who wants a content page that doesn't need their face,
-their wardrobe, or their location. Any niche - beauty, fitness, music,
-real estate. Him AND her, always. They're not engineers and they don't
-want to be: they want a system to follow in order, and they want their
-character to look REAL - real skin texture, baby hairs, culturally
-accurate styling. That last part is not a feature, it's the flag:
-nobody else in this niche builds for them on purpose.
+Two audiences, one system. We build for both without changing the
+product - only the doorway changes.
 
-Second audience, always watching: the business owner who would rather
-pay than build. We never chase them in copy - WORK WITH ME sits
-visible, and Q1 of the join questions finds them.
+**Segment A - The Creator.** Building an audience, wants to be
+recognizable. Any niche - beauty, fitness, music, real estate. Him
+AND her, always. They're not engineers and don't want to be: they
+want a system to follow in order, and they want their character to
+look REAL - real skin texture, baby hairs, culturally accurate
+styling. That last part is not a feature, it's the flag: nobody else
+in this niche builds for them on purpose.
 
-## 3 · THE WORLD WE SPEAK FROM
+**Segment B - The Business Owner.** Marketing a real company, wants a
+brand face they own. Salons and med spas, boutiques and e-commerce,
+real estate agents, restaurants, home service and care providers,
+consultants, local businesses with no content team. Their pain: a
+photoshoot costs hundreds every time they need new content, they've
+been recycling the same booked-model photos for a year, they can't
+keep up with every promo and season, and their competitor's page
+looks like a magazine while theirs looks like a phone.
+
+**The reframe that makes this brand bigger than it looks:** a creator
+builds a character to become recognizable. A business owner builds a
+character to let the customer see themselves in it - the woman in the
+chair, the buyer at the closing table, the client on the couch. Same
+product either way (Character First, Continuity, Camera Bible, the
+outfit and hair packs are exactly what a business owner needs too) -
+only the framing moves, from "build your following" to "build your
+brand's face." We already reach this segment through Q1 of the join
+questions and the visible WORK WITH ME page; a dedicated ad angle and
+DM script for this segment is future work, not built yet.
+
+**What turns both segments off:** hype, guru energy, vague promises,
+and anything that reads like it was written by someone who hasn't
+actually built what they're selling.
+
+## 4 · THE WORLD WE SPEAK FROM
 
 Everything in this brand is a production. Not a metaphor we visit -
 the world we live in:
@@ -53,11 +107,14 @@ the world we live in:
 - The system is **THE PRODUCTION BLUEPRINT**: four zones -
   🎭 CASTING, ✍🏽 STORY DEVELOPMENT, 🎨 PRODUCTION DESIGN,
   🎬 PRODUCTION + RELEASE.
+- Inside Zone 2, directing a single episode runs on **the S.C.E.N.E.
+  Method** - five blocks, left to right: Story, Cast, Environment,
+  Now Build, End on your stamp.
 - Progress is a film career: Extra to Studio Head.
 - Every lesson ends the same way: **"🎬 That's a wrap - mark complete
   when..."**
 
-## 4 · THE NAME SYSTEM
+## 5 · THE NAME SYSTEM
 
 | Thing | Name | Never call it |
 |---|---|---|
@@ -79,7 +136,7 @@ CONTINUES the shelf, it never re-sells what members own. Vaults hold
 collections (Hook Vault, Prompt Vault, Caption Vault). Blueprints hold
 systems (Production, Reference, Comment, Viral Story).
 
-## 5 · THE TWO VOICES
+## 6 · THE TWO VOICES
 
 **Voice 1 - THE FUNNEL (outside the paid door):** ads, About page,
 AutoDM, IG captions. Sells hard but honest. Short punches. Emoji
@@ -99,7 +156,7 @@ grade 3.9). Short sentences. Big claims backed by something you can
 screenshot. Hard system words always arrive with a plain translation:
 "Continuity - Part 2 starts one second after Part 1 ended."
 
-## 6 · THE LANGUAGE TABLE (the words, decided)
+## 7 · THE LANGUAGE TABLE (the words, decided)
 
 | We never say | We always say |
 |---|---|
@@ -123,7 +180,7 @@ looks, one Master Scene) · the [BRACKETS] (the fill-in slots in every
 prompt) · zones 1-4 (the blueprint stages) · LOCKED ✓ (a checkpoint
 passed) · "That's a wrap" (lesson complete).
 
-## 7 · COPY RULES (non-negotiable)
+## 8 · COPY RULES (non-negotiable)
 
 1. **No em dashes** in customer-facing copy. Hyphens only.
 2. **Emoji kit.** Brand marks: 🎬 🎥 🔒 ⚡ 🌍 👀 · Structure: ✅ ❌ 🚨
@@ -132,17 +189,22 @@ passed) · "That's a wrap" (lesson complete).
 3. **No income claims, ever.** Not in ads, not in captions, not in
    DMs. Our proof: view counts, "is she real" comments, what a scene
    cost to make.
-4. **No fake scarcity.** $9 flat until 50,000 members. The only
+4. **No boss-babe framing, no fake lifestyle flexing.** No rented
+   cars, no staged wealth. Credibility comes from finished, postable
+   work - not a performed lifestyle.
+5. **No fake scarcity.** $9 flat until 50,000 members. The only
    pressure line allowed: "The price goes up as we grow." A specific
    number that never comes true is a screenshot that burns the brand.
-5. **Prompts are sacred.** Copy inside prompt blocks never gets
+6. **Prompts are sacred.** Copy inside prompt blocks never gets
    reworded for style - members paste it into AI tools.
-6. **Reading level is a spec, not a vibe.** Member-facing copy tests
+7. **Reading level is a spec, not a vibe.** Member-facing copy tests
    at sixth grade or under before it ships.
-7. **Every lesson closes with the wrap line** and a checkable action:
+8. **Every lesson closes with the wrap line** and a checkable action:
    "🎬 That's a wrap - mark complete when [something they did]."
+9. **Never state a business fact we haven't verified** - a trademark,
+   a credential, a number. If unsure, leave it out rather than guess.
 
-## 8 · VISUAL IDENTITY
+## 9 · VISUAL IDENTITY
 
 **The palette - dark set, neon lights:**
 
@@ -155,8 +217,13 @@ passed) · "That's a wrap" (lesson complete).
 | Silver/chrome | #C0C3C7 | Titles - brushed-metal headline treatment |
 | Off-white | #F7F7F5 | Body text on black |
 
-Accents cycle cyan → magenta → lime across documents and UI. Magenta
-owns the locks and the money moments. Lime owns beginnings.
+Accents cycle cyan, then magenta, then lime across documents and UI.
+Magenta owns the locks and the money moments. Lime owns beginnings.
+*(Flag: an earlier identity brief named only black, silver, cyan and
+magenta as the locked palette, with no lime. Every shipped asset - all
+19 module PDFs, every rank badge, the roadmap graphic - already runs
+lime as the third accent. Lime stays as documented here unless
+Destyni says cut it; changing it means re-touching every rendered PDF.)*
 
 **Type:** Poppins everywhere - ExtraBold for display titles (the
 brushed-chrome treatment), Bold/SemiBold for headings and labels
@@ -184,7 +251,34 @@ behind cover titles, the accent cycle per document, progress ticks
 (PART 07 OF 19), corner brackets, magenta NEXT STEP banners, code
 panels for prompts with a COPY THIS header.
 
-## 9 · THE LADDER (offers, and how we talk about money)
+## 10 · POSITIONING (for pitch decks, ad briefs, media kits - not classroom copy)
+
+**Positioning statement:** For creators who want content people
+recognize, THE SCENE AI is the operating system for building
+consistent AI characters and cinematic worlds - because the
+difference between random pictures and a real brand is a character
+you can repeat.
+
+**What makes this different:**
+- Everyone else teaches how to make an image. We teach how to build a
+  world.
+- Everyone else sells prompts. We sell a named method - the S.C.E.N.E.
+  Method, the Production Blueprint.
+- Everyone else's proof is a screenshot. Ours is a finished,
+  serialized body of work.
+- We are not competing on price or trend speed. We compete on depth,
+  taste, and a system that holds up past the first post.
+
+**The vibe, one paragraph:** dark, cinematic, expensive, and calm. A
+director's monitor glowing in a black room - silver type, a flash of
+cyan, a flash of magenta. Feels like a film studio, not a course. No
+clutter, no stock energy, no screaming arrows.
+
+This section is reference language for pitches and ad briefs. It runs
+above the sixth-grade reading target on purpose - never paste it
+directly into classroom or About-page copy without simplifying first.
+
+## 11 · THE LADDER (offers, and how we talk about money)
 
 | Rung | Price | Voice rule |
 |---|---|---|
@@ -198,16 +292,22 @@ Money voice: we minimize our price ($0.30 a day) and prove our cost
 ("this scene cost $4 to make") - we never promise their income. The
 7-day money-back guarantee is real and appears wherever the price does.
 
-## 10 · THE RANKS (the career ladder)
+*(This is the live ladder, sold entirely through Skool. There is no
+separate storefront, no standalone Stan product, and no "planned"
+membership tier waiting to launch - THE SCENE AI membership above IS
+the recurring tier, live now. If you see the ladder described any
+other way in an older document, this page is the correct one.)*
 
-Extra → Day Player → Supporting → Co-Star → Lead → Showrunner →
-Director → Producer → Studio Head. Points are likes from other
-members - the ladder rewards good episodes, not spam. Every rank
-speaks in the world's voice ("You're on the call sheet"), and the top
-three pay real prizes (50% off DFY · free lifetime · the World
-Builder, free). Rank badges: metallic emblems, no text.
+## 12 · THE RANKS (the career ladder)
 
-## 11 · WHAT WE NEVER DO
+Extra, Day Player, Supporting, Co-Star, Lead, Showrunner, Director,
+Producer, Studio Head. Points are likes from other members - the
+ladder rewards good episodes, not spam. Every rank speaks in the
+world's voice ("You're on the call sheet"), and the top three pay real
+prizes (50% off DFY · free lifetime · the World Builder, free). Rank
+badges: metallic emblems, no text.
+
+## 13 · WHAT WE NEVER DO
 
 - Never a different face every post - in our content OR our copy. The
   brand is consistency; we are the proof. (More characters is not more
@@ -216,6 +316,7 @@ Builder, free). Rank badges: metallic emblems, no text.
   FOCUS, not limits - the second character is a sequel move, made
   after the first one is locked and releasing.
 - Never guru-core: no rented Lambos, no income screenshots, no 🚀.
+- Never boss-babe framing or fake lifestyle flexing (see Copy Rule 4).
 - Never "AI influencer girlfriend" energy. She's a series lead, not a
   fantasy. He exists too, always.
 - Never punch down at members' niches. Every niche gets the same
@@ -225,3 +326,7 @@ Builder, free). Rank badges: metallic emblems, no text.
   the hook. Inside, she's the talent and the member is the director.
 - Never spend the business's rent money. The brand is self-funded and
   says so out loud - "built from a phone" includes the budget.
+- Never state a fact about the business we haven't verified (see Copy
+  Rule 9) - a stale funnel, an old storefront, an unconfirmed
+  trademark. Wrong facts in brand material cost more to unwind than
+  they saved by skipping the check.
