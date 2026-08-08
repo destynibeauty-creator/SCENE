@@ -6,7 +6,7 @@ ROOT = os.path.dirname(HERE)
 OUT = os.path.join(ROOT, 'skool-upload')
 
 MAP = {
- 'pdfs/00_The-SCENE-AI_Start-Here_The-SCENE-OS.pdf': 'The Production Schedule.pdf',
+ 'pdfs/00_The-SCENE-AI_Start-Here_Production-Blueprint.pdf': 'The Production Blueprint.pdf',
  'pdfs/01_The-SCENE-AI_Module-01_Character-First.pdf': 'Module 01 - Character First.pdf',
  'pdfs/02_The-SCENE-AI_Module-02_The-Prompt-Pack.pdf': 'Module 02 - The Prompt Pack.pdf',
  'pdfs/03_The-SCENE-AI_Module-03_The-SCENE-Method.pdf': 'Module 03 - The SCENE Method.pdf',

@@ -246,27 +246,56 @@ class PanelLabel(Flowable):
 
 
 class SystemMap(Flowable):
-    """Full road map: 9 numbered steps with arrows, START and POST pins."""
+    """The Production Blueprint: four production zones, each ending in a
+    LOCKED checkpoint. Zones 3-4 sit behind THE WORLD BUILDER."""
 
-    STEPS = [
-        ('1', 'CHARACTER FIRST', 'Pick who your audience will follow.', 'MODULE 01'),
-        ('2', 'PROMPT PACK', 'Make your MASTER face and DNA photos.', 'MODULE 02'),
-        ('3', 'THE SCENE METHOD', 'Direct your first scene: story, cast, place.', 'MODULE 03'),
-        ('4', 'THE SCENE LIBRARY', 'Pick tomorrow\'s story in thirty seconds.', 'MODULE 04'),
-        ('5', 'OUTFIT + HAIR', 'Lock the look for every episode.', 'MODULES 05 + 06'),
-        ('6', 'REFERENCE BLUEPRINT', 'Give every photo you upload one job.', 'MODULE 07'),
-        ('7', 'CONTINUITY SYSTEM', 'Make Part 2 match Part 1.', 'MODULE 08'),
-        ('8', 'CAMERA + REALISM', 'Shoot it real. Catch anything fake.', 'MODULES 09 + 10'),
-        ('9', 'VAULT + STORY', 'Build the final prompt. Grow the world.', 'MODULES 11 + 12'),
+    # (num, title, question, [(item, ref)], checkpoint(text, next), locked)
+    ZONES = [
+        ('1', 'CASTING + CHARACTER DEVELOPMENT', 'Who are we following?',
+         [('Character First', 'MODULE 01'),
+          ('The Prompt Pack', 'MODULE 02')],
+         ('CAST LOCKED', 'MOVE TO STORY DEVELOPMENT'), False),
+        ('2', 'STORY DEVELOPMENT', 'What happens in tonight’s episode?',
+         [('The SCENE Method', 'MODULE 03'),
+          ('The SCENE Library - or this month’s drop', 'MODULE 04'),
+          ('The Hook Vault', 'BONUS 01')],
+         ('STORY LOCKED', 'MOVE TO PRODUCTION DESIGN'), False),
+        ('3', 'PRODUCTION DESIGN', 'What does the world look like?',
+         [('Wardrobe - hers and his', 'MODULES 05A + 05B'),
+          ('Hair + Grooming - hers and his', 'MODULES 06A + 06B'),
+          ('Production References', 'MODULE 07'),
+          ('Continuity', 'MODULE 08'),
+          ('The Camera', 'MODULE 09'),
+          ('The Realism Pass', 'MODULE 10')],
+         ('WORLD LOCKED', 'READY FOR PRODUCTION'), True),
+        ('4', 'PRODUCTION + RELEASE', 'Roll. Release. Study. Repeat.',
+         [('The Prompt Vault', 'MODULE 11'),
+          ('Viral Story Blueprint', 'MODULE 12'),
+          ('Caption Vault + Comment Blueprint', 'BONUS 02 + 03'),
+          ('SCENE Studio - writes your prompts', 'THE TOOL')],
+         None, True),
     ]
-    ROW, GAP = 44, 11
-    DIVIDER_AFTER = 4   # steps 1-4 = the $9 shelf; WORLD BUILDER below
-    DIV_H = 24
+    FLOW = 'PREP > GENERATE > EDIT > RELEASE > STUDY RESPONSE > NEXT EPISODE'
+    PAD_T, HEAD, QLINE, IROW, PAD_B = 8, 15, 12, 13, 8
+    CHK, DIV, FLOW_H = 26, 22, 18
+    DIVIDER_BEFORE = 2   # zones 1-2 = the $9 shelf; WORLD BUILDER below
+
+    def _card_h(self, z):
+        h = self.PAD_T + self.HEAD + self.QLINE + len(z[3]) * self.IROW \
+            + self.PAD_B
+        if z[5] and z[4] is None:
+            h += self.FLOW_H
+        return h
 
     def wrap(self, aw, ah):
         self.width = AVAIL
-        self.height = 30 + len(self.STEPS) * self.ROW + \
-            (len(self.STEPS) - 1) * self.GAP + 40 + self.DIV_H
+        h = 26  # START HERE chip
+        for i, z in enumerate(self.ZONES):
+            if i == self.DIVIDER_BEFORE:
+                h += self.DIV
+            h += self._card_h(z)
+            h += self.CHK if z[4] else 30
+        self.height = h + 20  # final chip
         return self.width, self.height
 
     def _chip(self, c, cx, cy, text, bg):
@@ -276,73 +305,124 @@ class SystemMap(Flowable):
         c.setFillColor(JET)
         tracked(c, 0, cy + 5.5, text, FONTS['P-B'], 8.5, JET, 1.6, center_at=cx)
 
+    def _connector(self, c, cx, y_top, length):
+        c.setStrokeColor(HexColor('#3A3A44'))
+        c.setLineWidth(1.4)
+        c.line(cx, y_top, cx, y_top - length + 6)
+        c.setFillColor(HexColor('#3A3A44'))
+        p = c.beginPath()
+        p.moveTo(cx - 4, y_top - length + 7)
+        p.lineTo(cx + 4, y_top - length + 7)
+        p.lineTo(cx, y_top - length + 1)
+        p.close()
+        c.drawPath(p, stroke=0, fill=1)
+
+    def _check(self, c, x, y, col):
+        c.setStrokeColor(col)
+        c.setLineWidth(1.5)
+        c.setLineCap(1)
+        c.line(x, y + 2.6, x + 2.4, y)
+        c.line(x + 2.4, y, x + 7, y + 6.2)
+        c.setLineCap(0)
+
     def draw(self):
         c = self.canv
-        cycle = [CYAN, MAGENTA, LIME]
+        cycle = [CYAN, LIME, MAGENTA, CYAN]
         bx, bw = 24, self.width - 48
-        chip_cx = bx + 30
-        y = self.height - 30
-        self._chip(c, self.width / 2, y + 6, 'START HERE', LIME)
-        for i, (n, name, desc, ref) in enumerate(self.STEPS):
-            col = cycle[i % 3]
-            extra = self.DIV_H if i >= self.DIVIDER_AFTER else 0
-            top = y - i * (self.ROW + self.GAP) - extra
-            if i == self.DIVIDER_AFTER:
-                dy = top + self.GAP + 9
+        cx = self.width / 2
+        y = self.height
+        self._chip(c, cx, y - 20, 'START HERE - DAY ONE ON SET', LIME)
+        y -= 26
+        for i, z in enumerate(self.ZONES):
+            n, title, q, items, chk, locked = z
+            col = cycle[i]
+            if i == self.DIVIDER_BEFORE:
+                dy = y - self.DIV / 2 + 3
                 c.setStrokeColor(HexColor('#3A2230'))
                 c.setLineWidth(1)
                 c.line(bx, dy, bx + bw * 0.22, dy)
                 c.line(bx + bw * 0.78, dy, bx + bw, dy)
                 tracked(c, 0, dy - 3, 'THE WORLD BUILDER OPENS HERE',
-                        FONTS['P-B'], 8.5, MAGENTA, 2.2,
-                        center_at=bx + bw / 2)
-            # connector arrow from previous
-            if i > 0:
-                ay = top + self.GAP
-                c.setStrokeColor(HexColor('#3A3A44'))
-                c.setLineWidth(1.4)
-                c.line(chip_cx, ay + self.GAP - 2, chip_cx, ay - 8)
-                c.setFillColor(HexColor('#3A3A44'))
-                p = c.beginPath()
-                p.moveTo(chip_cx - 4, ay - 7)
-                p.lineTo(chip_cx + 4, ay - 7)
-                p.lineTo(chip_cx, ay - 13)
-                p.close()
-                c.drawPath(p, stroke=0, fill=1)
-            box_y = top - self.ROW
+                        FONTS['P-B'], 8.5, MAGENTA, 2.2, center_at=bx + bw / 2)
+                y -= self.DIV
+            ch = self._card_h(z)
+            box_y = y - ch
             c.setFillColor(HexColor('#0C0C11'))
             c.setStrokeColor(HexColor('#26262E'))
             c.setLineWidth(0.7)
-            c.roundRect(bx, box_y, bw, self.ROW, 6, stroke=1, fill=1)
+            c.roundRect(bx, box_y, bw, ch, 6, stroke=1, fill=1)
             c.setFillColor(col)
-            c.rect(bx, box_y, 3, self.ROW, stroke=0, fill=1)
-            # number chip
+            c.rect(bx, box_y, 3, ch, stroke=0, fill=1)
+            # zone header: number chip + ZONE n · TITLE
+            hy = y - self.PAD_T - self.HEAD
             c.setFillColor(col)
-            c.circle(chip_cx, box_y + self.ROW / 2, 11, stroke=0, fill=1)
+            c.circle(bx + 22, hy + 6.5, 9.5, stroke=0, fill=1)
             c.setFillColor(JET)
-            c.setFont(FONTS['P-XB'], 12)
-            c.drawCentredString(chip_cx, box_y + self.ROW / 2 - 4.2, n)
-            # text
+            c.setFont(FONTS['P-XB'], 10.5)
+            c.drawCentredString(bx + 22, hy + 3, n)
             c.setFillColor(WHITE)
-            c.setFont(FONTS['P-B'], 11.5)
-            c.drawString(chip_cx + 24, box_y + self.ROW - 20, name)
-            c.setFillColor(HexColor('#B9BDC4'))
-            c.setFont(FONTS['P'], 9.5)
-            c.drawString(chip_cx + 24, box_y + 8, desc)
-            tracked(c, 0, box_y + self.ROW - 19, ref, FONTS['MONO'], 7, col,
-                    1.2, center_at=bx + bw - 52)
-            if i >= self.DIVIDER_AFTER:
-                # locked-row badge: padlock + THE WORLD BUILDER
-                lx = tracked(c, 0, box_y + 8, 'THE WORLD BUILDER',
+            c.setFont(FONTS['P-B'], 10.5)
+            c.drawString(bx + 38, hy + 2.5, f'ZONE {n}  ·  {title}')
+            if locked:
+                lx = tracked(c, 0, hy + 3, 'THE WORLD BUILDER',
                              FONTS['P-B'], 6.5, MAGENTA, 1.6,
                              center_at=bx + bw - 47)
                 c.setFillColor(MAGENTA)
                 c.setStrokeColor(MAGENTA)
                 c.setLineWidth(1.1)
-                c.roundRect(lx - 11, box_y + 7, 6.4, 4.6, 1, stroke=0, fill=1)
-                c.arc(lx - 10.2, box_y + 10.2, lx - 5.6, box_y + 14.6,
+                c.roundRect(lx - 11, hy + 2, 6.4, 4.6, 1, stroke=0, fill=1)
+                c.arc(lx - 10.2, hy + 5.2, lx - 5.6, hy + 9.6,
                       startAng=0, extent=180)
-        self._chip(c, self.width / 2, 2, 'POST IT', MAGENTA)
+            # the question the zone answers
+            qy = hy - self.QLINE
+            c.setFillColor(HexColor('#9AA0A8'))
+            c.setFont(FONTS['P'], 8.8)
+            c.drawString(bx + 38, qy + 2.5, q)
+            # items
+            iy = qy
+            for name, ref in items:
+                iy -= self.IROW
+                c.setFillColor(col)
+                c.rect(bx + 40, iy + 4, 4, 4, stroke=0, fill=1)
+                c.setFillColor(HexColor('#E2E4E7'))
+                c.setFont(FONTS['P'], 9)
+                c.drawString(bx + 52, iy + 2.5, name)
+                tracked(c, 0, iy + 3, ref, FONTS['MONO'], 6.8, col, 1.2,
+                        center_at=bx + bw - 60)
+            # zone 4 carries the release loop
+            if locked and chk is None:
+                fy = box_y + 8
+                tracked(c, 0, fy, self.FLOW, FONTS['MONO'], 6.8,
+                        col, 1.2, center_at=bx + bw / 2)
+            y = box_y
+            # checkpoint pill between zones
+            if chk:
+                txt1, txt2 = chk
+                f1, s1 = FONTS['P-B'], 7.8
+                f2, s2 = FONTS['MONO'], 6.8
+                w1 = pdfmetrics.stringWidth(txt1, f1, s1) + 1.4 * len(txt1)
+                w2 = pdfmetrics.stringWidth(txt2, f2, s2) + 1.2 * len(txt2)
+                check_w, sep_w, pad = 13, 16, 14
+                pw = pad + w1 + check_w + sep_w + w2 + pad
+                py = y - self.CHK / 2 - 9
+                self._connector(c, cx, y, self.CHK)
+                c.setFillColor(JET)
+                c.setStrokeColor(col)
+                c.setLineWidth(0.9)
+                c.roundRect(cx - pw / 2, py, pw, 18, 9, stroke=1, fill=1)
+                tx = cx - pw / 2 + pad
+                tracked(c, tx, py + 5.5, txt1, f1, s1, col, 1.4)
+                self._check(c, tx + w1 + 4, py + 5.5, col)
+                c.setFillColor(HexColor('#5A5A64'))
+                c.setFont(FONTS['P-B'], 7.5)
+                c.drawString(tx + w1 + check_w + 4, py + 5.2, '›')
+                tracked(c, tx + w1 + check_w + sep_w, py + 5.5, txt2,
+                        f2, s2, HexColor('#B9BDC4'), 1.2)
+                y -= self.CHK
+            elif i == len(self.ZONES) - 1:
+                self._connector(c, cx, y, 26)
+                y -= 30
+        self._chip(c, cx, y - 16, 'YOUR EPISODE IS LIVE', MAGENTA)
 
 
 class MethodFlow(Flowable):
@@ -1037,7 +1117,7 @@ def build_doc(docid, pages, meta, outpath, S):
             if docid == 'START HERE' and not did_map:
                 did_map = True
                 flow.append(Spacer(1, 6))
-                flow.append(AccentHeading('Your production schedule', S['accent']))
+                flow.append(AccentHeading('The four production zones', S['accent']))
                 flow.append(Spacer(1, 10))
                 flow.append(SystemMap())
                 flow.append(Spacer(1, 14))

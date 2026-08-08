@@ -55,13 +55,16 @@ Section description:
 
 ### Lesson 1 · The Map
 **Attach (two files, map first):** `The Creator OS Map.pdf` +
-`The Production Schedule.pdf`
+`The Production Blueprint.pdf`
 **Paste:**
-> The whole system on one road. Four zones, one unlock, one loop.
+> This is how a real studio runs a show - and how you run yours.
+> Four zones: 🎭 CASTING, ✍🏽 STORY DEVELOPMENT, 🎨 PRODUCTION DESIGN,
+> 🎬 PRODUCTION + RELEASE. You move forward when a zone is LOCKED.
 >
-> First time: follow the whole road, top to bottom. Every episode
-> after: jump straight to the tool that solves your next problem.
-> The second file is the full production schedule - same system, more detail.
+> First episode: run the zones in order, top to bottom. Every episode
+> after: your cast and world are already locked, so you jump straight
+> to STORY and roll. The second file is the full Production Blueprint -
+> every zone, every checkpoint, every module.
 >
 > 🎬 That's a wrap - mark complete when you know which zone you're in today.
 

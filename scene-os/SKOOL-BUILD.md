@@ -73,7 +73,7 @@ doors: the 🔒 World Builder tile and 🎥 WORK WITH ME.
 ### Section 2 · 🟢 BUILD YOUR CHARACTER — access: ALL MEMBERS
 | Item | File |
 |---|---|
-| The Map | `The Creator OS Map.pdf` + `The Production Schedule.pdf` (file `00`) |
+| The Map | `The Creator OS Map.pdf` + `The Production Blueprint.pdf` (file `00`) |
 | Module 01 - Character First | `01_..._Character-First.pdf` |
 | Module 02 - The Prompt Pack | `02_..._The-Prompt-Pack.pdf` |
 | Module 03 - The SCENE Method | `03_..._The-SCENE-Method.pdf` |

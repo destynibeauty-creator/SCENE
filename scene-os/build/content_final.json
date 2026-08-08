@@ -12,21 +12,21 @@
    {
     "type": "h1",
     "lines": [
-     "THE SCENE OS"
+     "PRODUCTION BLUEPRINT"
     ],
     "y": 103.84100000000001
    },
    {
     "type": "sub",
     "lines": [
-     "Your full plan, from character idea to posted episode."
+     "From character development to released episode."
     ],
     "y": 145.53200000000004
    },
    {
     "type": "label",
     "lines": [
-     "CREATE THE CHARACTER. DIRECT THE SCENE. BUILD THE WORLD."
+     "CAST THE LEAD. LOCK THE STORY. RELEASE THE EPISODE."
     ],
     "y": 165.83799999999997
    }
@@ -39,15 +39,15 @@
    {
     "type": "h2",
     "lines": [
-     "How to use this system"
+     "How to run this blueprint"
     ],
     "y": 56.29200000000003
    },
    {
     "type": "body",
     "lines": [
-     "The SCENE AI is not a pile of random prompts. It is one connected system for creators.",
-     "Do the modules in order the first time. Once your character is locked in, come back to just the modules you need for each new episode."
+     "This is a real production pipeline - the same way a studio runs a show. Four zones. You move to the next zone only when the one before it is LOCKED.",
+     "Your first episode: run the zones in order, top to bottom. Every episode after: your cast and your world are already locked, so you jump straight to STORY DEVELOPMENT and roll from there."
     ],
     "y": 83.65999999999997
    },
@@ -56,54 +56,29 @@
     "y": 113.03571428571429,
     "rows": [
      [
-      "STEP",
-      "MODULE",
-      "RESULT"
+      "STAGE",
+      "ZONE",
+      "WHAT GETS LOCKED"
      ],
      [
-      "1",
-      "Character First",
-      "Choose who the audience will follow."
+      "🎭 CASTING",
+      "Zone 1 - Casting + Character Development",
+      "Your lead. Face, body and references, locked in Modules 01 and 02."
      ],
      [
-      "2",
-      "Prompt Pack",
-      "Build the MASTER, DNA sheet, body lock and expression library."
+      "✍ DEVELOPMENT",
+      "Zone 2 - Story Development",
+      "Tonight’s episode. Story, hook and scene, locked in Modules 03 and 04."
      ],
      [
-      "3",
-      "The SCENE Method",
-      "Direct Story, Cast, Environment, Now Build and End Stamp."
+      "🎨 PRE-PRODUCTION",
+      "Zone 3 - Production Design",
+      "The world. Wardrobe, hair, location, camera and realism, locked in THE WORLD BUILDER."
      ],
      [
-      "4",
-      "The SCENE Library",
-      "Pick tomorrow’s story in thirty seconds."
-     ],
-     [
-      "5",
-      "Outfit + Hair Systems",
-      "Lock the look for each episode without changing who the character is."
-     ],
-     [
-      "6",
-      "Reference Blueprint",
-      "Give every image you upload a clear job."
-     ],
-     [
-      "7",
-      "Continuity System",
-      "Make Part 2 look like it begins one second after Part 1."
-     ],
-     [
-      "8",
-      "Camera + Realism",
-      "Put the camera in a believable spot. Catch the details that make AI look fake."
-     ],
-     [
-      "9",
-      "Vault + Story",
-      "Build the final master prompt. Post, study the response, build the next episode."
+      "🎬 PRODUCTION + RELEASE",
+      "Zone 4 - Production + Release",
+      "The episode. Built in the vault, produced, released, studied."
      ]
     ]
    },
@@ -272,7 +247,7 @@
     "type": "body",
     "y": 0,
     "lines": [
-     "Finish your shelf first. When your character is born and posting, THE WORLD BUILDER opens everything else — the styling systems, the camera, the realism pass, the vault."
+     "Finish your shelf first - Zones 1 and 2 live on your $9 shelf. When your lead is cast and your first episodes are out, THE WORLD BUILDER opens Zones 3 and 4: the styling systems, the camera, the realism pass, the vault."
     ]
    }
   ],
@@ -323,7 +298,7 @@
      [
       "Turn it all into video",
       "Seedance 2.0",
-      "It accepts multiple reference images at once - attach them ALL."
+      "It accepts multiple production references at once - attach them ALL."
      ],
      [
       "Control the motion",
@@ -333,7 +308,7 @@
      [
       "Edit, captions and sound",
       "CapCut",
-      "Free and enough. Cut, caption, post."
+      "Free and enough. Cut, caption, release."
      ]
     ]
    },
@@ -358,7 +333,7 @@
      ],
      [
       "3",
-      "MAKE THE VIDEO"
+      "PRODUCE IT"
      ],
      [
       "4",
@@ -366,7 +341,7 @@
      ],
      [
       "5",
-      "EDIT + POST"
+      "EDIT + RELEASE"
      ]
     ],
     "caption": "Prompt · photos · Seedance 2.0 with ALL references · Kling for motion · CapCut."
@@ -375,7 +350,7 @@
     "type": "body",
     "y": 0,
     "lines": [
-     "The bigger your scenes get, the more reference images you attach at once — one for identity, one for hair, one for the outfit, one for each location. The full multi-reference master template is in Module 11: The Prompt Vault, inside THE WORLD BUILDER."
+     "The bigger your scenes get, the more production references you attach at once — one for identity, one for hair, one for the outfit, one for each location. The full multi-reference master template is in Module 11: The Prompt Vault, inside THE WORLD BUILDER."
     ]
    },
    {
