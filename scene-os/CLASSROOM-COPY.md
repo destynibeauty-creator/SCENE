@@ -2,7 +2,7 @@
 
 Voice rule: members already paid. Director language everywhere. Selling
 copy exists ONLY on the locked World Builder tile and WORK WITH ME.
-Every lesson ends with a "Mark complete when..." line - ticks feed the
+Every lesson ends with a "That's a wrap - mark complete when..." line - ticks feed the
 progress bars, progress bars feed retention.
 
 Files: `scene-os/pdfs/` and `scene-os/products/`.
@@ -21,7 +21,7 @@ Files: `scene-os/pdfs/` and `scene-os/products/`.
 > 2. Open "Cast your lead" and build your character - him or her.
 > 3. Post your intro in 🎬 Start Here: who you are + who you're building.
 >
-> ✅ Mark complete when your intro is posted.
+> 🎬 That's a wrap - mark complete when your intro is posted.
 
 ### Lesson 2 · Cast your lead
 **Attach:** `The-SCENE-AI_Cast-Your-Lead_Members-Edition.pdf`
@@ -34,7 +34,7 @@ Files: `scene-os/pdfs/` and `scene-os/products/`.
 > standing there looking real, save that photo. That's your MASTER.
 > Their ID card, forever.
 >
-> ✅ Mark complete when your MASTER is saved to your phone.
+> 🎬 That's a wrap - mark complete when your MASTER is saved to your phone.
 
 ### Lesson 3 · Your drop schedule
 **No attachment. Paste:**
@@ -43,7 +43,7 @@ Files: `scene-os/pdfs/` and `scene-os/products/`.
 > shoot. One scene a day is a month of episodes. You never write from
 > a blank page again.
 >
-> ✅ Mark complete when you've opened Drop 001.
+> 🎬 That's a wrap - mark complete when you've opened Drop 001.
 
 ---
 
@@ -60,7 +60,7 @@ Section description:
 > and where everything lives. Read this once before Module 01 and
 > you'll never wonder "what do I do next."
 >
-> ✅ Mark complete when you can name the next module you're running.
+> 🎬 That's a wrap - mark complete when you can name the next module you're running.
 
 ### Lesson 2 · Module 01 - Character First
 **Attach:** `01_The-SCENE-AI_Module-01_Character-First.pdf`
@@ -69,7 +69,7 @@ Section description:
 > touching the camera - and how to make the one decision most people
 > skip. This is the foundation everything else stands on.
 >
-> ✅ Mark complete when you've written your character's one-line identity.
+> 🎬 That's a wrap - mark complete when you've written your character's one-line identity.
 
 ### Lesson 3 · Module 02 - The Prompt Pack
 **Attach:** `02_The-SCENE-AI_Module-02_The-Prompt-Pack.pdf`
@@ -78,7 +78,7 @@ Section description:
 > [BRACKETS]. By the end of this module your character has a face that
 > never changes and a full set of reference photos.
 >
-> ✅ Mark complete when your MASTER + DNA batch are generated and saved.
+> 🎬 That's a wrap - mark complete when your MASTER + DNA batch are generated and saved.
 
 ### Lesson 4 · Module 03 - The SCENE Method
 **Attach:** `03_The-SCENE-AI_Module-03_The-SCENE-Method.pdf`
@@ -87,7 +87,7 @@ Section description:
 > This is where your character stops being a photo and starts being a
 > SHOW.
 >
-> ✅ Mark complete when your first episode is posted. Tag #THESCENEAI.
+> 🎬 That's a wrap - mark complete when your first episode is posted. Tag #THESCENEAI.
 
 ### Lesson 5 · Module 04 - The SCENE Library
 **Attach:** `04_The-SCENE-AI_Module-04_The-SCENE-Library.pdf`
@@ -96,7 +96,7 @@ Section description:
 > thirty seconds. Between this and the monthly drops, "what do I post"
 > is never your problem again.
 >
-> ✅ Mark complete when you've shortlisted your next 5 episodes.
+> 🎬 That's a wrap - mark complete when you've shortlisted your next 5 episodes.
 
 ### Lesson 6 · The Hook Vault
 **Attach:** `15_The-SCENE-AI_Bonus-01_Hook-Vault.pdf`
@@ -104,7 +104,7 @@ Section description:
 > 150 hooks that stop the scroll in the first second. Pick one, put it
 > in the first line of your caption or the first frame of your scene.
 >
-> ✅ Mark complete when you've saved your 10 favorites.
+> 🎬 That's a wrap - mark complete when you've saved your 10 favorites.
 
 ---
 
@@ -146,7 +146,7 @@ module numbers - attach by number, no translation needed.
 | The SCENE Files | file `18` | "The competitor teardowns and episode files. Study the game tape." |
 | SCENE Studio | `scene-studio.html` | "The tool that writes your prompts. Download, open in your browser, works offline." |
 
-Every lesson: "✅ Mark complete when you've run it once."
+Every lesson: "🎬 That's a wrap - mark complete when you've run it once."
 
 ---
 
@@ -162,7 +162,7 @@ Every lesson: "✅ Mark complete when you've run it once."
 > Member mission: post ONE scene from this drop in 🎥 Episodes with
 > #THESCENEAI. Best episode gets broken down in next month's drop.
 >
-> ✅ Mark complete when your first drop scene is posted.
+> 🎬 That's a wrap - mark complete when your first drop scene is posted.
 
 ---
 
@@ -197,7 +197,7 @@ CTA. **Paste:**
 > Day Player, and the prizes get bigger from there - scroll the wall.
 > Fastest first points: post your intro in 🎬 Start Here.
 >
-> ✅ Mark complete when your intro is up.
+> 🎬 That's a wrap - mark complete when your intro is up.
 
 ### Level 2 · DAY PLAYER — "Your first credit"
 > You're on the call sheet. Three hooks from the vault - shoot
@@ -211,7 +211,7 @@ CTA. **Paste:**
 > ☐ MASTER saved  ☐ Scene picked, [BRACKETS] filled  ☐ Generated
 > ☐ Caption written  ☐ 3 pinned comments ready  ☐ Posted + #THESCENEAI
 >
-> ✅ Mark complete when the checklist is done once.
+> 🎬 That's a wrap - mark complete when the checklist is done once.
 
 ### Level 3 · SUPPORTING
 **Attach:** `The-SCENE-AI_Identity-Lock-Mini-Pack.pdf`
