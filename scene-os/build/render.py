@@ -712,6 +712,76 @@ class InfoCard(Flowable):
                 y -= 8
 
 
+CAST_DIR = os.path.join(HERE, 'assets', 'cast')
+
+
+class CastSpread(Flowable):
+    """Zone opener: two framed cast photos side by side (hero row), a
+    small 'other angles' row beneath, and a locked/checkpoint bar."""
+
+    def __init__(self, accent, people, angles, locked_text):
+        super().__init__()
+        self.accent = accent
+        self.people = people          # [(img, tag, tag_color), ...] x2
+        self.angles = angles          # [(img, caption), ...]
+        self.locked_text = locked_text
+
+    TAG_H, GAP1, ALT_CAP_H, GAP2, LOCK_H = 30, 14, 16, 14, 20
+
+    def wrap(self, aw, ah):
+        self.width = AVAIL
+        self.hero_h = 250
+        self.alt_h = 120
+        self.height = (self.hero_h + self.TAG_H + self.GAP1 + self.alt_h +
+                       self.ALT_CAP_H + self.GAP2 + self.LOCK_H)
+        return self.width, self.height
+
+    def _framed(self, c, path, x, y, w, h, border):
+        img = ImageReader(os.path.join(CAST_DIR, path))
+        iw, ih = img.getSize()
+        scale = min(w / iw, h / ih)
+        dw, dh = iw * scale, ih * scale
+        c.setFillColor(HexColor('#0C0C11'))
+        c.setStrokeColor(border)
+        c.setLineWidth(1.2)
+        c.roundRect(x, y, w, h, 6, stroke=1, fill=1)
+        c.saveState()
+        p = c.beginPath()
+        p.roundRect(x + 2, y + 2, w - 4, h - 4, 5)
+        c.clipPath(p, stroke=0, fill=0)
+        c.drawImage(img, x + (w - dw) / 2, y + (h - dh) / 2, dw, dh,
+                    preserveAspectRatio=True, mask='auto')
+        c.restoreState()
+
+    def draw(self):
+        c = self.canv
+        y = self.height
+        gap = 16
+        hw = (self.width - gap) / 2
+        hero_y = y - self.hero_h
+        for i, (img, tag, tag_color) in enumerate(self.people):
+            x = i * (hw + gap)
+            self._framed(c, img, x, hero_y, hw, self.hero_h, HexColor(tag_color))
+            tw = pdfmetrics.stringWidth(tag, FONTS['P-B'], 8.5) + 2.0 * len(tag) + 20
+            c.setFillColor(HexColor(tag_color))
+            c.roundRect(x + 10, hero_y - 22, tw, 18, 9, stroke=0, fill=1)
+            tracked(c, x + 20, hero_y - 17, tag, FONTS['P-B'], 8.5, JET, 1.8)
+        alt_y = hero_y - self.TAG_H - self.GAP1 - self.alt_h
+        n = len(self.angles)
+        aw = (self.width - gap * (n - 1)) / n
+        for i, (img, cap) in enumerate(self.angles):
+            x = i * (aw + gap)
+            self._framed(c, img, x, alt_y, aw, self.alt_h, HexColor('#26262E'))
+            c.setFillColor(HexColor('#9AA0A8'))
+            c.setFont(FONTS['P-SB'], 8)
+            c.drawCentredString(x + aw / 2, alt_y - 12, cap.upper())
+        c.setFillColor(self.accent)
+        c.circle(10, 5, 3, stroke=0, fill=1)
+        c.setFillColor(HexColor('#D6D8DB'))
+        c.setFont(FONTS['P-SB'], 9.5)
+        c.drawString(22, 1, self.locked_text)
+
+
 class NextStepBanner(Flowable):
     """End-of-document wayfinding: big arrow + where to go next."""
 
@@ -1253,6 +1323,14 @@ def build_doc(docid, pages, meta, outpath, S):
             flow.append(InfoCard(e['title'], accent, pill=pill,
                                   lines=e.get('lines'), bullets=e.get('bullets')))
             flow.append(Spacer(1, 8))
+        elif t == 'castspread':
+            people = [(img, tag, col) for img, tag, col in e['people']]
+            angles = [(img, cap) for img, cap in e['angles']]
+            flow.append(Spacer(1, 6))
+            flow.append(CastSpread(S['accent'], people, angles, e['locked_text']))
+            flow.append(Spacer(1, 10))
+        elif t == 'pagebreak':
+            flow.append(PageBreak())
         elif t == 'h2':
             flow.append(Spacer(1, 14))
             flow.append(AccentHeading(' '.join(e['lines']), S['accent']))

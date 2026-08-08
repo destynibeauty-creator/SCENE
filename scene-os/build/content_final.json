@@ -95,6 +95,69 @@
     "doc": "START HERE",
     "elems": [
       {
+        "type": "pagebreak"
+      },
+      {
+        "type": "h2",
+        "lines": [
+          "ZONE 1 - CASTING"
+        ]
+      },
+      {
+        "type": "body",
+        "lines": [
+          "Lock your characters before anything else. Every future image, scene, and episode should match the same faces, body types, styling, and details, so your series feels consistent and impossible to ignore."
+        ]
+      },
+      {
+        "type": "castspread",
+        "people": [
+          [
+            "female-hero.jpg",
+            "FEMALE LEAD",
+            "#F600A2"
+          ],
+          [
+            "male-hero.jpg",
+            "MALE LEAD",
+            "#00E5FF"
+          ]
+        ],
+        "angles": [
+          [
+            "female-alt.jpg",
+            "Back"
+          ],
+          [
+            "male-alt.jpg",
+            "Rear 3/4"
+          ]
+        ],
+        "locked_text": "CAST LOCKED - ready for production."
+      },
+      {
+        "type": "h3",
+        "lines": [
+          "What Zone 1 locks"
+        ]
+      },
+      {
+        "type": "bullet",
+        "lines": [
+          "Lead characters - the people your audience will follow.",
+          "Face identity - facial structure, eyes, lips, brows, skin tone, and expression range.",
+          "Body and silhouette - your character should still look like them from head to toe.",
+          "Signature looks - wardrobe helps the audience recognize your cast before they even speak.",
+          "Distinctive details - hair, jewelry, skin, grooming, and signature features."
+        ]
+      }
+    ]
+  },
+  {
+    "page": 3,
+    "doc": "START HERE",
+    "elems": [
+      {
         "type": "h2",
         "lines": [
           "YOUR EPISODE PRODUCTION CYCLE"
