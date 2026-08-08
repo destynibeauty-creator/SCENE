@@ -55,13 +55,13 @@ Section description:
 
 ### Lesson 1 · The Map
 **Attach (two files, map first):** `The Creator OS Map.pdf` +
-`The Road Map.pdf`
+`The Production Schedule.pdf`
 **Paste:**
 > The whole system on one road. Four zones, one unlock, one loop.
 >
 > First time: follow the whole road, top to bottom. Every episode
 > after: jump straight to the tool that solves your next problem.
-> The second file is the deep road map - same system, more detail.
+> The second file is the full production schedule - same system, more detail.
 >
 > 🎬 That's a wrap - mark complete when you know which zone you're in today.
 
