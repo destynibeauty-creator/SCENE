@@ -9,11 +9,14 @@ a PDF, a DM, a cover - answers to this document.
 
 ## 1 · THE BRAND IN ONE BREATH
 
-**THE SCENE AI** teaches creators to build one AI character and run
-them like a series - him or her, locked face, real skin, episode
-after episode, all from a phone.
+**THE SCENE AI** teaches creators to build AI characters and run
+them like a series - him or her or both, locked faces, real skin,
+episode after episode, all from a phone. One lead first. Then the
+cast grows.
 
-- **The one-liner:** One character. A whole world.
+- **The one-liner:** One character. A whole world. (The entry move,
+  not a cap - the world holds a full cast. Lead first, then co-stars,
+  then the second lead. Like any series.)
 - **The tagline:** Create cinematic content. Build your digital world.
 - **The promise:** Everything is copy and paste - simple enough for a
   fifth grader.
@@ -42,7 +45,9 @@ the world we live in:
 - Members are **creators and directors**. Never students. Never users.
 - They don't make videos. They **produce episodes**.
 - They don't post. They **release**.
-- Their character isn't created. Their lead is **CAST**.
+- Characters aren't created. They are **CAST** - the lead first,
+  then the co-star, then the second lead. A world can hold a full
+  cast; every new face gets its own MASTER and its own lock.
 - Nothing is chosen or finished. It's **LOCKED** - the cast is locked,
   the story is locked, the world is locked.
 - The system is **THE PRODUCTION BLUEPRINT**: four zones -
@@ -63,7 +68,7 @@ the world we live in:
 | The system doc | The Production Blueprint | the road map, the workflow |
 | The zone map | The Creator OS Map | the diagram |
 | Monthly content | Drops (Drop 001, 002...) | updates, new content |
-| The character's photo ID | the MASTER | profile pic, avatar |
+| The character's photo ID | the MASTER (one per character - every cast member gets their own) | profile pic, avatar |
 | The reference set | DNA batch, production references | reference images |
 | A piece of content | an episode, a scene | a post, a video |
 | The DFY arm | WORK WITH ME - I'm an AI Creative Director | services, freelancing |
@@ -205,7 +210,11 @@ Builder, free). Rank badges: metallic emblems, no text.
 ## 11 · WHAT WE NEVER DO
 
 - Never a different face every post - in our content OR our copy. The
-  brand is consistency; we are the proof.
+  brand is consistency; we are the proof. (More characters is not more
+  faces for one character: every cast member is locked, separately.)
+- Never cap the world at one character. The lead-first rule is about
+  FOCUS, not limits - the second character is a sequel move, made
+  after the first one is locked and releasing.
 - Never guru-core: no rented Lambos, no income screenshots, no 🚀.
 - Never "AI influencer girlfriend" energy. She's a series lead, not a
   fantasy. He exists too, always.
