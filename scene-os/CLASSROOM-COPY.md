@@ -25,7 +25,7 @@ Files: `scene-os/pdfs/` and `scene-os/products/`.
 
 ### Lesson 2 · Cast your lead
 **Attach:** `The-SCENE-AI_Cast-Your-Lead_Members-Edition.pdf`
-*(the FREE edition is for AutoDM leads only - never in the classroom)*
+*(the ONLY live Starter - the free funnel edition is retired)*
 **Paste:**
 > Every world starts with one face.
 >
@@ -114,8 +114,8 @@ Tile description (this one SELLS - it's a closed door):
 > Everything that stops face drift, fake-looking AI, and Part 2 not
 > matching Part 1. Styling systems for him and her. The camera. The
 > realism pass. The Prompt Vault. When your character is born and
-> you're ready to build the world - this opens. $97 once.
-> [Square link if Path B]
+> you're ready to build the world - this opens. $97 once, right here
+> in the app.
 
 Inside (owner voice - they paid): THE COMPLETE OS, in road-map
 order - a buyer opens ONE door and owns the whole system. Yes, four
@@ -168,23 +168,24 @@ Every lesson: "✅ Mark complete when you've run it once."
 
 ## 🎥 SECTION 5 · WORK WITH ME (all members - this page sells)
 
-One text lesson, no attachment. **Paste:**
+One text lesson, no attachment. Sold by INVOICE - the DM is the only
+CTA. **Paste:**
 > Don't want to build? I'm an AI Creative Director. I build worlds for
 > people who'd rather run them.
 >
 > **CHARACTER, DELIVERED - $297.** You talk, I build. Your locked
 > character, styled for your niche, first episode ready to post.
-> Delivered in 7 days. → [Square link]
+> Delivered in 7 days.
 >
 > **THE EPISODE PACK - $697.** A month of episodes, directed by me.
 > Four ready-to-run episodes with captions and pinned comments. You
-> just generate and post. → [Square link]
+> just generate and post.
 >
 > **THE PREMIERE - $997.** Your character, born and launched. Built,
 > styled, six episodes directed, comment funnel set up. Everything my
-> system does, done for you, in 14 days. → [Square link]
+> system does, done for you, in 14 days.
 >
-> DM me BUILT to start.
+> DM me BUILT to start. I'll ask three questions and send your invoice.
 
 ---
 

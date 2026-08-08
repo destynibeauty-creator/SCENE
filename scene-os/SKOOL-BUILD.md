@@ -67,7 +67,7 @@ doors: the 🔒 World Builder tile and 🎥 WORK WITH ME.
 | Item | File / content |
 |---|---|
 | Day one on set | 2-min phone video, unpolished: "You're the director now. This is your studio. Here's your first 24 hours." |
-| Cast your lead | `The-SCENE-AI_FREE_The-Character-Starter.pdf` + "Every world starts with one face. Build yours today - him or her." |
+| Cast your lead | `The-SCENE-AI_Cast-Your-Lead_Members-Edition.pdf` + "Every world starts with one face. Build yours today - him or her." |
 | Your drop schedule | Text: "On the 1st of every month a new drop lands: 30 scenes, 10 looks, one Master Scene ready to shoot. One scene a day is a month of episodes." |
 
 ### Section 2 · 🟢 BUILD YOUR CHARACTER — access: ALL MEMBERS
