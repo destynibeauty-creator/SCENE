@@ -96,7 +96,7 @@ Section description:
 > thirty seconds. Between this and the monthly drops, "what do I post"
 > is never your problem again.
 >
-> 🎬 That's a wrap - mark complete when you've shortlisted your next 5 episodes.
+> 🎬 That's a wrap - mark complete when you've picked your next 5 episodes.
 
 ### Lesson 6 · The Hook Vault
 **Attach:** `15_The-SCENE-AI_Bonus-01_Hook-Vault.pdf`

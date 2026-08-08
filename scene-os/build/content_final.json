@@ -2059,14 +2059,14 @@
    {
     "type": "body",
     "lines": [
-     "01. The first customer walks in early"
+     "01. The first customer walks in before the sign is even up"
     ],
     "y": 83.65999999999997
    },
    {
     "type": "body",
     "lines": [
-     "02. A meeting becomes a partnership offer"
+     "02. The meeting was set for 15 minutes. It ran two hours."
     ],
     "y": 102.06000000000006
    },
@@ -2080,14 +2080,14 @@
    {
     "type": "body",
     "lines": [
-     "04. A launch notification goes off during lunch"
+     "04. The launch sells out during lunch - the phone will not stop"
     ],
     "y": 138.86
    },
    {
     "type": "body",
     "lines": [
-     "05. The client asks for something bigger than expected"
+     "05. The client asks for something ten times bigger"
     ],
     "y": 157.26
    },
@@ -2101,7 +2101,7 @@
    {
     "type": "body",
     "lines": [
-     "07. An assistant brings unexpected numbers"
+     "07. The numbers come in and the whole room goes quiet"
     ],
     "y": 194.06000000000006
    },
@@ -2115,7 +2115,7 @@
    {
     "type": "body",
     "lines": [
-     "09. A competitor quietly attends the event"
+     "09. A competitor shows up to the launch party. Smiling."
     ],
     "y": 230.86
    },
@@ -2171,7 +2171,7 @@
    {
     "type": "body",
     "lines": [
-     "06. The label sends one final revision"
+     "06. The label calls at midnight with one demand"
     ],
     "y": 393.71000000000004
    },
@@ -2296,70 +2296,70 @@
    {
     "type": "body",
     "lines": [
-     "01. A client reveals a previous bad experience"
+     "01. The client sits down and says, \"Fix what she did.\""
     ],
     "y": 83.65999999999997
    },
    {
     "type": "body",
     "lines": [
-     "02. The sanitation check changes the appointment"
+     "02. The mirror turn makes the whole salon go quiet"
     ],
     "y": 102.06000000000006
    },
    {
     "type": "body",
     "lines": [
-     "03. A beauty product arrives before launch"
+     "03. A walk-in books the last appointment under a fake name"
     ],
     "y": 120.46000000000004
    },
    {
     "type": "body",
     "lines": [
-     "04. A mirror reveal makes the room go silent"
+     "04. The transformation is filmed - but only the reaction is shown"
     ],
     "y": 138.86
    },
    {
     "type": "body",
     "lines": [
-     "05. A student completes the first clean set"
+     "05. The bride cries before the makeup is even finished"
     ],
     "y": 157.26
    },
    {
     "type": "body",
     "lines": [
-     "06. The educator stops the class for one safety lesson"
+     "06. The chair spins around and everybody starts recording"
     ],
     "y": 175.65999999999997
    },
    {
     "type": "body",
     "lines": [
-     "07. A client asks for a look from years ago"
+     "07. A client brings a photo of the character from years ago"
     ],
     "y": 194.06000000000006
    },
    {
     "type": "body",
     "lines": [
-     "08. The treatment room is prepared for a VIP"
+     "08. The room is set up for a VIP nobody will name"
     ],
     "y": 212.46000000000004
    },
    {
     "type": "body",
     "lines": [
-     "09. A product demonstration becomes a transformation"
+     "09. Another stylist watches the technique from the doorway"
     ],
     "y": 230.86
    },
    {
     "type": "body",
     "lines": [
-     "10. The founder catches a shortcut and teaches the right way"
+     "10. The \"no photos\" client asks for one picture - for her mama"
     ],
     "y": 249.26
    },
@@ -2687,70 +2687,70 @@
    {
     "type": "body",
     "lines": [
-     "01. The nervous student sits in the front row"
+     "01. The student who almost quit goes first today"
     ],
     "y": 519.76
    },
    {
     "type": "body",
     "lines": [
-     "02. The educator notices one person doubting themselves"
+     "02. One question from the back row changes the whole class"
     ],
     "y": 538.1600000000001
    },
    {
     "type": "body",
     "lines": [
-     "03. The room is ready before anyone arrives"
+     "03. The teacher shows their own first attempt. The room laughs, then goes quiet."
     ],
     "y": 556.56
    },
    {
     "type": "body",
     "lines": [
-     "04. A student completes the first step live"
+     "04. Every seat is full - and the doors opened three minutes ago"
     ],
     "y": 574.96
    },
    {
     "type": "body",
     "lines": [
-     "05. The class learns why safety comes first"
+     "05. The demo fails live. The teacher keeps rolling."
     ],
     "y": 593.36
    },
    {
     "type": "body",
     "lines": [
-     "06. A screen shows the lesson everyone avoided"
+     "06. A student's before-and-after gets passed around the room"
     ],
     "y": 611.76
    },
    {
     "type": "body",
     "lines": [
-     "07. The founder shares the mistake that changed the method"
+     "07. The graduate walks back in - as the guest speaker"
     ],
     "y": 630.1600000000001
    },
    {
     "type": "body",
     "lines": [
-     "08. The quietest student asks the strongest question"
+     "08. The challenge: one skill, seven days, receipts required"
     ],
     "y": 648.56
    },
    {
     "type": "body",
     "lines": [
-     "09. The challenge begins with a decision"
+     "09. The quietest student posts the strongest result"
     ],
     "y": 666.96
    },
    {
     "type": "body",
     "lines": [
-     "10. The final day reveals how much changed"
+     "10. Class ends. Nobody leaves."
     ],
     "y": 685.36
    }
