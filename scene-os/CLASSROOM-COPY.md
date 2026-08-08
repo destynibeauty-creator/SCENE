@@ -53,14 +53,17 @@ Section description:
 > In order, top to bottom. By the end of this shelf your lead is cast,
 > locked, and on screen.
 
-### Lesson 1 · The Road Map
-**Attach:** `00_The-SCENE-AI_Start-Here_The-SCENE-OS.pdf`
+### Lesson 1 · The Map
+**Attach (two files, map first):** `The Creator OS Map.pdf` +
+`The Road Map.pdf`
 **Paste:**
-> The whole system on one map - what you're building, in what order,
-> and where everything lives. Read this once before Module 01 and
-> you'll never wonder "what do I do next."
+> The whole system on one road. Four zones, one unlock, one loop.
 >
-> 🎬 That's a wrap - mark complete when you can name the next module you're running.
+> First time: follow the whole road, top to bottom. Every episode
+> after: jump straight to the tool that solves your next problem.
+> The second file is the deep road map - same system, more detail.
+>
+> 🎬 That's a wrap - mark complete when you know which zone you're in today.
 
 ### Lesson 2 · Module 01 - Character First
 **Attach:** `01_The-SCENE-AI_Module-01_Character-First.pdf`

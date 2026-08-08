@@ -26,6 +26,7 @@ MAP = {
  'pdfs/17_The-SCENE-AI_Bonus-03_Comment-Blueprint.pdf': 'The Comment Blueprint.pdf',
  'pdfs/18_The-SCENE-AI_Bonus-04_The-SCENE-Files.pdf': 'The SCENE Files.pdf',
  'products/The-SCENE-AI_Cast-Your-Lead_Members-Edition.pdf': 'Cast Your Lead.pdf',
+ 'products/The-Creator-OS-Map.pdf': 'The Creator OS Map.pdf',
  'products/The-SCENE-AI_Identity-Lock-Mini-Pack.pdf': 'The Identity Lock Mini-Pack.pdf',
  'products/THE-SCENE-AI_Drop-001_The-Vacation-Heat-Drop.pdf': 'Drop 001 - The Vacation Heat Drop.pdf',
  'studio/scene-studio.html': 'SCENE Studio.html',
