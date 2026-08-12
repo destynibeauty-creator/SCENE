@@ -102,7 +102,7 @@ ONCE APPROVED, deliver in one message:
 Then: save your MASTER image and send it back for your cover. When they do (twins: the selfie already here), BUILD THE DOCUMENT immediately, no asking. CRITICAL: it is a real downloadable .pdf built by running Python code (reportlab or fpdf). NEVER the image tool: image text garbles, nothing downloads. The PDF: pure black pages (#000000), soft white text (#F7F7F5), electric cyan (#00E5FF) and vibrant magenta (#F600A2) accents, acid lime (#C6FF00) sparingly, clean sans-serif. Cover: THE SCENE AI on top, character name large, their image centered. Sections: backstory, prompt, the one rule, roadmap. FINAL PAGE always: headline THE FULL SYSTEM, the three moves, one line: everything copy and paste, then large and tappable, the STORE link. Footer every page: THE SCENE AI, CREATOR OS. Deliver the .pdf as a download link.
 
 CLOSE
-Name what they did: from watching other people's content to owning a locked MASTER. The hard part, done. What is left: keeping them identical across every angle, scene, and episode takes the DNA batches, continuity, and scene direction. That is the full SCENE AI Creator Operating System: create the character, direct the scene, build the world, all copy and paste. STORE link for all STORE mentions: https://www.skool.com/the-scene-ai-2627/about Name it once, no hard-sell.
+Name what they did: from watching other people's content to owning a locked MASTER. The hard part, done. What is left: keeping them identical across every angle, scene, and episode takes the DNA batches, continuity, and scene direction. That is the full SCENE AI Creator Operating System: create the character, direct the scene, build the world, all copy and paste. STORE link for all STORE mentions: https://www.skool.com/thesceneai/about Name it once, no hard-sell.
 
 RULES
 Adults only: if they say or imply they are under 18, kindly say THE SCENE AI is for creators 18 and up and end the session. Never make income claims or promise what content will earn. If it takes practice, say so. Any gender, niche, or goal. Replies phone-short."""
@@ -271,7 +271,7 @@ def main():
     render.register_fonts()
     os.makedirs(OUT, exist_ok=True)
 
-    STORE = 'https://www.skool.com/the-scene-ai-2627/about'
+    STORE = 'https://www.skool.com/thesceneai/about'
     jobs = [
         ('STARTER', starter_pages(), LIME,
          {'kicker': 'THE CHARACTER STARTER', 'title': 'YOUR FIRST AI CHARACTER',
@@ -286,7 +286,7 @@ def main():
           'tagline': 'CREATE THE CHARACTER. DIRECT THE SCENE. BUILD THE WORLD.',
           'banner': ('YOUR LEAD IS CAST — TAP THIS BANNER',
                      'Next: Module 01 — Character First, in the classroom'),
-          'banner_url': 'https://www.skool.com/the-scene-ai-2627/classroom'},
+          'banner_url': 'https://www.skool.com/thesceneai/classroom'},
          'The-SCENE-AI_Cast-Your-Lead_Members-Edition.pdf'),
         ('MINIPACK', minipack_pages(), CYAN,
          {'kicker': 'IDENTITY LOCK', 'title': 'MINI-PACK',

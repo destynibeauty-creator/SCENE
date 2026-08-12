@@ -41,7 +41,7 @@ names - upload straight from that folder.
 
 ## STEP 1 · GROUP SETTINGS (live - verify these)
 
-- Name: **THE SCENE AI** · URL: **https://www.skool.com/the-scene-ai-2627**
+- Name: **THE SCENE AI** · URL: **https://www.skool.com/thesceneai**
   (clean URL costs the $99 plan - that waits for the money rule)
 - Plan: Hobby · Price: **$9/month** · **Free trial OFF**
 - Privacy: Private · Discovery: ON · Membership approval: manual
@@ -420,7 +420,7 @@ Inside:
 **AutoDM copy (keyword SCENE, ManyChat free):**
 > You're in 🎬 This is where I teach the whole system - your
 > character, built and locked today, him or her:
-> https://www.skool.com/the-scene-ai-2627
+> https://www.skool.com/thesceneai
 > $9 founding price locks for life. Not for you? Full refund in
 > your first 7 days.
 
@@ -481,7 +481,7 @@ don't write new copy.
 >
 > Not for you? Full refund in your first 7 days. Cancel anytime.
 > 👇 Enter THE SCENE
-> https://www.skool.com/the-scene-ai-2627
+> https://www.skool.com/thesceneai
 
 ### AD 2 · "She's not real" — the craft angle. Creative: the bottle-delivery clip, overlay "she's not real."
 > 99% of AI content looks fake.
@@ -506,7 +506,7 @@ don't write new copy.
 > ✅ Monthly drops so you never run out of episodes
 >
 > $9/month founding rate, locks for life. 7-day money-back guarantee.
-> 👇 https://www.skool.com/the-scene-ai-2627
+> 👇 https://www.skool.com/thesceneai
 
 ### AD 3 · "Didn't join by accident" — social proof. HOLD until ~100 members. Creative: grid-scroll of the character's feed.
 > [X]+ creators didn't join THE SCENE AI by accident.
@@ -520,7 +520,7 @@ don't write new copy.
 > - Getting their episodes broken down and reposted
 >
 > $9/month, locks for life. 7-day money-back guarantee.
-> 👇 https://www.skool.com/the-scene-ai-2627
+> 👇 https://www.skool.com/thesceneai
 
 *(Update [X] monthly as the count grows - cheapest copy refresh there is.)*
 
@@ -540,7 +540,7 @@ don't write new copy.
 > ✅ Everything copy-paste. No editing skills. No film school.
 >
 > $9/month founding. Full refund in your first 7 days if it's not for you.
-> 👇 https://www.skool.com/the-scene-ai-2627
+> 👇 https://www.skool.com/thesceneai
 
 ### AD 5 · "Copy and paste" — beginner safety. Creative: 15-second screen record, prompt - paste - scene appears.
 > You don't know anything about AI? Good. You'll learn faster.
@@ -557,7 +557,7 @@ don't write new copy.
 > episode. Most members do all three in their first sitting.
 >
 > $9/month founding rate. $0.30/day. 7-day money-back guarantee.
-> 👇 https://www.skool.com/the-scene-ai-2627
+> 👇 https://www.skool.com/thesceneai
 
 **Headline / CTA bank:** "One Character. A Whole World. $9" · "Build
 Your AI Character Today | Just $9" · "Go From Random AI Pics To A World

@@ -13,7 +13,7 @@
 > founding-price threshold — at 600, new members pay $49/mo.
 > **FIRST MILESTONE: 10 founding members, all organic.**
 >
-> **GROUP URL (live): https://www.skool.com/the-scene-ai-2627 .** Custom URL
+> **GROUP URL (live): https://www.skool.com/thesceneai .** Custom URL
 > requires the $99 plan, so -2627 stands until the SELF-FUNDING RULE
 > unlocks Pro. PRO-DAY CHECKLIST addition: claim the clean URL, then
 > re-render products (one command) + re-attach, swap AutoDM/bio links
@@ -45,7 +45,7 @@ THE SCENE AI — $9/mo (Skool) · 7-day money-back guarantee
 **AutoDM copy (keyword SCENE):**
 > You're in 🎬 This is where I teach the whole system - your
 > character, built and locked today, him or her:
-> https://www.skool.com/the-scene-ai-2627
+> https://www.skool.com/thesceneai
 > $9 founding price locks for life. Not for you? Full refund in
 > your first 7 days.
 

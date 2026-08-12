@@ -230,7 +230,7 @@ def main():
             'accent': HexColor(MAG), 'accent_hex': MAG,
             'part': 0, 'total': 0, 'next': None,
             'banner': ('NEXT DROP', 'Drop 002 lands next month. Post with #THESCENEAI.'),
-            'banner_url': 'https://www.skool.com/the-scene-ai-2627/about',
+            'banner_url': 'https://www.skool.com/thesceneai/about',
             'cover_page': None, 'closing': True}
     ps = pages()
     meta['cover_page'] = ps[0]
