@@ -10,19 +10,31 @@ teardown: nobody in their ~260-ad library can film this.
 
 ## The receipts (as of Sep 10 — all currently true, refresh before use)
 
-| Metric | TikTok | Instagram (collab, crossposted to FB) | Facebook (app view) |
+| Metric | TikTok | Instagram (collab w/ profashionalist + thesceneai) | Facebook (separate post) |
 |---|---|---|---|
-| Views | 777.8K | 1,380,007 (963.9K unique viewers) | 503.9K |
+| Views | 777.8K | 1,380,286 (963.9K unique viewers; crosspost FB views only 869) | 503.9K |
 | Likes / Engagement | 90K likes | 46.9K likes | 44.5K engagement |
 | Comments | 1,641 | 749 | incl. "Scene" keyword comments |
 | Shares / Saves | 4,176 / 15K saves | 4.7K shares / 7.7K saves / 2.7K reposts | — |
-| New followers | 12.7K | **0** (see run note 8) | — |
-| Watch | 51.7s avg · 24.87% full | 37s avg | 135× non-follower reach vs typical |
+| New followers | 12.7K | 9.9K (from 62.6K profile visits) | — |
+| Bio link clicks | — | **35** (see run note 8 — the leak) | — |
+| Watch | 51.7s avg · 24.87% full | 37s avg · skip rate 35.9% (better than typical) | 135× non-follower reach vs typical |
 
-**Combined: 2M+ views in 4 days** (TikTok 777.8K + IG 1.38M; the FB
-503.9K may overlap the IG crosspost, so claim "2 million+", not 2.6M —
-never a number that could be called inflated). Comments across
-platforms: **2,300+**.
+**Combined: 2.6M+ views in 4 days, verified non-overlapping** (the IG
+insights break out crosspost FB views at just 869, so the 503.9K FB
+post is a separate surface: 777.8K + 1,380,286 + 503,978 = 2.66M).
+Ad copy stays at "2 million+" — understatement never has to be
+retracted, and it stays true as the number climbs.
+Comments across platforms: **2,300+**. New followers: **22,600+**
+(12.7K TikTok + 9.9K IG).
+
+**Audience (IG):** 99.4% non-followers — this story converts total
+strangers, which is exactly what a cold Meta ad needs. Age: 25–34 =
+35%, 35–44 = 29.6% (core 25–44 ≈ 65%), 45–54 = 11.8%. That's the ad
+targeting brief: broad, but expect delivery to settle on women 25–44.
+Quality signals all better than typical (like rate 5.0%, save 0.8%,
+share 0.5%, repost 0.3% — only comment rate runs low, so pin a
+question comment to feed it).
 Top comment words (TikTok): **nursing school (18) · next episode (15) ·
 part two (12) · next part (10) · god bless (7)** — the audience is
 literally demanding the series format the product teaches.
@@ -141,13 +153,15 @@ picture-in-picture.
 7. **What stays out:** no income claims, no "you'll go viral" promise
    — the copy sells the system that made THIS story, and the receipts
    do the rest.
-8. **The Instagram leak: 1.38M views, ZERO follows.** The IG reel ran
-   as a collaboration (profashionalist + richdestyni), so the reach
-   didn't bank followers anywhere — TikTok converted 777K views into
-   12.7K followers, IG converted 1.38M into none. Fixes for Part Two:
-   post it on the account that should own the audience (solo, or with
-   that account as the collab AUTHOR), and pin the keyword CTA
-   ("Comment SCENE") on BOTH the original reel and Part Two — the
-   comment→DM funnel converts reach even when the follow button
-   doesn't. The original reel still has live reach: pin the CTA on it
-   today.
+8. **The real Instagram leak is the BIO, not follows.** (Corrected
+   Sep 10, 12:25am insights: follows did bank — 9.9K — and the collab
+   now includes thesceneai, so the SCENE page is riding the reel.)
+   The leak: **62,600 profile visits → 35 bio link clicks.** Sixty-two
+   thousand people went looking and found no reason to click. Fix
+   today, in order: (a) bio line = one sentence + one link — "I built
+   her with AI. The system: [Skool link]" (or the keyword: "Comment
+   SCENE on any post"); (b) pin the keyword CTA comment on the reel
+   itself so nobody needs the bio at all; (c) pin the reel to the top
+   of the grid so profile visitors land on it. 62.6K visits at even a
+   2% click rate is ~1,250 clicks — the traffic already exists, it
+   just has nowhere to go.
