@@ -10,16 +10,19 @@ teardown: nobody in their ~260-ad library can film this.
 
 ## The receipts (as of Sep 10 — all currently true, refresh before use)
 
-| Metric | TikTok | Facebook |
-|---|---|---|
-| Views | 777.8K | 503.9K |
-| Likes / Engagement | 90K likes | 44.5K engagement |
-| Comments | 1,641 | active, incl. "Scene" keyword comments |
-| Shares / Saves | 4,176 / 15K saves | — |
-| New followers | 12.7K | — |
-| Watch | 51.7s avg on a 114.9s video · 24.87% full | 135× non-follower reach vs typical |
+| Metric | TikTok | Instagram (collab, crossposted to FB) | Facebook (app view) |
+|---|---|---|---|
+| Views | 777.8K | 1,380,007 (963.9K unique viewers) | 503.9K |
+| Likes / Engagement | 90K likes | 46.9K likes | 44.5K engagement |
+| Comments | 1,641 | 749 | incl. "Scene" keyword comments |
+| Shares / Saves | 4,176 / 15K saves | 4.7K shares / 7.7K saves / 2.7K reposts | — |
+| New followers | 12.7K | **0** (see run note 8) | — |
+| Watch | 51.7s avg · 24.87% full | 37s avg | 135× non-follower reach vs typical |
 
-**Combined: 1.28M+ views in 4 days.**
+**Combined: 2M+ views in 4 days** (TikTok 777.8K + IG 1.38M; the FB
+503.9K may overlap the IG crosspost, so claim "2 million+", not 2.6M —
+never a number that could be called inflated). Comments across
+platforms: **2,300+**.
 Top comment words (TikTok): **nursing school (18) · next episode (15) ·
 part two (12) · next part (10) · god bless (7)** — the audience is
 literally demanding the series format the product teaches.
@@ -28,18 +31,18 @@ proven hook frame. Keep it first in every cut.
 
 ---
 
-## AD 6A — "1.2 million" (the viral receipt · replaces the queued meta-proof ad)
+## AD 6A — "2 million" (the viral receipt · replaces the queued meta-proof ad)
 
 **Creative:** the episode, cut to ~45–60s (avg watch was 51.7s — the
 full 115s wastes paid seconds). Open on the 0:01 walkout frame.
-Overlay at 0–3s: "1.2 MILLION people watched her story this week."
+Overlay at 0–3s: "2 MILLION people watched her story this week."
 Beat, then: "She isn't real." End card: THE SCENE AI · $9/month.
 
-> 1.2 million people watched this story in 4 days. The woman in it doesn't exist.
+> 2 million people watched this story in 4 days. The woman in it doesn't exist.
 >
 > The story is real. It's mine. I was 19 with my one-year-old son, in scrubs, driving to nursing school with him in the back seat. I never filmed a second of it back then — there was no camera crew following me. There was barely gas money.
 >
-> So I built her with AI and directed it like an episode. Same face at the front door, on the highway, in the parking lot. Real skin texture. A baby on her hip. People in my comments are asking for part two — 1,600+ comments, and the top phrase is "next episode."
+> So I built her with AI and directed it like an episode. Same face at the front door, on the highway, in the parking lot. Real skin texture. A baby on her hip. People in my comments are asking for part two — 2,300+ comments, and the top phrase is "next episode."
 >
 > That's the part nobody tells you about AI content: the tool doesn't make people care. The CHARACTER does. Build her (or him) once, lock the face, and direct your real stories through them — episode after episode, no camera, all from your phone.
 >
@@ -66,11 +69,11 @@ picture-in-picture.
 
 > My comment section is begging for part two of a woman who doesn't exist.
 >
-> "Next episode." "Part two." "Nursing school 🥹." 1,600+ comments in four days. 15,000 people saved it. 12,700 followed — for a character I built with AI and my real story.
+> "Next episode." "Part two." "Nursing school 🥹." 2,300+ comments in four days. 22,000+ people saved it. 12,700 followed — for a character I built with AI and my real story.
 >
 > Here's why it worked when 99% of AI content gets scrolled past: I didn't generate a pretty video. I built the character FIRST — locked her face, her body, her world — then directed my own story through her, scene by scene, like an episode of a show.
 >
-> One face at the front door. The same face on the highway. The same face in the parking lot with her eyes closed before class. That consistency is the entire difference between "AI slop" and a story 1.2 million people sat through.
+> One face at the front door. The same face on the highway. The same face in the parking lot with her eyes closed before class. That consistency is the entire difference between "AI slop" and a story 2 million people sat through.
 >
 > THE SCENE AI teaches the whole thing, in order, copy-paste:
 >
@@ -87,7 +90,7 @@ picture-in-picture.
 
 > Nobody was filming the hardest chapter of your life. That doesn't mean you can't show it.
 >
-> I was 19, in scrubs, with a baby on my hip and a car that barely started. No footage exists of that season — people were too busy surviving it. Last week I rebuilt it with AI and 1.2 million people watched it in four days.
+> I was 19, in scrubs, with a baby on my hip and a car that barely started. No footage exists of that season — people were too busy surviving it. Last week I rebuilt it with AI and 2 million people watched it in four days.
 >
 > Your testimony deserves more than a text post. Build the character, lock the face, and direct the chapters — the day you moved out, the shift you almost quit, the graduation. No camera. No actors. No showing your face unless you want to.
 >
@@ -100,11 +103,11 @@ picture-in-picture.
 > https://www.skool.com/[scene-group]/about
 
 ## Headline bank (new, for these ads)
-- "1.2M Views. No Camera. $9"
+- "2M Views. No Camera. $9"
 - "She's Not Real. The Views Are."
 - "Tell The Story Nobody Filmed"
 - "Turn Your Story Into A Series | $9"
-- "1,600 Comments Asked For Part Two"
+- "2,300 Comments Asked For Part Two"
 
 ---
 
@@ -133,8 +136,18 @@ picture-in-picture.
    duplicate the ad ID with new cuts — never edit it.
 6. **Number hygiene:** every stat in these ads is real as of Sep 10.
    Before each new batch, re-pull the numbers and update UP only
-   (1.2M → 1.5M → 2M...) in NEW ads, old ads keep running. Never a
+   (2M → 2.5M → 3M...) in NEW ads, old ads keep running. Never a
    number that isn't currently true.
 7. **What stays out:** no income claims, no "you'll go viral" promise
    — the copy sells the system that made THIS story, and the receipts
    do the rest.
+8. **The Instagram leak: 1.38M views, ZERO follows.** The IG reel ran
+   as a collaboration (profashionalist + richdestyni), so the reach
+   didn't bank followers anywhere — TikTok converted 777K views into
+   12.7K followers, IG converted 1.38M into none. Fixes for Part Two:
+   post it on the account that should own the audience (solo, or with
+   that account as the collab AUTHOR), and pin the keyword CTA
+   ("Comment SCENE") on BOTH the original reel and Part Two — the
+   comment→DM funnel converts reach even when the follow button
+   doesn't. The original reel still has live reach: pin the CTA on it
+   today.
