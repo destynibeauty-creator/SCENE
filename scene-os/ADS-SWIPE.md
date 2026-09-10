@@ -163,6 +163,11 @@ guarantee. NO free trial — see the note at the bottom of this file.)*
 - "Founding Price $9 - Locks For Life" (swap to "$49 After 600 Members" at ~400)
 - Button copy: ENTER THE SCENE · Join Only for $9
 
+> **Sep 10 update:** the meta-proof slot is no longer a "later play."
+> The Sep 6 nursing-school episode went viral (1.28M+ views in 4 days,
+> comments demanding part two). Full ad kit for that creative:
+> `VIRAL-001-NURSING-SCHOOL.md` — Ads 6A/6B/6C + run notes.
+
 ## Later plays stolen from their library
 - **Niche variants** (their real-estate + ecom ads): SCENE versions for
   beauty pros, realtors, musicians — one ad each, same skeleton, swap
