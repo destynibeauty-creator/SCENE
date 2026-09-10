@@ -165,3 +165,33 @@ picture-in-picture.
    of the grid so profile visitors land on it. 62.6K visits at even a
    2% click rate is ~1,250 clicks — the traffic already exists, it
    just has nowhere to go.
+
+---
+
+## Launch config (Sep 10 — the go button)
+
+**Pre-flight:** test the SCENE keyword funnel end-to-end from another
+account (DM link must be the real Skool URL, not a placeholder);
+export a clean master (no watermark, original/licensed audio); cut to
+45–60s opening on the 0:01 walkout frame with the "2 MILLION" overlay.
+
+**Meta:** 1 campaign · Traffic objective optimized for Landing Page
+Views (no pixel possible on Skool) · broad Advantage+, US · $20–30/day
+· one ad set, two ads (6A copy × 45–60s cut and ~30s cut) · headline
+"2M Views. No Camera. $9" · CTA Learn More · destination = Skool about
+page only.
+
+**TikTok (day 2, optional):** Spark Ad on the original viral post,
+$10–15/day, same destination.
+
+**Rules:** no edits or budget changes for 4 full days (edits reset
+learning). Judge on ONE number: cost per Skool join (spend ÷ new
+members/day). The ladder means a join can cost more than $9 and still
+profit — but zero joins by day 4 = kill and diagnose the page, not
+the ad. Winners get duplicated with new cuts, never edited.
+
+**AutoDM (live Sep 10):** keywords SCENE/SYSTEM/LEARN/INFO · rotating
+public replies · opening DM ends on the button ask ("Send me the
+link") · delivery DM carries the link with NO price (price lives in
+ads + the about page) · follow-up DM for non-clickers. Second
+automation queued: PART TWO / PART 2 / NEXT EPISODE on the viral reel.
