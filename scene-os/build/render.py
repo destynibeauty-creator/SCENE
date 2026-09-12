@@ -1066,6 +1066,9 @@ class SceneDoc(BaseDocTemplate):
                 m['accent'], 3.4, center_at=cx)
         gradient_bar(c, cx - 80, ay - 176, 160, 3)
         wordmark(c, cx, 96, 0.8)
+        tracked(c, 0, 46,
+                '© THE SCENE AI - Destyni Triplett. Member copy - not for resale or redistribution.',
+                FONTS['P'], 5.6, HexColor('#5C6169'), 0.6, center_at=cx)
 
     # ---- cover page
     def draw_cover(self, c, doc):
@@ -1248,6 +1251,9 @@ class SceneDoc(BaseDocTemplate):
         tracked(c, PAGE_W - MARGIN - pw, fy, pn, FONTS['P-SB'], 8,
                 m['accent'], 1.8)
         bracket(c, PAGE_W - MARGIN + 4, fy - 4, 5, 'br', MAGENTA, 1.2)
+        tracked(c, MARGIN, fy - 15,
+                '© THE SCENE AI - Destyni Triplett. Member copy - not for resale or redistribution.',
+                FONTS['P'], 5.6, HexColor('#5C6169'), 0.6)
 
 
 # ---------------------------------------------------------------- assembly
