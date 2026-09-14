@@ -1303,12 +1303,12 @@ def build_doc(docid, pages, meta, outpath, S):
             flow.append(StepFlow(e['steps'], e.get('caption', '')))
             flow.append(Spacer(1, 10))
         elif t == 'linkline':
+            flow.append(Spacer(1, 6))
+            flow.append(NextStepBanner(S['accent'], 'TAP TO OPEN', e['text'],
+                                        url=e['url']))
             flow.append(Spacer(1, 4))
             flow.append(Paragraph(
-                f'<link href="{e["url"]}">'
-                f'<font color="{S["accent_hex"]}" name="{FONTS["P-B"]}">'
-                f'&#9654; {esc(e["text"])}</font></link><br/>'
-                f'<font color="#8A8F98" size="9" name="{FONTS["MONO"]}">'
+                f'<font color="#8A8F98" size="8.5" name="{FONTS["MONO"]}">'
                 f'{esc(e["url"].replace("https://", ""))}</font>', S['body']))
             flow.append(Spacer(1, 6))
         elif t == 'ccard':
