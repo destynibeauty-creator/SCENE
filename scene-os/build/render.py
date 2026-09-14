@@ -537,6 +537,53 @@ class StepFlow(Flowable):
                 cy -= 12
 
 
+CATEGORY_COLOR = {
+    'BUSINESS': SILVER, 'WORK': SILVER,
+    'VACATION': CYAN, 'TRAVEL': CYAN, 'SHOPPING': CYAN, 'BRUNCH': CYAN,
+    'FITNESS': CYAN,
+    'BEDTIME': LIME, 'CASUAL': LIME, 'LOUNGING': LIME,
+    'DATE NIGHT': MAGENTA, 'NIGHTLIFE': MAGENTA,
+}
+
+
+def category_color(cat):
+    return CATEGORY_COLOR.get(cat.upper(), CYAN)
+
+
+class LookHeader(Flowable):
+    """Numbered badge + title + color-coded category pill for one entry
+    in a look/prompt pack, so a long list of similar blocks is scannable
+    at a glance instead of reading as one continuous wall of text."""
+
+    def __init__(self, number, title, category):
+        super().__init__()
+        self.number = number
+        self.title = title
+        self.category = category
+        self.color = category_color(category)
+
+    def wrap(self, aw, ah):
+        self.width = AVAIL
+        self.height = 40
+        return self.width, self.height
+
+    def draw(self):
+        c = self.canv
+        c.setFillColor(self.color)
+        c.circle(15, 20, 15, stroke=0, fill=1)
+        c.setFillColor(JET)
+        c.setFont(FONTS['P-XB'], 12.5)
+        c.drawCentredString(15, 15.5, self.number)
+        c.setFillColor(WHITE)
+        c.setFont(FONTS['P-B'], 15.5)
+        c.drawString(40, 23, self.title)
+        pill = self.category.upper()
+        pw = pdfmetrics.stringWidth(pill, FONTS['P-SB'], 8) + 1.6 * len(pill) + 18
+        c.setFillColor(self.color)
+        c.roundRect(40, 0, pw, 15.5, 7.5, stroke=0, fill=1)
+        tracked(c, 49, 4.5, pill, FONTS['P-SB'], 8, JET, 1.4)
+
+
 class CommentCard(Flowable):
     """A pinned-comment mockup that looks like a social comment."""
 
@@ -1343,6 +1390,17 @@ def build_doc(docid, pages, meta, outpath, S):
             flow.append(Spacer(1, 8))
         elif t == 'h3':
             h3txt = ' '.join(e['lines'])
+            m = NUM_RE.match(h3txt)
+            nxt = elems[i + 1] if i + 1 < len(elems) else None
+            nxt_txt = ' '.join(nxt['lines']) if nxt and nxt.get('lines') else ''
+            if (m and nxt and nxt['type'] == 'body'
+                    and nxt_txt.lower().startswith('category:')):
+                flow.append(Spacer(1, 14))
+                flow.append(LookHeader(m.group(1).rstrip('.'), m.group(2),
+                                        nxt_txt.split(':', 1)[1].strip()))
+                flow.append(Spacer(1, 8))
+                i += 2
+                continue
             if h3txt.lower().startswith('copy-and-paste'):
                 pass  # the prompt panel's own COPY THIS header replaces it
             else:
