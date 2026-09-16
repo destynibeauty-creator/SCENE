@@ -226,3 +226,18 @@ signups: fix bio link, pinned "link in bio" comments, then the Spark
 Ad). At 100 members: launch the social-proof ad ("100+ creators
 inside") AND open CHARACTER, DELIVERED at $297 per OFFER-LADDER
 sequencing — 68 now, ~2 weeks away at current pace.
+
+**Sep 16 late (day ~7):** $366.35 spent · 1,095 clicks · $0.28 CPC ·
+37 purchases · **$9.90/join (improving — was $10.57)**. Skool: 77
+members · $665 MRR · 3.0% page conversion · FB overtook IG as top
+source (27 vs 24).
+**FIRST LADDER REVENUE: one $97 World Builder unlock + one $99
+annual.** $196 of upfront back-end cash = ~54% of ALL ad spend to
+date, on top of the MRR. Cost per join is now below the $9 front end
+BEFORE counting the ladder — the AVB economics are confirmed live.
+Actions: (1) leave the ad set alone, it's still improving; (2) get a
+win post/testimonial from both buyers — the unlock buyer's story is
+the next organic post and future 6B material; (3) annual stays a
+warm/in-community offer only, never cold ads; (4) 100-member triggers
+are ~1 week out at current pace — pre-write the count ad and have the
+$297 CHARACTER, DELIVERED listing ready to open.
