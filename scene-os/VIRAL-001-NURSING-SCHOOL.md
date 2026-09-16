@@ -195,3 +195,22 @@ public replies · opening DM ends on the button ask ("Send me the
 link") · delivery DM carries the link with NO price (price lives in
 ads + the about page) · follow-up DM for non-clickers. Second
 automation queued: PART TWO / PART 2 / NEXT EPISODE on the viral reel.
+
+---
+
+## Performance log
+
+**Sep 16 (first read, ~5–6 days live, Sales campaign, $60/day):**
+$338.20 spent · 995 unique link clicks · $0.29 CPC · 32 website
+purchases · **$10.57 cost per join** · click→join ≈ 3.2%.
+Read: $10.57 against $9/mo (≈$7.80 net after Skool's fee) = front end
+pays back inside month two on retention alone; every $97 unlock or DFY
+sale from this cohort is pure margin on top. CPC $0.29 and 3.2%
+click→join on cold traffic are both strong — the creative and the
+about page are doing their jobs. This is the AVB model working:
+front end ≈ break-even acquisition, ladder = profit.
+Watch item: ad set still shows learning phase "0 of ~50 conversions"
+despite 32 recorded purchases — verify the ad set's optimization
+event is Purchase on the same pixel that's logging the 32. If it's
+optimizing on a different event, fix in a DUPLICATED ad set, never by
+editing the live one.
