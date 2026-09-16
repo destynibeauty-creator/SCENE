@@ -214,3 +214,15 @@ despite 32 recorded purchases — verify the ad set's optimization
 event is Purchase on the same pixel that's logging the 32. If it's
 optimizing on a different event, fix in a DUPLICATED ad set, never by
 editing the live one.
+
+**Sep 16 (Skool side, last 30 days):** 68 members · $585 MRR · 98%
+engagement · 100% retention (pre-first-rebill — real test is the
+October rebill of the launch cohort) · 2K visitors → 60 signups =
+2.9% page conversion · $540 new MRR. Signup sources: Instagram 23,
+Facebook 22 (Meta surfaces = 75%), Skool network 7, Direct 4,
+TikTok 4. Signups peaked at 16/day.
+Gaps + triggers: TikTok is the leak (777K+ organic views → 4
+signups: fix bio link, pinned "link in bio" comments, then the Spark
+Ad). At 100 members: launch the social-proof ad ("100+ creators
+inside") AND open CHARACTER, DELIVERED at $297 per OFFER-LADDER
+sequencing — 68 now, ~2 weeks away at current pace.
