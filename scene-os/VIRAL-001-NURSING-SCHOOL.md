@@ -251,3 +251,21 @@ Status: World Builder $97 live; DFY tier NOT yet open — opening
 CHARACTER, DELIVERED ($297, 5 founding slots) is the active task per
 OFFER-LADDER sequencing (100 members passed). Social-proof count ad
 (124 creators) now unlocked with real numbers.
+
+**Sep 21 analytics sweep (28-day window):**
+- Original episode (IG): 1,718,208 views · 1.19M viewers · 63.2K
+  likes · 12,689 follows attributed · 39s avg watch.
+- Episode 2 (car-seat scene, ~Sep 13): 164,888 views · 905 follows ·
+  41s avg watch. Episode 3 (fire-truck scene): 24,937 views · 130
+  follows · **1m22s avg watch** — smaller reach, far deeper watch:
+  the series is converting casual viewers into episode-watchers.
+- FB page 28d: 3.2M views (271×) · 252,487 engagement · **+58,184
+  net followers**. TikTok 28d: 1.2M post views · 240.3K profile
+  views · 126.8K likes · 10.61% like rate · +7,114 followers.
+- Platform payouts for all that reach: $0.01 (FB) + $2.51 (TikTok)
+  vs Skool balance $1,216 — the monetization lesson the product
+  teaches, in her own receipts.
+- Cross-platform: ~4.4M+ views and ~78K new followers in 28 days.
+  Story-only total now safely **3M+** → next count-refresh ad
+  generation upgrades the hook to "3 million" and adds "60,000+ new
+  followers"; the 2M ads keep running untouched.
