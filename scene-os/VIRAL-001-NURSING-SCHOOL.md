@@ -302,3 +302,19 @@ discovery + broken attribution trails). Rule going forward: judge
 scaling on BLENDED cost per member (spend ÷ Skool signups), not Ads
 Manager CPA. At $5.67 vs $9/mo, month one is profitable on
 subscriptions alone — better than the AVB break-even benchmark.
+
+**Sep 21: FIRST HIGH-TICKET CLIENT — $2,588.** $497 signing + $697/mo
+× 3 (starting 10/5). One client ≈ 3.9× ALL ad spend to date. The
+full ladder is now proven live: viral story → $9 member → $97 unlock
+→ $99 annual → $2.5K custom DFY, inside two weeks of ads.
+Fulfillment guardrails (per OFFER-LADDER delivery policy — apply to
+this client): scope in writing (episodes/month, what's included);
+1080p standard delivery, 4K = paid add-on; dialogue clips at 10s;
+ONE revision round included, $25/episode after; ~3 generation
+attempts budgeted per episode. Watch credit pool — a monthly client
+runs ~2,700–3,400 credits of the 6,000/mo plan; buy the second
+credit plan the moment bookings need it (one client covers months of
+it). Payments: auto-charged recurring invoices (Square), never
+manual monthly asks. And film the build — "watch me build a client's
+character" is the best OS ad that exists (client-approved, faces
+optional).
