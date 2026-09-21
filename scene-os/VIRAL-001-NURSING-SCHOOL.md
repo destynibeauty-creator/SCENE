@@ -364,3 +364,18 @@ Target: $12–20K October (3–5× month one) — NOT $250K; forcing 65× in
    $250K months: ~5,100 members × $49 ≈ $250K/mo, a month-8-to-12
    destination if the machine keeps compounding. One new viral
    episode per month is the biggest single lever.
+
+**Sep 21: client proposal reviewed (Takeyla Everett, LPN — God's
+Purposeful Healthcare Staffing/Home Care).** She signed Option A
+(Content Starter: $497 + $697×3 = $2,588; 4 videos/mo, organic only).
+Option B (Full Package $1,000 + $1,500×3 = $5,500, +ads +40 referral
+contacts/mo) declined for now = pre-seeded day-90 upsell; standard
+rate anchored in writing at $1,500 setup/$2,500 mo. Proposal quality:
+professional-grade — two-option anchor, scope limits (1 script round/
+batch, 1 edit round/video), setup-fee-scoped 7-day guarantee, no
+auto-renew, healthcare compliance page (AI labeling, dramatization
+disclosure, no unverified VA claims, patient privacy), IP retention
+of methods/prompts. Tighten next time: autopay the 3 invoices,
+confirm "launch day" date in writing when set, cap referral line as
+"up to 40." Credit cost of her deliverables ≈ $105 vs $2,588. This
+document is the DFY template for all DIRECT leads.
