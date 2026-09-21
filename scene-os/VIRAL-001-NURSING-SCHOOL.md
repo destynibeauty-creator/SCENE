@@ -304,9 +304,14 @@ Manager CPA. At $5.67 vs $9/mo, month one is profitable on
 subscriptions alone — better than the AVB break-even benchmark.
 
 **Sep 21: FIRST HIGH-TICKET CLIENT — $2,588.** $497 signing + $697/mo
-× 3 (starting 10/5). One client ≈ 3.9× ALL ad spend to date. The
-full ladder is now proven live: viral story → $9 member → $97 unlock
-→ $99 annual → $2.5K custom DFY, inside two weeks of ads.
+× 3 (starting 10/5). One client ≈ 3.9× ALL ad spend to date.
+NOTE: she was NOT a $9 member — she came in direct at high ticket.
+Two intakes are now proven: (a) the ladder ($9 → $97 → $99 annual)
+and (b) DIRECT-TO-DFY from the content itself, no warm-up needed.
+The story qualifies premium buyers on its own — which means DFY
+deserves its own visible front door (WORK WITH ME tile, pinned post,
+a keyword like BUILD in the AutoDM) rather than being buried as an
+upsell.
 Fulfillment guardrails (per OFFER-LADDER delivery policy — apply to
 this client): scope in writing (episodes/month, what's included);
 1080p standard delivery, 4K = paid add-on; dialogue clips at 10s;
