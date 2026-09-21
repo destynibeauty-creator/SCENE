@@ -269,3 +269,14 @@ OFFER-LADDER sequencing (100 members passed). Social-proof count ad
   Story-only total now safely **3M+** → next count-refresh ad
   generation upgrades the hook to "3 million" and adds "60,000+ new
   followers"; the 2M ads keep running untouched.
+
+**Sep 21 full-ecosystem tally (28d, incl. secondary pages):**
+Views: FB main 3.2M + IG series ~1.91M + TikTok 1.2M = **~6.3M**
+(clean of crosspost double-counting — IG's FB-crosspost views were
+negligible). Followers: FB main 58,184 + IG main ~13,700 + TikTok
+7,114 + other page 6,000 + THE SCENE AI IG 6,600 + THE SCENE AI FB
+199 = **~91,800**. Approved claim for next ad generation and about
+page: "6 million+ views · 90,000+ new followers · 28 days" (round
+down, never up). Note: the SCENE AI brand IG gained 6.6K on its own —
+build it into the product's home (member results, drops, its own
+keyword funnel) so the brand compounds off the personal pages.
