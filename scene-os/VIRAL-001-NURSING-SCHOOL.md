@@ -280,3 +280,16 @@ page: "6 million+ views · 90,000+ new followers · 28 days" (round
 down, never up). Note: the SCENE AI brand IG gained 6.6K on its own —
 build it into the product's home (member results, drops, its own
 keyword funnel) so the brand compounds off the personal pages.
+
+**Sep 21 (later): $669.56 spent · 73 purchases · $9.17/join** — third
+consecutive CPA improvement (10.57 → 9.90 → 9.17); learning threshold
+(~50) passed. Front end now ~break-even on month one alone; ladder is
+pure margin. Next structure: cold keeps ~80% of budget (duplicate the
+winner, new cuts); NEW retargeting layer at $15–20/day serving
+Part Two/Three episodes to warm audiences (6A video viewers 50%+,
+IG/FB engagers 365d, excluding current members via customer list).
+Retargeting copy closes rather than hooks: acknowledge they watched,
+deliver part two, kill objections ($9, 7-day guarantee, one evening
+to start). Watch frequency (>4/week = refresh creative with the next
+episode). Sequential-story retargeting is the play nobody in the AVB
+library can copy.
