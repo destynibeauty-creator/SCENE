@@ -294,10 +294,10 @@ to start). Watch frequency (>4/week = refresh creative with the next
 episode). Sequential-story retargeting is the play nobody in the AVB
 library can copy.
 
-**Sep 21 correction (the real economics):** 76 joins attributed by
+**Sep 21 correction (the real economics):** 73 joins attributed by
 Meta, but **118 total signups** in the same window on $669.56 spend.
-Meta CPA = $8.81; **blended CPA = $5.67** — an organic halo of ~1
-free member per 2 paid (viral series + keyword funnel + Skool
+Meta CPA = $9.17; **blended CPA = $5.67** — an organic halo of ~1
+free member per ~1.6 paid (viral series + keyword funnel + Skool
 discovery + broken attribution trails). Rule going forward: judge
 scaling on BLENDED cost per member (spend ÷ Skool signups), not Ads
 Manager CPA. At $5.67 vs $9/mo, month one is profitable on
