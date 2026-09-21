@@ -346,3 +346,21 @@ after Oct 10's 9,000 refill; own feed runs zero-credit content til
 then (6B comments screen-record, recuts of existing episodes,
 receipts posts); ad creatives need no new generation. Top-up only if
 client scope can't wait — her $697 covers it.
+
+---
+
+## October plan (agreed ambition check, Sep 21)
+
+Target: $12–20K October (3–5× month one) — NOT $250K; forcing 65× in
+31 days breaks the ad account, the winner's learning, or both.
+1. Ads → $120–150/day in +25% steps every 3 days, judged on blended
+   CAC ≤ $9. Expected 500–700 new members → MRR $5–7K by Nov 1.
+2. Fill 5 × CHARACTER, DELIVERED ($297) + 1–2 × $697 clients via
+   DIRECT keyword + client-build content → $3–5K.
+3. World Builder unlocks at 5–8% of the larger base → $2–4K.
+4. HONOR THE 200-MEMBER GATE: new-member price rises to $19 at 200
+   (founders keep $9) — the published scarcity must come true, and
+   the price ladder ($19 → $29 → $49 at scale) is the real path to
+   $250K months: ~5,100 members × $49 ≈ $250K/mo, a month-8-to-12
+   destination if the machine keeps compounding. One new viral
+   episode per month is the biggest single lever.
