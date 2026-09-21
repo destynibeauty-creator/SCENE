@@ -241,3 +241,13 @@ the next organic post and future 6B material; (3) annual stays a
 warm/in-community offer only, never cold ads; (4) 100-member triggers
 are ~1 week out at current pace — pre-write the count ad and have the
 $297 CHARACTER, DELIVERED listing ready to open.
+
+**Sep 21 (day ~11): 100-MEMBER TRIGGER CROSSED.** 124 members · 5.0
+stars (2 reviews) · Skool balance $1,216.07 (next payout $468.63,
+$747.44 pending) · story now 3.1M+ views (IG 1.4M / FB 900K+ /
+TikTok 800K+) · 45K+ new followers · about page rebuilt around the
+viral proof · scarcity line now "$9 locks before 200 members."
+Status: World Builder $97 live; DFY tier NOT yet open — opening
+CHARACTER, DELIVERED ($297, 5 founding slots) is the active task per
+OFFER-LADDER sequencing (100 members passed). Social-proof count ad
+(124 creators) now unlocked with real numbers.
