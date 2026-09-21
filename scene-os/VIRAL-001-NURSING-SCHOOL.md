@@ -323,3 +323,11 @@ it). Payments: auto-charged recurring invoices (Square), never
 manual monthly asks. And film the build — "watch me build a client's
 character" is the best OS ad that exists (client-approved, faces
 optional).
+
+**Sep 21 month-one totals:** MRR now **$1,097** ($585 → $665 → $1,097
+in 5 days). Collected Sept ≈ $1,758 (Skool balance $1,216 + $42 paid
+out + $497 client signing + $2.52 platform rewards); booked $2,091
+more (3 × $697 from 10/5). ≈ **$3,849 produced on $669.56 ad spend.**
+October baseline before new growth: $1,097 MRR + $697 installment ≈
+$1,794. DFY front door keyword changed to **DIRECT** (BUILD already
+in use by another automation).
