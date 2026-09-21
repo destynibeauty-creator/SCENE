@@ -337,7 +337,10 @@ $375/9,000 + unlimited plan ~$180 (laggy, disliked) = ~$654/mo tools;
 ads ~$1,800/mo at $60/day. MRR $1,097 covers tools 1.7×. Actions:
 cancel the $180 plan at renewal unless it does something the credit
 plan can't; **credit crunch** — ~1,000 credits left until ~Oct 10
-renewal ≈ 3 finished episodes. Ration: client first; client days 1–5
+renewal. REAL unit cost (her number): a finished 1080p episode =
+210 credits ≈ $8.75 at 4.2¢/credit → runway = 4 episodes; the
+9,000/mo plan ≈ 42 finished episodes of capacity; client margin at
+$697/mo for 8–10 episodes ≈ 87%. Ration: client first; client days 1–5
 are interview/character/looks (image-cheap), heavy video generation
 after Oct 10's 9,000 refill; own feed runs zero-credit content til
 then (6B comments screen-record, recuts of existing episodes,
