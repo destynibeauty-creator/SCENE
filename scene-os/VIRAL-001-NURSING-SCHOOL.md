@@ -331,3 +331,15 @@ more (3 × $697 from 10/5). ≈ **$3,849 produced on $669.56 ad spend.**
 October baseline before new growth: $1,097 MRR + $697 installment ≈
 $1,794. DFY front door keyword changed to **DIRECT** (BUILD already
 in use by another automation).
+
+**Sep 21 cost stack (overhead, not CAC):** Skool $99 + credits
+$375/9,000 + unlimited plan ~$180 (laggy, disliked) = ~$654/mo tools;
+ads ~$1,800/mo at $60/day. MRR $1,097 covers tools 1.7×. Actions:
+cancel the $180 plan at renewal unless it does something the credit
+plan can't; **credit crunch** — ~1,000 credits left until ~Oct 10
+renewal ≈ 3 finished episodes. Ration: client first; client days 1–5
+are interview/character/looks (image-cheap), heavy video generation
+after Oct 10's 9,000 refill; own feed runs zero-credit content til
+then (6B comments screen-record, recuts of existing episodes,
+receipts posts); ad creatives need no new generation. Top-up only if
+client scope can't wait — her $697 covers it.
