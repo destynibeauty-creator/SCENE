@@ -379,3 +379,15 @@ of methods/prompts. Tighten next time: autopay the 3 invoices,
 confirm "launch day" date in writing when set, cap referral line as
 "up to 40." Credit cost of her deliverables ≈ $105 vs $2,588. This
 document is the DFY template for all DIRECT leads.
+
+**Sep 22: first churn — 13 cancellations queued (~10% of ~130).**
+Context: at/near the AVB benchmark (their "90%+ stay" = 10%/mo);
+cold-traffic $9 norms are 20–40% first-rebill. Economics hold: CAC
+$5.67 vs $7.80 first-month net = +$2.13 even on one-and-done members.
+Watch first-rebill churn rate, red line ~25–30%. Actions: (1) DM all
+13 for the reason — expect "never built the character"; (2) fix
+48-hour activation, track % of new members posting a character in
+week 1 (the rebill predictor); (3) ship Drop 002 BEFORE Oct 1 so
+rebills land after fresh value; (4) one honest founding-rate win-back
+note per canceller; (5) hygiene: the "98% of members active" line in
+the count ad must be re-verified each generation.
