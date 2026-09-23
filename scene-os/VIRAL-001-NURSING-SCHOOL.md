@@ -391,3 +391,14 @@ week 1 (the rebill predictor); (3) ship Drop 002 BEFORE Oct 1 so
 rebills land after fresh value; (4) one honest founding-rate win-back
 note per canceller; (5) hygiene: the "98% of members active" line in
 the count ad must be re-verified each generation.
+
+**Sep 23: DELIVERY STOPPED.** Meta banner: "no activity this week"
+despite Active toggle. Final numbers before halt: $768.77 spent · 85
+purchases · $9.04 CPA · $0.28 CPC · freq 1.82 (no fatigue — stopped
+cold = plumbing, not performance). Diagnose in order: (1) billing
+failure/outstanding balance, (2) account spending limit (~$750-800?
+spend froze at $768.77), (3) ad rejected on re-review → request
+review, never edit/delete, (4) Account Quality restriction, (5)
+stale banner (check Today tab). Do NOT rebuild the campaign.
+Skool: $589.83 payout landed 9/23; $1,017.97 pending; balance
+$1,043.29.
