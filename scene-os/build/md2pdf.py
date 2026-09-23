@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
-"""CLASSROOM-COPY.md -> clean branded PDF (light, readable, Poppins)."""
-import os, re, html
+"""Markdown -> clean branded PDF (light, readable, Poppins).
+
+Defaults to CLASSROOM-COPY.md. Pass paths to render another doc:
+  python3 md2pdf.py SRC.md OUT.pdf "FOOTER LABEL"
+"""
+import os, re, sys, html
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.units import inch
 from reportlab.lib.colors import HexColor
@@ -15,19 +19,26 @@ ROOT = '/home/user/SCENE/scene-os'
 F = os.path.join(ROOT, 'build', 'fonts')
 SRC = os.path.join(ROOT, 'CLASSROOM-COPY.md')
 OUT = os.path.join(ROOT, 'CLASSROOM-COPY.pdf')
+FOOTER = 'THE SCENE AI  ·  CLASSROOM COPY'
+CUSTOM = len(sys.argv) > 2
+if CUSTOM:
+    SRC, OUT = os.path.abspath(sys.argv[1]), os.path.abspath(sys.argv[2])
+    if len(sys.argv) > 3: FOOTER = sys.argv[3]
 
 for name, fn in [('Pop', 'Poppins-Regular.ttf'), ('Pop-B', 'Poppins-Bold.ttf'),
                  ('Pop-SB', 'Poppins-SemiBold.ttf'),
                  ('Pop-XB', 'Poppins-ExtraBold.ttf'),
                  ('Emoji', 'NotoEmoji.ttf')]:
     pdfmetrics.registerFont(TTFont(name, os.path.join(F, fn)))
+pdfmetrics.registerFontFamily('Pop', normal='Pop', bold='Pop-B',
+                              italic='Pop', boldItalic='Pop-B')
 
 CYAN = HexColor('#0099AA'); MAG = HexColor('#C4007F')
 INK = HexColor('#17181C'); MUT = HexColor('#5A5E66')
 BOX = HexColor('#F4F5F7'); LINE = HexColor('#DDDFE4')
 
 EMOJI = re.compile('([\U0001F000-\U0001FAFF☀-➿⬀-⯿'
-                   '←-⇿ -⁯️✅❌☐-☒]+)')
+                   '←-⇿️✅❌☐-☒]+)')
 
 def fmt(t):
     t = html.escape(t)
@@ -95,6 +106,11 @@ def flush_table():
                      for c in cells])
     ncol = len(rows[0])
     widths = {3: [2.0, 1.35, 3.05], 2: [2.2, 4.2]}.get(ncol, None)
+    if CUSTOM:
+        # size columns by their longest cell, so short columns stay narrow
+        need = [max(min(len(r[c].text), 60) for r in rows) + 4
+                for c in range(ncol)]
+        widths = [6.4 * n / sum(need) for n in need]
     if widths: widths = [w * inch for w in widths]
     t = Table(rows, colWidths=widths, repeatRows=1)
     t.setStyle(TableStyle([
@@ -143,7 +159,7 @@ def deco(c, doc):
     c.setFillColor(CYAN); c.rect(0, letter[1] - 6, letter[0] * .5, 6, 0, 1)
     c.setFillColor(MAG); c.rect(letter[0] * .5, letter[1] - 6, letter[0] * .5, 6, 0, 1)
     c.setFont('Pop-SB', 7.5); c.setFillColor(MUT)
-    c.drawString(0.75 * inch, 0.45 * inch, 'THE SCENE AI  ·  CLASSROOM COPY')
+    c.drawString(0.75 * inch, 0.45 * inch, FOOTER)
     c.drawRightString(letter[0] - 0.75 * inch, 0.45 * inch, str(doc.page))
     c.restoreState()
 
