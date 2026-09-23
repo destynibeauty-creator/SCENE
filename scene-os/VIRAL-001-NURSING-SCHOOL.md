@@ -402,3 +402,15 @@ review, never edit/delete, (4) Account Quality restriction, (5)
 stale banner (check Today tab). Do NOT rebuild the campaign.
 Skool: $589.83 payout landed 9/23; $1,017.97 pending; balance
 $1,043.29.
+
+**Sep 23 (later): delivery NOT dead** — spend ticking live ($768.77 →
+$769.25 in 3 min); Sep 21–23 averaged ~$50/day vs $60 budget = mild
+underdelivery, banner likely stale. Ad-level breakdown (the real
+find): MY STORY 79 joins @ $9.11 ($719 spend) · **BEACH CLUB 6 joins
+@ $6.08 on only $36 spend (starved by the auction)** · SHE'S NOT
+REAL killed at $11.22/0 joins. Actions: (1) duplicate BEACH CLUB
+into its own ad set @ $25–30/day, 4-day test, judge blended —
+potential second horse at −33% CPA; (2) creative law from the dead
+ad: the reveal ("she isn't real") never works as the HOOK cold — 
+lead with story or lifestyle, reveal as the twist. MY STORY stays
+untouched.
