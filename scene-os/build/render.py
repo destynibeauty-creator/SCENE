@@ -1507,6 +1507,9 @@ def main():
             nd = docs[idx + 1][0]
             nxt = (nd, titles[nd])
         if docid == 'MODULE 04':
+            # Hook Vault is the last free lesson, not World Builder yet
+            nxt = ('BONUS 01', titles['BONUS 01'])
+        if docid == 'BONUS 01':
             # the $9 shelf ends here - the next door has a name
             nxt = ('THE WORLD BUILDER', 'Modules 05 to 12')
         meta = {'kicker': docid, 'title': docid, 'sub': '', 'tagline': '',
