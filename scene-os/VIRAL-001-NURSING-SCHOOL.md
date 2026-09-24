@@ -414,3 +414,17 @@ potential second horse at −33% CPA; (2) creative law from the dead
 ad: the reveal ("she isn't real") never works as the HOOK cold — 
 lead with story or lifestyle, reveal as the twist. MY STORY stays
 untouched.
+
+**Sep 24 — PRICING DECISION: $9 stays, permanently (owner call).**
+150 members. Consequence executed: the "price goes up at 200" promise
+must be scrubbed from the about page BEFORE crossing 200 (page edits
+don't touch ad learning). New page block: "$9/MONTH. THAT'S THE
+PRICE. No fake countdown…" — honesty-as-differentiator vs AVB, who
+still run "founding rate, price goes up" at 25K without ever raising.
+Ads: 6A's "locks for life" stands (trivially true); next generation
+drops "founding" language → "$9/month. $0.30/day. 7-day money-back
+guarantee." Urgency relocates to honest, renewable sources: monthly
+drop deadlines, limited DFY slots (real capacity), proof recency.
+Strategy note: profit engine is the ladder, not the sub — max member
+volume at $9 is coherent. The $19-flip playbook in earlier notes is
+VOID.
