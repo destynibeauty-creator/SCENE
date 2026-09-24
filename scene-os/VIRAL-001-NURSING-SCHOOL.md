@@ -428,3 +428,13 @@ drop deadlines, limited DFY slots (real capacity), proof recency.
 Strategy note: profit engine is the ladder, not the sub — max member
 volume at $9 is coherent. The $19-flip playbook in earlier notes is
 VOID.
+
+**Sep 24 final: owner kept the original about copy** ("join before
+200 and your rate stays locked") while holding price at $9. Assessed:
+implies a raise without promising one — the explicit promise (pre-200
+joiners keep $9) is honored by never raising, so nothing falsifiable;
+identical to AVB's play at 25K. Hard rule remaining: the $9 lock for
+existing members is inviolable. Guarantee appears in ads but not on
+page — acceptable as long as refund requests are honored; costs some
+conversion, not integrity. DIRECT line also omitted from page — DFY
+routing lives in AutoDM + WORK WITH ME tile instead.
