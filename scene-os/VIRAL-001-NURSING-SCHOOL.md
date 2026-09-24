@@ -458,3 +458,12 @@ recommendation — declined the button (bundles hidden setting
 changes); executing manually instead: MY STORY $60→$75 (+25%), 3-day
 hold, next raise goes to whichever ad set is cheapest after BEACH
 CLUB's Saturday verdict.
+
+**Sep 24 (scale step executed):** MY STORY raised $60→$75/day, took
+it without re-entering learning — 94 joins, $8.87 CPA, $0.29 CPC,
+freq 1.83. BEACH CLUB (SOLO) live at $25/day, day 1 of learning: 2
+joins @ $11.20, CPC $0.56 (normal fresh-set exploration; the $6.08
+won't be judged until day 4). Combined $100/day. Saturday = double
+verdict: BEACH CLUB keep/kill (≤$8 keep · >$12 kill · between =
+extend) AND whether MY STORY's next raise goes to it or to BEACH
+CLUB. Frequency watch: creative refresh cue at ~3.0.
