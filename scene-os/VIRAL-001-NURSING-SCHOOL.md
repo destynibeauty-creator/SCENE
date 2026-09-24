@@ -69,7 +69,7 @@ Beat, then: "She isn't real." End card: THE SCENE AI · $9/month.
 >
 > Founding rate: $9/month. That's $0.30/day. Locks for life.
 >
-> Not for you? Full refund in your first 7 days. Cancel anytime.
+> Cancel anytime.
 > 👇 Tell your story. Enter THE SCENE.
 > https://www.skool.com/[scene-group]/about
 
@@ -95,7 +95,7 @@ picture-in-picture.
 > ✅ Monthly drops so you never run out of episodes
 > ✅ A community that critiques your episodes and reposts the best
 >
-> $9/month founding rate, locks for life. 7-day money-back guarantee.
+> $9/month founding rate, locks for life. Cancel anytime.
 > 👇 https://www.skool.com/[scene-group]/about
 
 ## AD 6C — "No camera crew" (persona variant · the storyteller who never filmed it)
@@ -110,7 +110,7 @@ picture-in-picture.
 > ✅ Your story, directed scene by scene — copy-paste simple
 > ✅ 30 new scenes every month + 120 story ideas when you're stuck
 >
-> $9/month founding rate. $0.30/day. 7-day money-back guarantee.
+> $9/month founding rate. $0.30/day. Cancel anytime.
 > 👇 Tell the story nobody filmed.
 > https://www.skool.com/[scene-group]/about
 
@@ -438,3 +438,13 @@ existing members is inviolable. Guarantee appears in ads but not on
 page — acceptable as long as refund requests are honored; costs some
 conversion, not integrity. DIRECT line also omitted from page — DFY
 routing lives in AutoDM + WORK WITH ME tile instead.
+
+**Sep 24: GUARANTEE RETIRED (owner decision, executed).** All
+refund/7-day-guarantee lines removed from canonical ad copy above
+(6A/6B/6C) — future generations must not reintroduce them; risk
+reversal is now "Cancel anytime" + the $9 price itself. Residual
+obligation: anyone who joined while ads carried the refund promise
+gets it honored on request (their join predates the change).
+Watch: CPA may tick up without the risk-reversal line — judge the
+post-change ads on their own 4-day windows, and expect refused-
+refund chargebacks to cost ~$24 each if any surface.
