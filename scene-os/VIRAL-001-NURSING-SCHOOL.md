@@ -439,12 +439,11 @@ page — acceptable as long as refund requests are honored; costs some
 conversion, not integrity. DIRECT line also omitted from page — DFY
 routing lives in AutoDM + WORK WITH ME tile instead.
 
-**Sep 24: GUARANTEE RETIRED (owner decision, executed).** All
-refund/7-day-guarantee lines removed from canonical ad copy above
-(6A/6B/6C) — future generations must not reintroduce them; risk
-reversal is now "Cancel anytime" + the $9 price itself. Residual
-obligation: anyone who joined while ads carried the refund promise
-gets it honored on request (their join predates the change).
-Watch: CPA may tick up without the risk-reversal line — judge the
-post-change ads on their own 4-day windows, and expect refused-
-refund chargebacks to cost ~$24 each if any surface.
+**Sep 24 CORRECTED: there never was a guarantee.** The live ads
+never carried the refund line — the owner cut it from the kit drafts
+before launching. No exposure, no obligations, nothing to unwind;
+the scrub above just aligns the written kit with what actually ran.
+Key learning: the $9.04 CPA was achieved with NO risk reversal —
+story + proof + price carries the skeleton for this audience. Future
+copy: never reintroduce guarantee language; "Cancel anytime" is the
+only reassurance line.
