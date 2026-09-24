@@ -447,3 +447,14 @@ Key learning: the $9.04 CPA was achieved with NO risk reversal —
 story + proof + price carries the skeleton for this audience. Future
 copy: never reintroduce guarantee language; "Cancel anytime" is the
 only reassurance line.
+
+**Sep 24 (later): delivery fully recovered, campaign badged "High
+performing."** 96 attributed joins · **$8.92 CPA (5th straight
+improvement)** · $855.93 spent · BEACH CLUB duplicate live (+$87/day
+spend pace = both ad sets delivering). Business: **147 paying
+members · $1,776.60 collected this month** · MRR ~$1,320+ · blended
+CAC ~$5.82. Meta pushed a "scale ad set +50% conversions" one-click
+recommendation — declined the button (bundles hidden setting
+changes); executing manually instead: MY STORY $60→$75 (+25%), 3-day
+hold, next raise goes to whichever ad set is cheapest after BEACH
+CLUB's Saturday verdict.
