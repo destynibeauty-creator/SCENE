@@ -467,3 +467,11 @@ won't be judged until day 4). Combined $100/day. Saturday = double
 verdict: BEACH CLUB keep/kill (≤$8 keep · >$12 kill · between =
 extend) AND whether MY STORY's next raise goes to it or to BEACH
 CLUB. Frequency watch: creative refresh cue at ~3.0.
+
+**Sep 25:** 156 members · $1.3K MRR · 151 signups/30d (8–13/day
+steady ≈ 300/mo pace) · 4.9K visitors · 3.1% conversion. Sources: FB
+64 (42.4%) · IG 49 (32.5%) · Direct 16 · **Skool network 15 (doubled,
+$0 CAC — validates maxing Growth Boost to 70% today)** · TikTok 7
+(still the untapped surface). Retention tile still 100% — the 13
+queued cancels process at rebill next week; expect high-80s/low-90s
+and treat it as planned.
