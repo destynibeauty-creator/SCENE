@@ -475,3 +475,11 @@ $0 CAC — validates maxing Growth Boost to 70% today)** · TikTok 7
 (still the untapped surface). Retention tile still 100% — the 13
 queued cancels process at rebill next week; expect high-80s/low-90s
 and treat it as planned.
+
+**Sep 25 (later): cancels 13 → 17 queued (10.9% of 156)** — expected
+drift as rebill dates approach; red line stays 25–30%. Reframe: ~11%
+monthly churn ≈ 9-month average lifetime ≈ $70 net sub LTV vs $5.82
+CAC = 12:1 before ladder revenue. Actions: why-DM all 17, Drop 002
+before Oct 1 (races the rebill wave), founding-rate reminder notes,
+and START A CHURN LEDGER (join date + source per canceller — detects
+whether a specific ad week attracts tourists vs uniform $9 tide).
