@@ -483,3 +483,11 @@ CAC = 12:1 before ladder revenue. Actions: why-DM all 17, Drop 002
 before Oct 1 (races the rebill wave), founding-rate reminder notes,
 and START A CHURN LEDGER (join date + source per canceller — detects
 whether a specific ad week attracts tourists vs uniform $9 tide).
+
+**Sep 26: Growth Boost 70% under review (owner felt the smaller
+split).** Clarified: only Skool-sourced members are shared; own-
+funnel members stay ~$7.80. The real test: 70% must produce ~2-2.5x
+the discovery VOLUME of 30% to win on sub revenue. Dated decision
+rule: hold 70% through Oct 9; baseline ~7 discovery joins/2wk. 15+ =
+keep 70% · 7-10 = drop to 50% · flat = back to 30%. No verdict from
+day one (boost needs time to affect rankings, per Skool's own UI).
