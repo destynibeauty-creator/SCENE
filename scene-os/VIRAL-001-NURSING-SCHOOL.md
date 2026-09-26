@@ -491,3 +491,13 @@ the discovery VOLUME of 30% to win on sub revenue. Dated decision
 rule: hold 70% through Oct 9; baseline ~7 discovery joins/2wk. 15+ =
 keep 70% · 7-10 = drop to 50% · flat = back to 30%. No verdict from
 day one (boost needs time to affect rankings, per Skool's own UI).
+
+**Sep 26: BEACH CLUB (SOLO) VERDICT — KILLED.** $62.93 spent · 5
+joins · $12.59 CPA (past the $12 kill line) · CPC stuck at $0.60 ·
+never exited learning (mid-test budget cut $25→$15 reset it anyway).
+Confirmed: the $6.08 was the original ad set's learning halo, not
+the creative. Executed: solo ad set OFF (not deleted); creative
+stays live in the main ad set; freed budget → MY STORY $75→$90
+tomorrow if CPA holds <$11. ACCOUNT LAW going forward: test new
+creatives INSIDE the learned ad set (the learning is the asset);
+solo ad sets only for genuinely different audiences/offers.
