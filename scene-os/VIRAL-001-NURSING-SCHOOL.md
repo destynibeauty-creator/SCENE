@@ -557,3 +557,13 @@ Full copy delivered in chat Sep 29. Claims audit: 8M series-wide
 guarantee language. Voice rule for all future generations: every
 line passes "would you say this to a friend" — the only technical
 word permitted is "AI."
+
+**Sep 29: FULL REFRESH BATCH DELIVERED — 8 creatives.** EP4 52s+30s
+and EP2 52s+30s, each in 9:16 (letterboxed widescreen) and 16:9
+(native). All: 8M+ hook overlay w/ brand brackets → "SHE ISN'T
+REAL." → story block → logo end card with magenta JOIN FOR $9/MONTH
+pill. EP2 cold open verified on the guard-lifting-the-baby shot
+(~0:40). Load plan: EP4 cuts under AD 7A copy, EP2 cuts under 7B,
+4-5 headline + 3 description variants per ad (logged above), CTA
+Learn More, all INSIDE the learned ad set next to MY STORY. Hold
+budget 3-4 days after adding, then the $90 raise if healthy.
