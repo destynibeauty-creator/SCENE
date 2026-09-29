@@ -611,3 +611,14 @@ Time" / "This Part Really Happened" / "The Hardest Chapter Made It
 In" / "Made From My Real Story"). 7B headline set unchanged.
 Headline rule going forward: every headline must give a stranger
 something to want — proof, twist, or invite — never a closed door.
+
+**Sep 29 (FINAL2 set, owner call during load):** hook card updated —
+"Want to learn how to make videos like this?" added under the 8M+
+stacked hook on the opening card (Poppins SemiBold, safe-zone
+verified all ratios). Only the first 3s re-rendered; SHE ISN'T REAL
+card, story block and end card untouched. Delivered as FINAL2-*
+(12 files) to replace FINAL-* in the drafts. Also during load: Meta
+error #1815809 ("Duplicate of ad asset values") hit — cause was a
+repeated headline slot; rule: all 3 headline slots must be
+word-for-word different. Ad naming convention set: "EP4 · 52s" style
+(episode · cut length), never renamed later, refreshes added beside.
