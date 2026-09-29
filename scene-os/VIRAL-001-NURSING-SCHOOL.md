@@ -501,3 +501,15 @@ stays live in the main ad set; freed budget → MY STORY $75→$90
 tomorrow if CPA holds <$11. ACCOUNT LAW going forward: test new
 creatives INSIDE the learned ad set (the learning is the asset);
 solo ad sets only for genuinely different audiences/offers.
+
+**Sep 29: first fatigue signals — refresh by ADDITION (the AVB way).**
+Lifetime CPA drifted $8.87 → $10.01 ($1,120.87 spent, 112 joins);
+yesterday $22.81 on 3 joins (may restate down via attribution lag).
+Meta's "spend near zero" banner wrong again — ignore. Refresh batch,
+all inside the learned ad set, same copy: (1) two new film cuts with
+different opening hooks (highway phone scene / campus arrival), (2)
+Episode 2 car-seat cut (165K organic proof), (3) the comments-scroll
+6B creative (zero credits). Nothing killed — auction reallocates.
+Sequencing: creatives first, hold budget 3–4 days, THEN the $90
+raise. AVB law restated: winners are never edited or retired while
+converting; refresh = new ads beside them.
