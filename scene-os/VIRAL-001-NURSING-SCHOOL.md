@@ -567,3 +567,13 @@ pill. EP2 cold open verified on the guard-lifting-the-baby shot
 4-5 headline + 3 description variants per ad (logged above), CTA
 Learn More, all INSIDE the learned ad set next to MY STORY. Hold
 budget 3-4 days after adding, then the $90 raise if healthy.
+
+**Sep 29 (copy final): 7A/7B rewritten to match the owner's live
+control voice** — short lines, no checkmark stack, "Same character./
+Same face./..." triplet, "The tool doesn't make people care. The
+story does.", close "Tap Sign Up and come build yours 🎬". 7A = the
+control verbatim with 8M update ("in 4 days" dropped — evergreen).
+7B = sibling with the part-two angle + "you have a chapter like this
+too" turn. CTA button = Sign Up (must match the copy's tap line).
+The checkmark-stack style is retired for cold ads in this account —
+the owner's flowing version is the proven converter.
