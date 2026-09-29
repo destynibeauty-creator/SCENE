@@ -600,3 +600,14 @@ clear of player controls. Load as 4 ads (episode × length), each
 carrying its 3 ratio files via placement customization, 7A/7B copy +
 3 headlines + 1 description each, CTA Sign Up, all inside the
 learned ad set. Then: hands off 4 days.
+
+**Sep 29 (headline swap, owner call):** "The Night I Don't Talk
+About" rejected as a 7A headline — too dark/closed as a standalone
+next to Sign Up. Final 7A headline set: "8 Million+ Watched Her
+Story" (proof) · "She Isn't Real. The Story Is." (twist) · "I Turned
+My Real Story Into This" (invite — replaces the rejected line;
+owner-swappable alternates offered: "My Story, One Chapter At A
+Time" / "This Part Really Happened" / "The Hardest Chapter Made It
+In" / "Made From My Real Story"). 7B headline set unchanged.
+Headline rule going forward: every headline must give a stranger
+something to want — proof, twist, or invite — never a closed door.
