@@ -590,3 +590,13 @@ owner truth-check before launch: "used my call to ask about my son"
 (7A) and "nowhere for my son to go that morning" (7B). Cut-copy
 alignment confirmed: EP4 ad uses 0-45s (van→booking→cell), EP2 ad
 cold-opens on the guard/baby shot.
+
+**Sep 29 FINAL DELIVERY: 12-file safe-zone creative set.** EP4 + EP2
+× 52s/30s × 9:16/1:1/16:9, all "FINAL-" prefixed (everything earlier
+superseded). Safe-zone spec baked in: 9:16 big stacked hook y300-640
+(clear of Reels top UI + right rail), end-card brackets inside
+caption-safe area; 1:1 hook fills top band; 16:9 hook top-of-frame
+clear of player controls. Load as 4 ads (episode × length), each
+carrying its 3 ratio files via placement customization, 7A/7B copy +
+3 headlines + 1 description each, CTA Sign Up, all inside the
+learned ad set. Then: hands off 4 days.
