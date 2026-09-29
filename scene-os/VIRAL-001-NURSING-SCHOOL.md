@@ -539,3 +539,21 @@ charcoal #0F0F12 · metallic silver #C0C3C7 · soft white #F7F7F5 ·
 cyan #00E5FF · magenta #F600A2 · acid lime #C6FF00 sparingly;
 Poppins Condensed Bold display / Poppins Medium body). All future
 creative assets follow the board.
+
+## AD 7A / 7B — the episode-cut ads (Sep 29, plain-voice generation)
+
+Owner brief: highest converting, genuine, no jargon/buzzwords.
+7A (EP4 cuts): "8 million people have watched this woman's story.
+She isn't real. The story is." → chapter-nobody-filmed angle →
+plain-words checkmarks → $9/cancel anytime. Headline: "Tell The
+Story Nobody Filmed | $9".
+7B (EP2 cuts): "This story has been watched more than 8 million
+times. This is the part everybody asked for." → part-two demand →
+"you have a chapter like this too" → 150+ members line (currently
+true — refresh per generation) → $9/cancel anytime. Headline:
+"8 Million Watched Her. She Isn't Real."
+Full copy delivered in chat Sep 29. Claims audit: 8M series-wide
+(owner-verified), 150+ members (live count), no income claims, no
+guarantee language. Voice rule for all future generations: every
+line passes "would you say this to a friend" — the only technical
+word permitted is "AI."
