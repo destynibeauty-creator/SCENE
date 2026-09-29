@@ -577,3 +577,16 @@ control verbatim with 8M update ("in 4 days" dropped — evergreen).
 too" turn. CTA button = Sign Up (must match the copy's tap line).
 The checkmark-stack style is retired for cold ads in this account —
 the owner's flowing version is the proven converter.
+
+**Sep 29 (copy FINAL, footage-grounded):** watched both episodes
+frame-by-frame. EP2 = "GO OUTSIDE" chapter (no childcare that
+morning → son found crying in her car → security pulls her from
+class → fire truck → TO BE CONTINUED). EP4 = arrest aftermath
+(police van in scrubs/white coat → holding cell door 167 → crying
+jail phone call → jail clothes → release → reunion hug outside).
+7A/7B rewritten around visible beats (door 167, "Go outside", the
+hug) in the owner's control voice. Two inference lines flagged for
+owner truth-check before launch: "used my call to ask about my son"
+(7A) and "nowhere for my son to go that morning" (7B). Cut-copy
+alignment confirmed: EP4 ad uses 0-45s (van→booking→cell), EP2 ad
+cold-opens on the guard/baby shot.
