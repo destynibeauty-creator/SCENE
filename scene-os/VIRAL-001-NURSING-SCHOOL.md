@@ -513,3 +513,16 @@ Episode 2 car-seat cut (165K organic proof), (3) the comments-scroll
 Sequencing: creatives first, hold budget 3–4 days, THEN the $90
 raise. AVB law restated: winners are never edited or retired while
 converting; refresh = new ads beside them.
+
+**Sep 29: CREATIVE PIPELINE BUILT.** Network allowlist opened
+(drive.google.com + *.googleusercontent.com) → all 4 episode masters
+pulled from Drive (TDTS folder, 212MB). In-session editing stack:
+ffmpeg (static) + PIL overlays (Poppins) + brand end cards (9:16 +
+16:9, built and delivered). First output: EP4-AD-52s-v1.mp4 — cold
+open on the police-van shot, "2 MILLION+ WATCHED HER STORY / SHE
+ISN'T REAL." overlays, 45s story block, end card, 1080x1920@30.
+Pending owner review: money-moment timestamps per episode → final
+cuts (45-60s + 30s each for Ep4 + Ep2) to drop INSIDE the learned
+ad set. Episode masters: Ep1 114.9s · Ep2 93.9s · Ep3 197.5s · Ep4
+178.5s (arrest chapter — strongest ad material with Ep2's car-seat
+chapter).
