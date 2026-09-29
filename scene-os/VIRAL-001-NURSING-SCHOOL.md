@@ -526,3 +526,16 @@ cuts (45-60s + 30s each for Ep4 + Ep2) to drop INSIDE the learned
 ad set. Episode masters: Ep1 114.9s · Ep2 93.9s · Ep3 197.5s · Ep4
 178.5s (arrest chapter — strongest ad material with Ep2's car-seat
 chapter).
+
+**Sep 29 (v2): EP4 ad cut rebuilt to brand + delivered in BOTH
+ratios** (1080x1920 letterboxed widescreen + native 1920x1080).
+Changes per owner: hook updated to "8 MILLION+ PEOPLE WATCHED HER
+STORY" (view count refreshed), official logo lockup + two-corner
+magenta/cyan bracket motif on the end card, magenta "JOIN FOR
+$9/MONTH" CTA pill (from the brand board's Join The Movement
+pattern). Official brand board saved to
+scene-os/build/assets/brand-board.webp (palette: jet black #000000 ·
+charcoal #0F0F12 · metallic silver #C0C3C7 · soft white #F7F7F5 ·
+cyan #00E5FF · magenta #F600A2 · acid lime #C6FF00 sparingly;
+Poppins Condensed Bold display / Poppins Medium body). All future
+creative assets follow the board.
