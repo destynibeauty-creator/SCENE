@@ -612,6 +612,22 @@ In" / "Made From My Real Story"). 7B headline set unchanged.
 Headline rule going forward: every headline must give a stranger
 something to want — proof, twist, or invite — never a closed door.
 
+**Sep 29 (FINAL3 — the load set, owner-directed hook evolution):**
+two iterations during load night. First (FINAL2): "Want to learn how
+to make videos like this?" added under the 8M+ hook. Then owner call:
+caption + headlines already carry the 8M proof, so the video card
+shouldn't repeat it — opening card rebuilt as the big question ONLY:
+"WANT TO LEARN HOW TO MAKE VIDEOS LIKE THIS?" (Poppins ExtraBold,
+brand brackets on 9:16, safe-zone verified all ratios). Division of
+labor rule: VIDEO INVITES, CAPTION PROVES — on-video text and caption
+never say the same thing twice. Only first 3s changed; twist card,
+story, end card untouched. FINAL3-* (12 files) delivered; FINAL-*
+and FINAL2-* superseded. Also: Higgsfield Marketing Studio scouted
+for a generated ad — verdict: catalog is product-shot/motion tooling,
+wrong fit vs footage-true ads; one real candidate is UGC talking-head
+delivered BY the locked character (script drafted in chat), parked
+until after Oct 10 credit refill, launch-beside-never-replace.
+
 **Sep 29 (FINAL2 set, owner call during load):** hook card updated —
 "Want to learn how to make videos like this?" added under the 8M+
 stacked hook on the opening card (Poppins SemiBold, safe-zone
