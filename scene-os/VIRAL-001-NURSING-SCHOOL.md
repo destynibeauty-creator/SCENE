@@ -628,6 +628,20 @@ wrong fit vs footage-true ads; one real candidate is UGC talking-head
 delivered BY the locked character (script drafted in chat), parked
 until after Oct 10 credit refill, launch-beside-never-replace.
 
+**Sep 30 (~3:45am) — day-1 read on the FINAL3 refresh (owner worried,
+verdict: hold).** Yesterday ad-level: MY STORY $27.45 / 3 purchases /
+$9.15 CPA (on historical average — account healthy). New ads combined
+$15.26 spend, 0 purchases (EP4·52s $6.53 · EP2·30s $4.50 · EP2·52s
+$3.04 · EP4·30s $1.19) — under two members' worth of data across four
+ads, no verdict possible. Meta alert "+59.3% / $12.59 7-day CPA" =
+blended-math artifact of the refresh, ignored. Today partial: $36 /
+2 purchases / 81 link clicks at $0.42 CPC (clicks healthy — new hook
+pulls). WATCH ITEM: yesterday under-delivered $42.74 of $75; normal
+for 1-2 days post-add; escalate only if daily spend still <$60 by
+Oct 3. Decision date unchanged: Oct 3 — new ad with $25+ spend and 0
+purchases gets turned off alone; low-spend ads get judged on clicks
+and more time. MY STORY untouchable. Nothing was edited tonight.
+
 **Sep 29 (FINAL2 set, owner call during load):** hook card updated —
 "Want to learn how to make videos like this?" added under the 8M+
 stacked hook on the opening card (Poppins SemiBold, safe-zone
