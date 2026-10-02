@@ -642,6 +642,18 @@ Oct 3. Decision date unchanged: Oct 3 — new ad with $25+ spend and 0
 purchases gets turned off alone; low-spend ads get judged on clicks
 and more time. MY STORY untouchable. Nothing was edited tonight.
 
+**Oct 2 (lifetime snapshot) — EP4·52s converts: first succession
+signal.** Ad set lifetime 130 purchases / $10.54 / $1.37K. MY STORY
+122 @ $10.33 (drift continues: $10.04 → $10.33 in 2 days — fatigue
+thesis holding). EP4·52s: 2 purchases @ $18.63 on $37.26 — Meta chose
+it from the four and it converts; CPA is 2-purchase math, not a
+verdict. EP2·30s $11.57/0 (on the bubble, kill at ~$25/0). EP2·52s
+$7.77/0 and EP4·30s $1.91/0 starved, no verdict. Sep 30 blended
+check: 5 Skool joins/24h (1 Skool-network) vs $42.74 spend → blended
+$8.55-10.69, machine fine. Oct 3 review: all survive unless EP2·30s
+crosses $25/0. Budget raise to ~$90 gated on EP4·52s reaching 5+
+purchases with CPA settling under $12.
+
 **Sep 29 (FINAL2 set, owner call during load):** hook card updated —
 "Want to learn how to make videos like this?" added under the 8M+
 stacked hook on the opening card (Poppins SemiBold, safe-zone
