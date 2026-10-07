@@ -30,6 +30,7 @@ MAP = {
  'products/The-SCENE-AI_Identity-Lock-Mini-Pack.pdf': 'The Identity Lock Mini-Pack.pdf',
  'products/THE-SCENE-AI_Drop-001_The-Vacation-Heat-Drop.pdf': 'Drop 001 - The Vacation Heat Drop.pdf',
  'products/THE-SCENE-AI_Drop-002_The-WWE-Fan-Day-Drop.pdf': 'Drop 002 - The WWE Fan Day Drop.pdf',
+ 'products/THE-SCENE-AI_Drop-003_The-Halloween-Drop.pdf': 'Drop 003 - The Halloween Drop.pdf',
  'studio/scene-studio.html': 'SCENE Studio.html',
 }
 os.makedirs(OUT, exist_ok=True)
