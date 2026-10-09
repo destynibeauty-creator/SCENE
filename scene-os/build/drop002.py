@@ -211,7 +211,7 @@ def main():
     render.register_fonts()
     os.makedirs(OUT, exist_ok=True)
     S = make_styles(HexColor(CYAN))
-    meta = {'kicker': 'THE SCENE AI · DROP 002', 'title': 'THE WWE FAN DAY DROP',
+    meta = {'kicker': 'DROP 002', 'title': 'THE WWE FAN DAY DROP',
             'sub': '30 new scenes, 10 new looks, and this month’s master '
                    'scene — members only.',
             'tagline': 'CREATE THE CHARACTER. DIRECT THE SCENE. BUILD THE WORLD.',

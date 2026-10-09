@@ -223,7 +223,7 @@ def main():
     render.register_fonts()
     os.makedirs(OUT, exist_ok=True)
     S = make_styles(HexColor(MAG))
-    meta = {'kicker': 'THE SCENE AI · DROP 001', 'title': 'THE VACATION HEAT DROP',
+    meta = {'kicker': 'DROP 001', 'title': 'THE VACATION HEAT DROP',
             'sub': '30 new scenes, 10 new looks, and this month’s master '
                    'scene — members only.',
             'tagline': 'CREATE THE CHARACTER. DIRECT THE SCENE. BUILD THE WORLD.',
