@@ -164,10 +164,10 @@ The first three seconds must create immediate curiosity through a natural reveal
 
 def pages():
     cover = {'page': 1, 'doc': 'DROP 001', 'elems': [
-        E('label', 'THE SCENE AI · DROP 001 · AUGUST'),
+        E('label', 'THE SCENE AI · DROP 001'),
         E('h1', 'THE VACATION HEAT DROP'),
-        E('sub', '30 new scenes, 10 new looks, and this month’s master '
-                 'scene — members only.'),
+        E('sub', '30 new scenes, 10 new looks, and one Master '
+                 'Scene — members only.'),
         E('label', 'CREATE THE CHARACTER. DIRECT THE SCENE. BUILD THE WORLD.'),
     ]}
     p2 = {'page': 2, 'doc': 'DROP 001', 'elems': [
@@ -184,13 +184,13 @@ def pages():
         E('h2', 'Glow-up + beauty — 10 scenes'),
     ] + [E('body', f'{i:02d}. {s}') for i, s in enumerate(GLOWUP, 1)]}
     p3 = {'page': 3, 'doc': 'DROP 001', 'elems': [
-        E('h2', 'The August looks — 5 for her'),
+        E('h2', 'The looks — 5 for her'),
     ]}
     for i, (name, desc) in enumerate(OUTFITS_HER, 1):
         p3['elems'].append(E('h3', f'{i:02d}. {name}'))
         p3['elems'].append(E('code', outfit_prompt('woman', desc)))
     p4 = {'page': 4, 'doc': 'DROP 001', 'elems': [
-        E('h2', 'The August looks — 5 for him'),
+        E('h2', 'The looks — 5 for him'),
     ]}
     for i, (name, desc) in enumerate(OUTFITS_HIM, 6):
         p4['elems'].append(E('h3', f'{i:02d}. {name}'))
@@ -204,7 +204,7 @@ def pages():
         E('code', PENTHOUSE),
     ]}
     p6 = {'page': 6, 'doc': 'DROP 001', 'elems': [
-        E('h2', 'Tool notes — August'),
+        E('h2', 'Tool notes'),
         E('bullet', 'Video: Seedance 2.0 syncs lips best on clips of 10 '
                     'seconds or less. Keep spoken lines 5–10 words.'),
         E('bullet', 'Photos: batch your poses in Nano Banana Pro right after '
@@ -224,8 +224,8 @@ def main():
     os.makedirs(OUT, exist_ok=True)
     S = make_styles(HexColor(MAG))
     meta = {'kicker': 'DROP 001', 'title': 'THE VACATION HEAT DROP',
-            'sub': '30 new scenes, 10 new looks, and this month’s master '
-                   'scene — members only.',
+            'sub': '30 new scenes, 10 new looks, and one Master '
+                   'Scene — members only.',
             'tagline': 'CREATE THE CHARACTER. DIRECT THE SCENE. BUILD THE WORLD.',
             'accent': HexColor(MAG), 'accent_hex': MAG,
             'part': 0, 'total': 0, 'next': None,

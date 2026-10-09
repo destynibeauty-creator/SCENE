@@ -146,10 +146,10 @@ The first three seconds must create immediate curiosity through a natural, unsta
 
 def pages():
     cover = {'page': 1, 'doc': 'DROP 002', 'elems': [
-        E('label', 'THE SCENE AI · DROP 002 · SEPTEMBER'),
+        E('label', 'THE SCENE AI · DROP 002'),
         E('h1', 'THE WWE FAN DAY DROP'),
-        E('sub', '30 new scenes, 10 new looks, and this month’s master '
-                 'scene — members only.'),
+        E('sub', '30 new scenes, 10 new looks, and one Master '
+                 'Scene — members only.'),
         E('label', 'CREATE THE CHARACTER. DIRECT THE SCENE. BUILD THE WORLD.'),
     ]}
     p2 = {'page': 2, 'doc': 'DROP 002', 'elems': [
@@ -166,13 +166,13 @@ def pages():
         E('h2', 'Meet and greet + backstage — 10 scenes'),
     ] + [E('body', f'{i:02d}. {s}') for i, s in enumerate(BACKSTAGE, 1)]}
     p3 = {'page': 3, 'doc': 'DROP 002', 'elems': [
-        E('h2', 'The September looks — 5 for her'),
+        E('h2', 'The looks — 5 for her'),
     ]}
     for i, (name, desc) in enumerate(OUTFITS_HER, 1):
         p3['elems'].append(E('h3', f'{i:02d}. {name}'))
         p3['elems'].append(E('code', outfit_prompt('woman', desc)))
     p4 = {'page': 4, 'doc': 'DROP 002', 'elems': [
-        E('h2', 'The September looks — 5 for him'),
+        E('h2', 'The looks — 5 for him'),
     ]}
     for i, (name, desc) in enumerate(OUTFITS_HIM, 6):
         p4['elems'].append(E('h3', f'{i:02d}. {name}'))
@@ -186,7 +186,7 @@ def pages():
         E('code', PHOTO_BOOTH_SCENE),
     ]}
     p6 = {'page': 6, 'doc': 'DROP 002', 'elems': [
-        E('h2', 'Tool notes — September'),
+        E('h2', 'Tool notes'),
         E('bullet', 'The 3-step method behind this drop: an idea chat first '
                     '(no character, just ask for scene ideas), then real '
                     'reference photos from an actual event, then your '
@@ -212,8 +212,8 @@ def main():
     os.makedirs(OUT, exist_ok=True)
     S = make_styles(HexColor(CYAN))
     meta = {'kicker': 'DROP 002', 'title': 'THE WWE FAN DAY DROP',
-            'sub': '30 new scenes, 10 new looks, and this month’s master '
-                   'scene — members only.',
+            'sub': '30 new scenes, 10 new looks, and one Master '
+                   'Scene — members only.',
             'tagline': 'CREATE THE CHARACTER. DIRECT THE SCENE. BUILD THE WORLD.',
             'accent': HexColor(CYAN), 'accent_hex': CYAN,
             'part': 0, 'total': 0, 'next': None,
