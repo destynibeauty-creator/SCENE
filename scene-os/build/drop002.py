@@ -199,6 +199,12 @@ def pages():
         E('bullet', 'Photos: batch your poses in Nano Banana Pro or '
                     'Seedream 4.5 right after you lock a new outfit — 6 to '
                     '10 angles per look.'),
+        E('bullet', 'Higgsfield Genjutsu: instead of generating a scene '
+                    'from nothing, find a real event clip and use motion '
+                    'transfer to replace the person in it with your MASTER '
+                    '— same movement, same background, your face. Reference '
+                    'multiple images at once (identity, outfit, jewelry, '
+                    'nails) with @Image tags in one prompt.'),
         E('h2', 'Member mission'),
         E('body', 'Post ONE scene from this drop with #THESCENEAI. The best '
                   'episode gets reposted and broken down in next month’s '
