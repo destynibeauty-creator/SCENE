@@ -663,9 +663,13 @@ under the 25-30% red line. Key discovery: many "cancelling" are
 dunning DMs going out (script in chat); churned-but-still-active
 members (e.g. active 3h after churn) get personal win-back DMs.
 Declined-vs-voluntary split pending. Churn framing adopted: churn is
-the tax, net members is the dashboard. GROWTH BOOST VERDICT (was due
-Oct 9): 23 discovery joins → KEEP 70% slider (~$62/mo for zero spend);
-re-check if a 2-week window falls under ~8 joins; discovery members
+the tax, net members is the dashboard. GROWTH BOOST VERDICT
+(corrected same day — 23 was recent TOTAL joins; only ~5 came from
+Discovery since the 70% slider went on): 70% is not buying promotion
+→ DROP SLIDER TO 50% now; re-verdict in 2 weeks: still ~5+ discovery
+joins at 50% → traffic isn't slider-dependent, drop to 30% ($6.30/
+member kept vs $2.70); falls to ~0 at 50% → slider was the driver,
+owner's call whether $2.70 members are worth 70%. Discovery members
 expected to churn harder (e.g. Martika: 30d inactive + declined) —
 segment them out when reading churn. Ads note: owner planned a
 $75→$40/day cut for cash-flow days (ruled safe; step back up
