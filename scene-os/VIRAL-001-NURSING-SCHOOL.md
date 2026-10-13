@@ -654,6 +654,27 @@ $8.55-10.69, machine fine. Oct 3 review: all survive unless EP2·30s
 crosses $25/0. Budget raise to ~$90 gated on EP4·52s reaching 5+
 purchases with CPA settling under $12.
 
+**Oct 13 — OCTOBER MILESTONE SNAPSHOT (the rebill month, mid-read).**
+Members: 247 active (~156 late Sep → +~90 in two weeks; growth
+outrunning churn ~6:1). MRR ≈ $2,223 gross / ~$2K net. Rebill wave:
+15 churned + 34 cancelling = 49 at risk of ~262 ≈ 18.7% WORST case —
+under the 25-30% red line. Key discovery: many "cancelling" are
+"Declined (churns in 12 days)" = failed cards, not quits — same-day
+dunning DMs going out (script in chat); churned-but-still-active
+members (e.g. active 3h after churn) get personal win-back DMs.
+Declined-vs-voluntary split pending. Churn framing adopted: churn is
+the tax, net members is the dashboard. GROWTH BOOST VERDICT (was due
+Oct 9): 23 discovery joins → KEEP 70% slider (~$62/mo for zero spend);
+re-check if a 2-week window falls under ~8 joins; discovery members
+expected to churn harder (e.g. Martika: 30d inactive + declined) —
+segment them out when reading churn. Ads note: owner planned a
+$75→$40/day cut for cash-flow days (ruled safe; step back up
+40→55→75; "lower budget = better learning" myth corrected: learning
+runs on conversion volume). BEACH CLUB (SOLO) postmortem corrected in
+record: it converted 5 @ $12.63 vs $6.43 in-set — same creative,
+double cost outside the learned set; the law stands on cleaner
+evidence.
+
 **Sep 29 (FINAL2 set, owner call during load):** hook card updated —
 "Want to learn how to make videos like this?" added under the 8M+
 stacked hook on the opening card (Poppins SemiBold, safe-zone
