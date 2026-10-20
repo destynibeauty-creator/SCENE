@@ -314,3 +314,13 @@ if asked inside: "founders keep their rate." Flip the Skool price
 setting to $29 in the same sitting as the copy paste. When ads
 return, all copy + end cards print $29 only — no "was $9" anchoring
 anywhere, ever.
+
+### PRICING DECISION — FINAL (Oct 20): $29/MONTH
+Owner chose $29 over the recommended $19 after hearing the full case
+(category meta $9, ladder-volume argument, wash math) — her call,
+eyes open. Execution rules locked: (1) the 8M proof line on the About
+page is load-bearing at this price, not optional; (2) tripwire: joins
+flatline 2 weeks -> add proof to the page (wins, member count, client
+work) — NEVER a price cut; the price only moves up; (3) ads restart
+math: $15-20 CPA is month-one profitable at $29. Next raise per
+ladder remains $49, quiet, at real scale.
