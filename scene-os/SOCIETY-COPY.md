@@ -324,3 +324,16 @@ flatline 2 weeks -> add proof to the page (wins, member count, client
 work) — NEVER a price cut; the price only moves up; (3) ads restart
 math: $15-20 CPA is month-one profitable at $29. Next raise per
 ladder remains $49, quiet, at real scale.
+
+### Oct 20 — $29 ERA IS LIVE (screenshot-verified)
+About page live with owner's 800-char copy, $29/month on the button,
+266 members (+19 since Oct 13 count), 5.0 stars / 8 reviews. Proof
+moved to the COVER ART instead of a copy line — stronger: "8.4
+MILLION+ VIEWS IN LESS THAN A MONTH. SHE ISN'T REAL." with per-
+platform receipts (FB 4.3M+ / IG 2.8M+ / TikTok 1.3M+ / 121K+ new
+followers) and a "results vary" disclaimer baked into the art —
+compliance pattern to repeat on all future proof creative. Number
+discipline: 8.4M was true at print; views only grow, so it stays
+true. URGENT flagged to owner: Skool admin banner "Your payment has
+been declined — fix billing issue" = HER platform payment bouncing;
+group restriction risk; told to fix same-day before all else.
