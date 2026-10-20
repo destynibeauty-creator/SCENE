@@ -260,3 +260,18 @@ One character. A whole world. Enter THE SCENE. 🎬
 · IG/TikTok bios · pinned comments with $9 · (ManyChat already
 price-free · ads off, end cards re-render deferred until ads return —
 when they do, end-card pill and all ad copy must print $29).
+
+
+### v3 amendment (same day): owner chose the THRESHOLD play, not an
+### immediate flip
+Owner rewrote the About page herself (her copy = live control, 923
+chars): stays $9 with a printed, falsifiable countdown — "Join before
+we hit 275 members" (247 at time of writing, ~28 away). Broader
+positioning: "digital twin," "use for your business or create for
+others" (DFY feeder). Claims audit passed: no income claims, no
+guarantee, correct lock wording. Suggested one addition (fits, ~979):
+"The system behind the story 8,000,000+ people watched." RULES: at
+member #275 the price goes to $29 SAME DAY (the $29 About copy above
+is the standby); the countdown doubles as content ("9 spots left at
+$9"), and the "275 hit, price is now $29" post is the trust-building
+proof that deadlines here come true.
