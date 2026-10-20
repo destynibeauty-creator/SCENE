@@ -275,3 +275,42 @@ member #275 the price goes to $29 SAME DAY (the $29 About copy above
 is the standby); the countdown doubles as content ("9 spots left at
 $9"), and the "275 hit, price is now $29" post is the trust-building
 proof that deadlines here come true.
+
+### v3 final (Oct 20): THE QUIET RAISE — no $9 anywhere, no countdown
+Owner's final call ("Does Gucci announce a price increase" / "Take $9
+out completely"): straight to $29 with zero price history on any
+public surface. The 275-threshold play and the founders-locked line
+are DEAD — never posted, never referenced. Her About copy, price
+block removed (800/1000 chars — the LIVE control):
+```
+Let’s turn YOUR stories, ideas + content in your head into realistic AI videos you can post, use for your business or create for others.
+
+Your imagination only. ❌ No tech experience needed.
+
+INSIDE THE SCENE AI:
+✅ Build your own AI character or digital twin
+✅ Keep your character looking consistent from scene to scene
+✅ Create realistic skin, hair + texture
+✅ Get culturally accurate hair, clothes + details
+✅ Turn one idea into videos, ads + stories
+✅ Use ready-to-run scenes so you never start from scratch
+✅ Copy + paste beginner-friendly prompts
+✅ Get the exact AI film tools + workflows
+✅ Post your work + get my feedback
+
+🔒 WORLD BUILDER CREATOR OS
+Build an entire visual world around your character, brand or story.
+
+You already have the idea.
+
+Come make it real 🎬
+
+$29/month. Cancel anytime.
+```
+Optional proof line (fits, +56): "The system behind the story
+8,000,000+ people watched." Scrub applies everywhere $9 appears:
+bios, pinned comments, highlights. Founders keep $9 billing silently;
+if asked inside: "founders keep their rate." Flip the Skool price
+setting to $29 in the same sitting as the copy paste. When ads
+return, all copy + end cards print $29 only — no "was $9" anchoring
+anywhere, ever.
