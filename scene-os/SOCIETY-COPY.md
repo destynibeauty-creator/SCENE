@@ -205,3 +205,58 @@ SCENE members have somewhere to go.
 - Free Character Starter email sequence → community invite as email 2
 - Stan can list the community as an external-link card pointing to the Skool
   page (keeps the store as the single storefront)
+
+
+## v3 — THE $29 ERA (Oct 20, 2026 — owner decision, supersedes the
+## "Pricing decision (FINAL): $9 flat" section above)
+
+Owner raised the price to $29/mo (ads were off; cash need + maturity
+of the funnel: 247 members, 8M+ story views). The $9-flat section
+above is retained for history only. Rules that carried over: existing
+members' $9 lock is INVIOLABLE and now a retention weapon (leave =
+rejoin at $29); "price goes up as we grow" stays on the page (still
+true — next stop per the original ladder could be $49); NO guarantee
+language, "Cancel anytime" only; all printed numbers currently true
+(240+ = 247 rounded down; 8M+ owner-verified).
+
+**Launch sequence:** last-call announcement posted 3-4 days before the
+flip ("goes to $29 on [DAY]; join before and lock $9 for life") — the
+ONE deployment of the real countdown the old section reserved. Once a
+date is posted the raise happens on that date, no extensions.
+
+**About copy (999/1000 chars — the live version from flip day):**
+```
+🎬 Build an AI character people follow like a series - him or her. No camera. No face on camera. All from your phone.
+
+The system behind the story 8,000,000+ people watched.
+
+240+ creators inside. Founders locked $9 for life - that window closed. The price goes up as we grow. Lock in $29 now.
+
+What's inside? 🎬
+✅ A new drop every month: 30 ready-to-run scenes
+✅ 10 identity-locked looks - 5 for her, 5 for him
+✅ Master Scene of the Month, ready to run
+✅ The Character Starter - build yours TODAY
+✅ Tool notes: Seedance, Nano Banana Pro settings
+✅ Post episodes, get feedback, get reposted
+🔒 World Builder classroom: the full Creator OS
+🎥 Don't want to build? I build & direct it for you
+
+Real skin texture. Baby hairs. Culturally accurate styling for him AND her. All copy + paste.
+
+Tired of:
+❌ Plastic AI that screams "fake"
+❌ A different face every post
+❌ Never knowing what to post
+This is the system.
+
+⚡ $29/month - under $1/day
+✅ Cancel anytime
+
+One character. A whole world. Enter THE SCENE. 🎬
+```
+
+**Flip-day scrub list:** Skool price setting -> $29 · About copy paste
+· IG/TikTok bios · pinned comments with $9 · (ManyChat already
+price-free · ads off, end cards re-render deferred until ads return —
+when they do, end-card pill and all ad copy must print $29).

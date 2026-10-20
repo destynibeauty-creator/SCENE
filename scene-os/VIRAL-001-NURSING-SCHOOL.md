@@ -679,6 +679,16 @@ record: it converted 5 @ $12.63 vs $6.43 in-set — same creative,
 double cost outside the learned set; the law stands on cleaner
 evidence.
 
+**Oct 20 — PRICE RAISED TO $29/MO (owner decision; ads currently
+OFF).** Sequence: last-call post first (3-4 days, "$9 for life ends
+[DAY]"), then flip. 247 founders keep $9 forever — churn tailwind.
+New About copy (999 chars) + last-call post delivered; v3 section
+added to SOCIETY-COPY.md. WHEN ADS RETURN: all copy + the 12 end
+cards must print $29 (re-render queued then, pipeline ready); expect
+higher CPA / lower volume / richer unit economics — a $20 CPA is
+profitable month one at $29. The learned ad set's $9-buyer model is
+stale; plan re-learning on restart.
+
 **Sep 29 (FINAL2 set, owner call during load):** hook card updated —
 "Want to learn how to make videos like this?" added under the 8M+
 stacked hook on the opening card (Poppins SemiBold, safe-zone
