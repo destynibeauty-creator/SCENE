@@ -77,3 +77,13 @@ chrome --headless --no-pdf-header-footer \
 The looks are written as itemized **brand + piece** breakdowns (matching the labeled
 reference style). They're built to be recreated as cut-out product flat-lays — swap in
 your own product images to produce the collage layout.
+
+---
+
+# COMMENT DESK - AI comment replies for Instagram
+
+**`comment-agent/`** - Claude drafts replies to new comments on
+@richdestyni and @profashionalist in Destyni's voice. You approve them in a
+phone-friendly dashboard, or turn on auto-post for simple replies. The
+dashboard also has a copy-paste helper for Facebook profile comments.
+Setup steps are in [`comment-agent/README.md`](comment-agent/README.md).

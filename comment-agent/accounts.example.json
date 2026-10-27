@@ -1,0 +1,14 @@
+[
+  {
+    "name": "richdestyni",
+    "ig_user_id": "filled in by: python cli.py add-account <token>",
+    "access_token": "filled in by: python cli.py add-account <token>",
+    "voice_notes": "Main account. AI creative + lashes + nurse life."
+  },
+  {
+    "name": "profashionalist",
+    "ig_user_id": "filled in by: python cli.py add-account <token>",
+    "access_token": "filled in by: python cli.py add-account <token>",
+    "voice_notes": "Fashion account. Talk outfits and style."
+  }
+]
